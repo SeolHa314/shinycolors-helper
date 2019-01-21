@@ -1705,7 +1705,6 @@ primJsp([0], {
                                 })
                             })
                         })
-                        t = temp_t;
                     }
                 }, {
                     key: "_showMemorySkillRoulette",
