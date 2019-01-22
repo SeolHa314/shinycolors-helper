@@ -1,3 +1,3 @@
 # shinycolors-perfect
 
-빵집 유틸 코드 저장소
+빵집 유틸 코드 저장소입니다
