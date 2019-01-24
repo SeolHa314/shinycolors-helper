@@ -4,7 +4,7 @@
 
     ASSET_ROOT: "/assets/",
 
-    TRACKING_URI: "https://tracking.shinycolors.enza.fun/",
+    TRACKING_URI: "",
 
     ENABLE_CRYPTO: false,
 
