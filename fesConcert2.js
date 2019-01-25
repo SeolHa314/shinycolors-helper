@@ -1,6 +1,7 @@
 var selectPoint = 0;
+var id = "gmjjeigfmgimllgiapflnikkfbinkdhl"
 
-chrome.runtime.sendMessage(null, function(response) {
+chrome.runtime.sendMessage(id, null, function(response) {
     if(request.success){
         selectPoint = request.point
     }
