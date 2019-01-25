@@ -15966,7 +15966,7 @@ primJsp([59], [, function(e, t, n) {
       , V = function(e) {
         return B.default.load(e).then(function(e) {
             return H(G.getIncludeMasterMap(e)).then(function(t) {
-                if($("#patchState").text == "true")
+                if($("#patchState").text() == "true")
                     return ajax(e, t)
                 else{
                     return {
