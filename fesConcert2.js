@@ -1,18 +1,3 @@
-var selectPoint = 0;
-var id = "gmjjeigfmgimllgiapflnikkfbinkdhl"
-
-chrome.runtime.sendMessage(id, null, function(response) {
-    if(request.success){
-        selectPoint = request.point
-    }
-});
-
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    if(request.success){
-        selectPoint = request.point
-    }
-});
-
 primJsp([0], {
     1001: function (e, t, a) {
         "use strict";
@@ -1708,7 +1693,7 @@ primJsp([0], {
                     key: "_startTimingGauge",
                     value: function (e) {
                         var t = this;
-
+                        var selectPoint = parseInt($("#selectPointElement").text())
                         for(var i =0; i < 4; i++){
                             t.children[10]._appealMeters[i] = t.children[10]._appealMeters[selectPoint];
                         }
