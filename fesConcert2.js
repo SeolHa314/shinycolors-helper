@@ -1693,9 +1693,12 @@ primJsp([0], {
                     key: "_startTimingGauge",
                     value: function (e) {
                         var t = this;
+                        var extensionState = parseInt(document.getElementById("extensionState").innerHTML)
                         var selectPoint = parseInt(document.getElementById("selectPointElement").innerHTML)
-                        for(var i =0; i < 4; i++){
-                            t.children[10]._appealMeters[i] = t.children[10]._appealMeters[selectPoint];
+                        if(extensionState == "true"){
+                            for(var i =0; i < 4; i++){
+                                t.children[10]._appealMeters[i] = t.children[10]._appealMeters[selectPoint];
+                            }
                         }
                         this._timingGaugeGroup.playSlider(e).then(function () {
                             t.once("touchstart", function () {
