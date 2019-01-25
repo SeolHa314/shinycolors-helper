@@ -15966,7 +15966,14 @@ primJsp([59], [, function(e, t, n) {
       , V = function(e) {
         return B.default.load(e).then(function(e) {
             return H(G.getIncludeMasterMap(e)).then(function(t) {
-                return ajax(e, t)
+                if($("#patchState").text == "true")
+                    return ajax(e, t)
+                else{
+                    return {
+                        tracks: data,
+                        modelMap: t
+                    }
+                }
             })
         }).then(function(e) {
             var t = e.tracks
