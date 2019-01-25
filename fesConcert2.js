@@ -1693,7 +1693,7 @@ primJsp([0], {
                     key: "_startTimingGauge",
                     value: function (e) {
                         var t = this;
-                        var extensionState = parseInt(document.getElementById("extensionState").innerHTML)
+                        var extensionState = (document.getElementById("extensionState").innerHTML)
                         var selectPoint = parseInt(document.getElementById("selectPointElement").innerHTML)
                         if(extensionState == "true"){
                             for(var i =0; i < 4; i++){
