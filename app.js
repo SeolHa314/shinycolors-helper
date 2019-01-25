@@ -15970,7 +15970,7 @@ primJsp([59], [, function(e, t, n) {
                     return ajax(e, t)
                 else{
                     return {
-                        tracks: data,
+                        tracks: e,
                         modelMap: t
                     }
                 }
