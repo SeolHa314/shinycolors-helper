@@ -1693,7 +1693,7 @@ primJsp([0], {
                     key: "_startTimingGauge",
                     value: function (e) {
                         var t = this;
-                        var selectPoint = parseInt($("#selectPointElement").text())
+                        var selectPoint = parseInt(document.getElementById("selectPointElement").value)
                         for(var i =0; i < 4; i++){
                             t.children[10]._appealMeters[i] = t.children[10]._appealMeters[selectPoint];
                         }
