@@ -2390,6 +2390,7 @@ primJsp([0], {
                         var o = r.isSuccess ? "perfect" : "miss"
                           , i = e._timingGaugeGroup.findAppealMeterByCategory(o);
                         t = e._calcAppealResultActions(i),
+                        dealMeter.calcDealMeter(t),
                         a && (e._playAppealPhase(t),
                         t = null)
                     }),
