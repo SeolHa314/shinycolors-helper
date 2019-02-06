@@ -2349,7 +2349,7 @@ primJsp([0], {
                                 t._timingGaugeGroup.disappear();
                                 var a = t._calcAppealResultActions(e);
                                 //딜미터기 코드
-                                calcDealMeter(a)
+                                dealMeter.calcDealMeter(a)
                                 t._playAppealPhase(a), t.emit("startAppealPhase")
                             })
                         })
@@ -2419,6 +2419,8 @@ primJsp([0], {
             }, {
                 key: "_initJudgeList",
                 value: function(e) {
+                    // maxkss 딜 미터기 심사위원 초기화
+                    dealMeter.initJudgeList(e)
                     var t = this;
                     e.forEach(function(e) {
                         t._judgeList.addJudge(T.default.new(e))
@@ -2427,6 +2429,8 @@ primJsp([0], {
             }, {
                 key: "_initPlayerIdolList",
                 value: function(e) {
+                    // maxkss 딜 미터기 아이돌 초기화
+                    dealMeter.initPlayerList(e)
                     var t = this;
                     this._playerIdolList.init(e.map(function(e) {
                         var a = G.default.new(e, e.idolColor);
