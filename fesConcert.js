@@ -2421,7 +2421,8 @@ primJsp([0], {
             }, {
                 key: "_initJudgeList",
                 value: function(e) {
-                    // maxkss 딜 미터기 심사위원 초기화
+                    // maxkss 딜 미터기 심사위원 초기화 및 시작
+                    dealMeter.showDealMeter()
                     dealMeter.initJudgeList(e)
                     var t = this;
                     e.forEach(function(e) {
@@ -2610,6 +2611,8 @@ primJsp([0], {
             }, {
                 key: "_endConcert",
                 value: function(e) {
+                    //maxkss 끝났을때
+                    dealMeter.hideDealMeter()
                     var t = this;
                     delete this.update,
                     new Promise(function(a) {
