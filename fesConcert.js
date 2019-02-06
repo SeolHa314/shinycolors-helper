@@ -2390,11 +2390,10 @@ primJsp([0], {
                         var o = r.isSuccess ? "perfect" : "miss"
                           , i = e._timingGaugeGroup.findAppealMeterByCategory(o);
                         t = e._calcAppealResultActions(i),
-                        temp = t,
+                        dealMeter.calcDealMeter(t),
                         a && (e._playAppealPhase(t),
                         t = null)
                         // maxkss 메모리 어필
-                        dealMeter.calcDealMeter(temp)
                     }),
                     this._memorySkillRoulette.once("showFrameEnd", function() {
                         e.once("touchstart", n),
