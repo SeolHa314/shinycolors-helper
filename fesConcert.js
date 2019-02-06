@@ -2348,6 +2348,8 @@ primJsp([0], {
                             t._timingGaugeGroup.stopSlider().then(function (e) {
                                 t._timingGaugeGroup.disappear();
                                 var a = t._calcAppealResultActions(e);
+                                //딜미터기 코드
+                                calcDealMeter(a)
                                 t._playAppealPhase(a), t.emit("startAppealPhase")
                             })
                         })
