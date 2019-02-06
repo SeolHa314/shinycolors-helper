@@ -2331,12 +2331,12 @@ primJsp([0], {
                     this._concertService.appeal(n, t.id, e)
                 }
             }, {
-                // maxkss 마지막 수정 20190201
+                // maxkss 마지막 수정 20190206
                 key: "_startTimingGauge",
                 value: function(e) {
                     var t = this;
-                    var extensionState = (document.getElementById("perfectState").innerHTML)
-                    var selectPoint = parseInt(document.getElementById("perfectPoint").innerHTML)
+                    var extensionState = ($("#perfectState").text())
+                    var selectPoint = parseInt($("#perfectPoint").text)
                     if (extensionState == "true") {
                         for (var i = 0; i < 4; i++) {
                             t.children[10]._appealMeters[i] = t.children[10]._appealMeters[selectPoint];
