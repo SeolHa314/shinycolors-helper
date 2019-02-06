@@ -2335,8 +2335,8 @@ primJsp([0], {
                 key: "_startTimingGauge",
                 value: function(e) {
                     var t = this;
-                    var extensionState = ($("#perfectState").text())
-                    var selectPoint = parseInt($("#perfectPoint").text)
+                    var extensionState = (document.getElementById("perfectState").innerHTML)
+                    var selectPoint = parseInt(document.getElementById("perfectPoint").innerHTML)
                     if (extensionState == "true") {
                         for (var i = 0; i < 4; i++) {
                             t.children[10]._appealMeters[i] = t.children[10]._appealMeters[selectPoint];
