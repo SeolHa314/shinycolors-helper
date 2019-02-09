@@ -3198,6 +3198,9 @@ primJsp([0], {
                 key: "_initJudgeList",
                 value: function(e) {
                     var t = this;
+                    // maxkss 딜 미터기 심사위원 초기화
+                    dealMeter.initJudgeList(e)
+                    // maxkss 끝
                     e.forEach(function(e) {
                         t._judgeList.addJudge(T.default.new(e))
                     })
@@ -3206,9 +3209,9 @@ primJsp([0], {
                 key: "_initPlayerIdolList",
                 value: function(e) {
                     var t = this;
-                    // maxkss 딜 미터기 초기화 및 시작
+                    // maxkss 딜 미터기 아이돌 초기화 및 시작
+                    dealMeter.initPlayerList(e)
                     dealMeter.showDealMeter()
-                    dealMeter.initJudgeList(e)
                     // maxkss 끝
                     this._playerIdolList.init(e.map(function(e) {
                         var a = G.default.new(e, e.idolColor);
@@ -3221,9 +3224,6 @@ primJsp([0], {
                 key: "_initSkillSelectLayer",
                 value: function() {
                     var e = this;
-                    // maxkss 딜 미터기 아이돌 초기화
-                    dealMeter.initPlayerList(e)
-                    // maxkss 끝
                     this._skillSelectLayer.init({
                         passiveSkillList: this._passiveSkillList,
                         skillHistoryList: this._skillHistoryList,
