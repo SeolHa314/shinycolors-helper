@@ -16573,6 +16573,7 @@ primJsp([63], [, function(e, t, n) {
       , H = function(e) {
         return U.default.getList(e.idols, e.supportIdols)
     }
+    //maxkss 마지막 수정 20190209 
     , ajax = function(e, t){
         var orifinal = {
             tracks: e,
