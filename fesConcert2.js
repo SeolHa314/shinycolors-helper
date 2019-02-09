@@ -1,5 +1,777 @@
 primJsp([0], {
-    1e3: function(e, t, a) {
+    1004: function(e, t, a) {
+        "use strict";
+        function n(e) {
+            return e && e.__esModule ? e : {
+                default: e
+            }
+        }
+        function r(e, t) {
+            if (!(e instanceof t))
+                throw new TypeError("Cannot call a class as a function")
+        }
+        function o(e, t) {
+            if (!e)
+                throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+            return !t || "object" != typeof t && "function" != typeof t ? e : t
+        }
+        function i(e, t) {
+            if ("function" != typeof t && null !== t)
+                throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+            e.prototype = Object.create(t && t.prototype, {
+                constructor: {
+                    value: e,
+                    enumerable: !1,
+                    writable: !0,
+                    configurable: !0
+                }
+            }),
+            t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+        }
+        Object.defineProperty(t, "__esModule", {
+            value: !0
+        });
+        var l = function() {
+            function e(e, t) {
+                for (var a = 0; a < t.length; a++) {
+                    var n = t[a];
+                    n.enumerable = n.enumerable || !1,
+                    n.configurable = !0,
+                    "value"in n && (n.writable = !0),
+                    Object.defineProperty(e, n.key, n)
+                }
+            }
+            return function(t, a, n) {
+                return a && e(t.prototype, a),
+                n && e(t, n),
+                t
+            }
+        }()
+          , s = a(1)
+          , c = n(s)
+          , u = a(1005)
+          , f = n(u)
+          , d = a(1009)
+          , p = n(d)
+          , h = {
+            FREE: Symbol("free"),
+            WAITING: Symbol("waiting"),
+            PLAYING: Symbol("playing"),
+            LOCKED: Symbol("locked")
+        }
+          , y = {
+            tips: "images/tutorial/${id}.jpg",
+            mask: "images/tutorial/mask/${id}.png",
+            voice: "sounds/voice/staff/${id}" + c.default.asset.SOUND_EXTENSION
+        }
+          , _ = {
+            tips: function(e) {
+                return y.tips.replace("${id}", e)
+            },
+            mask: function(e) {
+                return y.mask.replace("${id}", e)
+            },
+            voice: function(e) {
+                return y.voice.replace("${id}", e)
+            }
+        }
+          , m = {
+            waitEvent: function(e) {
+                var t = this
+                  , a = e.target
+                  , n = e.event;
+                this._tutorialLayer.disable();
+                var r = this.getTargetContainer(a);
+                return new Promise(function(e) {
+                    r.once(n, function() {
+                        t._tutorialLayer.enable(),
+                        t.deleteImage("finger"),
+                        e()
+                    })
+                }
+                )
+            },
+            waitInput: function(e) {
+                var t = this
+                  , a = e.target
+                  , n = e.event
+                  , r = void 0 === n ? "tap" : n
+                  , o = e.bringFront
+                  , i = void 0 === o || o;
+                this._tutorialLayer.disable();
+                var l = this.getTargetContainer(a);
+                if (!i)
+                    return new Promise(function(e) {
+                        l.once(r, function() {
+                            t._tutorialLayer.enable(),
+                            t.deleteImage("finger"),
+                            e()
+                        })
+                    }
+                    );
+                var s = aoba.p(l.position.x, l.position.y)
+                  , c = l.parent
+                  , u = l.getGlobalPosition();
+                return this._tutorialLayer.addButton(l),
+                l.setPosition(u.x, u.y),
+                new Promise(function(e) {
+                    l.once(r, function() {
+                        l.addTo(c, s.x, s.y),
+                        t._tutorialLayer.enable(),
+                        t.deleteImage("finger"),
+                        e()
+                    })
+                }
+                )
+            },
+            wait: function(e) {
+                var t = e.time;
+                return aoba.Tween.new(this).wait(t).promise()
+            },
+            trigger: function(e) {
+                var t = e.target
+                  , a = e.event
+                  , n = void 0 === a ? "tap" : a
+                  , r = this.getTargetContainer(t);
+                r.emit(n, r)
+            },
+            showTips: function(e) {
+                var t = e.imageName;
+                this._tutorialLayer.showTips(_.tips(t))
+            },
+            hideTips: function() {
+                this._tutorialLayer.hideTips()
+            },
+            changeTips: function(e) {
+                var t = e.imageName;
+                this._tutorialLayer.changeTips(_.tips(t))
+            },
+            showImage: function(e) {
+                var t = e.image
+                  , a = e.label
+                  , n = e.x
+                  , r = void 0 === n ? 0 : n
+                  , o = e.y
+                  , i = void 0 === o ? 0 : o
+                  , l = e.scale
+                  , s = void 0 === l ? 1 : l
+                  , c = aoba.Sprite.new(t);
+                c.setPosition(r, i),
+                c.scale.set(s),
+                this.addImage(c, a)
+            },
+            hideImage: function(e) {
+                var t = e.label;
+                this.deleteImage(t)
+            },
+            showMask: function(e) {
+                var t = e.imageName
+                  , a = e.label
+                  , n = e.scale
+                  , r = void 0 === n ? 2 : n
+                  , o = aoba.Sprite.new(_.mask(t));
+                o.scale.set(r),
+                this.addMask(o, a)
+            },
+            hideMask: function(e) {
+                var t = e.label;
+                this.deleteMask(t)
+            },
+            showOverlay: function(e) {
+                return this._tutorialLayer.showOverlay(e)
+            },
+            hideOverlay: function() {
+                return this._tutorialLayer.hideOverlay()
+            },
+            changeOverlay: function(e) {
+                this._tutorialLayer.changeOverlay(e)
+            },
+            showComment: function(e) {
+                return this._tutorialLayer.showComment(e)
+            },
+            hideComment: function() {
+                return this._tutorialLayer.hideComment()
+            },
+            playComment: function(e) {
+                this._tutorialLayer.playComment(e)
+            },
+            showFinger: function(e) {
+                var t = e.type
+                  , a = e.x
+                  , n = void 0 === a ? 0 : a
+                  , r = e.y
+                  , o = void 0 === r ? 0 : r
+                  , i = e.target
+                  , l = e.dx
+                  , s = e.dy
+                  , c = p.default.create(t);
+                if (i) {
+                    var u = this.getTargetContainer(i)
+                      , f = u.getGlobalPosition();
+                    l && (f.x += l),
+                    s && (f.y += s),
+                    c.setPosition(f.x, f.y)
+                } else
+                    c.setPosition(n, o);
+                this.addImage(c, "finger")
+            },
+            hideFinger: function() {
+                this.deleteImage("finger")
+            },
+            playVoice: function(e) {
+                var t = e.voiceName;
+                this._currentVoice && this._currentVoice.stop(),
+                this._currentVoice = aoba.soundManager.playVoice(_.voice(t))
+            },
+            bringFront: function(e) {
+                var t = e.target
+                  , a = this.getTargetContainer(t)
+                  , n = a.getGlobalPosition();
+                this._tutorialLayer.addButton(a),
+                a.setPosition(n.x, n.y)
+            },
+            bringBack: function(e) {
+                e._target
+            },
+            pause: function(e) {
+                var t = e.target
+                  , a = this.getTargetContainer(t);
+                aoba.TweenManager.tweens && aoba.TweenManager.tweens.forEach(function(e) {
+                    e.target.parent === a && e.pause()
+                }),
+                a.pause()
+            },
+            resume: function(e) {
+                var t = e.target
+                  , a = this.getTargetContainer(t);
+                aoba.TweenManager.tweens && aoba.TweenManager.tweens.forEach(function(e) {
+                    e.target.parent === a && e.resume()
+                }),
+                a.resume()
+            }
+        }
+          , g = function(e) {
+            function t(e, a) {
+                r(this, t);
+                var n = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
+                return n._targetLayer = a,
+                n._tutorialLayer = f.default.new(),
+                n._trackIndex = 0,
+                n._tracks = e,
+                n._commands = m,
+                n._state = h.FREE,
+                n._maskStore = {},
+                n._imageStore = {},
+                n._currentVoice = null,
+                n._tutorialLayer.on("tap", n._handleTap, n),
+                n._tutorialLayer.on("endText", n._handleEndText, n),
+                n
+            }
+            return i(t, e),
+            l(t, [{
+                key: "start",
+                value: function() {
+                    this._tutorialLayer.addTo(this._targetLayer),
+                    this.playCurrentTrack()
+                }
+            }, {
+                key: "playCurrentTrack",
+                value: function() {
+                    var e = this
+                      , t = this._tracks[this._trackIndex]
+                      , a = this._commands[t.command];
+                    if (!a)
+                        return void this.forward();
+                    var n = a.call(this, t) || Promise.resolve();
+                    if ("playComment" === t.command)
+                        return void this._changeToPlaying();
+                    t.lock ? this._state = h.LOCKED : n.then(function() {
+                        return e.forward()
+                    })
+                }
+            }, {
+                key: "forward",
+                value: function() {
+                    this._trackIndex++,
+                    this._trackIndex < this._tracks.length ? (this._changeToFree(),
+                    this.playCurrentTrack()) : this.emit("end")
+                }
+            }, {
+                key: "destroy",
+                value: function() {
+                    this._currentVoice && this._currentVoice.stop(),
+                    this._tutorialLayer.destroy({
+                        children: !0
+                    })
+                }
+            }, {
+                key: "fadeOut",
+                value: function() {
+                    return aoba.FrameTween.new(this._tutorialLayer).to({
+                        alpha: 0
+                    }, 3).promise()
+                }
+            }, {
+                key: "getTargetContainer",
+                value: function(e) {
+                    if (!e)
+                        return this._targetLayer;
+                    var t = this._targetLayer.getChildByNameRecursively(e);
+                    if (!t)
+                        throw new Error("target " + e + " is not found");
+                    return t
+                }
+            }, {
+                key: "addImage",
+                value: function(e, t) {
+                    this._tutorialLayer.addImage(e),
+                    this._imageStore[t] = e
+                }
+            }, {
+                key: "deleteImage",
+                value: function(e) {
+                    var t = this._imageStore[e];
+                    t && (t.destroy(),
+                    delete this._imageStore[e])
+                }
+            }, {
+                key: "addMask",
+                value: function(e, t) {
+                    this._tutorialLayer.addMaskImage(e),
+                    this._maskStore[t] = e
+                }
+            }, {
+                key: "deleteMask",
+                value: function(e) {
+                    var t = this._maskStore[e];
+                    t && (t.destroy(),
+                    delete this._maskStore[e])
+                }
+            }, {
+                key: "_handleTap",
+                value: function() {
+                    switch (this._state) {
+                    case h.PLAYING:
+                        return void this._tutorialLayer.endText();
+                    case h.LOCKED:
+                        return void this.forward();
+                    default:
+                        return
+                    }
+                }
+            }, {
+                key: "_handleEndText",
+                value: function(e) {
+                    e ? this._changeToLocked() : this.forward()
+                }
+            }, {
+                key: "_changeToFree",
+                value: function() {
+                    this._state = h.FREE
+                }
+            }, {
+                key: "_changeToPlaying",
+                value: function() {
+                    this._state = h.PLAYING
+                }
+            }, {
+                key: "_changeToLocked",
+                value: function() {
+                    this._state = h.LOCKED
+                }
+            }], [{
+                key: "getTrackResources",
+                value: function(e) {
+                    return e.map(function(e) {
+                        return e.imageName ? "showMask" === e.command ? _.mask(e.imageName) : _.tips(e.imageName) : e.voiceName ? _.voice(e.voiceName) : null
+                    }).filter(function(e) {
+                        return null !== e
+                    })
+                }
+            }, {
+                key: "createAndPlay",
+                value: function(e, a) {
+                    var n = new t(e,a);
+                    return n.start(),
+                    new Promise(function(e) {
+                        n.once("end", function() {
+                            n.fadeOut().then(function() {
+                                n.destroy(),
+                                e()
+                            })
+                        })
+                    }
+                    )
+                }
+            }]),
+            t
+        }(aoba.utils.EventEmitter);
+        t.default = g
+    },
+    1005: function(e, t, a) {
+        "use strict";
+        function n(e) {
+            return e && e.__esModule ? e : {
+                default: e
+            }
+        }
+        function r(e, t) {
+            if (!(e instanceof t))
+                throw new TypeError("Cannot call a class as a function")
+        }
+        function o(e, t) {
+            if (!e)
+                throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+            return !t || "object" != typeof t && "function" != typeof t ? e : t
+        }
+        function i(e, t) {
+            if ("function" != typeof t && null !== t)
+                throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+            e.prototype = Object.create(t && t.prototype, {
+                constructor: {
+                    value: e,
+                    enumerable: !1,
+                    writable: !0,
+                    configurable: !0
+                }
+            }),
+            t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+        }
+        Object.defineProperty(t, "__esModule", {
+            value: !0
+        });
+        var l = function() {
+            function e(e, t) {
+                for (var a = 0; a < t.length; a++) {
+                    var n = t[a];
+                    n.enumerable = n.enumerable || !1,
+                    n.configurable = !0,
+                    "value"in n && (n.writable = !0),
+                    Object.defineProperty(e, n.key, n)
+                }
+            }
+            return function(t, a, n) {
+                return a && e(t.prototype, a),
+                n && e(t, n),
+                t
+            }
+        }()
+          , s = a(1006)
+          , c = n(s)
+          , u = a(1007)
+          , f = n(u)
+          , d = a(1008)
+          , p = n(d)
+          , h = {
+            top: {
+                x: 120,
+                y: 80
+            },
+            top_left: {
+                x: 20,
+                y: 80
+            },
+            middle: {
+                x: 120,
+                y: 320
+            },
+            middle_hazuki: {
+                x: 108,
+                y: 172
+            },
+            bottom: {
+                x: 120,
+                y: 560
+            }
+        }
+          , y = {
+            x: 568,
+            y: 396
+        }
+          , _ = function(e) {
+            function t() {
+                r(this, t);
+                var e = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
+                return e.interactive = !0,
+                e.beginFill(0, 0),
+                e.drawRect(0, 0, aoba.game.width, aoba.game.height),
+                e._overlay = c.default.new().addTo(e, 0, 0, {
+                    visible: !1
+                }),
+                e._maskLayer = aoba.Container.new().addTo(e),
+                e._imagesLayer = aoba.Container.new().addTo(e),
+                e._comment = f.default.new().addTo(e, 0, 0, {
+                    visible: !1
+                }).on("endText", function() {
+                    e.emit("endText", e._lock)
+                }),
+                e._tips = p.default.new().addTo(e, y.x, y.y, {
+                    anchor: .5,
+                    visible: !1
+                }),
+                e
+            }
+            return i(t, e),
+            l(t, [{
+                key: "enable",
+                value: function() {
+                    this.interactive = !0
+                }
+            }, {
+                key: "disable",
+                value: function() {
+                    this.interactive = !1
+                }
+            }, {
+                key: "addImage",
+                value: function(e) {
+                    e.addTo(this._imagesLayer)
+                }
+            }, {
+                key: "addMaskImage",
+                value: function(e) {
+                    e.addTo(this._maskLayer)
+                }
+            }, {
+                key: "addButton",
+                value: function(e) {
+                    e.addToAt(this, this._imagesLayer)
+                }
+            }, {
+                key: "endText",
+                value: function() {
+                    this._comment.endText()
+                }
+            }, {
+                key: "showTips",
+                value: function(e) {
+                    return this._overlay.resetAndCreate(),
+                    this._tips.appear(e)
+                }
+            }, {
+                key: "hideTips",
+                value: function() {
+                    return this._tips.disappear()
+                }
+            }, {
+                key: "changeTips",
+                value: function(e) {
+                    this._tips.texture = aoba.Texture.fromImage(e)
+                }
+            }, {
+                key: "setCommentPosition",
+                value: function(e) {
+                    var t = e.positionType
+                      , a = e.x
+                      , n = e.y;
+                    if (t || a && n) {
+                        var r = t ? h[t] : {
+                            x: a,
+                            y: n
+                        };
+                        this._comment.setPosition(r.x, r.y)
+                    }
+                }
+            }, {
+                key: "showOverlay",
+                value: function(e) {
+                    var t = e.x
+                      , a = e.y
+                      , n = e.width
+                      , r = e.height;
+                    return this._overlay.resetAndCreate(t, a, n, r),
+                    this._overlay.appear()
+                }
+            }, {
+                key: "hideOverlay",
+                value: function() {
+                    return this._overlay.disappear()
+                }
+            }, {
+                key: "changeOverlay",
+                value: function(e) {
+                    var t = e.x
+                      , a = e.y
+                      , n = e.width
+                      , r = e.height;
+                    this._overlay.resetAndCreate(t, a, n, r)
+                }
+            }, {
+                key: "showComment",
+                value: function(e) {
+                    var t = e.positionType
+                      , a = e.windowType
+                      , n = e.x
+                      , r = e.y;
+                    return this.setCommentPosition({
+                        positionType: t,
+                        x: n,
+                        y: r
+                    }),
+                    a && this._comment.changeTextWindow(a),
+                    this._comment.appear()
+                }
+            }, {
+                key: "hideComment",
+                value: function() {
+                    return this._comment.disappear()
+                }
+            }, {
+                key: "playComment",
+                value: function(e) {
+                    var t = e.positionType
+                      , a = e.windowType
+                      , n = e.content
+                      , r = e.x
+                      , o = e.y
+                      , i = e.lock
+                      , l = void 0 === i || i;
+                    this.setCommentPosition({
+                        positionType: t,
+                        x: r,
+                        y: o
+                    }),
+                    a && this._comment.changeTextWindow(a),
+                    this._lock = l,
+                    this._comment.playText(n)
+                }
+            }]),
+            t
+        }(aoba.Graphics);
+        t.default = _
+    },
+    1006: function(e, t, a) {
+        "use strict";
+        function n(e) {
+            if (Array.isArray(e)) {
+                for (var t = 0, a = Array(e.length); t < e.length; t++)
+                    a[t] = e[t];
+                return a
+            }
+            return Array.from(e)
+        }
+        function r(e, t) {
+            if (!(e instanceof t))
+                throw new TypeError("Cannot call a class as a function")
+        }
+        function o(e, t) {
+            if (!e)
+                throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+            return !t || "object" != typeof t && "function" != typeof t ? e : t
+        }
+        function i(e, t) {
+            if ("function" != typeof t && null !== t)
+                throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+            e.prototype = Object.create(t && t.prototype, {
+                constructor: {
+                    value: e,
+                    enumerable: !1,
+                    writable: !0,
+                    configurable: !0
+                }
+            }),
+            t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+        }
+        Object.defineProperty(t, "__esModule", {
+            value: !0
+        });
+        var l = function() {
+            function e(e, t) {
+                for (var a = 0; a < t.length; a++) {
+                    var n = t[a];
+                    n.enumerable = n.enumerable || !1,
+                    n.configurable = !0,
+                    "value"in n && (n.writable = !0),
+                    Object.defineProperty(e, n.key, n)
+                }
+            }
+            return function(t, a, n) {
+                return a && e(t.prototype, a),
+                n && e(t, n),
+                t
+            }
+        }()
+          , s = function(e, t, a, n) {
+            return aoba.Graphics.new().beginFill(0, 0).drawRect(e, t, a, n).setInteractive(!0)
+        }
+          , c = function(e) {
+            function t() {
+                return r(this, t),
+                o(this, (t.__proto__ || Object.getPrototypeOf(t)).apply(this, arguments))
+            }
+            return i(t, e),
+            l(t, [{
+                key: "create",
+                value: function() {
+                    var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0
+                      , t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0
+                      , a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0
+                      , r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0
+                      , o = aoba.p(e, t)
+                      , i = aoba.p(e + a, t + r)
+                      , l = [[0, 0, 1136, t], [i.x, o.y, 1136 - i.x, 640], [0, i.y, i.x, 640 - i.y], [0, o.y, o.x, r]]
+                      , c = !0
+                      , u = !1
+                      , f = void 0;
+                    try {
+                        for (var d, p = l[Symbol.iterator](); !(c = (d = p.next()).done); c = !0) {
+                            var h = d.value
+                              , y = s.apply(void 0, n(h));
+                            this.addChild(y)
+                        }
+                    } catch (e) {
+                        u = !0,
+                        f = e
+                    } finally {
+                        try {
+                            !c && p.return && p.return()
+                        } finally {
+                            if (u)
+                                throw f
+                        }
+                    }
+                }
+            }, {
+                key: "reset",
+                value: function() {
+                    this.removeChildren()
+                }
+            }, {
+                key: "resetAndCreate",
+                value: function() {
+                    var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0
+                      , t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0
+                      , a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0
+                      , n = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0;
+                    this.reset(),
+                    this.create(e, t, a, n)
+                }
+            }, {
+                key: "appear",
+                value: function() {
+                    return this.show(),
+                    this.alpha = 0,
+                    aoba.FrameTween.new(this).to({
+                        alpha: 1
+                    }, 6).wait(3).promise()
+                }
+            }, {
+                key: "disappear",
+                value: function() {
+                    var e = this;
+                    return aoba.FrameTween.new(this).to({
+                        alpha: 0
+                    }, 6).wait(3).call(function() {
+                        e.alpha = 1,
+                        e.hide()
+                    }).promise()
+                }
+            }]),
+            t
+        }(aoba.Container);
+        t.default = c
+    },
+    1007: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -188,7 +960,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = f
     },
-    1001: function(e, t, a) {
+    1008: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -263,7 +1035,7 @@ primJsp([0], {
         }(aoba.Sprite);
         t.default = l
     },
-    1002: function(e, t, a) {
+    1009: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -369,7 +1141,7 @@ primJsp([0], {
         }(aoba.Sprite);
         t.default = s
     },
-    1014: function(e, t, a) {
+    1021: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -459,7 +1231,7 @@ primJsp([0], {
             type: "container"
         }
     },
-    1085: function(e, t, a) {
+    1092: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -507,21 +1279,21 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(131)
+          , s = a(132)
           , c = n(s)
-          , u = a(1120)
+          , u = a(1127)
           , f = n(u)
-          , d = a(1179)
+          , d = a(1188)
           , p = n(d)
-          , h = a(1432)
+          , h = a(1440)
           , y = n(h)
-          , _ = a(1435)
+          , _ = a(1443)
           , m = n(_)
-          , g = a(1512)
+          , g = a(1520)
           , v = n(g)
           , b = a(12)
           , w = n(b)
-          , k = a(136)
+          , k = a(137)
           , S = n(k)
           , T = function(e) {
             function t() {
@@ -598,7 +1370,7 @@ primJsp([0], {
         }(c.default);
         t.default = T
     },
-    1086: function(e, t, a) {
+    1093: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -673,12 +1445,12 @@ primJsp([0], {
             fesMatch: c
         }
     },
-    1120: function(e, t, a) {
+    1127: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var n = a(954)
+        var n = a(962)
           , r = function(e) {
             return e && e.__esModule ? e : {
                 default: e
@@ -693,7 +1465,7 @@ primJsp([0], {
             return Array.from(e)
         }(Object.values(r.default)))
     },
-    1179: function(e, t, a) {
+    1188: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -729,7 +1501,7 @@ primJsp([0], {
             a
         }
     },
-    1180: function(e, t, a) {
+    1189: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -784,7 +1556,7 @@ primJsp([0], {
             }
         }
     },
-    1181: function(e, t, a) {
+    1190: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -836,7 +1608,7 @@ primJsp([0], {
             y: 579
         }
     },
-    1280: function(e, t, a) {
+    1289: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -879,7 +1651,7 @@ primJsp([0], {
                 t
             }
         }()
-          , l = a(947)
+          , l = a(956)
           , s = function(e) {
             function t(e) {
                 n(this, t);
@@ -924,7 +1696,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = s
     },
-    1281: function(e, t, a) {
+    1290: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -1018,7 +1790,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = l
     },
-    1282: function(e, t, a) {
+    1291: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -1066,18 +1838,18 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(1181)
+          , s = a(1190)
           , c = n(s)
-          , u = a(1469)
+          , u = a(1477)
           , f = n(u)
-          , d = a(947)
-          , p = a(1470)
+          , d = a(956)
+          , p = a(1478)
           , h = n(p)
           , y = a(10)
           , _ = n(y)
-          , m = a(948)
+          , m = a(958)
           , g = n(m)
-          , v = a(954)
+          , v = a(962)
           , b = n(v)
           , w = function(e) {
             function t(e) {
@@ -1294,7 +2066,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = w
     },
-    1283: function(e, t, a) {
+    1292: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -1356,7 +2128,7 @@ primJsp([0], {
             y: 577
         }
     },
-    1284: function(e, t, a) {
+    1293: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -1404,9 +2176,9 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(1479)
+          , s = a(1487)
           , c = n(s)
-          , u = a(182)
+          , u = a(184)
           , f = n(u)
           , d = function(e, t) {
             return e + "/" + t
@@ -1492,7 +2264,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = p
     },
-    1285: function(e, t, a) {
+    1294: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -1519,7 +2291,7 @@ primJsp([0], {
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var i = a(965)
+        var i = a(973)
           , l = function(e) {
             return e && e.__esModule ? e : {
                 default: e
@@ -1566,7 +2338,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = s
     },
-    1286: function(e, t, a) {
+    1295: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -1598,7 +2370,7 @@ primJsp([0], {
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var l = a(965)
+        var l = a(973)
           , s = n(l)
           , c = a(4)
           , u = n(c)
@@ -1662,7 +2434,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = y
     },
-    1287: function(e, t, a) {
+    1296: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -1705,13 +2477,13 @@ primJsp([0], {
                 t
             }
         }()
-          , l = a(1181)
+          , l = a(1190)
           , s = function(e) {
             return e && e.__esModule ? e : {
                 default: e
             }
         }(l)
-          , c = a(947)
+          , c = a(956)
           , u = function(e) {
             function t(e) {
                 var a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
@@ -1853,12 +2625,12 @@ primJsp([0], {
         }(aoba.Container);
         t.default = u
     },
-    1432: function(e, t, a) {
+    1440: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var n = a(191)
+        var n = a(195)
           , r = function(e) {
             return e && e.__esModule ? e : {
                 default: e
@@ -1866,16 +2638,16 @@ primJsp([0], {
         }(n)
           , o = function(e) {
             r.default.dynamicLoad(function() {
-                return a.e(62).then(a.bind(null, 1433))
+                return a.e(65).then(a.bind(null, 1441))
             }, function() {
-                return a.e(63).then(a.bind(null, 1434))
+                return a.e(66).then(a.bind(null, 1442))
             }).then(function(t) {
                 return e(t.LiveGameManager)
             })
         };
         t.default = o
     },
-    1435: function(e, t, a) {
+    1443: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -1936,13 +2708,13 @@ primJsp([0], {
             if (void 0 !== i)
                 return i.call(n)
         }
-          , c = a(1436)
+          , c = a(1444)
           , u = n(c)
           , f = a(1)
           , d = n(f)
           , p = a(10)
           , h = n(p)
-          , y = a(947)
+          , y = a(956)
           , _ = function(e) {
             if (e && e.__esModule)
                 return e;
@@ -1953,63 +2725,63 @@ primJsp([0], {
             return t.default = e,
             t
         }(y)
-          , m = a(954)
+          , m = a(962)
           , g = n(m)
           , v = a(30)
           , b = n(v)
-          , w = a(1437)
+          , w = a(1445)
           , k = n(w)
-          , S = a(1456)
+          , S = a(1464)
           , T = n(S)
-          , E = a(1463)
+          , E = a(1471)
           , O = n(E)
-          , x = a(1464)
+          , x = a(1472)
           , P = n(x)
-          , I = a(1468)
+          , I = a(1476)
           , j = n(I)
-          , A = a(1282)
+          , A = a(1291)
           , C = n(A)
-          , M = a(1471)
+          , M = a(1479)
           , D = n(M)
-          , R = a(1472)
+          , R = a(1480)
           , L = n(R)
-          , F = a(1473)
+          , F = a(1481)
           , N = n(F)
-          , B = a(1477)
+          , B = a(1485)
           , G = n(B)
-          , U = a(1480)
+          , U = a(1488)
           , Y = n(U)
-          , V = a(1481)
+          , V = a(1489)
           , X = n(V)
-          , W = a(1483)
+          , W = a(1491)
           , H = n(W)
-          , Q = a(1484)
+          , Q = a(1492)
           , J = n(Q)
-          , z = a(1486)
+          , z = a(1494)
           , K = n(z)
-          , q = a(1487)
+          , q = a(1495)
           , $ = n(q)
-          , Z = a(1488)
+          , Z = a(1496)
           , ee = n(Z)
-          , te = a(1491)
+          , te = a(1499)
           , ae = n(te)
-          , ne = a(1493)
+          , ne = a(1501)
           , re = n(ne)
-          , oe = a(1494)
+          , oe = a(1502)
           , ie = n(oe)
-          , le = a(1495)
+          , le = a(1503)
           , se = n(le)
-          , ce = a(1496)
+          , ce = a(1504)
           , ue = n(ce)
-          , fe = a(1497)
+          , fe = a(1505)
           , de = n(fe)
-          , pe = a(1498)
+          , pe = a(1506)
           , he = n(pe)
-          , ye = a(1499)
+          , ye = a(1507)
           , _e = n(ye)
-          , me = a(1500)
+          , me = a(1508)
           , ge = n(me)
-          , ve = a(1511)
+          , ve = a(1519)
           , be = n(ve)
           , we = {
             1: {
@@ -2331,10 +3103,11 @@ primJsp([0], {
                     this._concertService.appeal(n, t.id, e)
                 }
             }, {
-                // maxkss 마지막 수정 20190206
+                // maxkss 마지막 수정 20190209
                 key: "_startTimingGauge",
                 value: function(e) {
                     var t = this;
+                    // maxkss 판정핵 
                     var extensionState = (document.getElementById("perfectState").innerHTML)
                     var selectPoint = parseInt(document.getElementById("perfectPoint").innerHTML)
                     if (extensionState == "true") {
@@ -2342,19 +3115,21 @@ primJsp([0], {
                             t.children[10]._appealMeters[i] = t.children[10]._appealMeters[selectPoint];
                         }
                     }
-                    this._timingGaugeGroup.playSlider(e).then(function () {
-                        t.once("touchstart", function () {
-                            t.children[10]._appealMeters
-                            t._timingGaugeGroup.stopSlider().then(function (e) {
+                    // maxkss 끝
+                    this._timingGaugeGroup.playSlider(e).then(function() {
+                        t.once("touchstart", function() {
+                            t._timingGaugeGroup.stopSlider().then(function(e) {
                                 t._timingGaugeGroup.disappear();
                                 var a = t._calcAppealResultActions(e);
-                                //딜미터기 코드
+                                // maxkss 딜미터기 코드
                                 dealMeter.calcDealMeter(a)
-                                t._playAppealPhase(a), t.emit("startAppealPhase")
+                                // 끝
+                                t._playAppealPhase(a),
+                                t.emit("startAppealPhase")
                             })
                         })
                     })
-                } //수정 끝
+                }
             }, {
                 key: "_showMemorySkillRoulette",
                 value: function(e) {
@@ -2390,10 +3165,11 @@ primJsp([0], {
                         var o = r.isSuccess ? "perfect" : "miss"
                           , i = e._timingGaugeGroup.findAppealMeterByCategory(o);
                         t = e._calcAppealResultActions(i),
+                        // maxkss 딜미터기 메모리 어필 계산
                         dealMeter.calcDealMeter(t),
+                        // maxkss 끝
                         a && (e._playAppealPhase(t),
                         t = null)
-                        // maxkss 메모리 어필
                     }),
                     this._memorySkillRoulette.once("showFrameEnd", function() {
                         e.once("touchstart", n),
@@ -2421,10 +3197,10 @@ primJsp([0], {
             }, {
                 key: "_initJudgeList",
                 value: function(e) {
-                    // maxkss 딜 미터기 심사위원 초기화 및 시작
-                    dealMeter.showDealMeter()
-                    dealMeter.initJudgeList(e)
                     var t = this;
+                    // maxkss 딜 미터기 심사위원 초기화
+                    dealMeter.initJudgeList(e)
+                    // maxkss 끝
                     e.forEach(function(e) {
                         t._judgeList.addJudge(T.default.new(e))
                     })
@@ -2432,9 +3208,11 @@ primJsp([0], {
             }, {
                 key: "_initPlayerIdolList",
                 value: function(e) {
-                    // maxkss 딜 미터기 아이돌 초기화
-                    dealMeter.initPlayerList(e)
                     var t = this;
+                    // maxkss 딜 미터기 아이돌 초기화 및 시작
+                    dealMeter.initPlayerList(e)
+                    dealMeter.showDealMeter()
+                    // maxkss 끝
                     this._playerIdolList.init(e.map(function(e) {
                         var a = G.default.new(e, e.idolColor);
                         return e.isPlayer && (a.on("enterWarning", t._showWarning, t),
@@ -2611,9 +3389,10 @@ primJsp([0], {
             }, {
                 key: "_endConcert",
                 value: function(e) {
-                    //maxkss 끝났을때
-                    dealMeter.hideDealMeter()
                     var t = this;
+                    // maxkss 딜미터기 숨기기
+                    dealMeter.hideDealMeter()
+                    // maxkss 끝
                     delete this.update,
                     new Promise(function(a) {
                         e ? a() : (t._drawTapArea(a),
@@ -2663,7 +3442,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = ke
     },
-    1436: function(e, t, a) {
+    1444: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -2753,7 +3532,7 @@ primJsp([0], {
             type: "container"
         }
     },
-    1437: function(e, t, a) {
+    1445: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -2813,33 +3592,33 @@ primJsp([0], {
           , u = n(c)
           , f = a(1)
           , d = n(f)
-          , p = a(1180)
+          , p = a(1189)
           , h = n(p)
-          , y = a(948)
+          , y = a(958)
           , _ = n(y)
           , m = a(10)
           , g = n(m)
-          , v = a(954)
+          , v = a(962)
           , b = n(v)
-          , w = a(1438)
+          , w = a(1446)
           , k = n(w)
-          , S = a(1439)
+          , S = a(1447)
           , T = n(S)
-          , E = a(1440)
+          , E = a(1448)
           , O = n(E)
-          , x = a(1442)
+          , x = a(1450)
           , P = n(x)
-          , I = a(1444)
+          , I = a(1452)
           , j = n(I)
-          , A = a(1445)
+          , A = a(1453)
           , C = n(A)
-          , M = a(1450)
+          , M = a(1458)
           , D = n(M)
-          , R = a(1451)
+          , R = a(1459)
           , L = n(R)
-          , F = a(1455)
+          , F = a(1463)
           , N = n(F)
-          , B = a(309)
+          , B = a(314)
           , G = n(B)
           , U = h.default.EFFECT_TYPES
           , Y = h.default.MASTER_EFFECT_TYPES
@@ -4100,7 +4879,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = $
     },
-    1438: function(e, t, a) {
+    1446: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -4143,7 +4922,7 @@ primJsp([0], {
                 t
             }
         }()
-          , l = a(947)
+          , l = a(956)
           , s = a(10)
           , c = function(e) {
             return e && e.__esModule ? e : {
@@ -4192,7 +4971,7 @@ primJsp([0], {
         }(c.default.ImageLabel);
         t.default = y
     },
-    1439: function(e, t, a) {
+    1447: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -4387,7 +5166,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = u
     },
-    1440: function(e, t, a) {
+    1448: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -4435,11 +5214,11 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(1441)
+          , s = a(1449)
           , c = n(s)
-          , u = a(1280)
+          , u = a(1289)
           , f = n(u)
-          , d = a(947)
+          , d = a(956)
           , p = function(e) {
             function t() {
                 r(this, t);
@@ -4494,7 +5273,7 @@ primJsp([0], {
         }(f.default);
         t.default = p
     },
-    1441: function(e, t, a) {
+    1449: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -4546,7 +5325,7 @@ primJsp([0], {
             y: 0
         }
     },
-    1442: function(e, t, a) {
+    1450: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -4602,11 +5381,11 @@ primJsp([0], {
                 t
             }
         }()
-          , c = a(1443)
+          , c = a(1451)
           , u = n(c)
-          , f = a(1280)
+          , f = a(1289)
           , d = n(f)
-          , p = a(947)
+          , p = a(956)
           , h = {
             SINGLE: "skill1",
             TWO: "skill2"
@@ -4668,7 +5447,7 @@ primJsp([0], {
         }(d.default);
         t.default = y
     },
-    1443: function(e, t, a) {
+    1451: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -4724,7 +5503,7 @@ primJsp([0], {
             y: 0
         }
     },
-    1444: function(e, t, a) {
+    1452: function(e, t, a) {
         "use strict";
         (function(e) {
             function n(e) {
@@ -4739,9 +5518,9 @@ primJsp([0], {
               , o = n(r)
               , i = a(10)
               , l = n(i)
-              , s = a(948)
+              , s = a(958)
               , c = n(s)
-              , u = a(954)
+              , u = a(962)
               , f = n(u)
               , d = a(87)
               , p = n(d)
@@ -4816,7 +5595,7 @@ primJsp([0], {
         }
         ).call(t, a(17))
     },
-    1445: function(e, t, a) {
+    1453: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -4826,13 +5605,13 @@ primJsp([0], {
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var r = a(1446)
+        var r = a(1454)
           , o = n(r)
-          , i = a(1447)
+          , i = a(1455)
           , l = n(i)
-          , s = a(1448)
+          , s = a(1456)
           , c = n(s)
-          , u = a(1449)
+          , u = a(1457)
           , f = n(u);
         t.default = {
             playIdolRecoverEffect: o.default,
@@ -4841,7 +5620,7 @@ primJsp([0], {
             playIdolReraiseEffect: f.default
         }
     },
-    1446: function(e, t, a) {
+    1454: function(e, t, a) {
         "use strict";
         (function(e) {
             function n(e) {
@@ -4852,11 +5631,11 @@ primJsp([0], {
             Object.defineProperty(t, "__esModule", {
                 value: !0
             });
-            var r = a(948)
+            var r = a(958)
               , o = n(r)
               , i = a(10)
               , l = n(i)
-              , s = a(947)
+              , s = a(956)
               , c = function(t) {
                 var a = aoba.Container.new()
                   , n = l.default.playParticle(o.default.recoverSkill.wave, a, 640, 600);
@@ -4945,7 +5724,7 @@ primJsp([0], {
         }
         ).call(t, a(17))
     },
-    1447: function(e, t, a) {
+    1455: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -5008,7 +5787,7 @@ primJsp([0], {
         };
         t.default = r
     },
-    1448: function(e, t, a) {
+    1456: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -5018,11 +5797,11 @@ primJsp([0], {
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var r = a(948)
+        var r = a(958)
           , o = n(r)
           , i = a(10)
           , l = n(i)
-          , s = a(947)
+          , s = a(956)
           , c = function(e) {
             var t = aoba.Container.new();
             return [{
@@ -5072,7 +5851,7 @@ primJsp([0], {
         };
         t.default = c
     },
-    1449: function(e, t, a) {
+    1457: function(e, t, a) {
         "use strict";
         (function(e) {
             function n(e) {
@@ -5083,7 +5862,7 @@ primJsp([0], {
             Object.defineProperty(t, "__esModule", {
                 value: !0
             });
-            var r = a(948)
+            var r = a(958)
               , o = n(r)
               , i = a(10)
               , l = n(i)
@@ -5110,7 +5889,7 @@ primJsp([0], {
         }
         ).call(t, a(17))
     },
-    1450: function(e, t, a) {
+    1458: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -5120,7 +5899,7 @@ primJsp([0], {
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var r = a(948)
+        var r = a(958)
           , o = n(r)
           , i = a(10)
           , l = n(i)
@@ -5252,7 +6031,7 @@ primJsp([0], {
             shootJudgeStar: d
         }
     },
-    1451: function(e, t, a) {
+    1459: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -5302,9 +6081,9 @@ primJsp([0], {
         }()
           , s = a(10)
           , c = n(s)
-          , u = a(1452)
+          , u = a(1460)
           , f = n(u)
-          , d = a(948)
+          , d = a(958)
           , p = n(d)
           , h = function(e) {
             function t() {
@@ -5367,7 +6146,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = h
     },
-    1452: function(e, t, a) {
+    1460: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -5410,7 +6189,7 @@ primJsp([0], {
                 t
             }
         }()
-          , l = a(1453)
+          , l = a(1461)
           , s = function(e) {
             return e && e.__esModule ? e : {
                 default: e
@@ -5456,7 +6235,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = u
     },
-    1453: function(e, t, a) {
+    1461: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -5504,9 +6283,9 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(1454)
+          , s = a(1462)
           , c = n(s)
-          , u = a(180)
+          , u = a(182)
           , f = n(u)
           , d = function(e) {
             function t(e) {
@@ -5558,7 +6337,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = d
     },
-    1454: function(e, t, a) {
+    1462: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -5617,7 +6396,7 @@ primJsp([0], {
             y: 488
         }
     },
-    1455: function(e, t, a) {
+    1463: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -5665,9 +6444,9 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(309)
+          , s = a(314)
           , c = n(s)
-          , u = a(948)
+          , u = a(958)
           , f = n(u)
           , d = function(e) {
             function t() {
@@ -5725,7 +6504,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = d
     },
-    1456: function(e, t, a) {
+    1464: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -5788,22 +6567,22 @@ primJsp([0], {
         }
           , c = a(17)
           , u = n(c)
-          , f = a(1457)
+          , f = a(1465)
           , d = n(f)
-          , p = a(947)
-          , h = a(182)
+          , p = a(956)
+          , h = a(184)
           , y = n(h)
-          , _ = a(1458)
+          , _ = a(1466)
           , m = n(_)
-          , g = a(1460)
+          , g = a(1468)
           , v = n(g)
-          , b = a(1461)
+          , b = a(1469)
           , w = n(b)
-          , k = a(1462)
+          , k = a(1470)
           , S = n(k)
-          , T = a(1281)
+          , T = a(1290)
           , E = n(T)
-          , O = a(954)
+          , O = a(962)
           , x = n(O)
           , P = {
             vocal: {
@@ -6161,7 +6940,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = I
     },
-    1457: function(e, t, a) {
+    1465: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -6230,7 +7009,7 @@ primJsp([0], {
             y: 61
         }
     },
-    1458: function(e, t, a) {
+    1466: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -6264,7 +7043,7 @@ primJsp([0], {
         });
         var l = a(9)
           , s = n(l)
-          , c = a(1459)
+          , c = a(1467)
           , u = n(c)
           , f = 3
           , d = {
@@ -6308,7 +7087,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = p
     },
-    1459: function(e, t, a) {
+    1467: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -6358,7 +7137,7 @@ primJsp([0], {
             y: 61
         }
     },
-    1460: function(e, t, a) {
+    1468: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -6455,7 +7234,7 @@ primJsp([0], {
         }(aoba.Sprite);
         t.default = c
     },
-    1461: function(e, t, a) {
+    1469: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -6578,7 +7357,7 @@ primJsp([0], {
         }(aoba.Sprite);
         t.default = c
     },
-    1462: function(e, t, a) {
+    1470: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -6621,7 +7400,7 @@ primJsp([0], {
                 t
             }
         }()
-          , l = a(947)
+          , l = a(956)
           , s = function(e) {
             function t(e) {
                 n(this, t);
@@ -6672,7 +7451,7 @@ primJsp([0], {
         }(aoba.Sprite);
         t.default = s
     },
-    1463: function(e, t, a) {
+    1471: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -6715,7 +7494,7 @@ primJsp([0], {
                 t
             }
         }()
-          , l = a(947)
+          , l = a(956)
           , s = function(e) {
             function t() {
                 n(this, t);
@@ -6864,7 +7643,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = s
     },
-    1464: function(e, t, a) {
+    1472: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -6965,7 +7744,7 @@ primJsp([0], {
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var s = a(20)
+        var s = a(21)
           , c = n(s)
           , u = a(10)
           , f = n(u)
@@ -6973,19 +7752,19 @@ primJsp([0], {
           , p = n(d)
           , h = a(23)
           , y = n(h)
-          , _ = a(1465)
+          , _ = a(1473)
           , m = n(_)
           , g = a(72)
           , v = n(g)
-          , b = a(98)
+          , b = a(101)
           , w = n(b)
-          , k = a(99)
+          , k = a(102)
           , S = n(k)
-          , T = a(182)
+          , T = a(184)
           , E = n(T)
-          , O = a(310)
+          , O = a(315)
           , x = n(O)
-          , P = a(1466)
+          , P = a(1474)
           , I = n(P)
           , j = 100
           , A = {
@@ -7010,7 +7789,7 @@ primJsp([0], {
         }(y.default);
         t.default = C
     },
-    1465: function(e, t, a) {
+    1473: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -7160,7 +7939,7 @@ primJsp([0], {
             y: 84
         }
     },
-    1466: function(e, t, a) {
+    1474: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -7192,9 +7971,9 @@ primJsp([0], {
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var l = a(1467)
+        var l = a(1475)
           , s = n(l)
-          , c = a(310)
+          , c = a(315)
           , u = n(c)
           , f = a(9)
           , d = n(f)
@@ -7240,7 +8019,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = h
     },
-    1467: function(e, t, a) {
+    1475: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -7336,7 +8115,7 @@ primJsp([0], {
             y: 190
         }
     },
-    1468: function(e, t, a) {
+    1476: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -7361,7 +8140,7 @@ primJsp([0], {
                 t
             }
         }()
-          , o = a(184)
+          , o = a(186)
           , i = function(e) {
             return e && e.__esModule ? e : {
                 default: e
@@ -7430,7 +8209,7 @@ primJsp([0], {
         }();
         t.default = s
     },
-    1469: function(e, t, a) {
+    1477: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -7478,13 +8257,13 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(1283)
+          , s = a(1292)
           , c = n(s)
-          , u = a(954)
+          , u = a(962)
           , f = n(u)
           , d = a(10)
           , p = n(d)
-          , h = a(948)
+          , h = a(958)
           , y = n(h)
           , _ = 1e3
           , m = function(e) {
@@ -7615,7 +8394,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = g
     },
-    1470: function(e, t, a) {
+    1478: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -7663,11 +8442,11 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(1181)
+          , s = a(1190)
           , c = n(s)
-          , u = a(1283)
+          , u = a(1292)
           , f = n(u)
-          , d = a(947)
+          , d = a(956)
           , p = function(e) {
             function t() {
                 r(this, t);
@@ -7771,7 +8550,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = h
     },
-    1471: function(e, t, a) {
+    1479: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -7836,11 +8615,11 @@ primJsp([0], {
           , u = n(c)
           , f = a(1)
           , d = n(f)
-          , p = a(954)
+          , p = a(962)
           , h = n(p)
           , y = a(10)
           , _ = n(y)
-          , m = a(948)
+          , m = a(958)
           , g = n(m)
           , v = 20
           , b = 234
@@ -8271,7 +9050,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = x
     },
-    1472: function(e, t, a) {
+    1480: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -8380,7 +9159,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = l
     },
-    1473: function(e, t, a) {
+    1481: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -8464,15 +9243,15 @@ primJsp([0], {
           , f = n(u)
           , d = a(23)
           , p = n(d)
-          , h = a(1474)
+          , h = a(1482)
           , y = n(h)
           , _ = a(72)
           , m = n(_)
-          , g = a(98)
+          , g = a(101)
           , v = n(g)
-          , b = a(99)
+          , b = a(102)
           , w = n(b)
-          , k = a(1475)
+          , k = a(1483)
           , S = n(k)
           , T = 100
           , E = {
@@ -8497,7 +9276,7 @@ primJsp([0], {
         }(p.default);
         t.default = O
     },
-    1474: function(e, t, a) {
+    1482: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -8540,7 +9319,7 @@ primJsp([0], {
             y: 88
         }
     },
-    1475: function(e, t, a) {
+    1483: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -8572,9 +9351,9 @@ primJsp([0], {
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var l = a(1476)
+        var l = a(1484)
           , s = n(l)
-          , c = a(310)
+          , c = a(315)
           , u = n(c)
           , f = 31
           , d = function(e) {
@@ -8612,7 +9391,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = d
     },
-    1476: function(e, t, a) {
+    1484: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -8688,7 +9467,7 @@ primJsp([0], {
             y: 91
         }
     },
-    1477: function(e, t, a) {
+    1485: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -8751,24 +9530,24 @@ primJsp([0], {
         }
           , c = a(17)
           , u = n(c)
-          , f = a(20)
+          , f = a(21)
           , d = n(f)
-          , p = a(1478)
+          , p = a(1486)
           , h = n(p)
-          , y = a(1281)
+          , y = a(1290)
           , _ = n(y)
-          , m = a(947)
+          , m = a(956)
           , g = a(9)
           , v = n(g)
-          , b = a(948)
+          , b = a(958)
           , w = n(b)
           , k = a(10)
           , S = n(k)
-          , T = a(1284)
+          , T = a(1293)
           , E = n(T)
-          , O = a(954)
+          , O = a(962)
           , x = n(O)
-          , P = a(333)
+          , P = a(334)
           , I = n(P)
           , j = {
             normal: "text_timing_normal",
@@ -9412,7 +10191,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = D
     },
-    1478: function(e, t, a) {
+    1486: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -9482,7 +10261,7 @@ primJsp([0], {
             y: 286
         }
     },
-    1479: function(e, t, a) {
+    1487: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -9534,7 +10313,7 @@ primJsp([0], {
             y: 326
         }
     },
-    1480: function(e, t, a) {
+    1488: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -9577,7 +10356,7 @@ primJsp([0], {
                 t
             }
         }()
-          , l = a(947)
+          , l = a(956)
           , s = function(e) {
             function t() {
                 return n(this, t),
@@ -9722,7 +10501,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = s
     },
-    1481: function(e, t, a) {
+    1489: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -9770,9 +10549,9 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(1482)
+          , s = a(1490)
           , c = n(s)
-          , u = a(947)
+          , u = a(956)
           , f = a(10)
           , d = n(f)
           , p = {
@@ -9858,7 +10637,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = h
     },
-    1482: function(e, t, a) {
+    1490: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -9889,7 +10668,7 @@ primJsp([0], {
             y: 320
         }
     },
-    1483: function(e, t, a) {
+    1491: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -9937,11 +10716,11 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(1285)
+          , s = a(1294)
           , c = n(s)
-          , u = a(1286)
+          , u = a(1295)
           , f = n(u)
-          , d = a(947)
+          , d = a(956)
           , p = function(e) {
             function t() {
                 r(this, t);
@@ -10026,7 +10805,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = p
     },
-    1484: function(e, t, a) {
+    1492: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -10069,13 +10848,13 @@ primJsp([0], {
                 t
             }
         }()
-          , l = a(1485)
+          , l = a(1493)
           , s = function(e) {
             return e && e.__esModule ? e : {
                 default: e
             }
         }(l)
-          , c = a(947)
+          , c = a(956)
           , u = function(e) {
             function t() {
                 return n(this, t),
@@ -10130,7 +10909,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = u
     },
-    1485: function(e, t, a) {
+    1493: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -10176,7 +10955,7 @@ primJsp([0], {
             y: 512
         }
     },
-    1486: function(e, t, a) {
+    1494: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -10224,9 +11003,9 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(954)
+          , s = a(962)
           , c = n(s)
-          , u = a(1287)
+          , u = a(1296)
           , f = n(u)
           , d = function(e) {
             var t = aoba.Sprite.new("concert_light_circle.png").setProps({
@@ -10461,7 +11240,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = y
     },
-    1487: function(e, t, a) {
+    1495: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -10511,7 +11290,7 @@ primJsp([0], {
         }()
           , s = a(10)
           , c = n(s)
-          , u = a(948)
+          , u = a(958)
           , f = n(u)
           , d = function(e) {
             function t() {
@@ -10640,7 +11419,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = d
     },
-    1488: function(e, t, a) {
+    1496: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -10696,12 +11475,12 @@ primJsp([0], {
                 t
             }
         }()
-          , c = a(1489)
+          , c = a(1497)
           , u = n(c)
-          , f = a(947)
-          , d = a(1490)
+          , f = a(956)
+          , d = a(1498)
           , p = n(d)
-          , h = a(954)
+          , h = a(962)
           , y = n(h)
           , _ = 5
           , m = {
@@ -10999,7 +11778,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = b
     },
-    1489: function(e, t, a) {
+    1497: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -11075,7 +11854,7 @@ primJsp([0], {
             y: 439
         }
     },
-    1490: function(e, t, a) {
+    1498: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -11087,7 +11866,7 @@ primJsp([0], {
         });
         var r = a(10)
           , o = n(r)
-          , i = a(948)
+          , i = a(958)
           , l = n(i)
           , s = function(e) {
             return aoba.FrameTween.new(e).to({
@@ -11235,7 +12014,7 @@ primJsp([0], {
         };
         t.default = d
     },
-    1491: function(e, t, a) {
+    1499: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -11283,11 +12062,11 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(1492)
+          , s = a(1500)
           , c = n(s)
           , u = a(10)
           , f = n(u)
-          , d = a(954)
+          , d = a(962)
           , p = n(d)
           , h = function(e) {
             function t(e) {
@@ -11341,7 +12120,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = h
     },
-    1492: function(e, t, a) {
+    1500: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -11372,7 +12151,7 @@ primJsp([0], {
             y: 0
         }
     },
-    1493: function(e, t, a) {
+    1501: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -11457,7 +12236,7 @@ primJsp([0], {
         }(aoba.Sprite);
         t.default = l
     },
-    1494: function(e, t, a) {
+    1502: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -11526,7 +12305,7 @@ primJsp([0], {
         }();
         t.default = l
     },
-    1495: function(e, t, a) {
+    1503: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -11574,9 +12353,9 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(954)
+          , s = a(962)
           , c = n(s)
-          , u = a(948)
+          , u = a(958)
           , f = n(u)
           , d = a(10)
           , p = n(d)
@@ -11668,7 +12447,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = _
     },
-    1496: function(e, t, a) {
+    1504: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -11729,9 +12508,9 @@ primJsp([0], {
             if (void 0 !== i)
                 return i.call(n)
         }
-          , c = a(954)
+          , c = a(962)
           , u = n(c)
-          , f = a(948)
+          , f = a(958)
           , d = n(f)
           , p = a(10)
           , h = n(p)
@@ -11845,7 +12624,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = m
     },
-    1497: function(e, t, a) {
+    1505: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -11860,9 +12639,9 @@ primJsp([0], {
           , o = n(r)
           , i = a(10)
           , l = n(i)
-          , s = a(948)
+          , s = a(958)
           , c = n(s)
-          , u = a(954)
+          , u = a(962)
           , f = n(u)
           , d = t.createAndPlayAppealStartEffect = function() {
             var e = aoba.Container.new();
@@ -11946,7 +12725,7 @@ primJsp([0], {
         ;
         t.default = d
     },
-    1498: function(e, t, a) {
+    1506: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -11992,7 +12771,7 @@ primJsp([0], {
         ;
         t.default = s
     },
-    1499: function(e, t, a) {
+    1507: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -12006,11 +12785,11 @@ primJsp([0], {
           , o = n(r)
           , i = a(10)
           , l = n(i)
-          , s = a(948)
+          , s = a(958)
           , c = n(s)
           , u = a(87)
           , f = n(u)
-          , d = a(954)
+          , d = a(962)
           , p = n(d)
           , h = o.default.SCREEN_WIDTH
           , y = o.default.SCREEN_HEIGHT
@@ -12061,7 +12840,7 @@ primJsp([0], {
         };
         t.default = _
     },
-    1500: function(e, t, a) {
+    1508: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -12123,43 +12902,43 @@ primJsp([0], {
           , d = n(f)
           , p = a(9)
           , h = n(p)
-          , y = a(1501)
+          , y = a(1509)
           , _ = n(y)
-          , m = a(1502)
+          , m = a(1510)
           , g = n(m)
-          , v = a(1503)
+          , v = a(1511)
           , b = n(v)
-          , w = a(1504)
+          , w = a(1512)
           , k = n(w)
-          , S = a(1505)
+          , S = a(1513)
           , T = n(S)
-          , E = a(1506)
+          , E = a(1514)
           , O = n(E)
-          , x = a(1507)
+          , x = a(1515)
           , P = n(x)
-          , I = a(1508)
+          , I = a(1516)
           , j = n(I)
-          , A = a(1284)
+          , A = a(1293)
           , C = n(A)
           , M = a(86)
           , D = n(M)
-          , R = a(329)
+          , R = a(331)
           , L = n(R)
-          , F = a(1287)
+          , F = a(1296)
           , N = n(F)
-          , B = a(1282)
+          , B = a(1291)
           , G = n(B)
-          , U = a(1285)
+          , U = a(1294)
           , Y = n(U)
-          , V = a(1286)
+          , V = a(1295)
           , X = n(V)
-          , W = a(1509)
+          , W = a(1517)
           , H = n(W)
           , Q = a(30)
           , J = n(Q)
-          , z = a(98)
+          , z = a(101)
           , K = n(z)
-          , q = a(99)
+          , q = a(102)
           , $ = n(q)
           , Z = u.default.asset.PARAMETER_ICONS
           , ee = function(e, t) {
@@ -12552,7 +13331,7 @@ primJsp([0], {
             FesPauseDialog: de
         }
     },
-    1501: function(e, t, a) {
+    1509: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -12649,7 +13428,7 @@ primJsp([0], {
             y: 0
         }
     },
-    1502: function(e, t, a) {
+    1510: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -12685,7 +13464,7 @@ primJsp([0], {
             y: 113
         }
     },
-    1503: function(e, t, a) {
+    1511: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -12715,7 +13494,7 @@ primJsp([0], {
             y: 113
         }
     },
-    1504: function(e, t, a) {
+    1512: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -12753,7 +13532,7 @@ primJsp([0], {
             y: 66
         }
     },
-    1505: function(e, t, a) {
+    1513: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -12797,7 +13576,7 @@ primJsp([0], {
             y: 172
         }
     },
-    1506: function(e, t, a) {
+    1514: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -12839,7 +13618,7 @@ primJsp([0], {
             y: 52
         }
     },
-    1507: function(e, t, a) {
+    1515: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -12865,7 +13644,7 @@ primJsp([0], {
             y: 257
         }
     },
-    1508: function(e, t, a) {
+    1516: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -12908,7 +13687,7 @@ primJsp([0], {
             y: 383
         }
     },
-    1509: function(e, t, a) {
+    1517: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -12940,9 +13719,9 @@ primJsp([0], {
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var l = a(1510)
+        var l = a(1518)
           , s = n(l)
-          , c = a(310)
+          , c = a(315)
           , u = n(c)
           , f = a(9)
           , d = n(f)
@@ -12988,7 +13767,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = h
     },
-    1510: function(e, t, a) {
+    1518: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -13084,7 +13863,7 @@ primJsp([0], {
             y: 113
         }
     },
-    1511: function(e, t, a) {
+    1519: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -13156,7 +13935,7 @@ primJsp([0], {
         }();
         t.default = l
     },
-    1512: function(e, t, a) {
+    1520: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -13194,15 +13973,15 @@ primJsp([0], {
                 t
             }
         }()
-          , l = a(1513)
+          , l = a(1521)
           , s = n(l)
-          , c = a(1514)
+          , c = a(1522)
           , u = n(c)
-          , f = a(1515)
+          , f = a(1523)
           , d = n(f)
           , p = a(55)
           , h = n(p)
-          , y = a(1180)
+          , y = a(1189)
           , _ = n(y)
           , m = _.default.EFFECT_TYPES
           , g = _.default.ACTION_TYPES
@@ -13925,7 +14704,7 @@ primJsp([0], {
         }();
         t.default = O
     },
-    1513: function(e, t, a) {
+    1521: function(e, t, a) {
         "use strict";
         function n(e) {
             if (Array.isArray(e)) {
@@ -14294,7 +15073,7 @@ primJsp([0], {
         }();
         t.default = i
     },
-    1514: function(e, t, a) {
+    1522: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -14319,7 +15098,7 @@ primJsp([0], {
                 t
             }
         }()
-          , o = a(1180)
+          , o = a(1189)
           , i = function(e) {
             return e && e.__esModule ? e : {
                 default: e
@@ -14479,7 +15258,7 @@ primJsp([0], {
         }();
         t.default = s
     },
-    1515: function(e, t, a) {
+    1523: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -14574,7 +15353,7 @@ primJsp([0], {
         }();
         t.default = o
     },
-    2055: function(e, t, a) {
+    2063: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -14618,7 +15397,7 @@ primJsp([0], {
             target: "concertGame"
         }]
     },
-    2056: function(e, t, a) {
+    2064: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -14658,7 +15437,7 @@ primJsp([0], {
             target: "concertGame"
         }]
     },
-    2057: function(e, t, a) {
+    2065: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -14790,7 +15569,7 @@ primJsp([0], {
             event: "startAppealPhase"
         }]
     },
-    2058: function(e, t, a) {
+    2066: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -14879,7 +15658,7 @@ primJsp([0], {
             event: "startAppealPhase"
         }]
     },
-    2059: function(e, t, a) {
+    2067: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -14968,7 +15747,7 @@ primJsp([0], {
             event: "startAppealPhase"
         }]
     },
-    2060: function(e, t, a) {
+    2068: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -15108,7 +15887,7 @@ primJsp([0], {
             bringFront: !1
         }]
     },
-    2061: function(e, t, a) {
+    2069: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -15140,7 +15919,7 @@ primJsp([0], {
             target: "concertGame"
         }]
     },
-    2062: function(e, t, a) {
+    2070: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -15184,7 +15963,7 @@ primJsp([0], {
             target: "concertGame"
         }]
     },
-    883: function(e, t, a) {
+    888: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -15242,19 +16021,19 @@ primJsp([0], {
         }()
           , c = a(58)
           , u = n(c)
-          , f = a(1085)
+          , f = a(1092)
           , d = n(f)
-          , p = a(1120)
+          , p = a(1127)
           , h = n(p)
-          , y = a(1179)
+          , y = a(1188)
           , _ = n(y)
-          , m = a(53)
+          , m = a(54)
           , g = n(m)
-          , v = a(136)
+          , v = a(137)
           , b = n(v)
-          , w = a(967)
+          , w = a(975)
           , k = n(w)
-          , S = a(1086)
+          , S = a(1093)
           , T = n(S)
           , E = function(e) {
             function t(e) {
@@ -15310,7 +16089,7 @@ primJsp([0], {
         }(d.default);
         t.default = E
     },
-    886: function(e, t, a) {
+    891: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -15399,21 +16178,21 @@ primJsp([0], {
         }()
           , u = a(58)
           , f = n(u)
-          , d = a(1085)
+          , d = a(1092)
           , p = n(d)
-          , h = a(1120)
+          , h = a(1127)
           , y = n(h)
-          , _ = a(1179)
+          , _ = a(1188)
           , m = n(_)
-          , g = a(53)
+          , g = a(54)
           , v = n(g)
-          , b = a(136)
+          , b = a(137)
           , w = n(b)
-          , k = a(967)
+          , k = a(975)
           , S = n(k)
-          , T = a(1086)
+          , T = a(1093)
           , E = n(T)
-          , O = a(102)
+          , O = a(105)
           , x = n(O)
           , P = function(e) {
             function t(e) {
@@ -15475,7 +16254,7 @@ primJsp([0], {
         }(p.default);
         t.default = P
     },
-    911: function(e, t, a) {
+    916: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -15531,13 +16310,13 @@ primJsp([0], {
                 t
             }
         }()
-          , c = a(1085)
+          , c = a(1092)
           , u = n(c)
-          , f = a(134)
+          , f = a(135)
           , d = n(f)
-          , p = a(967)
+          , p = a(975)
           , h = n(p)
-          , y = a(1086)
+          , y = a(1093)
           , _ = n(y)
           , m = function(e) {
             function t(e) {
@@ -15568,7 +16347,7 @@ primJsp([0], {
         }(u.default);
         t.default = m
     },
-    912: function(e, t, a) {
+    917: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -15624,15 +16403,15 @@ primJsp([0], {
                 t
             }
         }()
-          , c = a(1085)
+          , c = a(1092)
           , u = n(c)
-          , f = a(1120)
+          , f = a(1127)
           , d = n(f)
-          , p = a(134)
+          , p = a(135)
           , h = n(p)
-          , y = a(967)
+          , y = a(975)
           , _ = n(y)
-          , m = a(1086)
+          , m = a(1093)
           , g = n(m)
           , v = function(e) {
             function t(e) {
@@ -15663,7 +16442,7 @@ primJsp([0], {
         }(u.default);
         t.default = v
     },
-    927: function(e, t, a) {
+    932: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -15719,33 +16498,33 @@ primJsp([0], {
                 t
             }
         }()
-          , c = a(1085)
+          , c = a(1092)
           , u = n(c)
-          , f = a(181)
+          , f = a(183)
           , d = n(f)
-          , p = a(997)
+          , p = a(1004)
           , h = n(p)
-          , y = a(2055)
+          , y = a(2063)
           , _ = n(y)
-          , m = a(2056)
+          , m = a(2064)
           , g = n(m)
-          , v = a(2057)
+          , v = a(2065)
           , b = n(v)
-          , w = a(2058)
+          , w = a(2066)
           , k = n(w)
-          , S = a(2059)
+          , S = a(2067)
           , T = n(S)
-          , E = a(2060)
+          , E = a(2068)
           , O = n(E)
-          , x = a(2061)
+          , x = a(2069)
           , P = n(x)
-          , I = a(2062)
+          , I = a(2070)
           , j = n(I)
-          , A = a(967)
+          , A = a(975)
           , C = n(A)
-          , M = a(1086)
+          , M = a(1093)
           , D = n(M)
-          , R = a(976)
+          , R = a(983)
           , L = n(R)
           , F = [b.default, k.default, T.default, O.default]
           , N = 4
@@ -15809,7 +16588,7 @@ primJsp([0], {
         }(u.default);
         t.default = B
     },
-    947: function(e, t, a) {
+    956: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -16489,7 +17268,7 @@ primJsp([0], {
             }]
         }
     },
-    948: function(e, t, a) {
+    958: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -16823,7 +17602,7 @@ primJsp([0], {
             passiveReraiseSkill: B
         }
     },
-    954: function(e, t, a) {
+    962: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -16873,7 +17652,7 @@ primJsp([0], {
             idolRetire: "sounds/se/concert_result/0135.m4a"
         }
     },
-    965: function(e, t, a) {
+    973: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -16935,7 +17714,7 @@ primJsp([0], {
             y: 376
         }
     },
-    967: function(e, t, a) {
+    975: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -16947,7 +17726,7 @@ primJsp([0], {
         });
         var r = a(1)
           , o = n(r)
-          , i = a(1014)
+          , i = a(1021)
           , l = n(i)
           , s = {
             AUDITION: function(e) {
@@ -17211,784 +17990,12 @@ primJsp([0], {
             createTV: k
         }
     },
-    976: function(e, t, a) {
+    983: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
         }),
         t.default = ["images/ui/tutorial/parts.json"]
-    },
-    997: function(e, t, a) {
-        "use strict";
-        function n(e) {
-            return e && e.__esModule ? e : {
-                default: e
-            }
-        }
-        function r(e, t) {
-            if (!(e instanceof t))
-                throw new TypeError("Cannot call a class as a function")
-        }
-        function o(e, t) {
-            if (!e)
-                throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-            return !t || "object" != typeof t && "function" != typeof t ? e : t
-        }
-        function i(e, t) {
-            if ("function" != typeof t && null !== t)
-                throw new TypeError("Super expression must either be null or a function, not " + typeof t);
-            e.prototype = Object.create(t && t.prototype, {
-                constructor: {
-                    value: e,
-                    enumerable: !1,
-                    writable: !0,
-                    configurable: !0
-                }
-            }),
-            t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-        }
-        Object.defineProperty(t, "__esModule", {
-            value: !0
-        });
-        var l = function() {
-            function e(e, t) {
-                for (var a = 0; a < t.length; a++) {
-                    var n = t[a];
-                    n.enumerable = n.enumerable || !1,
-                    n.configurable = !0,
-                    "value"in n && (n.writable = !0),
-                    Object.defineProperty(e, n.key, n)
-                }
-            }
-            return function(t, a, n) {
-                return a && e(t.prototype, a),
-                n && e(t, n),
-                t
-            }
-        }()
-          , s = a(1)
-          , c = n(s)
-          , u = a(998)
-          , f = n(u)
-          , d = a(1002)
-          , p = n(d)
-          , h = {
-            FREE: Symbol("free"),
-            WAITING: Symbol("waiting"),
-            PLAYING: Symbol("playing"),
-            LOCKED: Symbol("locked")
-        }
-          , y = {
-            tips: "images/tutorial/${id}.jpg",
-            mask: "images/tutorial/mask/${id}.png",
-            voice: "sounds/voice/staff/${id}" + c.default.asset.SOUND_EXTENSION
-        }
-          , _ = {
-            tips: function(e) {
-                return y.tips.replace("${id}", e)
-            },
-            mask: function(e) {
-                return y.mask.replace("${id}", e)
-            },
-            voice: function(e) {
-                return y.voice.replace("${id}", e)
-            }
-        }
-          , m = {
-            waitEvent: function(e) {
-                var t = this
-                  , a = e.target
-                  , n = e.event;
-                this._tutorialLayer.disable();
-                var r = this.getTargetContainer(a);
-                return new Promise(function(e) {
-                    r.once(n, function() {
-                        t._tutorialLayer.enable(),
-                        t.deleteImage("finger"),
-                        e()
-                    })
-                }
-                )
-            },
-            waitInput: function(e) {
-                var t = this
-                  , a = e.target
-                  , n = e.event
-                  , r = void 0 === n ? "tap" : n
-                  , o = e.bringFront
-                  , i = void 0 === o || o;
-                this._tutorialLayer.disable();
-                var l = this.getTargetContainer(a);
-                if (!i)
-                    return new Promise(function(e) {
-                        l.once(r, function() {
-                            t._tutorialLayer.enable(),
-                            t.deleteImage("finger"),
-                            e()
-                        })
-                    }
-                    );
-                var s = aoba.p(l.position.x, l.position.y)
-                  , c = l.parent
-                  , u = l.getGlobalPosition();
-                return this._tutorialLayer.addButton(l),
-                l.setPosition(u.x, u.y),
-                new Promise(function(e) {
-                    l.once(r, function() {
-                        l.addTo(c, s.x, s.y),
-                        t._tutorialLayer.enable(),
-                        t.deleteImage("finger"),
-                        e()
-                    })
-                }
-                )
-            },
-            wait: function(e) {
-                var t = e.time;
-                return aoba.Tween.new(this).wait(t).promise()
-            },
-            trigger: function(e) {
-                var t = e.target
-                  , a = e.event
-                  , n = void 0 === a ? "tap" : a
-                  , r = this.getTargetContainer(t);
-                r.emit(n, r)
-            },
-            showTips: function(e) {
-                var t = e.imageName;
-                this._tutorialLayer.showTips(_.tips(t))
-            },
-            hideTips: function() {
-                this._tutorialLayer.hideTips()
-            },
-            changeTips: function(e) {
-                var t = e.imageName;
-                this._tutorialLayer.changeTips(_.tips(t))
-            },
-            showImage: function(e) {
-                var t = e.image
-                  , a = e.label
-                  , n = e.x
-                  , r = void 0 === n ? 0 : n
-                  , o = e.y
-                  , i = void 0 === o ? 0 : o
-                  , l = e.scale
-                  , s = void 0 === l ? 1 : l
-                  , c = aoba.Sprite.new(t);
-                c.setPosition(r, i),
-                c.scale.set(s),
-                this.addImage(c, a)
-            },
-            hideImage: function(e) {
-                var t = e.label;
-                this.deleteImage(t)
-            },
-            showMask: function(e) {
-                var t = e.imageName
-                  , a = e.label
-                  , n = e.scale
-                  , r = void 0 === n ? 2 : n
-                  , o = aoba.Sprite.new(_.mask(t));
-                o.scale.set(r),
-                this.addMask(o, a)
-            },
-            hideMask: function(e) {
-                var t = e.label;
-                this.deleteMask(t)
-            },
-            showOverlay: function(e) {
-                return this._tutorialLayer.showOverlay(e)
-            },
-            hideOverlay: function() {
-                return this._tutorialLayer.hideOverlay()
-            },
-            changeOverlay: function(e) {
-                this._tutorialLayer.changeOverlay(e)
-            },
-            showComment: function(e) {
-                return this._tutorialLayer.showComment(e)
-            },
-            hideComment: function() {
-                return this._tutorialLayer.hideComment()
-            },
-            playComment: function(e) {
-                this._tutorialLayer.playComment(e)
-            },
-            showFinger: function(e) {
-                var t = e.type
-                  , a = e.x
-                  , n = void 0 === a ? 0 : a
-                  , r = e.y
-                  , o = void 0 === r ? 0 : r
-                  , i = e.target
-                  , l = e.dx
-                  , s = e.dy
-                  , c = p.default.create(t);
-                if (i) {
-                    var u = this.getTargetContainer(i)
-                      , f = u.getGlobalPosition();
-                    l && (f.x += l),
-                    s && (f.y += s),
-                    c.setPosition(f.x, f.y)
-                } else
-                    c.setPosition(n, o);
-                this.addImage(c, "finger")
-            },
-            hideFinger: function() {
-                this.deleteImage("finger")
-            },
-            playVoice: function(e) {
-                var t = e.voiceName;
-                this._currentVoice && this._currentVoice.stop(),
-                this._currentVoice = aoba.soundManager.playVoice(_.voice(t))
-            },
-            bringFront: function(e) {
-                var t = e.target
-                  , a = this.getTargetContainer(t)
-                  , n = a.getGlobalPosition();
-                this._tutorialLayer.addButton(a),
-                a.setPosition(n.x, n.y)
-            },
-            bringBack: function(e) {
-                e._target
-            },
-            pause: function(e) {
-                var t = e.target
-                  , a = this.getTargetContainer(t);
-                aoba.TweenManager.tweens && aoba.TweenManager.tweens.forEach(function(e) {
-                    e.target.parent === a && e.pause()
-                }),
-                a.pause()
-            },
-            resume: function(e) {
-                var t = e.target
-                  , a = this.getTargetContainer(t);
-                aoba.TweenManager.tweens && aoba.TweenManager.tweens.forEach(function(e) {
-                    e.target.parent === a && e.resume()
-                }),
-                a.resume()
-            }
-        }
-          , g = function(e) {
-            function t(e, a) {
-                r(this, t);
-                var n = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
-                return n._targetLayer = a,
-                n._tutorialLayer = f.default.new(),
-                n._trackIndex = 0,
-                n._tracks = e,
-                n._commands = m,
-                n._state = h.FREE,
-                n._maskStore = {},
-                n._imageStore = {},
-                n._currentVoice = null,
-                n._tutorialLayer.on("tap", n._handleTap, n),
-                n._tutorialLayer.on("endText", n._handleEndText, n),
-                n
-            }
-            return i(t, e),
-            l(t, [{
-                key: "start",
-                value: function() {
-                    this._tutorialLayer.addTo(this._targetLayer),
-                    this.playCurrentTrack()
-                }
-            }, {
-                key: "playCurrentTrack",
-                value: function() {
-                    var e = this
-                      , t = this._tracks[this._trackIndex]
-                      , a = this._commands[t.command];
-                    if (!a)
-                        return void this.forward();
-                    var n = a.call(this, t) || Promise.resolve();
-                    if ("playComment" === t.command)
-                        return void this._changeToPlaying();
-                    t.lock ? this._state = h.LOCKED : n.then(function() {
-                        return e.forward()
-                    })
-                }
-            }, {
-                key: "forward",
-                value: function() {
-                    this._trackIndex++,
-                    this._trackIndex < this._tracks.length ? (this._changeToFree(),
-                    this.playCurrentTrack()) : this.emit("end")
-                }
-            }, {
-                key: "destroy",
-                value: function() {
-                    this._currentVoice && this._currentVoice.stop(),
-                    this._tutorialLayer.destroy({
-                        children: !0
-                    })
-                }
-            }, {
-                key: "fadeOut",
-                value: function() {
-                    return aoba.FrameTween.new(this._tutorialLayer).to({
-                        alpha: 0
-                    }, 3).promise()
-                }
-            }, {
-                key: "getTargetContainer",
-                value: function(e) {
-                    if (!e)
-                        return this._targetLayer;
-                    var t = this._targetLayer.getChildByNameRecursively(e);
-                    if (!t)
-                        throw new Error("target " + e + " is not found");
-                    return t
-                }
-            }, {
-                key: "addImage",
-                value: function(e, t) {
-                    this._tutorialLayer.addImage(e),
-                    this._imageStore[t] = e
-                }
-            }, {
-                key: "deleteImage",
-                value: function(e) {
-                    var t = this._imageStore[e];
-                    t && (t.destroy(),
-                    delete this._imageStore[e])
-                }
-            }, {
-                key: "addMask",
-                value: function(e, t) {
-                    this._tutorialLayer.addMaskImage(e),
-                    this._maskStore[t] = e
-                }
-            }, {
-                key: "deleteMask",
-                value: function(e) {
-                    var t = this._maskStore[e];
-                    t && (t.destroy(),
-                    delete this._maskStore[e])
-                }
-            }, {
-                key: "_handleTap",
-                value: function() {
-                    switch (this._state) {
-                    case h.PLAYING:
-                        return void this._tutorialLayer.endText();
-                    case h.LOCKED:
-                        return void this.forward();
-                    default:
-                        return
-                    }
-                }
-            }, {
-                key: "_handleEndText",
-                value: function(e) {
-                    e ? this._changeToLocked() : this.forward()
-                }
-            }, {
-                key: "_changeToFree",
-                value: function() {
-                    this._state = h.FREE
-                }
-            }, {
-                key: "_changeToPlaying",
-                value: function() {
-                    this._state = h.PLAYING
-                }
-            }, {
-                key: "_changeToLocked",
-                value: function() {
-                    this._state = h.LOCKED
-                }
-            }], [{
-                key: "getTrackResources",
-                value: function(e) {
-                    return e.map(function(e) {
-                        return e.imageName ? "showMask" === e.command ? _.mask(e.imageName) : _.tips(e.imageName) : e.voiceName ? _.voice(e.voiceName) : null
-                    }).filter(function(e) {
-                        return null !== e
-                    })
-                }
-            }, {
-                key: "createAndPlay",
-                value: function(e, a) {
-                    var n = new t(e,a);
-                    return n.start(),
-                    new Promise(function(e) {
-                        n.once("end", function() {
-                            n.fadeOut().then(function() {
-                                n.destroy(),
-                                e()
-                            })
-                        })
-                    }
-                    )
-                }
-            }]),
-            t
-        }(aoba.utils.EventEmitter);
-        t.default = g
-    },
-    998: function(e, t, a) {
-        "use strict";
-        function n(e) {
-            return e && e.__esModule ? e : {
-                default: e
-            }
-        }
-        function r(e, t) {
-            if (!(e instanceof t))
-                throw new TypeError("Cannot call a class as a function")
-        }
-        function o(e, t) {
-            if (!e)
-                throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-            return !t || "object" != typeof t && "function" != typeof t ? e : t
-        }
-        function i(e, t) {
-            if ("function" != typeof t && null !== t)
-                throw new TypeError("Super expression must either be null or a function, not " + typeof t);
-            e.prototype = Object.create(t && t.prototype, {
-                constructor: {
-                    value: e,
-                    enumerable: !1,
-                    writable: !0,
-                    configurable: !0
-                }
-            }),
-            t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-        }
-        Object.defineProperty(t, "__esModule", {
-            value: !0
-        });
-        var l = function() {
-            function e(e, t) {
-                for (var a = 0; a < t.length; a++) {
-                    var n = t[a];
-                    n.enumerable = n.enumerable || !1,
-                    n.configurable = !0,
-                    "value"in n && (n.writable = !0),
-                    Object.defineProperty(e, n.key, n)
-                }
-            }
-            return function(t, a, n) {
-                return a && e(t.prototype, a),
-                n && e(t, n),
-                t
-            }
-        }()
-          , s = a(999)
-          , c = n(s)
-          , u = a(1e3)
-          , f = n(u)
-          , d = a(1001)
-          , p = n(d)
-          , h = {
-            top: {
-                x: 120,
-                y: 80
-            },
-            top_left: {
-                x: 20,
-                y: 80
-            },
-            middle: {
-                x: 120,
-                y: 320
-            },
-            middle_hazuki: {
-                x: 108,
-                y: 172
-            },
-            bottom: {
-                x: 120,
-                y: 560
-            }
-        }
-          , y = {
-            x: 568,
-            y: 396
-        }
-          , _ = function(e) {
-            function t() {
-                r(this, t);
-                var e = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
-                return e.interactive = !0,
-                e.beginFill(0, 0),
-                e.drawRect(0, 0, aoba.game.width, aoba.game.height),
-                e._overlay = c.default.new().addTo(e, 0, 0, {
-                    visible: !1
-                }),
-                e._maskLayer = aoba.Container.new().addTo(e),
-                e._imagesLayer = aoba.Container.new().addTo(e),
-                e._comment = f.default.new().addTo(e, 0, 0, {
-                    visible: !1
-                }).on("endText", function() {
-                    e.emit("endText", e._lock)
-                }),
-                e._tips = p.default.new().addTo(e, y.x, y.y, {
-                    anchor: .5,
-                    visible: !1
-                }),
-                e
-            }
-            return i(t, e),
-            l(t, [{
-                key: "enable",
-                value: function() {
-                    this.interactive = !0
-                }
-            }, {
-                key: "disable",
-                value: function() {
-                    this.interactive = !1
-                }
-            }, {
-                key: "addImage",
-                value: function(e) {
-                    e.addTo(this._imagesLayer)
-                }
-            }, {
-                key: "addMaskImage",
-                value: function(e) {
-                    e.addTo(this._maskLayer)
-                }
-            }, {
-                key: "addButton",
-                value: function(e) {
-                    e.addToAt(this, this._imagesLayer)
-                }
-            }, {
-                key: "endText",
-                value: function() {
-                    this._comment.endText()
-                }
-            }, {
-                key: "showTips",
-                value: function(e) {
-                    return this._overlay.resetAndCreate(),
-                    this._tips.appear(e)
-                }
-            }, {
-                key: "hideTips",
-                value: function() {
-                    return this._tips.disappear()
-                }
-            }, {
-                key: "changeTips",
-                value: function(e) {
-                    this._tips.texture = aoba.Texture.fromImage(e)
-                }
-            }, {
-                key: "setCommentPosition",
-                value: function(e) {
-                    var t = e.positionType
-                      , a = e.x
-                      , n = e.y;
-                    if (t || a && n) {
-                        var r = t ? h[t] : {
-                            x: a,
-                            y: n
-                        };
-                        this._comment.setPosition(r.x, r.y)
-                    }
-                }
-            }, {
-                key: "showOverlay",
-                value: function(e) {
-                    var t = e.x
-                      , a = e.y
-                      , n = e.width
-                      , r = e.height;
-                    return this._overlay.resetAndCreate(t, a, n, r),
-                    this._overlay.appear()
-                }
-            }, {
-                key: "hideOverlay",
-                value: function() {
-                    return this._overlay.disappear()
-                }
-            }, {
-                key: "changeOverlay",
-                value: function(e) {
-                    var t = e.x
-                      , a = e.y
-                      , n = e.width
-                      , r = e.height;
-                    this._overlay.resetAndCreate(t, a, n, r)
-                }
-            }, {
-                key: "showComment",
-                value: function(e) {
-                    var t = e.positionType
-                      , a = e.windowType
-                      , n = e.x
-                      , r = e.y;
-                    return this.setCommentPosition({
-                        positionType: t,
-                        x: n,
-                        y: r
-                    }),
-                    a && this._comment.changeTextWindow(a),
-                    this._comment.appear()
-                }
-            }, {
-                key: "hideComment",
-                value: function() {
-                    return this._comment.disappear()
-                }
-            }, {
-                key: "playComment",
-                value: function(e) {
-                    var t = e.positionType
-                      , a = e.windowType
-                      , n = e.content
-                      , r = e.x
-                      , o = e.y
-                      , i = e.lock
-                      , l = void 0 === i || i;
-                    this.setCommentPosition({
-                        positionType: t,
-                        x: r,
-                        y: o
-                    }),
-                    a && this._comment.changeTextWindow(a),
-                    this._lock = l,
-                    this._comment.playText(n)
-                }
-            }]),
-            t
-        }(aoba.Graphics);
-        t.default = _
-    },
-    999: function(e, t, a) {
-        "use strict";
-        function n(e) {
-            if (Array.isArray(e)) {
-                for (var t = 0, a = Array(e.length); t < e.length; t++)
-                    a[t] = e[t];
-                return a
-            }
-            return Array.from(e)
-        }
-        function r(e, t) {
-            if (!(e instanceof t))
-                throw new TypeError("Cannot call a class as a function")
-        }
-        function o(e, t) {
-            if (!e)
-                throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-            return !t || "object" != typeof t && "function" != typeof t ? e : t
-        }
-        function i(e, t) {
-            if ("function" != typeof t && null !== t)
-                throw new TypeError("Super expression must either be null or a function, not " + typeof t);
-            e.prototype = Object.create(t && t.prototype, {
-                constructor: {
-                    value: e,
-                    enumerable: !1,
-                    writable: !0,
-                    configurable: !0
-                }
-            }),
-            t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-        }
-        Object.defineProperty(t, "__esModule", {
-            value: !0
-        });
-        var l = function() {
-            function e(e, t) {
-                for (var a = 0; a < t.length; a++) {
-                    var n = t[a];
-                    n.enumerable = n.enumerable || !1,
-                    n.configurable = !0,
-                    "value"in n && (n.writable = !0),
-                    Object.defineProperty(e, n.key, n)
-                }
-            }
-            return function(t, a, n) {
-                return a && e(t.prototype, a),
-                n && e(t, n),
-                t
-            }
-        }()
-          , s = function(e, t, a, n) {
-            return aoba.Graphics.new().beginFill(0, 0).drawRect(e, t, a, n).setInteractive(!0)
-        }
-          , c = function(e) {
-            function t() {
-                return r(this, t),
-                o(this, (t.__proto__ || Object.getPrototypeOf(t)).apply(this, arguments))
-            }
-            return i(t, e),
-            l(t, [{
-                key: "create",
-                value: function() {
-                    var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0
-                      , t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0
-                      , a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0
-                      , r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0
-                      , o = aoba.p(e, t)
-                      , i = aoba.p(e + a, t + r)
-                      , l = [[0, 0, 1136, t], [i.x, o.y, 1136 - i.x, 640], [0, i.y, i.x, 640 - i.y], [0, o.y, o.x, r]]
-                      , c = !0
-                      , u = !1
-                      , f = void 0;
-                    try {
-                        for (var d, p = l[Symbol.iterator](); !(c = (d = p.next()).done); c = !0) {
-                            var h = d.value
-                              , y = s.apply(void 0, n(h));
-                            this.addChild(y)
-                        }
-                    } catch (e) {
-                        u = !0,
-                        f = e
-                    } finally {
-                        try {
-                            !c && p.return && p.return()
-                        } finally {
-                            if (u)
-                                throw f
-                        }
-                    }
-                }
-            }, {
-                key: "reset",
-                value: function() {
-                    this.removeChildren()
-                }
-            }, {
-                key: "resetAndCreate",
-                value: function() {
-                    var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0
-                      , t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0
-                      , a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0
-                      , n = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0;
-                    this.reset(),
-                    this.create(e, t, a, n)
-                }
-            }, {
-                key: "appear",
-                value: function() {
-                    return this.show(),
-                    this.alpha = 0,
-                    aoba.FrameTween.new(this).to({
-                        alpha: 1
-                    }, 6).wait(3).promise()
-                }
-            }, {
-                key: "disappear",
-                value: function() {
-                    var e = this;
-                    return aoba.FrameTween.new(this).to({
-                        alpha: 0
-                    }, 6).wait(3).call(function() {
-                        e.alpha = 1,
-                        e.hide()
-                    }).promise()
-                }
-            }]),
-            t
-        }(aoba.Container);
-        t.default = c
     }
 });
-//# sourceMappingURL=fesConcert-179cc7fe7c592fea41f0.chunk.js.map
+//# sourceMappingURL=0-0ce99c4507bf1b5bb972.chunk.js.map
