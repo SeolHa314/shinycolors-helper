@@ -1,4 +1,4 @@
-primJsp([60], [, function(e, t, n) {
+primJsp([63], [, function(e, t, n) {
     "use strict";
     function o(e) {
         return e && e.__esModule ? e : {
@@ -10,15 +10,15 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(84)
       , i = o(r)
-      , a = n(89)
+      , a = n(90)
       , s = o(a)
-      , u = n(385)
+      , u = n(389)
       , l = o(u)
-      , c = n(386)
+      , c = n(390)
       , f = o(c)
-      , d = n(16)
+      , d = n(13)
       , p = o(d)
-      , h = n(387)
+      , h = n(391)
       , g = o(h);
     t.default = {
         app: i.default,
@@ -45,23 +45,23 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(139)
+    var r = n(140)
       , i = o(r)
       , a = n(78)
       , s = o(a)
       , u = n(17)
       , l = o(u)
-      , c = n(16)
+      , c = n(13)
       , f = o(c)
       , d = n(55)
       , p = o(d)
       , h = n(84)
       , g = o(h)
-      , m = n(213)
+      , m = n(220)
       , _ = o(m)
-      , y = n(133)
+      , y = n(134)
       , I = o(y)
-      , A = n(427)
+      , A = n(431)
       , C = o(A)
       , v = {
         ERROR_WITHOUT_ERROR_LOG: 299,
@@ -332,13 +332,13 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(18)
       , i = o(r)
-      , a = n(20)
+      , a = n(21)
       , s = o(a)
       , u = n(1)
       , l = o(u)
-      , c = n(47)
+      , c = n(49)
       , f = o(c)
-      , d = n(38)
+      , d = n(35)
       , p = o(d)
       , h = l.default.asset
       , g = h.ADMIN_UPLOADED_FILE_PATH
@@ -352,8 +352,8 @@ primJsp([60], [, function(e, t, n) {
       , b = h.MOVIE_EXTENSION
       , P = h.SOUND_EXTENSION
       , T = h.CONCERT_MUSIC_PATH
-      , w = h.SPINE_FILE_NAME
-      , O = function(e) {
+      , O = h.SPINE_FILE_NAME
+      , w = function(e) {
         return e ? e + "_" : ""
     }
       , E = function(e, t) {
@@ -363,12 +363,12 @@ primJsp([60], [, function(e, t, n) {
         var o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : ""
           , r = E(e, n)
           , i = C[e] && C[e][t] || v;
-        return "" + O(o) + r + i
+        return "" + w(o) + r + i
     }
       , k = function(e, t) {
         var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : ""
           , o = E(e, t);
-        return "" + O(n) + o + b
+        return "" + w(n) + o + b
     }
       , R = function(e, t, n) {
         var o = E(e, t);
@@ -394,7 +394,7 @@ primJsp([60], [, function(e, t, n) {
             e
         },
         createSpinePath: function(e, t, n) {
-            return i.default.join(y, e, t, E(e, n), w)
+            return i.default.join(y, e, t, E(e, n), O)
         },
         createVoicePath: function(e, t, n) {
             var o = [I, e, R(e, t, n)].filter(function(e) {
@@ -455,7 +455,7 @@ primJsp([60], [, function(e, t, n) {
             t
         }
     }()
-      , s = n(206)
+      , s = n(213)
       , u = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -506,73 +506,73 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(320)
+    var r = n(325)
       , i = o(r)
-      , a = n(321)
+      , a = n(326)
       , s = o(a)
-      , u = n(502)
+      , u = n(506)
       , l = o(u)
       , c = n(86)
       , f = o(c)
-      , d = n(100)
+      , d = n(103)
       , p = o(d)
       , h = n(73)
       , g = o(h)
       , m = n(23)
       , _ = o(m)
-      , y = n(310)
+      , y = n(315)
       , I = o(y)
-      , A = n(182)
+      , A = n(184)
       , C = o(A)
-      , v = n(604)
+      , v = n(608)
       , b = o(v)
-      , P = n(605)
+      , P = n(609)
       , T = o(P)
-      , w = n(606)
-      , O = o(w)
-      , E = n(325)
+      , O = n(610)
+      , w = o(O)
+      , E = n(330)
       , S = o(E)
-      , k = n(193)
+      , k = n(197)
       , R = o(k)
-      , x = n(148)
+      , x = n(149)
       , M = o(x)
-      , N = n(132)
+      , N = n(133)
       , j = o(N)
-      , B = n(309)
+      , B = n(314)
       , D = o(B)
-      , L = n(608)
+      , L = n(612)
       , F = o(L)
-      , U = n(99)
+      , U = n(102)
       , G = o(U)
-      , H = n(312)
+      , H = n(317)
       , V = o(H)
-      , W = n(370)
+      , W = n(374)
       , Y = o(W)
-      , z = n(98)
-      , K = o(z)
-      , q = n(612)
+      , K = n(101)
+      , z = o(K)
+      , q = n(616)
       , X = o(q)
       , J = n(72)
       , Z = o(J)
-      , Q = n(315)
+      , Q = n(320)
       , $ = o(Q)
-      , ee = n(328)
+      , ee = n(336)
       , te = o(ee)
-      , ne = n(136)
+      , ne = n(137)
       , oe = o(ne)
-      , re = n(189)
+      , re = n(191)
       , ie = o(re)
-      , ae = n(254)
+      , ae = n(261)
       , se = o(ae)
-      , ue = n(255)
+      , ue = n(262)
       , le = o(ue)
-      , ce = n(329)
+      , ce = n(331)
       , fe = o(ce)
-      , de = n(614)
+      , de = n(618)
       , pe = o(de)
-      , he = n(615)
+      , he = n(619)
       , ge = o(he)
-      , me = n(135)
+      , me = n(136)
       , _e = o(me);
     t.default = {
         INCREASE_FONT_COLOR: 16199014,
@@ -588,7 +588,7 @@ primJsp([60], [, function(e, t, n) {
         Gauge: C.default,
         ImageLabel: b.default,
         InteractionBox: T.default,
-        graphics: O.default,
+        graphics: w.default,
         MovingBg: S.default,
         MuteVideo: M.default,
         MuteVideoAndSEPlayer: R.default,
@@ -598,7 +598,7 @@ primJsp([60], [, function(e, t, n) {
         ScrollBar: G.default,
         ScrollBarBase: V.default,
         ScrollMap: Y.default,
-        ScrollRect: K.default,
+        ScrollRect: z.default,
         SelectButton: X.default,
         Spine: $.default,
         StretchSprite: Z.default,
@@ -623,11 +623,11 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(52)
+    var r = n(53)
       , i = o(r)
-      , a = n(186)
+      , a = n(188)
       , s = o(a)
-      , u = n(428)
+      , u = n(432)
       , l = o(u)
       , c = n(55)
       , f = o(c)
@@ -789,7 +789,7 @@ primJsp([60], [, function(e, t, n) {
         }
     }
 }
-, , , , function(e, t, n) {
+, function(e, t, n) {
     "use strict";
     Object.defineProperty(t, "__esModule", {
         value: !0
@@ -816,7 +816,7 @@ primJsp([60], [, function(e, t, n) {
         SPEED: d
     }
 }
-, , function(e, t, n) {
+, , , , , function(e, t, n) {
     (function(e) {
         // Copyright Joyent, Inc. and other Node contributors.
         //
@@ -948,9 +948,9 @@ primJsp([60], [, function(e, t, n) {
             e.substr(t, n)
         }
     }
-    ).call(t, n(185))
+    ).call(t, n(187))
 }
-, , , function(e, t, n) {
+, , function(e, t, n) {
     "use strict";
     function o(e) {
         return e && e.__esModule ? e : {
@@ -962,15 +962,15 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(79)
       , i = o(r)
-      , a = n(546)
+      , a = n(549)
       , s = o(a)
-      , u = n(547)
+      , u = n(550)
       , l = o(u)
-      , c = n(548)
+      , c = n(551)
       , f = o(c)
-      , d = n(90)
+      , d = n(91)
       , p = o(d)
-      , h = n(54)
+      , h = n(47)
       , g = o(h)
       , m = n(1)
       , _ = o(m)
@@ -1012,7 +1012,7 @@ primJsp([60], [, function(e, t, n) {
     };
     t.default = y
 }
-, , function(e, t, n) {
+, , , function(e, t, n) {
     "use strict";
     function o(e) {
         return e && e.__esModule ? e : {
@@ -1064,7 +1064,7 @@ primJsp([60], [, function(e, t, n) {
       , l = o(u)
       , c = n(73)
       , f = o(c)
-      , d = n(100)
+      , d = n(103)
       , p = o(d)
       , h = n(86)
       , g = o(h)
@@ -1112,9 +1112,9 @@ primJsp([60], [, function(e, t, n) {
               , b = e.width
               , P = void 0 === b ? null : b
               , T = e.height
-              , w = void 0 === T ? null : T
-              , O = e.isCenter
-              , E = void 0 !== O && O
+              , O = void 0 === T ? null : T
+              , w = e.isCenter
+              , E = void 0 !== w && w
               , S = e.marginTop
               , k = void 0 === S ? 20 : S
               , R = e.marginMain
@@ -1126,13 +1126,13 @@ primJsp([60], [, function(e, t, n) {
               , j = void 0
               , B = void 0
               , D = void 0;
-            P && w ? (N = _.default.new("pop_stretch.png", {
+            P && O ? (N = _.default.new("pop_stretch.png", {
                 left: 80,
                 top: 80,
                 right: 80,
                 bottom: 20,
                 width: P,
-                height: w
+                height: O
             }),
             D = 82) : (N = aoba.Sprite.new("pop_" + o + "_top.png"),
             j = aoba.Sprite.new("pop_" + o + "_middle.png"),
@@ -1183,7 +1183,7 @@ primJsp([60], [, function(e, t, n) {
             U.pivot.set(U.width / 2, 0),
             N.addTo(L),
             j) {
-                var H = w || F.height;
+                var H = O || F.height;
                 j.height = H + U.height + x,
                 j.addTo(L, 0, N.height)
             }
@@ -1297,106 +1297,6 @@ primJsp([60], [, function(e, t, n) {
 }
 , function(e, t, n) {
     "use strict";
-    (function(e) {
-        function o(e) {
-            return e && e.__esModule ? e : {
-                default: e
-            }
-        }
-        Object.defineProperty(t, "__esModule", {
-            value: !0
-        });
-        var r = n(34)
-          , i = o(r)
-          , a = n(16)
-          , s = o(a)
-          , u = void 0;
-        e.GLOBAL ? u = n(201) : (n(378),
-        e.GLOBAL = e,
-        u = n(201));
-        var l = new u
-          , c = /\sLine\//
-          , f = /FBAN\/FB/
-          , d = /FBAN\/MessengerFor/
-          , p = !!window.navigator.standalone
-          , h = window.matchMedia("(display-mode: fullscreen)").matches
-          , g = {
-            IOS_STANDALONE_MODE: p,
-            ANDROID_STANDALONE_MODE: h,
-            getUserAgent: function() {
-                return l.USER_AGENT
-            },
-            browserVersion: function() {
-                return l.BROWSER_VERSION
-            },
-            browserMajorVersion: function() {
-                var e = this.browserVersion().split(".");
-                return 3 === e.length ? parseInt(e[0], 10) : 0
-            },
-            browserMinorVersion: function() {
-                var e = this.browserVersion().split(".");
-                return 3 === e.length ? parseInt(e[1], 10) : 0
-            },
-            browserPatchVersion: function() {
-                var e = this.browserVersion().split(".");
-                return 3 === e.length ? parseInt(e[2], 10) : 0
-            },
-            isStandAlone: function() {
-                return p || h
-            },
-            isLine: function() {
-                return !!this.getUserAgent().match(c)
-            },
-            isFaceBook: function() {
-                return !!this.getUserAgent().match(f)
-            },
-            isFaceBookMessenger: function() {
-                return !!this.getUserAgent().match(d)
-            },
-            isTwitter: function() {
-                return s.default.PF_URI ? i.default.util.DEPRECATED_isTwitterBrowser() : !!i.default && i.default.util.DEPRECATED_isTwitterBrowser()
-            },
-            isWebView: function() {
-                return l.WEB_VIEW
-            },
-            isEnzaApp: function() {
-                return !!i.default && i.default.util.isOfficialApp()
-            },
-            webViewInApp: function() {
-                return !this.isEnzaApp() && (!!(this.isFaceBook() || this.isFaceBookMessenger() || this.isLine()) || this.isWebView() && !this.IOS_STANDALONE_MODE && !this.ANDROID_STANDALONE_MODE)
-            },
-            isAndroid: function() {
-                return l.Android
-            },
-            isIOS: function() {
-                return l.iOS
-            },
-            isPhone: function() {
-                return this.isMobile() && !this.isTablet()
-            },
-            isTablet: function() {
-                return l.iPad || this.isAndroid() && l.Kindle
-            },
-            isMobile: function() {
-                return l.MOBILE
-            },
-            isChrome: function() {
-                return l.Chrome
-            },
-            isSafari: function() {
-                return l.Safari || p
-            },
-            isAndroidDefaultBrowser: function() {
-                var e = this.getUserAgent();
-                return !!this.isAndroid() && (/Linux; U;/.test(e) && !/Chrome/.test(e) || /Chrome/.test(e) && /Version/.test(e) || /Chrome/.test(e) && /SamsungBrowser/.test(e))
-            }
-        };
-        t.default = g
-    }
-    ).call(t, n(76))
-}
-, function(e, t, n) {
-    "use strict";
     function o(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -1446,9 +1346,9 @@ primJsp([60], [, function(e, t, n) {
     }()
       , a = n(1)
       , s = o(a)
-      , u = n(150)
+      , u = n(151)
       , l = o(u)
-      , c = n(313)
+      , c = n(318)
       , f = o(c)
       , d = n(9)
       , p = o(d)
@@ -1582,6 +1482,106 @@ primJsp([60], [, function(e, t, n) {
         }
     }
 }
+, function(e, t, n) {
+    "use strict";
+    (function(e) {
+        function o(e) {
+            return e && e.__esModule ? e : {
+                default: e
+            }
+        }
+        Object.defineProperty(t, "__esModule", {
+            value: !0
+        });
+        var r = n(34)
+          , i = o(r)
+          , a = n(13)
+          , s = o(a)
+          , u = void 0;
+        e.GLOBAL ? u = n(206) : (n(382),
+        e.GLOBAL = e,
+        u = n(206));
+        var l = new u
+          , c = /\sLine\//
+          , f = /FBAN\/FB/
+          , d = /FBAN\/MessengerFor/
+          , p = !!window.navigator.standalone
+          , h = window.matchMedia("(display-mode: fullscreen)").matches
+          , g = {
+            IOS_STANDALONE_MODE: p,
+            ANDROID_STANDALONE_MODE: h,
+            getUserAgent: function() {
+                return l.USER_AGENT
+            },
+            browserVersion: function() {
+                return l.BROWSER_VERSION
+            },
+            browserMajorVersion: function() {
+                var e = this.browserVersion().split(".");
+                return 3 === e.length ? parseInt(e[0], 10) : 0
+            },
+            browserMinorVersion: function() {
+                var e = this.browserVersion().split(".");
+                return 3 === e.length ? parseInt(e[1], 10) : 0
+            },
+            browserPatchVersion: function() {
+                var e = this.browserVersion().split(".");
+                return 3 === e.length ? parseInt(e[2], 10) : 0
+            },
+            isStandAlone: function() {
+                return p || h
+            },
+            isLine: function() {
+                return !!this.getUserAgent().match(c)
+            },
+            isFaceBook: function() {
+                return !!this.getUserAgent().match(f)
+            },
+            isFaceBookMessenger: function() {
+                return !!this.getUserAgent().match(d)
+            },
+            isTwitter: function() {
+                return s.default.PF_URI ? i.default.util.DEPRECATED_isTwitterBrowser() : !!i.default && i.default.util.DEPRECATED_isTwitterBrowser()
+            },
+            isWebView: function() {
+                return l.WEB_VIEW
+            },
+            isEnzaApp: function() {
+                return !!i.default && i.default.util.isOfficialApp()
+            },
+            webViewInApp: function() {
+                return !this.isEnzaApp() && (!!(this.isFaceBook() || this.isFaceBookMessenger() || this.isLine()) || this.isWebView() && !this.IOS_STANDALONE_MODE && !this.ANDROID_STANDALONE_MODE)
+            },
+            isAndroid: function() {
+                return l.Android
+            },
+            isIOS: function() {
+                return l.iOS
+            },
+            isPhone: function() {
+                return this.isMobile() && !this.isTablet()
+            },
+            isTablet: function() {
+                return l.iPad || this.isAndroid() && l.Kindle
+            },
+            isMobile: function() {
+                return l.MOBILE
+            },
+            isChrome: function() {
+                return l.Chrome
+            },
+            isSafari: function() {
+                return l.Safari || p
+            },
+            isAndroidDefaultBrowser: function() {
+                var e = this.getUserAgent();
+                return !!this.isAndroid() && (/Linux; U;/.test(e) && !/Chrome/.test(e) || /Chrome/.test(e) && /Version/.test(e) || /Chrome/.test(e) && /SamsungBrowser/.test(e))
+            }
+        };
+        t.default = g
+    }
+    ).call(t, n(76))
+}
 , , , , , function(e, t, n) {
     "use strict";
     Object.defineProperty(t, "__esModule", {
@@ -1610,7 +1610,7 @@ primJsp([60], [, function(e, t, n) {
     }),
     t.default = window.ezpf
 }
-, , , , function(e, t, n) {
+, function(e, t, n) {
     "use strict";
     function o(e) {
         return e && e.__esModule ? e : {
@@ -1622,9 +1622,9 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(18)
       , i = o(r)
-      , a = n(16)
+      , a = n(13)
       , s = o(a)
-      , u = n(112)
+      , u = n(113)
       , l = o(u)
       , c = s.default.ASSET_ROOT
       , f = i.default.join(c, "asset-map.json")
@@ -1709,6 +1709,60 @@ primJsp([60], [, function(e, t, n) {
         }
     };
     t.default = p
+}
+, , , , function(e, t, n) {
+    "use strict";
+    function o(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var r = n(4)
+      , i = o(r)
+      , a = n(485)
+      , s = o(a)
+      , u = n(90)
+      , l = o(u)
+      , c = n(96)
+      , f = o(c);
+    t.default = {
+        getSpinePath: function(e) {
+            return i.default.createSpinePath("characters", e, this.id)
+        },
+        getMoviePath: function(e) {
+            var t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
+            return i.default.createMoviePath("characters", e, this.id, this.hash, t)
+        },
+        getVoicePath: function(e) {
+            return i.default.createVoicePath("characters", this.id, e)
+        },
+        getImagePath: function(e) {
+            return i.default.createImagePath("characters", e, this.id)
+        },
+        getUnitImagePath: function(e) {
+            return this._extendedUnit.getImagePath(e)
+        },
+        getHashPrefixAssets: function() {
+            var e = this
+              , t = f.default.cloneAndEmptyHashProperty(this);
+            return l.default.movieTypes.characters.map(function(n) {
+                return {
+                    url: e.getMoviePath(n, !1),
+                    key: t.getMoviePath(n, !1)
+                }
+            })
+        },
+        get _extendedUnit() {
+            return this.unit || (this.unit = {
+                id: this.unitId
+            }),
+            aoba.utils.getPrototypeOf(this.unit) !== s.default && aoba.utils.setPrototypeOf(this.unit, s.default),
+            this.unit
+        }
+    }
 }
 , function(e, t, n) {
     "use strict";
@@ -1822,341 +1876,12 @@ primJsp([60], [, function(e, t, n) {
     }
     Object.defineProperty(t, "__esModule", {
         value: !0
-    }),
-    t.setErrorEvent = t.claims = void 0;
-    var r = n(212)
-      , i = o(r)
-      , a = n(1)
-      , s = o(a)
-      , u = n(2)
-      , l = o(u)
-      , c = n(55)
-      , f = o(c)
-      , d = n(16)
-      , p = o(d)
-      , h = n(34)
-      , g = o(h)
-      , m = n(351)
-      , _ = (o(m),
-    void 0)
-      , y = t.claims = Object.create(null)
-      , I = (t.setErrorEvent = function(e) {
-        _ || (_ = e)
-    }
-    ,
-    function() {
-        _ && _.emit("error", {
-            type: s.default.app.CLIENT_ERROR_TYPES.SDK
-        }),
-        f.default.captureException(new Error("ezpf not found"))
-    }
-    )
-      , A = function() {
-        var e = !1;
-        return g.default ? new Promise(function(t, n) {
-            g.default.startLogin(p.default.GAME_ID, function(o) {
-                l.default.addHeader("Authorization", o),
-                Object.assign(y, (0,
-                i.default)(o)),
-                e || (f.default.setUserId(y.id),
-                l.default.post("login").then(function(n) {
-                    e = !0,
-                    t(n)
-                }).catch(function(e) {
-                    n(e)
-                }))
-            }, function() {})
-        }
-        ) : (I(),
-        new Promise(function(e) {}
-        ))
-    }
-      , C = function() {
-        return new Promise(function(e, t) {
-            var n = localStorage.getItem("userId");
-            l.default.addHeader("Authorization", n),
-            Object.assign(y, {
-                id: n,
-                is_app_installed: !1,
-                is_guest: !0,
-                is_game_user_registered: !0
-            }),
-            f.default.setUserId(y.id),
-            l.default.post("login").then(function(t) {
-                e(t)
-            }).catch(function(e) {
-                t(e)
-            })
-        }
-        )
-    };
-    t.default = function() {
-        return p.default.PF_URI ? A() : C()
-    }
-}
-, function(e, t, n) {
-    "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var o = n(191)
-      , r = function(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }(o)
-      , i = null
-      , a = {
-        preload: function() {
-            return r.default.dynamicLoad(function() {
-                return n.e(46).then(n.bind(null, 865))
-            }, function() {
-                return n.e(51).then(n.bind(null, 866))
-            }).then(function(e) {
-                return i = e,
-                e
-            })
-        },
-        encryptPath: function(e, t) {
-            return i.encryptPath(e, t)
-        },
-        decryptResource: function(e) {
-            var t = e.byteLength
-              , n = i._malloc(t);
-            new Uint8Array(i.HEAPU8.buffer,n,t).set(new Uint8Array(e));
-            var o = decodeURIComponent(escape(i.decryptResource(n, t)));
-            return i._free(n),
-            o
-        }
-    };
-    t.default = a
-}
-, , function(e, t, n) {
-    "use strict";
-    function o(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var r = n(4)
-      , i = o(r)
-      , a = n(481)
-      , s = o(a)
-      , u = n(89)
-      , l = o(u)
-      , c = n(93)
-      , f = o(c);
-    t.default = {
-        getSpinePath: function(e) {
-            return i.default.createSpinePath("characters", e, this.id)
-        },
-        getMoviePath: function(e) {
-            var t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
-            return i.default.createMoviePath("characters", e, this.id, this.hash, t)
-        },
-        getVoicePath: function(e) {
-            return i.default.createVoicePath("characters", this.id, e)
-        },
-        getImagePath: function(e) {
-            return i.default.createImagePath("characters", e, this.id)
-        },
-        getUnitImagePath: function(e) {
-            return this._extendedUnit.getImagePath(e)
-        },
-        getHashPrefixAssets: function() {
-            var e = this
-              , t = f.default.cloneAndEmptyHashProperty(this);
-            return l.default.movieTypes.characters.map(function(n) {
-                return {
-                    url: e.getMoviePath(n, !1),
-                    key: t.getMoviePath(n, !1)
-                }
-            })
-        },
-        get _extendedUnit() {
-            return this.unit || (this.unit = {
-                id: this.unitId
-            }),
-            aoba.utils.getPrototypeOf(this.unit) !== s.default && aoba.utils.setPrototypeOf(this.unit, s.default),
-            this.unit
-        }
-    }
-}
-, , , function(e, t, n) {
-    "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var o = n(349)
-      , r = function(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }(o)
-      , i = aoba
-      , a = i.loader
-      , s = function e(t, n) {
-        var o = (0,
-        r.default)(t);
-        return 0 === o.length ? void n() : a.loading ? void a.onComplete.once(function() {
-            e(o, n)
-        }) : (a.add(o),
-        void a.onComplete.once(n))
-    }
-      , u = function(e, t) {
-        t && t.spineData && (t.data = null,
-        t.xhr = null)
-    }
-      , l = !1
-      , c = function(e) {
-        return l || (a.onLoad.add(u),
-        l = !0),
-        new Promise(function(t) {
-            return s(e, t)
-        }
-        )
-    };
-    t.default = c
-}
-, function(e, t, n) {
-    "use strict";
-    function o(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var r = n(359)
-      , i = o(r)
-      , a = n(344)
-      , s = o(a)
-      , u = n(102)
-      , l = o(u)
-      , c = n(573)
-      , f = o(c)
-      , d = n(198)
-      , p = o(d)
-      , h = n(575)
-      , g = o(h)
-      , m = n(576)
-      , _ = o(m)
-      , y = n(579)
-      , I = o(y)
-      , A = n(580)
-      , C = o(A)
-      , v = n(581)
-      , b = o(v)
-      , P = n(582)
-      , T = o(P)
-      , w = n(257)
-      , O = o(w)
-      , E = n(361)
-      , S = o(E)
-      , k = n(362)
-      , R = o(k)
-      , x = n(584)
-      , M = o(x)
-      , N = n(140)
-      , j = o(N)
-      , B = n(134)
-      , D = o(B)
-      , L = n(592)
-      , F = o(L)
-      , U = n(593)
-      , G = o(U)
-      , H = n(594)
-      , V = o(H)
-      , W = n(200)
-      , Y = o(W)
-      , z = n(345)
-      , K = o(z)
-      , q = n(595)
-      , X = o(q)
-      , J = n(365)
-      , Z = o(J)
-      , Q = n(346)
-      , $ = o(Q)
-      , ee = n(597)
-      , te = o(ee)
-      , ne = n(598)
-      , oe = o(ne)
-      , re = n(599)
-      , ie = o(re)
-      , ae = n(347)
-      , se = o(ae)
-      , ue = n(366)
-      , le = o(ue)
-      , ce = n(367)
-      , fe = o(ce)
-      , de = n(600)
-      , pe = o(de)
-      , he = n(368)
-      , ge = o(he)
-      , me = n(369)
-      , _e = o(me)
-      , ye = n(602)
-      , Ie = o(ye)
-      , Ae = n(603)
-      , Ce = o(Ae);
-    t.default = {
-        announce: i.default,
-        campaign: s.default,
-        earthUser: l.default,
-        fes: f.default,
-        fesMatch: p.default,
-        gameEventCommunicationHistory: g.default,
-        gasha: _.default,
-        gashaGroup: I.default,
-        homeDeck: C.default,
-        idol: b.default,
-        invitation: T.default,
-        item: O.default,
-        loginBonus: M.default,
-        memorialShop: S.default,
-        myPage: j.default,
-        newNotifications: R.default,
-        produce: D.default,
-        produceMarathon: F.default,
-        supportIdol: G.default,
-        updateInformation: V.default,
-        user: Y.default,
-        userEnhancementItem: K.default,
-        userExchangeItemShop: X.default,
-        userFesDeck: Z.default,
-        userFesIdol: $.default,
-        userGashaTicket: te.default,
-        userIdol: oe.default,
-        userIdolPieces: ie.default,
-        userMission: se.default,
-        userProduceIdol: le.default,
-        userShop: fe.default,
-        userSkin: pe.default,
-        userSupportIdol: ge.default,
-        userRecoveryItem: _e.default,
-        userReserveIdol: Ie.default,
-        userReserveSupportIdol: Ce.default
-    }
-}
-, function(e, t, n) {
-    "use strict";
-    function o(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
     });
     var r = n(1)
       , i = o(r)
-      , a = n(257)
+      , a = n(264)
       , s = o(a)
-      , u = n(342)
+      , u = n(346)
       , l = o(u)
       , c = {
         recoveryItem: {
@@ -2279,10 +2004,288 @@ primJsp([60], [, function(e, t, n) {
     }
     Object.defineProperty(t, "__esModule", {
         value: !0
-    });
-    var r = n(16)
+    }),
+    t.setErrorEvent = t.claims = void 0;
+    var r = n(219)
       , i = o(r)
-      , a = n(24)
+      , a = n(1)
+      , s = o(a)
+      , u = n(2)
+      , l = o(u)
+      , c = n(55)
+      , f = o(c)
+      , d = n(13)
+      , p = o(d)
+      , h = n(34)
+      , g = o(h)
+      , m = n(354)
+      , _ = (o(m),
+    void 0)
+      , y = t.claims = Object.create(null)
+      , I = (t.setErrorEvent = function(e) {
+        _ || (_ = e)
+    }
+    ,
+    function() {
+        _ && _.emit("error", {
+            type: s.default.app.CLIENT_ERROR_TYPES.SDK
+        }),
+        f.default.captureException(new Error("ezpf not found"))
+    }
+    )
+      , A = function() {
+        var e = !1;
+        return g.default ? new Promise(function(t, n) {
+            g.default.startLogin(p.default.GAME_ID, function(o) {
+                l.default.addHeader("Authorization", o),
+                Object.assign(y, (0,
+                i.default)(o)),
+                e || (f.default.setUserId(y.id),
+                l.default.post("login").then(function(n) {
+                    e = !0,
+                    t(n)
+                }).catch(function(e) {
+                    n(e)
+                }))
+            }, function() {})
+        }
+        ) : (I(),
+        new Promise(function(e) {}
+        ))
+    }
+      , C = function() {
+        return new Promise(function(e, t) {
+            var n = localStorage.getItem("userId");
+            l.default.addHeader("Authorization", n),
+            Object.assign(y, {
+                id: n,
+                is_app_installed: !1,
+                is_guest: !0,
+                is_game_user_registered: !0
+            }),
+            f.default.setUserId(y.id),
+            l.default.post("login").then(function(t) {
+                e(t)
+            }).catch(function(e) {
+                t(e)
+            })
+        }
+        )
+    };
+    t.default = function() {
+        return p.default.PF_URI ? A() : C()
+    }
+}
+, function(e, t, n) {
+    "use strict";
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var o = n(195)
+      , r = function(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }(o)
+      , i = null
+      , a = {
+        preload: function() {
+            return r.default.dynamicLoad(function() {
+                return n.e(48).then(n.bind(null, 869))
+            }, function() {
+                return n.e(53).then(n.bind(null, 870))
+            }).then(function(e) {
+                return i = e,
+                e
+            })
+        },
+        encryptPath: function(e, t) {
+            return i.encryptPath(e, t)
+        },
+        decryptResource: function(e) {
+            var t = e.byteLength
+              , n = i._malloc(t);
+            new Uint8Array(i.HEAPU8.buffer,n,t).set(new Uint8Array(e));
+            var o = decodeURIComponent(escape(i.decryptResource(n, t)));
+            return i._free(n),
+            o
+        }
+    };
+    t.default = a
+}
+, , , , function(e, t, n) {
+    "use strict";
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var o = n(352)
+      , r = function(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }(o)
+      , i = aoba
+      , a = i.loader
+      , s = function e(t, n) {
+        var o = (0,
+        r.default)(t);
+        return 0 === o.length ? void n() : a.loading ? void a.onComplete.once(function() {
+            e(o, n)
+        }) : (a.add(o),
+        void a.onComplete.once(n))
+    }
+      , u = function(e, t) {
+        t && t.spineData && (t.data = null,
+        t.xhr = null)
+    }
+      , l = !1
+      , c = function(e) {
+        return l || (a.onLoad.add(u),
+        l = !0),
+        new Promise(function(t) {
+            return s(e, t)
+        }
+        )
+    };
+    t.default = c
+}
+, function(e, t, n) {
+    "use strict";
+    function o(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var r = n(363)
+      , i = o(r)
+      , a = n(347)
+      , s = o(a)
+      , u = n(105)
+      , l = o(u)
+      , c = n(576)
+      , f = o(c)
+      , d = n(202)
+      , p = o(d)
+      , h = n(578)
+      , g = o(h)
+      , m = n(579)
+      , _ = o(m)
+      , y = n(582)
+      , I = o(y)
+      , A = n(583)
+      , C = o(A)
+      , v = n(584)
+      , b = o(v)
+      , P = n(585)
+      , T = o(P)
+      , O = n(264)
+      , w = o(O)
+      , E = n(365)
+      , S = o(E)
+      , k = n(366)
+      , R = o(k)
+      , x = n(587)
+      , M = o(x)
+      , N = n(141)
+      , j = o(N)
+      , B = n(135)
+      , D = o(B)
+      , L = n(595)
+      , F = o(L)
+      , U = n(596)
+      , G = o(U)
+      , H = n(597)
+      , V = o(H)
+      , W = n(205)
+      , Y = o(W)
+      , K = n(348)
+      , z = o(K)
+      , q = n(598)
+      , X = o(q)
+      , J = n(368)
+      , Z = o(J)
+      , Q = n(349)
+      , $ = o(Q)
+      , ee = n(600)
+      , te = o(ee)
+      , ne = n(601)
+      , oe = o(ne)
+      , re = n(602)
+      , ie = o(re)
+      , ae = n(350)
+      , se = o(ae)
+      , ue = n(369)
+      , le = o(ue)
+      , ce = n(370)
+      , fe = o(ce)
+      , de = n(603)
+      , pe = o(de)
+      , he = n(371)
+      , ge = o(he)
+      , me = n(372)
+      , _e = o(me)
+      , ye = n(605)
+      , Ie = o(ye)
+      , Ae = n(606)
+      , Ce = o(Ae)
+      , ve = n(373)
+      , be = o(ve);
+    t.default = {
+        announce: i.default,
+        campaign: s.default,
+        earthUser: l.default,
+        fes: f.default,
+        fesMatch: p.default,
+        gameEventCommunicationHistory: g.default,
+        gasha: _.default,
+        gashaGroup: I.default,
+        homeDeck: C.default,
+        idol: b.default,
+        invitation: T.default,
+        item: w.default,
+        loginBonus: M.default,
+        memorialShop: S.default,
+        myPage: j.default,
+        newNotifications: R.default,
+        produce: D.default,
+        produceMarathon: F.default,
+        supportIdol: G.default,
+        updateInformation: V.default,
+        user: Y.default,
+        userEnhancementItem: z.default,
+        userExchangeItemShop: X.default,
+        userFesDeck: Z.default,
+        userFesIdol: $.default,
+        userGashaTicket: te.default,
+        userIdol: oe.default,
+        userIdolPieces: ie.default,
+        userMission: se.default,
+        userProduceIdol: le.default,
+        userShop: fe.default,
+        userSkin: pe.default,
+        userSupportIdol: ge.default,
+        userRecoveryItem: _e.default,
+        userReserveIdol: Ie.default,
+        userReserveSupportIdol: Ce.default,
+        characterFanRanking: be.default
+    }
+}
+, function(e, t, n) {
+    "use strict";
+    function o(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var r = n(13)
+      , i = o(r)
+      , a = n(25)
       , s = o(a)
       , u = n(34)
       , l = o(u)
@@ -2297,8 +2300,8 @@ primJsp([60], [, function(e, t, n) {
                 var e = l.default && l.default.VERSION ? l.default.VERSION : ""
                   , t = {
                     tags: {
-                        buildDate: "2019-1-30 07:09:24",
-                        buildVersion: "196b0e5",
+                        buildDate: "2019-2-7 11:50:31",
+                        buildVersion: "65dd85d",
                         pfSdkVersion: e,
                         isAndroidDefaultBrowser: "" + s.default.isAndroidDefaultBrowser(),
                         xVersion: i.default.X_VERSION
@@ -2385,47 +2388,47 @@ primJsp([60], [, function(e, t, n) {
             t
         }
     }()
-      , s = n(203)
+      , s = n(210)
       , u = o(s)
-      , l = n(204)
+      , l = n(211)
       , c = o(l)
       , f = n(12)
       , d = o(f)
-      , p = n(429)
+      , p = n(433)
       , h = o(p)
-      , g = n(91)
+      , g = n(92)
       , m = o(g)
-      , _ = n(110)
+      , _ = n(111)
       , y = o(_)
-      , I = n(16)
+      , I = n(13)
       , A = o(I)
-      , C = n(205)
+      , C = n(212)
       , v = o(C)
-      , b = n(215)
+      , b = n(222)
       , P = o(b)
-      , T = n(213)
-      , w = o(T)
-      , O = n(482)
-      , E = o(O)
-      , S = n(38)
+      , T = n(220)
+      , O = o(T)
+      , w = n(486)
+      , E = o(w)
+      , S = n(35)
       , k = o(S)
-      , R = n(46)
+      , R = n(48)
       , x = o(R)
-      , M = n(24)
+      , M = n(25)
       , N = o(M)
-      , j = n(52)
+      , j = n(53)
       , B = o(j)
-      , D = n(47)
+      , D = n(49)
       , L = o(D)
-      , F = n(352)
+      , F = n(355)
       , U = o(F)
-      , G = n(137)
+      , G = n(138)
       , H = o(G)
-      , V = n(216)
+      , V = n(223)
       , W = o(V)
       , Y = aoba
-      , z = Y.game
-      , K = Y.soundManager
+      , K = Y.game
+      , z = Y.soundManager
       , q = Y.sceneManager
       , X = !1
       , J = function(e) {
@@ -2438,7 +2441,7 @@ primJsp([60], [, function(e, t, n) {
       , Z = function(e) {
         k.default.fetchHashMap(),
         J(e),
-        e.split("/")[1] && "/login" !== e && w.default.setPreUrlToStorage()
+        e.split("/")[1] && "/login" !== e && O.default.setPreUrlToStorage()
     }
       , Q = function() {
         return Promise.resolve().then(function() {
@@ -2574,10 +2577,10 @@ primJsp([60], [, function(e, t, n) {
                 })),
                 e.then(function() {
                     (0,
-                    h.default)(K),
+                    h.default)(z),
                     q.loadScene("loading", {}, !0),
-                    z.run(),
-                    m.default.start(z)
+                    K.run(),
+                    m.default.start(K)
                 })
             }
         }, {
@@ -2649,35 +2652,35 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(489)
+    var r = n(493)
       , i = o(r)
-      , a = n(491)
+      , a = n(495)
       , s = o(a)
-      , u = n(236)
+      , u = n(243)
       , l = o(u)
-      , c = n(238)
+      , c = n(245)
       , f = o(c)
-      , d = n(237)
+      , d = n(244)
       , p = o(d)
-      , h = n(241)
+      , h = n(248)
       , g = o(h)
-      , m = n(239)
+      , m = n(246)
       , _ = o(m)
-      , y = n(242)
+      , y = n(249)
       , I = o(y)
-      , A = n(243)
+      , A = n(250)
       , C = o(A)
-      , v = n(244)
+      , v = n(251)
       , b = o(v)
-      , P = n(247)
+      , P = n(254)
       , T = o(P)
-      , w = n(246)
-      , O = o(w)
-      , E = n(248)
+      , O = n(253)
+      , w = o(O)
+      , E = n(255)
       , S = o(E)
-      , k = n(245)
+      , k = n(252)
       , R = o(k)
-      , x = n(249)
+      , x = n(256)
       , M = o(x);
     t.default = {
         AdvPlayer: i.default,
@@ -2691,7 +2694,7 @@ primJsp([60], [, function(e, t, n) {
         MovieLayer: C.default,
         ScenarioPlayer: b.default,
         SelectItem: T.default,
-        SelectList: O.default,
+        SelectList: w.default,
         SoundController: S.default,
         TextPlayer: R.default,
         TrackManager: M.default
@@ -3210,7 +3213,7 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(115)
       , i = o(r)
-      , a = n(39)
+      , a = n(40)
       , s = o(a);
     t.default = {
         getImagePath: function(e) {
@@ -3319,9 +3322,9 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(92)
+    var r = n(95)
       , i = o(r)
-      , a = n(39)
+      , a = n(40)
       , s = o(a);
     t.default = {
         getImagePath: function(e) {
@@ -3667,6 +3670,11 @@ primJsp([60], [, function(e, t, n) {
                 }
             }]
         }, {
+            code: 2070,
+            dialogTitleKey: "errorDialog.errorTitle",
+            dialogContentKey: "errorDialog.earthPaymentFailureFatal",
+            needsInquiryButton: !0
+        }, {
             code: 9e3,
             dialogTitleKey: "errorDialog.errorTitle",
             dialogContentKey: "errorDialog.other",
@@ -3893,13 +3901,13 @@ primJsp([60], [, function(e, t, n) {
       , l = o(u)
       , c = n(1)
       , f = o(c)
-      , d = n(47)
+      , d = n(49)
       , p = o(d)
-      , h = n(38)
+      , h = n(35)
       , g = o(h)
-      , m = n(113)
+      , m = n(94)
       , _ = o(m)
-      , y = n(112)
+      , y = n(113)
       , I = o(y)
       , A = null
       , C = function(e, t, n) {
@@ -4230,6 +4238,32 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
+    var o = n(1)
+      , r = function(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }(o);
+    t.default = {
+        calcCurrentStamina: function() {
+            if (this.overStamina > 0)
+                return r.default.app.MAX_STAMINA + parseInt(this.overStamina, 10);
+            var e = Math.floor(Date.now() / 1e3);
+            return this.recoveryTime < e ? r.default.app.MAX_STAMINA : Math.floor(r.default.app.MAX_STAMINA - (this.recoveryTime - e) / r.default.app.STAMINA_RECOVER_INTERVAL)
+        },
+        calcNextStaminaRecoveryTime: function() {
+            if (this.overStamina > 0)
+                return 0;
+            var e = Math.floor(Date.now() / 1e3);
+            return this.recoveryTime < e ? 0 : (this.recoveryTime - e) % r.default.app.STAMINA_RECOVER_INTERVAL * 1e3
+        }
+    }
+}
+, function(e, t, n) {
+    "use strict";
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
     var o = {
         SHADOW_RESOURCE: {
             name: "comic_shadow.png",
@@ -4465,13 +4499,13 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(20)
+    var r = n(21)
       , i = o(r)
       , a = n(18)
       , s = o(a)
       , u = n(1)
       , l = o(u)
-      , c = n(150)
+      , c = n(151)
       , f = o(c)
       , d = l.default.asset.CONTENT_IMAGE_PATH;
     t.default = {
@@ -4595,6 +4629,152 @@ primJsp([60], [, function(e, t, n) {
             default: e
         }
     }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var r = n(77)
+      , i = o(r)
+      , a = n(40)
+      , s = o(a);
+    t.default = {
+        getImagePath: function(e) {
+            var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
+              , n = !t.ignoresIdolCostume && this.currentIdolCostume && this.currentIdolCostume.getImagePath(e);
+            return n || this._extendedUserIdol.getImagePath(e)
+        },
+        getSpinePath: function(e) {
+            var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
+              , n = !t.ignoresIdolCostume && this.currentIdolCostume && this.currentIdolCostume.getSpinePath(e);
+            return n || this._extendedUserIdol.getSpinePath(e)
+        },
+        getMoviePath: function(e) {
+            var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
+              , n = !t.ignoresIdolCostume && this.currentIdolCostume && this.currentIdolCostume.getMoviePath(e);
+            return n || this._extendedUserIdol.getMoviePath(e)
+        },
+        getVoicePath: function(e) {
+            var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
+              , n = !t.ignoresIdolCostume && this.currentIdolCostume && this.currentIdolCostume.getVoicePath(e);
+            return n || this._extendedUserIdol.getVoicePath(e)
+        },
+        getRarityImagePath: function(e) {
+            return this._extendedUserIdol.getRarityImagePath(e)
+        },
+        getUnitImagePath: function(e) {
+            return this._extendedUserIdol.getUnitImagePath(e)
+        },
+        getParameterRank: function(e) {
+            var t = this.idolParameterRank.filter(function(t) {
+                return t.category === e
+            })
+              , n = this[e];
+            return t.sort(function(e, t) {
+                return t.value - e.value
+            }).find(function(e) {
+                return n >= e.value
+            }).rank
+        },
+        getTotalAppeal: function() {
+            var e = this;
+            return ["vocal", "dance", "visual"].reduce(function(t, n) {
+                return t + e[n]
+            }, 0)
+        },
+        get name() {
+            return this._extendedUserIdol.name
+        },
+        get firstName() {
+            return this._extendedUserIdol.firstName
+        },
+        get idolId() {
+            return this._extendedUserIdol.idolId
+        },
+        get characterId() {
+            return this._extendedUserIdol.characterId
+        },
+        get unitId() {
+            return this._extendedUserIdol.unitId
+        },
+        get idolParameterRank() {
+            return this.userIdol.idol.idolParameterRanks
+        },
+        get memoryAppealLevel() {
+            return this.memoryAppeal ? this.memoryAppeal.level : 0
+        },
+        get tensionLevel() {
+            return this.produceTension.tensionLevel
+        },
+        set tensionLevel(e) {
+            this.produceTension.tensionLevel = e
+        },
+        get currentIdolCostume() {
+            return this.idolCostume && aoba.utils.getPrototypeOf(this.idolCostume) !== s.default && aoba.utils.setPrototypeOf(this.idolCostume, s.default),
+            this.idolCostume
+        },
+        set currentIdolCostume(e) {
+            this.idolCostume = e
+        },
+        get _extendedUserIdol() {
+            return aoba.utils.getPrototypeOf(this.userIdol) !== i.default && aoba.utils.setPrototypeOf(this.userIdol, i.default),
+            this.userIdol
+        }
+    }
+}
+, function(e, t, n) {
+    "use strict";
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var o = n(18)
+      , r = function(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }(o)
+      , i = !1
+      , a = !1;
+    !function() {
+        if (!a) {
+            var e = {
+                lossy: "UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA",
+                lossless: "UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==",
+                alpha: "UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",
+                animation: "UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"
+            }
+              , t = new Image;
+            t.onload = function() {
+                i = t.width > 0 && t.height > 0,
+                a = !0
+            }
+            ,
+            t.onerror = function() {
+                i = !1,
+                a = !0
+            }
+            ,
+            t.src = "data:image/webp;base64," + e.lossless
+        }
+    }();
+    var s = {
+        isSupportedWebP: function() {
+            return i
+        },
+        isWebPResource: function(e) {
+            return ".png" === r.default.extname(e)
+        },
+        toWebPUrl: function(e) {
+            return e.substr(0, e.length - r.default.extname(e).length) + ".webp"
+        }
+    };
+    t.default = s
+}
+, function(e, t, n) {
+    "use strict";
+    function o(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }
     function r(e) {
         if (Array.isArray(e)) {
             for (var t = 0, n = Array(e.length); t < e.length; t++)
@@ -4610,9 +4790,9 @@ primJsp([60], [, function(e, t, n) {
       , a = o(i)
       , s = n(4)
       , u = o(s)
-      , l = n(49)
+      , l = n(39)
       , c = o(l)
-      , f = n(93)
+      , f = n(96)
       , d = o(f)
       , p = a.default.asset.imageTypes
       , h = a.default.asset.spineTypes
@@ -4727,11 +4907,11 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(21)
+    var r = n(20)
       , i = o(r)
-      , a = n(92)
+      , a = n(95)
       , s = o(a)
-      , u = n(39)
+      , u = n(40)
       , l = o(u)
       , c = {
         getImagePath: function(e) {
@@ -5224,25 +5404,53 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(1)
+    var o = n(9)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
         }
-    }(o);
-    t.default = {
-        calcCurrentStamina: function() {
-            if (this.overStamina > 0)
-                return r.default.app.MAX_STAMINA + parseInt(this.overStamina, 10);
-            var e = Math.floor(Date.now() / 1e3);
-            return this.recoveryTime < e ? r.default.app.MAX_STAMINA : Math.floor(r.default.app.MAX_STAMINA - (this.recoveryTime - e) / r.default.app.STAMINA_RECOVER_INTERVAL)
-        },
-        calcNextStaminaRecoveryTime: function() {
-            if (this.overStamina > 0)
-                return 0;
-            var e = Math.floor(Date.now() / 1e3);
-            return this.recoveryTime < e ? 0 : (this.recoveryTime - e) % r.default.app.STAMINA_RECOVER_INTERVAL * 1e3
+    }(o)
+      , i = {
+        get: function() {
+            return {
+                event: r.default.t("announce.event"),
+                campaign: r.default.t("announce.campaign"),
+                gasha: r.default.t("announce.gasha"),
+                update: r.default.t("announce.update"),
+                maintenance: r.default.t("announce.maintenance"),
+                problem: r.default.t("announce.problem"),
+                ticket: r.default.t("announce.ticket")
+            }
         }
+    }
+      , a = {
+        update: {
+            id: "update",
+            types: ["update", "event", "gasha", "campaign", "maintenance", "ticket"],
+            displayOrder: 1
+        },
+        event: {
+            id: "event",
+            types: ["event", "gasha", "campaign", "ticket"],
+            displayOrder: 3
+        },
+        problem: {
+            id: "problem",
+            types: ["problem", "maintenance"],
+            displayOrder: 2
+        }
+    }
+      , s = {};
+    Object.values(a).forEach(function(e) {
+        e.types.forEach(function(t) {
+            s[t] = e
+        })
+    });
+    t.default = {
+        Types: i,
+        Categories: a,
+        CategoryOfType: s,
+        STORAGE_STATE_KEY: "primAnnounceState"
     }
 }
 , function(e, t, n) {
@@ -5259,14 +5467,14 @@ primJsp([60], [, function(e, t, n) {
       , i = o(r)
       , a = n(9)
       , s = o(a)
-      , u = n(258)
+      , u = n(265)
       , l = o(u)
-      , c = n(46)
-      , f = n(94)
+      , c = n(48)
+      , f = n(97)
       , d = o(f)
-      , p = n(111)
+      , p = n(112)
       , h = o(p)
-      , g = n(21)
+      , g = n(20)
       , m = o(g)
       , _ = n(4)
       , y = o(_)
@@ -5366,60 +5574,6 @@ primJsp([60], [, function(e, t, n) {
     "use strict";
     Object.defineProperty(t, "__esModule", {
         value: !0
-    });
-    var o = n(9)
-      , r = function(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }(o)
-      , i = {
-        get: function() {
-            return {
-                event: r.default.t("announce.event"),
-                campaign: r.default.t("announce.campaign"),
-                gasha: r.default.t("announce.gasha"),
-                update: r.default.t("announce.update"),
-                maintenance: r.default.t("announce.maintenance"),
-                problem: r.default.t("announce.problem"),
-                ticket: r.default.t("announce.ticket")
-            }
-        }
-    }
-      , a = {
-        update: {
-            id: "update",
-            types: ["update", "event", "gasha", "campaign", "maintenance", "ticket"],
-            displayOrder: 1
-        },
-        event: {
-            id: "event",
-            types: ["event", "gasha", "campaign", "ticket"],
-            displayOrder: 3
-        },
-        problem: {
-            id: "problem",
-            types: ["problem", "maintenance"],
-            displayOrder: 2
-        }
-    }
-      , s = {};
-    Object.values(a).forEach(function(e) {
-        e.types.forEach(function(t) {
-            s[t] = e
-        })
-    });
-    t.default = {
-        Types: i,
-        Categories: a,
-        CategoryOfType: s,
-        STORAGE_STATE_KEY: "primAnnounceState"
-    }
-}
-, function(e, t, n) {
-    "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
     }),
     t.default = {
         STATES: {
@@ -5502,7 +5656,7 @@ primJsp([60], [, function(e, t, n) {
             t
         }
     }()
-      , s = n(506)
+      , s = n(510)
       , u = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -5556,11 +5710,11 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(20)
+    var r = n(21)
       , i = o(r)
       , a = n(18)
       , s = o(a)
-      , u = n(341)
+      , u = n(345)
       , l = o(u)
       , c = n(4)
       , f = o(c)
@@ -5680,11 +5834,11 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(90)
+    var r = n(91)
       , i = o(r)
-      , a = n(101)
+      , a = n(89)
       , s = o(a)
-      , u = n(197)
+      , u = n(201)
       , l = o(u)
       , c = function(e, t) {
         var n = e && e.body ? e.body : [];
@@ -5721,7 +5875,7 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(261)
+    var r = n(268)
       , i = o(r)
       , a = n(1)
       , s = o(a)
@@ -5792,128 +5946,30 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(77)
-      , i = o(r)
-      , a = n(39)
-      , s = o(a);
-    t.default = {
-        getImagePath: function(e) {
-            var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
-              , n = !t.ignoresIdolCostume && this.currentIdolCostume && this.currentIdolCostume.getImagePath(e);
-            return n || this._extendedUserIdol.getImagePath(e)
-        },
-        getSpinePath: function(e) {
-            var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
-              , n = !t.ignoresIdolCostume && this.currentIdolCostume && this.currentIdolCostume.getSpinePath(e);
-            return n || this._extendedUserIdol.getSpinePath(e)
-        },
-        getMoviePath: function(e) {
-            var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
-              , n = !t.ignoresIdolCostume && this.currentIdolCostume && this.currentIdolCostume.getMoviePath(e);
-            return n || this._extendedUserIdol.getMoviePath(e)
-        },
-        getVoicePath: function(e) {
-            var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
-              , n = !t.ignoresIdolCostume && this.currentIdolCostume && this.currentIdolCostume.getVoicePath(e);
-            return n || this._extendedUserIdol.getVoicePath(e)
-        },
-        getRarityImagePath: function(e) {
-            return this._extendedUserIdol.getRarityImagePath(e)
-        },
-        getUnitImagePath: function(e) {
-            return this._extendedUserIdol.getUnitImagePath(e)
-        },
-        getParameterRank: function(e) {
-            var t = this.idolParameterRank.filter(function(t) {
-                return t.category === e
-            })
-              , n = this[e];
-            return t.sort(function(e, t) {
-                return t.value - e.value
-            }).find(function(e) {
-                return n >= e.value
-            }).rank
-        },
-        getTotalAppeal: function() {
-            var e = this;
-            return ["vocal", "dance", "visual"].reduce(function(t, n) {
-                return t + e[n]
-            }, 0)
-        },
-        get name() {
-            return this._extendedUserIdol.name
-        },
-        get firstName() {
-            return this._extendedUserIdol.firstName
-        },
-        get idolId() {
-            return this._extendedUserIdol.idolId
-        },
-        get characterId() {
-            return this._extendedUserIdol.characterId
-        },
-        get unitId() {
-            return this._extendedUserIdol.unitId
-        },
-        get idolParameterRank() {
-            return this.userIdol.idol.idolParameterRanks
-        },
-        get memoryAppealLevel() {
-            return this.memoryAppeal ? this.memoryAppeal.level : 0
-        },
-        get tensionLevel() {
-            return this.produceTension.tensionLevel
-        },
-        set tensionLevel(e) {
-            this.produceTension.tensionLevel = e
-        },
-        get currentIdolCostume() {
-            return this.idolCostume && aoba.utils.getPrototypeOf(this.idolCostume) !== s.default && aoba.utils.setPrototypeOf(this.idolCostume, s.default),
-            this.idolCostume
-        },
-        set currentIdolCostume(e) {
-            this.idolCostume = e
-        },
-        get _extendedUserIdol() {
-            return aoba.utils.getPrototypeOf(this.userIdol) !== i.default && aoba.utils.setPrototypeOf(this.userIdol, i.default),
-            this.userIdol
-        }
-    }
-}
-, function(e, t, n) {
-    "use strict";
-    function o(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
     var r = n(18)
       , i = o(r)
       , a = n(17)
       , s = o(a)
-      , u = n(216)
+      , u = n(223)
       , l = o(u)
-      , c = n(431)
+      , c = n(435)
       , f = o(c)
-      , d = n(204)
+      , d = n(211)
       , p = o(d)
-      , h = n(38)
+      , h = n(35)
       , g = o(h)
       , m = n(84)
       , _ = o(m)
-      , y = n(113)
+      , y = n(94)
       , I = o(y)
-      , A = n(16)
+      , A = n(13)
       , C = o(A)
-      , v = n(47)
+      , v = n(49)
       , b = o(v)
       , P = window
       , T = P.caches
-      , w = _.default.CACHE_STORAGE_NAME
-      , O = function(e) {
+      , O = _.default.CACHE_STORAGE_NAME
+      , w = function(e) {
         var t = e;
         if (I.default.isSupportedWebP() && I.default.isWebPResource(t) && (t = I.default.toWebPUrl(t)),
         C.default.ENABLE_CRYPTO) {
@@ -5942,11 +5998,11 @@ primJsp([60], [, function(e, t, n) {
             var t = E.find(function(t) {
                 return t.key === e
             });
-            return O(t ? t.url : e)
+            return w(t ? t.url : e)
         })
     }
       , R = function() {
-        return T.open(w)
+        return T.open(O)
     };
     t.default = {
         init: function() {
@@ -6011,7 +6067,7 @@ primJsp([60], [, function(e, t, n) {
         },
         _deleteCachesByTargets: function() {
             return Promise.resolve().then(function() {
-                return T.open(w)
+                return T.open(O)
             }).then(function(e) {
                 return S(k(), 100).reduce(function(t, n) {
                     return t.then(function() {
@@ -6024,7 +6080,7 @@ primJsp([60], [, function(e, t, n) {
         },
         _deleteCachesByKeys: function() {
             return Promise.resolve().then(function() {
-                return T.open(w)
+                return T.open(O)
             }).then(function(e) {
                 return e.keys().then(function(t) {
                     return Promise.all(t.map(function(t) {
@@ -6078,7 +6134,7 @@ primJsp([60], [, function(e, t, n) {
     }()
       , a = n(17)
       , s = o(a)
-      , u = n(259)
+      , u = n(266)
       , l = o(u)
       , c = function() {
         function e(t) {
@@ -6221,9 +6277,9 @@ primJsp([60], [, function(e, t, n) {
       , s = o(a)
       , u = n(18)
       , l = o(u)
-      , c = n(47)
+      , c = n(49)
       , f = o(c)
-      , d = n(38)
+      , d = n(35)
       , p = o(d)
       , h = {
         _errorEvent: null,
@@ -6271,54 +6327,6 @@ primJsp([60], [, function(e, t, n) {
     };
     t.default = h
 }
-, function(e, t, n) {
-    "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var o = n(18)
-      , r = function(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }(o)
-      , i = !1
-      , a = !1;
-    !function() {
-        if (!a) {
-            var e = {
-                lossy: "UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA",
-                lossless: "UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==",
-                alpha: "UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",
-                animation: "UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"
-            }
-              , t = new Image;
-            t.onload = function() {
-                i = t.width > 0 && t.height > 0,
-                a = !0
-            }
-            ,
-            t.onerror = function() {
-                i = !1,
-                a = !0
-            }
-            ,
-            t.src = "data:image/webp;base64," + e.lossless
-        }
-    }();
-    var s = {
-        isSupportedWebP: function() {
-            return i
-        },
-        isWebPResource: function(e) {
-            return ".png" === r.default.extname(e)
-        },
-        toWebPUrl: function(e) {
-            return e.substr(0, e.length - r.default.extname(e).length) + ".webp"
-        }
-    };
-    t.default = s
-}
 , , function(e, t, n) {
     "use strict";
     function o(e) {
@@ -6333,9 +6341,9 @@ primJsp([60], [, function(e, t, n) {
       , i = o(r)
       , a = n(4)
       , s = o(a)
-      , u = n(49)
+      , u = n(39)
       , l = o(u)
-      , c = n(93)
+      , c = n(96)
       , f = o(c)
       , d = i.default.asset.imageTypes
       , p = i.default.asset.voiceIds
@@ -6458,19 +6466,19 @@ primJsp([60], [, function(e, t, n) {
         value: !0
     }),
     t.processConcertResultResponse = t.processAuditionResultResponse = t.processConcertResumeResponse = t.processConcertStartResponse = t.processConcertReadyResponse = void 0;
-    var i = n(109)
+    var i = n(93)
       , a = o(i)
-      , s = n(256)
+      , s = n(263)
       , u = o(s)
-      , l = n(49)
+      , l = n(39)
       , c = o(l)
-      , f = n(188)
+      , f = n(190)
       , d = o(f)
       , p = n(4)
       , h = o(p)
-      , g = n(21)
+      , g = n(20)
       , m = o(g)
-      , _ = n(106)
+      , _ = n(108)
       , y = o(_)
       , I = function(e) {
         return {
@@ -6529,8 +6537,8 @@ primJsp([60], [, function(e, t, n) {
           , b = void 0;
         try {
             for (var P, T = d[Symbol.iterator](); !(C = (P = T.next()).done); C = !0) {
-                var w = P.value;
-                aoba.utils.setPrototypeOf(w.character, c.default)
+                var O = P.value;
+                aoba.utils.setPrototypeOf(O.character, c.default)
             }
         } catch (e) {
             v = !0,
@@ -6543,14 +6551,14 @@ primJsp([60], [, function(e, t, n) {
                     throw b
             }
         }
-        var O = o.memoryAppeal;
-        O && (O.idol = o.userIdol.idol,
-        O.imagePaths = {
+        var w = o.memoryAppeal;
+        w && (w.idol = o.userIdol.idol,
+        w.imagePaths = {
             card: o.getImagePath("concert_card"),
             icon: "memory_skill_icon.png"
         },
-        O.isMemoryAppeal = !0,
-        O.skillEffects = O.memoryAppealEffects),
+        w.isMemoryAppeal = !0,
+        w.skillEffects = w.memoryAppealEffects),
         o.activeSkills.map(function(e) {
             return e.idol = o.userIdol.idol,
             e.belongsToSupportIdol = !1,
@@ -6743,6 +6751,42 @@ primJsp([60], [, function(e, t, n) {
         Promise.resolve(t)
     }
 }
+, function(e, t, n) {
+    "use strict";
+    function o(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var r = n(4)
+      , i = o(r)
+      , a = n(104)
+      , s = o(a)
+      , u = s.default.Categories
+      , l = s.default.CategoryOfType;
+    t.default = {
+        get image() {
+            return this._image || (this._image = i.default.createAdminImagePath("announces", this.id, "").split("/.png")[0]),
+            this._image
+        },
+        get isUpdatedRecently() {
+            return this.displayLabelEndAt && 1e3 * this.displayLabelEndAt > Date.now()
+        },
+        get isNew() {
+            return this.isUpdatedRecently && !this.shouldShowUpdateLabel
+        },
+        get isUpdated() {
+            return this.isUpdatedRecently && this.shouldShowUpdateLabel
+        },
+        get category() {
+            return this._category || (this._category = l[this.announceType] || u.update),
+            this._category
+        }
+    }
+}
 , , , , , , , , , , , , , , , function(e, t, n) {
     "use strict";
     function o(e) {
@@ -6801,9 +6845,9 @@ primJsp([60], [, function(e, t, n) {
     }()
       , l = n(10)
       , c = o(l)
-      , f = n(135)
+      , f = n(136)
       , d = o(f)
-      , p = n(251)
+      , p = n(258)
       , h = o(p)
       , g = n(23)
       , m = o(g)
@@ -6811,15 +6855,15 @@ primJsp([60], [, function(e, t, n) {
       , y = o(_)
       , I = n(1)
       , A = o(I)
-      , C = n(616)
+      , C = n(620)
       , v = o(C)
-      , b = n(24)
+      , b = n(25)
       , P = o(b)
-      , T = n(617)
-      , w = o(T)
-      , O = n(34)
-      , E = o(O)
-      , S = n(16)
+      , T = n(621)
+      , O = o(T)
+      , w = n(34)
+      , E = o(w)
+      , S = n(13)
       , k = o(S)
       , R = n(72)
       , x = o(R)
@@ -6842,7 +6886,7 @@ primJsp([60], [, function(e, t, n) {
             e.on("removed", e._onRemoved, e),
             e.on("enter", e.onEnter, e),
             e.on("exit", e._onExit, e),
-            P.default.isAndroid() && P.default.isChrome() && e.once("tap", w.default),
+            P.default.isAndroid() && P.default.isChrome() && e.once("tap", O.default),
             e
         }
         return s(t, e),
@@ -7324,7 +7368,7 @@ primJsp([60], [, function(e, t, n) {
         r.default)(e, t, n, o)
     }
     ;
-    var o = n(214)
+    var o = n(221)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -7347,7 +7391,7 @@ primJsp([60], [, function(e, t, n) {
       , s = o(a)
       , u = n(60)
       , l = (o(u),
-    n(196))
+    n(200))
       , c = n(116)
       , f = function() {
         return i.default.post("produces/1/actions/next").then(l.processNextResponse)
@@ -7721,9 +7765,9 @@ primJsp([60], [, function(e, t, n) {
     t.EVENT_LABEL = void 0;
     var r = n(78)
       , i = o(r)
-      , a = n(16)
+      , a = n(13)
       , s = o(a)
-      , u = n(46)
+      , u = n(48)
       , l = t.EVENT_LABEL = {
         CHANGE_PAGE: "changePage",
         PRODUCE_EVENT_PLAY: "produceEventPlay",
@@ -7786,7 +7830,7 @@ primJsp([60], [, function(e, t, n) {
             default: e
         }
     }(o)
-      , i = n(270);
+      , i = n(276);
     t.default = {
         get: function() {
             return r.default.post("myPage").then(function(e) {
@@ -7808,9 +7852,9 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(4)
       , i = o(r)
-      , a = n(187)
+      , a = n(189)
       , s = o(a)
-      , u = n(93)
+      , u = n(96)
       , l = o(u)
       , c = {
         gashaTicket: "gasha_ticket",
@@ -8416,6 +8460,23 @@ primJsp([60], [, function(e, t, n) {
         }
     }
 }
+, function(e, t, n) {
+    "use strict";
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    }),
+    t.default = {
+        getMoney: function() {
+            return this.userMoney.amount
+        },
+        getJewel: function() {
+            return this.userJewel.num
+        },
+        calcCurrentStamina: function() {
+            return this.userStamen.calcCurrentStamina()
+        }
+    }
+}
 , , , , , , , , , , , , , , , , , , , , , , , , , , , function(e, t, n) {
     "use strict";
     function o(e) {
@@ -8428,11 +8489,11 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(34)
       , i = o(r)
-      , a = n(527)
+      , a = n(530)
       , s = o(a)
-      , u = n(46)
+      , u = n(48)
       , l = o(u)
-      , c = n(195)
+      , c = n(199)
       , f = o(c);
     t.default = {
         sdk: i.default,
@@ -8454,17 +8515,17 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(133)
+    var r = n(134)
       , i = o(r)
-      , a = n(354)
+      , a = n(357)
       , s = o(a)
       , u = n(60)
       , l = o(u)
-      , c = n(52)
+      , c = n(53)
       , f = o(c)
-      , d = n(186)
+      , d = n(188)
       , p = o(d)
-      , h = n(250)
+      , h = n(257)
       , g = o(h)
       , m = function(e) {
         return e >= 0 ? "+" + e : "" + e
@@ -8524,16 +8585,16 @@ primJsp([60], [, function(e, t, n) {
     });
     var i = n(2)
       , a = o(i)
-      , s = n(138)
+      , s = n(139)
       , u = o(s)
-      , l = n(196)
+      , l = n(200)
       , c = n(116)
-      , f = n(270)
-      , d = n(266)
+      , f = n(276)
+      , d = n(272)
       , p = o(d)
-      , h = n(146)
+      , h = n(147)
       , g = o(h)
-      , m = n(102)
+      , m = n(105)
       , _ = o(m)
       , y = {
         getMoney: function() {
@@ -9168,9 +9229,9 @@ primJsp([60], [, function(e, t, n) {
     });
     var i = n(17)
       , a = o(i)
-      , s = n(205)
+      , s = n(212)
       , u = o(s)
-      , l = n(215)
+      , l = n(222)
       , c = o(l)
       , f = [].concat(r(u.default), r(c.default))
       , d = aoba.loader.resources
@@ -9266,17 +9327,17 @@ primJsp([60], [, function(e, t, n) {
       , i = o(r)
       , a = n(88)
       , s = o(a)
-      , u = n(531)
+      , u = n(534)
       , l = o(u)
-      , c = n(537)
+      , c = n(540)
       , f = o(c)
-      , d = n(539)
+      , d = n(542)
       , p = o(d)
-      , h = n(189)
+      , h = n(191)
       , g = o(h)
-      , m = n(254)
+      , m = n(261)
       , _ = o(m)
-      , y = n(255)
+      , y = n(262)
       , I = o(y)
       , A = {
         getDataPath: function(e) {
@@ -9614,8 +9675,74 @@ primJsp([60], [, function(e, t, n) {
     }
     Object.defineProperty(t, "__esModule", {
         value: !0
+    }),
+    t.processUserBusinesses = void 0;
+    var r = n(341)
+      , i = o(r)
+      , a = n(75)
+      , s = o(a)
+      , u = n(594)
+      , l = o(u);
+    t.processUserBusinesses = function(e) {
+        var t = !0;
+        return e.forEach(function(e) {
+            e.business && aoba.utils.setPrototypeOf(e.business, i.default),
+            aoba.utils.setPrototypeOf(e, l.default),
+            e.isLocked() && (e.isPurchasable = t,
+            t = !1),
+            e.hasMember() && (e.setActiveMemberRandomIndex(),
+            e.members.forEach(function(e) {
+                aoba.utils.setPrototypeOf(e.userSupportIdol, s.default)
+            }))
+        }),
+        e
+    }
+}
+, function(e, t, n) {
+    "use strict";
+    Object.defineProperty(t, "__esModule", {
+        value: !0
     });
-    var r = n(377)
+    var o = n(4)
+      , r = function(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }(o)
+      , i = {
+        produce_marathon: "produce_marathons",
+        character_fan_ranking: "character_fan_ranking"
+    };
+    t.default = {
+        getAlbumBannerImagePath: function() {
+            return this.getImagePath("album_banner")
+        },
+        getFanRankingBannerImagePath: function() {
+            return this.getImagePath("banner")
+        },
+        getFanRankingLogoImagePath: function() {
+            return this.getImagePath("logo")
+        },
+        getImagePath: function(e) {
+            return r.default.createImagePath(i[this.eventType], e, this.id)
+        },
+        canOnlyGetReward: function() {
+            var e = Math.floor(Date.now() / 1e3);
+            return this.closeAt < e && this.rewardCloseAt > e
+        }
+    }
+}
+, function(e, t, n) {
+    "use strict";
+    function o(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var r = n(381)
       , i = o(r)
       , a = n(55)
       , s = o(a)
@@ -9689,13 +9816,13 @@ primJsp([60], [, function(e, t, n) {
     }()
       , u = n(73)
       , l = o(u)
-      , c = n(100)
+      , c = n(103)
       , f = o(c)
-      , d = n(405)
+      , d = n(409)
       , p = o(d)
       , h = n(9)
       , g = o(h)
-      , m = n(46)
+      , m = n(48)
       , _ = n(86)
       , y = o(_)
       , I = "images/ui/common/join_recommend_banner.png"
@@ -9897,7 +10024,7 @@ primJsp([60], [, function(e, t, n) {
         if (void 0 !== a)
             return a.call(o)
     }
-      , u = n(148)
+      , u = n(149)
       , l = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -10035,13 +10162,13 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(16)
+    var o = n(13)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
         }
     }(o)
-      , i = n(46)
+      , i = n(48)
       , a = function() {}
       , s = function() {}
       , u = !r.default.PF_URI
@@ -10094,40 +10221,40 @@ primJsp([60], [, function(e, t, n) {
       , a = o(i)
       , s = n(88)
       , u = o(s)
-      , l = n(188)
+      , l = n(190)
       , c = o(l)
-      , f = n(109)
+      , f = n(93)
       , d = o(f)
-      , p = n(256)
+      , p = n(263)
       , h = o(p)
-      , g = n(544)
+      , g = n(547)
       , m = o(g)
-      , _ = n(106)
+      , _ = n(108)
       , y = o(_)
-      , I = n(545)
+      , I = n(548)
       , A = o(I)
       , C = n(77)
       , v = o(C)
       , b = n(75)
       , P = o(b)
-      , T = n(101)
-      , w = o(T)
-      , O = n(21)
-      , E = o(O)
-      , S = n(90)
+      , T = n(89)
+      , O = o(T)
+      , w = n(20)
+      , E = o(w)
+      , S = n(91)
       , k = o(S)
-      , R = n(549)
+      , R = n(552)
       , x = o(R)
       , M = n(4)
       , N = o(M)
-      , j = n(54)
+      , j = n(47)
       , B = o(j)
-      , D = n(25)
+      , D = n(24)
       , L = o(D)
-      , F = n(39)
+      , F = n(40)
       , U = o(F)
       , G = n(116)
-      , H = n(102)
+      , H = n(105)
       , V = o(H)
       , W = n(116)
       , Y = function(e) {
@@ -10137,10 +10264,10 @@ primJsp([60], [, function(e, t, n) {
             supportSkill: e
         }
     }
-      , z = function(e) {
+      , K = function(e) {
         return e.evolutionStage ? x.default.evolution : e.lockSize > 1 ? x.default.gold : x.default.normal
     }
-      , K = t.processDeckResponse = function(e) {
+      , z = t.processDeckResponse = function(e) {
         aoba.utils.setPrototypeOf(e, A.default),
         e.userIdol && (aoba.utils.setPrototypeOf(e.userIdol, v.default),
         e.userIdol.idolCostumes && e.userIdol.idolCostumes.forEach(function(e) {
@@ -10170,9 +10297,9 @@ primJsp([60], [, function(e, t, n) {
           , i = t.userProduceItems ? t.userProduceItems.filter(function(e) {
             return e.num
         }) : [];
-        return aoba.utils.setPrototypeOf(o, w.default),
+        return aoba.utils.setPrototypeOf(o, O.default),
         r.forEach(function(e) {
-            return K(e)
+            return z(e)
         }),
         i.forEach(function(e) {
             aoba.utils.setPrototypeOf(e, k.default),
@@ -10337,7 +10464,7 @@ primJsp([60], [, function(e, t, n) {
                 try {
                     for (var g, m = l.skillPanels[Symbol.iterator](); !(c = (g = m.next()).done); c = !0) {
                         var _ = g.value;
-                        _.skillGrade = z(_);
+                        _.skillGrade = K(_);
                         var y = a.default.app.SKILL_CATEGORIES;
                         switch (_.skillCategory) {
                         case y.ACTIVE:
@@ -10584,32 +10711,32 @@ primJsp([60], [, function(e, t, n) {
     });
     var i = n(2)
       , a = o(i)
-      , s = n(104)
+      , s = n(106)
       , u = o(s)
       , l = n(60)
       , c = (o(l),
-    n(94))
+    n(97))
       , f = o(c)
-      , d = n(574)
+      , d = n(577)
       , p = o(d)
-      , h = n(21)
+      , h = n(20)
       , g = o(h)
-      , m = n(49)
+      , m = n(39)
       , _ = o(m)
       , y = n(4)
       , I = o(y)
-      , A = n(111)
+      , A = n(112)
       , C = o(A)
-      , v = n(259)
+      , v = n(266)
       , b = o(v)
-      , P = n(190)
+      , P = n(192)
       , T = o(P)
-      , w = function(e) {
+      , O = function(e) {
         return e.userFesDeckMembers.find(function(e) {
             return "center" === e.fesDeckMemberPosition.position
         }).userFesIdol
     }
-      , O = function(e) {
+      , w = function(e) {
         var t = e.body;
         return t.userGradeRanking && (0 === t.userGradeRanking.rank ? t.userGradeRanking = null : (aoba.utils.setPrototypeOf(t.userGradeRanking, p.default),
         g.default.setUserTitleMixin(t.userGradeRanking.userTitle))),
@@ -10638,7 +10765,7 @@ primJsp([60], [, function(e, t, n) {
             aoba.utils.setPrototypeOf(e.userFesIdol, f.default)
         }),
         i.forEach(function(e) {
-            e.centerIdol = w(e.userFesDeck),
+            e.centerIdol = O(e.userFesDeck),
             aoba.utils.setPrototypeOf(e.centerIdol, f.default)
         });
         var s = [].concat(a).sort(function(e, t) {
@@ -10651,7 +10778,7 @@ primJsp([60], [, function(e, t, n) {
                 return e.userFesDeck.totalEvaluation >= t.requiredPoint
             })
         });
-        var u = w(o);
+        var u = O(o);
         return aoba.utils.setPrototypeOf(u, f.default),
         e.body.player = {
             name: n,
@@ -10746,12 +10873,12 @@ primJsp([60], [, function(e, t, n) {
         P.isCenter = !0,
         P.displayParams = Object.assign({}, u.userFesDeckParameter),
         i.forEach(function(e) {
-            e.centerIdol = w(e.userFesDeck),
+            e.centerIdol = O(e.userFesDeck),
             aoba.utils.setPrototypeOf(e.centerIdol, f.default)
         });
-        var O = [].concat(r(i.map(function(e) {
+        var w = [].concat(r(i.map(function(e) {
             return Object.assign({}, e, {
-                character: w(e.userFesDeck).idol.character,
+                character: O(e.userFesDeck).idol.character,
                 mental: e.userFesDeck.userFesDeckParameter.mental,
                 isPlayer: !1
             })
@@ -10761,7 +10888,7 @@ primJsp([60], [, function(e, t, n) {
             mental: u.userFesDeckParameter.mental,
             isPlayer: !0
         }]);
-        O.forEach(function(e) {
+        w.forEach(function(e) {
             aoba.utils.setPrototypeOf(e.character, _.default)
         });
         var E = !0
@@ -10797,7 +10924,7 @@ primJsp([60], [, function(e, t, n) {
         M.skillEffects = M.memoryAppealEffects),
         t.userFesDeck = u,
         t.judges = a,
-        t.rivals = O,
+        t.rivals = w,
         t.activeSkills = d,
         t.idols = c,
         t.musicPath = I.default.createConcertMusicPath("main", t.concertBgm.id),
@@ -10865,13 +10992,13 @@ primJsp([60], [, function(e, t, n) {
         finish: function(e) {
             return a.default.post("fesMatchConcert/actions/finish", e).then(function(e) {
                 var t = e.body;
-                return t.userFesDeck.centerIdol = w(t.userFesDeck),
+                return t.userFesDeck.centerIdol = O(t.userFesDeck),
                 t.userFesDeck.userFesDeckMembers.forEach(function(e) {
                     aoba.utils.setPrototypeOf(e.userFesIdol, f.default)
                 }),
                 g.default.setUserTitleMixin(t.userTitle),
                 t.rivalDecks.forEach(function(e) {
-                    e.centerIdol = w(e.userFesDeck),
+                    e.centerIdol = O(e.userFesDeck),
                     aoba.utils.setPrototypeOf(e.centerIdol, f.default),
                     g.default.setUserTitleMixin(e.userTitle)
                 }),
@@ -10880,7 +11007,7 @@ primJsp([60], [, function(e, t, n) {
             })
         },
         getRanking: function() {
-            return a.default.get("userFesMatchRanking").then(O)
+            return a.default.get("userFesMatchRanking").then(w)
         }
     };
     t.default = R
@@ -10915,7 +11042,7 @@ primJsp([60], [, function(e, t, n) {
             t
         }
     }()
-      , a = n(360)
+      , a = n(364)
       , s = o(a)
       , u = n(1)
       , l = o(u)
@@ -10958,6 +11085,30 @@ primJsp([60], [, function(e, t, n) {
 }
 , function(e, t, n) {
     "use strict";
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var o = n(88)
+      , r = function(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }(o);
+    t.default = {
+        getSeason: function() {
+            return Math.ceil(this.week / r.default.SEASON_WEEK_NUM)
+        },
+        getRestOfSeasonWeek: function() {
+            var e = this.getSeason();
+            return Math.min(e * r.default.SEASON_WEEK_NUM, r.default.TOTAL_WEEK_NUM) - (this.week - 1)
+        },
+        getActiveProduceItems: function() {
+            return this.activeProduceItems
+        }
+    }
+}
+, function(e, t, n) {
+    "use strict";
     function o(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -10968,9 +11119,9 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(271)
+      , a = n(154)
       , s = o(a)
-      , u = n(101)
+      , u = n(89)
       , l = o(u);
     t.default = {
         get: function() {
@@ -11013,8 +11164,8 @@ primJsp([60], [, function(e, t, n) {
               , b = "iOS" === p
               , P = "Android" === p
               , T = h(f, p, m, y, n)
-              , w = /^(iPhone 6s|iPhone 7)/.test(A) || parseFloat(g) >= 10 && /^iPad Pro/.test(A)
-              , O = /native/.test(Object.keys + "")
+              , O = /^(iPhone 6s|iPhone 7)/.test(A) || parseFloat(g) >= 10 && /^iPad Pro/.test(A)
+              , w = /native/.test(Object.keys + "")
               , E = /native/.test(String.raw + "");
             return {
                 OS: p,
@@ -11028,10 +11179,10 @@ primJsp([60], [, function(e, t, n) {
                 LANGUAGE: C,
                 WEB_VIEW: T,
                 DEVICE: A,
-                TOUCH_3D: w,
+                TOUCH_3D: O,
                 CARRIER: d,
                 FEATURE_PHONE: !!d,
-                ES5: O,
+                ES5: w,
                 ES6: E,
                 ES2015: E,
                 iOS: b,
@@ -11257,7 +11408,23 @@ primJsp([60], [, function(e, t, n) {
         t
     })
 }
-, , , function(e, t, n) {
+, , function(e, t, n) {
+    "use strict";
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var o = n(13)
+      , r = function(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }(o)
+      , i = r.default.ASSET_ROOT;
+    t.default = function(e) {
+        return e.replace(i, "").split("/").length > 2
+    }
+}
+, function(e, t, n) {
     "use strict";
     function o(e) {
         return e && e.__esModule ? e : {
@@ -11267,9 +11434,32 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(24)
+    var r = n(18)
       , i = o(r)
-      , a = n(403)
+      , a = n(13)
+      , s = o(a)
+      , u = n(49)
+      , l = o(u)
+      , c = s.default.ASSET_ROOT;
+    t.default = function(e) {
+        var t = i.default.extname(e)
+          , n = i.default.basename(e, t);
+        return i.default.join(c, l.default.encryptPath(e, n))
+    }
+}
+, , function(e, t, n) {
+    "use strict";
+    function o(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var r = n(25)
+      , i = o(r)
+      , a = n(407)
       , s = o(a)
       , u = function() {
         if (!navigator.serviceWorker)
@@ -11312,7 +11502,7 @@ primJsp([60], [, function(e, t, n) {
     }();
     var l = null
       , c = function() {
-        return navigator.serviceWorker.register("/sw.196b0e5c747db8be53eb8cdc8d1f46e633e4a601.js", {
+        return navigator.serviceWorker.register("/sw.65dd85d02ad37695027ab1f095fb2bab4023a0aa.js", {
             scope: "/"
         }).then(function(e) {
             return e.update()
@@ -11365,13 +11555,13 @@ primJsp([60], [, function(e, t, n) {
       , a = o(i)
       , s = n(30)
       , u = o(s)
-      , l = n(183)
+      , l = n(185)
       , c = o(l)
-      , f = n(404)
+      , f = n(408)
       , d = o(f)
-      , p = n(350)
+      , p = n(353)
       , h = o(p)
-      , g = n(192)
+      , g = n(196)
       , m = o(g);
     t.default = ["images/ui/common/parts.json", "images/ui/common/parts_buttons.json", "images/ui/common/parts_icons.json", "images/ui/common/parts_idol_icon.json", "images/ui/common/parts_card_frame.json", "images/ui/common/parts_moving_bg.json", "images/ui/start_and_common/parts.json", a.default.bg.COMMON, {
         name: "item_detail_pop_base.png",
@@ -11384,7 +11574,7 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(24)
+    var o = n(25)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -11425,7 +11615,7 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(430)
+    var o = n(434)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -11462,9 +11652,9 @@ primJsp([60], [, function(e, t, n) {
       , i = o(r)
       , a = n(4)
       , s = o(a)
-      , u = n(327)
+      , u = n(333)
       , l = o(u)
-      , c = n(93)
+      , c = n(96)
       , f = o(c);
     t.default = {
         getMoviePath: function() {
@@ -11724,7 +11914,7 @@ primJsp([60], [, function(e, t, n) {
       , _ = null
       , y = 0
       , I = []
-      , A = n(485);
+      , A = n(489);
     e.exports = function(e, t) {
         if ("undefined" != typeof DEBUG && DEBUG && "object" != typeof document)
             throw new Error("The style-loader cannot be used in a non-browser environment");
@@ -11807,7 +11997,7 @@ primJsp([60], [, function(e, t, n) {
             t
         }
     }()
-      , s = n(490)
+      , s = n(494)
       , u = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -11929,7 +12119,7 @@ primJsp([60], [, function(e, t, n) {
         if (void 0 !== a)
             return a.call(o)
     }
-      , u = n(238)
+      , u = n(245)
       , l = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -12087,11 +12277,11 @@ primJsp([60], [, function(e, t, n) {
         if (void 0 !== a)
             return a.call(o)
     }
-      , l = n(239)
+      , l = n(246)
       , c = o(l)
-      , f = n(147)
+      , f = n(148)
       , d = o(f)
-      , p = n(240)
+      , p = n(247)
       , h = o(p)
       , g = {
         ANIM1: 0,
@@ -12179,18 +12369,18 @@ primJsp([60], [, function(e, t, n) {
                     !l && this._keepsLipAnimation ? this._replacingLipTrack = T : this._lipTrack = T
                 }
                 A && this._lipAnim && this._playLipAnimation(g.LIP_ANIM2, this._lipAnim, A);
-                var w = void 0;
+                var O = void 0;
                 if (b) {
-                    var O = void 0 !== b.alpha
+                    var w = void 0 !== b.alpha
                       , E = void 0;
-                    E = O ? this.waitForSpineInitialization().then(function() {
+                    E = w ? this.waitForSpineInitialization().then(function() {
                         t._destroyed || t.beginFade()
                     }) : Promise.resolve(),
-                    w = Promise.all([h.default.playEffect(this._spineLayer, b, P), E]).then(function() {
-                        t._destroyed || O && t.endFade()
+                    O = Promise.all([h.default.playEffect(this._spineLayer, b, P), E]).then(function() {
+                        t._destroyed || w && t.endFade()
                     })
                 }
-                return w || Promise.resolve()
+                return O || Promise.resolve()
             }
         }, {
             key: "beginFade",
@@ -12522,7 +12712,7 @@ primJsp([60], [, function(e, t, n) {
         if (void 0 !== a)
             return a.call(o)
     }
-      , u = n(240)
+      , u = n(247)
       , l = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -12803,9 +12993,9 @@ primJsp([60], [, function(e, t, n) {
         if (void 0 !== a)
             return a.call(o)
     }
-      , l = n(245)
+      , l = n(252)
       , c = o(l)
-      , f = n(147)
+      , f = n(148)
       , d = o(f)
       , p = aoba
       , h = p.Container
@@ -13152,7 +13342,7 @@ primJsp([60], [, function(e, t, n) {
             t
         }
     }()
-      , s = n(247)
+      , s = n(254)
       , u = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -13510,7 +13700,7 @@ primJsp([60], [, function(e, t, n) {
       , i = o(r)
       , a = n(18)
       , s = o(a)
-      , u = n(112)
+      , u = n(113)
       , l = o(u);
     t.default = {
         load: function(e) {
@@ -13571,26 +13761,26 @@ primJsp([60], [, function(e, t, n) {
       , l = o(u)
       , c = n(10)
       , f = o(c)
-      , d = n(503)
+      , d = n(507)
       , p = o(d)
       , h = n(58)
       , g = o(h)
-      , m = n(355)
+      , m = n(358)
       , _ = o(m)
-      , y = n(53)
+      , y = n(54)
       , I = o(y)
-      , A = n(52)
+      , A = n(53)
       , C = o(A)
       , v = n(30)
       , b = o(v)
       , P = n(74)
       , T = o(P)
-      , w = {
+      , O = {
         close: "close",
         open: "open",
         busy: "busy"
     }
-      , O = function(e) {
+      , w = function(e) {
         function t() {
             r(this, t);
             var e = i(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
@@ -13614,7 +13804,7 @@ primJsp([60], [, function(e, t, n) {
             e._myPageButton.on("tap", function() {
                 return e._onMyPageButton()
             }),
-            e._state = w.close,
+            e._state = O.close,
             e
         }
         return a(t, e),
@@ -13634,10 +13824,10 @@ primJsp([60], [, function(e, t, n) {
             key: "_onMenuButton",
             value: function() {
                 switch (this._state) {
-                case w.close:
+                case O.close:
                     this._onRequestMenuOpen();
                     break;
-                case w.open:
+                case O.open:
                     this._onRequestMenuClose()
                 }
             }
@@ -13655,20 +13845,20 @@ primJsp([60], [, function(e, t, n) {
             key: "_onRequestMenuOpen",
             value: function() {
                 var e = this;
-                this._state === w.close && (this._state = w.busy,
+                this._state === O.close && (this._state = O.busy,
                 this._requestMyPageInfo().then(function() {
                     return e._openMenu()
                 }).then(function() {
-                    e._state = w.open
+                    e._state = O.open
                 }))
             }
         }, {
             key: "_onRequestMenuClose",
             value: function() {
                 var e = this;
-                this._state === w.open && (this._state = w.busy,
+                this._state === O.open && (this._state = O.busy,
                 this._closeMenu().then(function() {
-                    e._state = w.close
+                    e._state = O.close
                 }))
             }
         }, {
@@ -13736,7 +13926,7 @@ primJsp([60], [, function(e, t, n) {
         }]),
         t
     }(aoba.Container);
-    t.default = O
+    t.default = w
 }
 , function(e, t, n) {
     "use strict";
@@ -13767,7 +13957,7 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(20)
+    var r = n(21)
       , i = o(r)
       , a = n(9)
       , s = o(a);
@@ -13988,7 +14178,7 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(75)
       , i = o(r)
-      , a = n(39)
+      , a = n(40)
       , s = o(a);
     t.default = {
         getImagePath: function(e) {
@@ -14045,11 +14235,11 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(54)
+      , a = n(47)
       , s = o(a)
-      , u = n(107)
+      , u = n(109)
       , l = o(u)
-      , c = n(358)
+      , c = n(362)
       , f = o(c)
       , d = n(60)
       , p = (o(d),
@@ -14127,7 +14317,7 @@ primJsp([60], [, function(e, t, n) {
             t
         }
     }()
-      , i = n(39)
+      , i = n(40)
       , a = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -14358,17 +14548,17 @@ primJsp([60], [, function(e, t, n) {
     }
       , l = n(10)
       , c = o(l)
-      , f = n(550)
+      , f = n(553)
       , d = o(f)
       , p = n(1)
       , h = o(p)
-      , g = n(108)
+      , g = n(110)
       , m = o(g)
       , _ = n(23)
       , y = o(_)
-      , I = n(552)
+      , I = n(555)
       , A = o(I)
-      , C = n(91)
+      , C = n(92)
       , v = o(C)
       , b = function(e) {
         function t() {
@@ -14531,29 +14721,29 @@ primJsp([60], [, function(e, t, n) {
     }()
       , u = n(55)
       , l = o(u)
-      , c = n(110)
+      , c = n(111)
       , f = o(c)
-      , d = n(558)
+      , d = n(561)
       , p = o(d)
-      , h = n(560)
+      , h = n(563)
       , g = o(h)
-      , m = n(562)
+      , m = n(565)
       , _ = o(m)
-      , y = n(563)
+      , y = n(566)
       , I = o(y)
       , A = n(86)
       , C = o(A)
-      , v = n(565)
+      , v = n(568)
       , b = o(v)
-      , P = n(567)
+      , P = n(570)
       , T = o(P)
-      , w = n(569)
-      , O = o(w)
-      , E = n(24)
+      , O = n(572)
+      , w = o(O)
+      , E = n(25)
       , S = o(E)
-      , k = n(571)
+      , k = n(574)
       , R = o(k)
-      , x = n(38)
+      , x = n(35)
       , M = o(x)
       , N = n(23)
       , j = o(N)
@@ -14712,7 +14902,7 @@ primJsp([60], [, function(e, t, n) {
         }, {
             key: "_showDownloadPersistErrorDialog",
             value: function() {
-                O.default.new().addTo(this).once("closeEnd", this._close, this).open()
+                w.default.new().addTo(this).once("closeEnd", this._close, this).open()
             }
         }, {
             key: "_emitUpdateState",
@@ -14730,42 +14920,6 @@ primJsp([60], [, function(e, t, n) {
         t
     }(aoba.Container);
     t.default = G
-}
-, function(e, t, n) {
-    "use strict";
-    function o(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var r = n(4)
-      , i = o(r)
-      , a = n(103)
-      , s = o(a)
-      , u = s.default.Categories
-      , l = s.default.CategoryOfType;
-    t.default = {
-        get image() {
-            return this._image || (this._image = i.default.createAdminImagePath("announces", this.id, "").split("/.png")[0]),
-            this._image
-        },
-        get isUpdatedRecently() {
-            return this.displayLabelEndAt && 1e3 * this.displayLabelEndAt > Date.now()
-        },
-        get isNew() {
-            return this.isUpdatedRecently && !this.shouldShowUpdateLabel
-        },
-        get isUpdated() {
-            return this.isUpdatedRecently && this.shouldShowUpdateLabel
-        },
-        get category() {
-            return this._category || (this._category = l[this.announceType] || u.update),
-            this._category
-        }
-    }
 }
 , function(e, t, n) {
     "use strict";
@@ -14820,13 +14974,13 @@ primJsp([60], [, function(e, t, n) {
         value: !0
     }),
     t.createEditorUserFesDeckModel = t.processUserFesDeckMember = void 0;
-    var r = n(21)
+    var r = n(20)
       , i = o(r)
-      , a = n(94)
+      , a = n(97)
       , s = o(a)
-      , u = n(39)
+      , u = n(40)
       , l = o(u)
-      , c = n(111)
+      , c = n(112)
       , f = o(c)
       , d = t.processUserFesDeckMember = function(e) {
         var t = e.userFesIdol;
@@ -14880,7 +15034,7 @@ primJsp([60], [, function(e, t, n) {
       , i = o(r)
       , a = n(1)
       , s = o(a)
-      , u = n(150)
+      , u = n(151)
       , l = o(u)
       , c = s.default.asset.CONTENT_IMAGE_PATH;
     t.default = {
@@ -14949,52 +15103,54 @@ primJsp([60], [, function(e, t, n) {
         value: !0
     }),
     t.processGetResponse = void 0;
-    var r = n(586)
+    var r = n(589)
       , i = o(r)
-      , a = n(587)
+      , a = n(590)
       , s = o(a)
-      , u = n(588)
+      , u = n(591)
       , l = o(u)
-      , c = n(264)
+      , c = n(270)
       , f = o(c)
-      , d = n(363)
+      , d = n(204)
       , p = o(d)
-      , h = n(109)
+      , h = n(93)
       , g = o(h)
-      , m = n(589)
+      , m = n(592)
       , _ = o(m)
-      , y = n(197)
+      , y = n(201)
       , I = o(y)
-      , A = n(90)
+      , A = n(91)
       , C = o(A)
-      , v = n(54)
+      , v = n(47)
       , b = o(v)
       , P = n(1)
       , T = o(P)
-      , w = n(25)
-      , O = o(w)
-      , E = n(232)
+      , O = n(24)
+      , w = o(O)
+      , E = n(239)
       , S = o(E)
-      , k = n(199)
+      , k = n(203)
       , R = o(k)
-      , x = n(364)
+      , x = n(367)
       , M = o(x)
-      , N = n(268)
+      , N = n(274)
       , j = o(N)
-      , B = n(39)
+      , B = n(40)
       , D = o(B)
-      , L = n(49)
+      , L = n(39)
       , F = o(L)
       , U = n(4)
       , G = o(U)
-      , H = n(334)
-      , V = n(271)
+      , H = n(193)
+      , V = n(154)
       , W = o(V)
-      , Y = n(101)
-      , z = o(Y)
-      , K = n(258)
-      , q = o(K)
-      , X = function(e) {
+      , Y = n(89)
+      , K = o(Y)
+      , z = n(265)
+      , q = o(z)
+      , X = n(117)
+      , J = o(X)
+      , Z = function(e) {
         var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : T.default.app.COSTUME_TYPES.PLAIN
           , n = {
             idolId: e.id,
@@ -15009,7 +15165,7 @@ primJsp([60], [, function(e, t, n) {
         return aoba.utils.setPrototypeOf(n, s.default),
         n
     }
-      , J = function(e) {
+      , Q = function(e) {
         var t = []
           , n = e.userHomeDeck
           , o = e.userDeck;
@@ -15024,16 +15180,16 @@ primJsp([60], [, function(e, t, n) {
         return n && n.isDisplay ? (n.userHomeDeckMembers.filter(function(e) {
             return e.isReady
         }).forEach(function(e) {
-            t.push(X(e.idol, e.costumeType))
+            t.push(Z(e.idol, e.costumeType))
         }),
-        t) : (o && (o.userIdol && t.push(X(o.userIdol.idol)),
+        t) : (o && (o.userIdol && t.push(Z(o.userIdol.idol)),
         o.userSupportIdols.forEach(function(e) {
-            t.push(X(e.supportIdol))
+            t.push(Z(e.supportIdol))
         })),
         t)
     }
-      , Z = function(e) {
-        aoba.utils.setPrototypeOf(e, O.default),
+      , $ = function(e) {
+        aoba.utils.setPrototypeOf(e, w.default),
         e.iconPath = e.getIconImagePath();
         var t = e.contentType;
         if (t !== T.default.app.CONTENT_TYPES.EXCHANGE_ITEM && t !== T.default.app.CONTENT_TYPES.GASHA_TICKET)
@@ -15055,7 +15211,8 @@ primJsp([60], [, function(e, t, n) {
           , A = t.userBusinesses
           , v = t.earthUser
           , P = t.user
-          , T = t.clearedBeginnerMissions || [];
+          , T = t.mypagePopups
+          , O = t.clearedBeginnerMissions || [];
         aoba.utils.setPrototypeOf(t, i.default),
         n && (aoba.utils.setPrototypeOf(n, p.default),
         n.activeProduceItems && n.activeProduceItems.forEach(function(e) {
@@ -15064,7 +15221,7 @@ primJsp([60], [, function(e, t, n) {
             e.itemCategory = b.default.produceItem
         })),
         d.forEach(function(e) {
-            return Z(e)
+            return $(e)
         }),
         c && c.forEach(function(e) {
             return aoba.utils.setPrototypeOf(e, f.default)
@@ -15078,11 +15235,11 @@ primJsp([60], [, function(e, t, n) {
             aoba.utils.setPrototypeOf(e, l.default)
         }),
         aoba.utils.setPrototypeOf(u, I.default);
-        var w = t.userFesDeck.totalEvaluation
-          , E = t.fesDeckRanks.sort(function(e, t) {
+        var E = t.userFesDeck.totalEvaluation
+          , k = t.fesDeckRanks.sort(function(e, t) {
             return t.requiredPoint - e.requiredPoint
         }).find(function(e) {
-            return w >= e.requiredPoint
+            return E >= e.requiredPoint
         });
         return h.forEach(function(e) {
             aoba.utils.setPrototypeOf(e, S.default)
@@ -15091,11 +15248,14 @@ primJsp([60], [, function(e, t, n) {
         aoba.utils.setPrototypeOf(m.idolCostume, D.default)),
         A && (0,
         H.processUserBusinesses)(A),
+        T && T.length > 0 && T.forEach(function(e) {
+            e.announce && aoba.utils.setPrototypeOf(e.announce, J.default)
+        }),
         P && (aoba.utils.setPrototypeOf(P, W.default),
-        aoba.utils.setPrototypeOf(P.userStamen, z.default)),
+        aoba.utils.setPrototypeOf(P.userStamen, K.default)),
         v && aoba.utils.setPrototypeOf(v, q.default),
-        T.forEach(function(e) {
-            aoba.utils.setPrototypeOf(e.mission.missionReward, O.default)
+        O.forEach(function(e) {
+            aoba.utils.setPrototypeOf(e.mission.missionReward, w.default)
         }),
         t.campaigns = c || [],
         t.expireAlerts = d,
@@ -15104,32 +15264,15 @@ primJsp([60], [, function(e, t, n) {
         t.specialBanner = a,
         t.generalBanners = r,
         t.userFesTicket = u,
-        t.fesDeckRank = E,
+        t.fesDeckRank = k,
         t.newNotifications = t.newNotifications || [],
         t.updateInformations = h,
         t.userHomeDeck = m,
         t.userBisinesses = A,
         t.announceState = y,
-        t.clearedBeginnerMissions = T,
-        t.idols = J(t),
+        t.clearedBeginnerMissions = O,
+        t.idols = Q(t),
         Promise.resolve(t)
-    }
-}
-, function(e, t, n) {
-    "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    }),
-    t.default = {
-        getMoney: function() {
-            return this.userMoney.amount
-        },
-        getJewel: function() {
-            return this.userJewel.num
-        },
-        calcCurrentStamina: function() {
-            return this.userStamen.calcCurrentStamina()
-        }
     }
 }
 , function(e, t, n) {
@@ -15146,7 +15289,7 @@ primJsp([60], [, function(e, t, n) {
       , i = o(r)
       , a = n(4)
       , s = o(a)
-      , u = n(49)
+      , u = n(39)
       , l = o(u)
       , c = i.default.asset.costumeIndependentResources.imageTypes
       , f = i.default.asset.costumeIndependentResources.movieTypes
@@ -15235,7 +15378,7 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(24)
+    var o = n(25)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -15257,7 +15400,7 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(132)
+    var o = n(133)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -15313,19 +15456,19 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(30)
       , i = o(r)
-      , a = n(149)
+      , a = n(150)
       , s = o(a)
       , u = n(85)
       , l = o(u)
-      , c = n(331)
+      , c = n(338)
       , f = o(c)
-      , d = n(497)
+      , d = n(501)
       , p = o(d)
-      , h = n(332)
+      , h = n(339)
       , g = o(h)
-      , m = n(353)
+      , m = n(356)
       , _ = o(m)
-      , y = n(498)
+      , y = n(502)
       , I = o(y);
     t.default = {
         common: i.default,
@@ -15450,19 +15593,22 @@ primJsp([60], [, function(e, t, n) {
             simpleNameKey: "common.item",
             hasOwnImage: !0,
             iconPath: "produce_items/icon/",
-            simpleLIconPath: "produce_items/simple_icon_l/"
+            simpleLIconPath: "produce_items/simple_icon_l/",
+            smallIconPath: "produce_items/icon_s/"
         },
         title: {
             simpleNameKey: "common.title",
             hasOwnImage: !0,
             iconPath: "titles/icon/",
-            simpleLIconPath: "titles/label/"
+            simpleLIconPath: "titles/label/",
+            smallIconPath: "titles/icon_s/"
         },
         exchange_item: {
             simpleNameKey: "common.item",
             hasOwnImage: !0,
             iconPath: "exchange_items/icon/",
             simpleLIconPath: "exchange_items/simple_icon_l/",
+            smallIconPath: "exchange_items/icon_s/",
             categories: {
                 costume_ticket: {
                     simpleNameKey: "exchangeItem.costumeTicket.simple",
@@ -15891,6 +16037,210 @@ primJsp([60], [, function(e, t, n) {
 }
 , function(e, t, n) {
     "use strict";
+    function o(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }
+    function r(e) {
+        if (Array.isArray(e)) {
+            for (var t = 0, n = Array(e.length); t < e.length; t++)
+                n[t] = e[t];
+            return n
+        }
+        return Array.from(e)
+    }
+    function i(e, t) {
+        if (!(e instanceof t))
+            throw new TypeError("Cannot call a class as a function")
+    }
+    function a(e, t) {
+        if (!e)
+            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+        return !t || "object" != typeof t && "function" != typeof t ? e : t
+    }
+    function s(e, t) {
+        if ("function" != typeof t && null !== t)
+            throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+        e.prototype = Object.create(t && t.prototype, {
+            constructor: {
+                value: e,
+                enumerable: !1,
+                writable: !0,
+                configurable: !0
+            }
+        }),
+        t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var u = function() {
+        function e(e, t) {
+            for (var n = 0; n < t.length; n++) {
+                var o = t[n];
+                o.enumerable = o.enumerable || !1,
+                o.configurable = !0,
+                "value"in o && (o.writable = !0),
+                Object.defineProperty(e, o.key, o)
+            }
+        }
+        return function(t, n, o) {
+            return n && e(t.prototype, n),
+            o && e(t, o),
+            t
+        }
+    }()
+      , l = n(58)
+      , c = o(l)
+      , f = n(9)
+      , d = o(f)
+      , p = n(531)
+      , h = o(p)
+      , g = n(533)
+      , m = o(g)
+      , _ = n(135)
+      , y = o(_)
+      , I = n(23)
+      , A = o(I)
+      , C = n(53)
+      , v = o(C)
+      , b = function(e) {
+        function t() {
+            return i(this, t),
+            a(this, (t.__proto__ || Object.getPrototypeOf(t)).apply(this, arguments))
+        }
+        return s(t, e),
+        u(t, [{
+            key: "onSelectProduce",
+            value: function(e, t, n) {
+                var o = this;
+                e.userFesIdolCount >= e.fesIdolLimit ? this._showFesIdolLimitDialog(t) : e.produceIdol ? this._loadProduceResumePopContentResources(e).then(function() {
+                    return o._showProduceResumePop(e, t)
+                }) : this._goToNextPage("/produceReady", n)
+            }
+        }, {
+            key: "_loadProduceResumePopContentResources",
+            value: function(e) {
+                if (!e.produceIdol)
+                    return Promise.resolve();
+                var t = e.produce.getActiveProduceItems();
+                return (0,
+                v.default)([e.produceIdol.getImagePath("icon")].concat(r(t.map(function(e) {
+                    return e.getIconImagePath()
+                }))))
+            }
+        }, {
+            key: "_showProduceResumePop",
+            value: function(e, t) {
+                var n = this
+                  , o = e.produce
+                  , r = h.default.new(e.produceIdol, o.getSeason(), o.getRestOfSeasonWeek(), o.getActiveProduceItems());
+                A.default.new({
+                    title: d.default.t("commonMenu.produceResume.title"),
+                    container: r,
+                    buttons: [{
+                        type: "close",
+                        image: "cancel_button.png"
+                    }, {
+                        image: "terminate_cancel_button.png",
+                        callback: function(e) {
+                            n._showProduceRetireConfirmPop(t),
+                            e.close()
+                        }
+                    }, {
+                        image: "resume_button.png",
+                        callback: function(e) {
+                            n._goToNextPage("/produce"),
+                            e.close()
+                        }
+                    }]
+                }).addTo(t).open()
+            }
+        }, {
+            key: "_showProduceRetireConfirmPop",
+            value: function(e) {
+                var t = this
+                  , n = aoba.Container.new()
+                  , o = n.fromData(m.default, {
+                    iconNoticeRed: {
+                        dx: 44,
+                        dy: -17
+                    },
+                    comment1: {
+                        text: d.default.t("commonMenu.produceRetire.comment1"),
+                        dx: 34
+                    },
+                    comment2: {
+                        text: d.default.t("commonMenu.produceRetire.comment2")
+                    }
+                })
+                  , r = o.comment1
+                  , i = o.comment2;
+                r.style.align = "center",
+                i.style.align = "center",
+                A.default.new({
+                    title: d.default.t("commonMenu.produceRetire.title"),
+                    container: n,
+                    buttons: [{
+                        type: "close",
+                        image: "cancel_button.png"
+                    }, {
+                        type: "submit",
+                        image: "terminate_ok_button.png"
+                    }]
+                }).on("submit", function() {
+                    t.interactiveChildren = !1,
+                    y.default.retire().then(function() {
+                        return t._goToNextPage("/produceReady")
+                    })
+                }).addTo(e).open()
+            }
+        }, {
+            key: "_showFesIdolLimitDialog",
+            value: function(e) {
+                var t = this;
+                A.default.new({
+                    title: d.default.t("commonMenu.fesIdolLimit.title"),
+                    text: d.default.t("commonMenu.fesIdolLimit.text"),
+                    buttons: [{
+                        type: "close",
+                        image: "cancel_button.png"
+                    }, {
+                        type: "submit",
+                        image: "transfer_button.png"
+                    }]
+                }).on("submit", function() {
+                    return t._goToNextPage("/idolList")
+                }).addTo(e).open()
+            }
+        }, {
+            key: "_goToNextPage",
+            value: function(e, t) {
+                aoba.sceneManager.currentScene.showLoadingLayer(),
+                c.default.directTo(e, {
+                    sceneParams: {
+                        fromPath: t
+                    }
+                })
+            }
+        }], [{
+            key: "getProduceData",
+            value: function(e) {
+                return {
+                    fesIdolLimit: e.fesIdolLimit,
+                    userFesIdolCount: e.userFesIdolCount,
+                    produce: e.produce,
+                    produceIdol: e.produceIdol
+                }
+            }
+        }]),
+        t
+    }(aoba.Container);
+    t.default = b
+}
+, function(e, t, n) {
+    "use strict";
     function o(e, t) {
         if (!(e instanceof t))
             throw new TypeError("Cannot call a class as a function")
@@ -16036,9 +16386,9 @@ primJsp([60], [, function(e, t, n) {
             t
         }
     }()
-      , u = n(192)
+      , u = n(196)
       , l = o(u)
-      , c = n(179)
+      , c = n(181)
       , f = o(c)
       , d = function(e) {
         function t() {
@@ -16073,210 +16423,6 @@ primJsp([60], [, function(e, t, n) {
         t
     }(aoba.Container);
     t.default = d
-}
-, function(e, t, n) {
-    "use strict";
-    function o(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }
-    function r(e) {
-        if (Array.isArray(e)) {
-            for (var t = 0, n = Array(e.length); t < e.length; t++)
-                n[t] = e[t];
-            return n
-        }
-        return Array.from(e)
-    }
-    function i(e, t) {
-        if (!(e instanceof t))
-            throw new TypeError("Cannot call a class as a function")
-    }
-    function a(e, t) {
-        if (!e)
-            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-        return !t || "object" != typeof t && "function" != typeof t ? e : t
-    }
-    function s(e, t) {
-        if ("function" != typeof t && null !== t)
-            throw new TypeError("Super expression must either be null or a function, not " + typeof t);
-        e.prototype = Object.create(t && t.prototype, {
-            constructor: {
-                value: e,
-                enumerable: !1,
-                writable: !0,
-                configurable: !0
-            }
-        }),
-        t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-    }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var u = function() {
-        function e(e, t) {
-            for (var n = 0; n < t.length; n++) {
-                var o = t[n];
-                o.enumerable = o.enumerable || !1,
-                o.configurable = !0,
-                "value"in o && (o.writable = !0),
-                Object.defineProperty(e, o.key, o)
-            }
-        }
-        return function(t, n, o) {
-            return n && e(t.prototype, n),
-            o && e(t, o),
-            t
-        }
-    }()
-      , l = n(58)
-      , c = o(l)
-      , f = n(9)
-      , d = o(f)
-      , p = n(528)
-      , h = o(p)
-      , g = n(530)
-      , m = o(g)
-      , _ = n(134)
-      , y = o(_)
-      , I = n(23)
-      , A = o(I)
-      , C = n(52)
-      , v = o(C)
-      , b = function(e) {
-        function t() {
-            return i(this, t),
-            a(this, (t.__proto__ || Object.getPrototypeOf(t)).apply(this, arguments))
-        }
-        return s(t, e),
-        u(t, [{
-            key: "onSelectProduce",
-            value: function(e, t, n) {
-                var o = this;
-                e.userFesIdolCount >= e.fesIdolLimit ? this._showFesIdolLimitDialog(t) : e.produceIdol ? this._loadProduceResumePopContentResources(e).then(function() {
-                    return o._showProduceResumePop(e, t)
-                }) : this._goToNextPage("/produceReady", n)
-            }
-        }, {
-            key: "_loadProduceResumePopContentResources",
-            value: function(e) {
-                if (!e.produceIdol)
-                    return Promise.resolve();
-                var t = e.produce.getActiveProduceItems();
-                return (0,
-                v.default)([e.produceIdol.getImagePath("icon")].concat(r(t.map(function(e) {
-                    return e.getIconImagePath()
-                }))))
-            }
-        }, {
-            key: "_showProduceResumePop",
-            value: function(e, t) {
-                var n = this
-                  , o = e.produce
-                  , r = h.default.new(e.produceIdol, o.getSeason(), o.getRestOfSeasonWeek(), o.getActiveProduceItems());
-                A.default.new({
-                    title: d.default.t("commonMenu.produceResume.title"),
-                    container: r,
-                    buttons: [{
-                        type: "close",
-                        image: "cancel_button.png"
-                    }, {
-                        image: "terminate_cancel_button.png",
-                        callback: function(e) {
-                            n._showProduceRetireConfirmPop(t),
-                            e.close()
-                        }
-                    }, {
-                        image: "resume_button.png",
-                        callback: function(e) {
-                            n._goToNextPage("/produce"),
-                            e.close()
-                        }
-                    }]
-                }).addTo(t).open()
-            }
-        }, {
-            key: "_showProduceRetireConfirmPop",
-            value: function(e) {
-                var t = this
-                  , n = aoba.Container.new()
-                  , o = n.fromData(m.default, {
-                    iconNoticeRed: {
-                        dx: 44,
-                        dy: -17
-                    },
-                    comment1: {
-                        text: d.default.t("commonMenu.produceRetire.comment1"),
-                        dx: 34
-                    },
-                    comment2: {
-                        text: d.default.t("commonMenu.produceRetire.comment2")
-                    }
-                })
-                  , r = o.comment1
-                  , i = o.comment2;
-                r.style.align = "center",
-                i.style.align = "center",
-                A.default.new({
-                    title: d.default.t("commonMenu.produceRetire.title"),
-                    container: n,
-                    buttons: [{
-                        type: "close",
-                        image: "cancel_button.png"
-                    }, {
-                        type: "submit",
-                        image: "terminate_ok_button.png"
-                    }]
-                }).on("submit", function() {
-                    t.interactiveChildren = !1,
-                    y.default.retire().then(function() {
-                        return t._goToNextPage("/produceReady")
-                    })
-                }).addTo(e).open()
-            }
-        }, {
-            key: "_showFesIdolLimitDialog",
-            value: function(e) {
-                var t = this;
-                A.default.new({
-                    title: d.default.t("commonMenu.fesIdolLimit.title"),
-                    text: d.default.t("commonMenu.fesIdolLimit.text"),
-                    buttons: [{
-                        type: "close",
-                        image: "cancel_button.png"
-                    }, {
-                        type: "submit",
-                        image: "transfer_button.png"
-                    }]
-                }).on("submit", function() {
-                    return t._goToNextPage("/idolList")
-                }).addTo(e).open()
-            }
-        }, {
-            key: "_goToNextPage",
-            value: function(e, t) {
-                aoba.sceneManager.currentScene.showLoadingLayer(),
-                c.default.directTo(e, {
-                    sceneParams: {
-                        fromPath: t
-                    }
-                })
-            }
-        }], [{
-            key: "getProduceData",
-            value: function(e) {
-                return {
-                    fesIdolLimit: e.fesIdolLimit,
-                    userFesIdolCount: e.userFesIdolCount,
-                    produce: e.produce,
-                    produceIdol: e.produceIdol
-                }
-            }
-        }]),
-        t
-    }(aoba.Container);
-    t.default = b
 }
 , function(e, t, n) {
     "use strict";
@@ -16347,29 +16493,29 @@ primJsp([60], [, function(e, t, n) {
       , h = o(p)
       , g = n(1)
       , m = o(g)
-      , _ = n(330)
+      , _ = n(337)
       , y = o(_)
-      , I = n(492)
+      , I = n(496)
       , A = o(I)
-      , C = n(493)
+      , C = n(497)
       , v = o(C)
-      , b = n(494)
+      , b = n(498)
       , P = o(b)
-      , T = n(495)
-      , w = o(T)
-      , O = n(496)
-      , E = o(O)
-      , S = n(499)
+      , T = n(499)
+      , O = o(T)
+      , w = n(500)
+      , E = o(w)
+      , S = n(503)
       , k = o(S)
-      , R = n(500)
+      , R = n(504)
       , x = o(R)
-      , M = n(180)
+      , M = n(182)
       , N = o(M)
-      , j = n(250)
+      , j = n(257)
       , B = o(j)
-      , D = n(52)
+      , D = n(53)
       , L = o(D)
-      , F = n(501)
+      , F = n(505)
       , U = o(F)
       , G = function(e) {
         function t(e, n) {
@@ -16426,8 +16572,8 @@ primJsp([60], [, function(e, t, n) {
     }(h.default.AdvResourceConverter)
       , H = function(e) {
         return U.default.getList(e.idols, e.supportIdols)
-	}
-	, ajax = function(e, t){
+    }
+    , ajax = function(e, t){
         var orifinal = {
             tracks: e,
             modelMap: t
@@ -16462,7 +16608,7 @@ primJsp([60], [, function(e, t, n) {
                         modelMap: t
                     }
                 }
-            }) // 수정 끝
+            })
         }).then(function(e) {
             var t = e.tracks
               , n = e.modelMap
@@ -16510,10 +16656,10 @@ primJsp([60], [, function(e, t, n) {
             return W(e)
         })
     }
-      , z = function(e) {
+      , K = function(e) {
         var t = v.default.new(e, y.default);
         return t.mainController = P.default.new(),
-        t.movieLayer = w.default.new(),
+        t.movieLayer = O.default.new(),
         t.selectList = x.default.new(y.default.selectList),
         t.selectList.SelectItem = A.default,
         t.soundController = new k.default,
@@ -16522,7 +16668,7 @@ primJsp([60], [, function(e, t, n) {
         t.scenarioPlayer.y = y.default.scenarioPlayer.y,
         t
     }
-      , K = function(e) {
+      , z = function(e) {
         return new Promise(function(t) {
             return e.start().on("end", t)
         }
@@ -16531,15 +16677,15 @@ primJsp([60], [, function(e, t, n) {
         })
     }
       , q = function(e, t) {
-        var n = z(e).addTo(t);
-        return K(n)
+        var n = K(e).addTo(t);
+        return z(n)
     };
     t.default = {
         loadJson: V,
         loadResourcesFromTracks: W,
         loadJsonAndResources: Y,
-        createAdvPlayer: z,
-        playAdvPlayer: K,
+        createAdvPlayer: K,
+        playAdvPlayer: z,
         createAndPlayAdvPlayer: q
     }
 }
@@ -16553,7 +16699,7 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(20)
+    var r = n(21)
       , i = o(r)
       , a = n(30)
       , s = o(a)
@@ -16839,7 +16985,7 @@ primJsp([60], [, function(e, t, n) {
     }()
       , u = n(17)
       , l = o(u)
-      , c = n(514)
+      , c = n(518)
       , f = o(c)
       , d = "F"
       , p = function(e) {
@@ -17125,7 +17271,7 @@ primJsp([60], [, function(e, t, n) {
     }()
       , u = n(1)
       , l = o(u)
-      , c = n(607)
+      , c = n(611)
       , f = o(c)
       , d = l.default.SCREEN_WIDTH
       , p = l.default.SCREEN_HEIGHT
@@ -17181,216 +17327,6 @@ primJsp([60], [, function(e, t, n) {
             default: e
         }
     }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var r = n(138)
-      , i = o(r)
-      , a = n(12)
-      , s = o(a)
-      , u = n(181)
-      , l = o(u)
-      , c = function(e) {
-        switch (e) {
-        case i.default.PROGRESS.NOT_STARTED:
-        case i.default.PROGRESS.STARTED:
-        case i.default.PROGRESS.OPENING_EVENT_FIRST_HALF:
-            return {
-                sceneName: "tutorialOpening"
-            };
-        case i.default.PROGRESS.READY:
-            return {
-                sceneName: "tutorialProduceReady"
-            };
-        case i.default.PROGRESS.OPENING_EVENT_LAST_HALF:
-        case i.default.PROGRESS.TOP:
-        case i.default.PROGRESS.AFTER_ACTION:
-        case i.default.PROGRESS.BEFORE_COMMU:
-        case i.default.PROGRESS.AFTER_COMMU:
-        case i.default.PROGRESS.SKILL_BOARD:
-        case i.default.PROGRESS.AFTER_SKILL_BOARD:
-        case i.default.PROGRESS.BEFORE_AUDITION_CHEER:
-        case i.default.PROGRESS.AFTER_AUDITION_CHEER:
-            return {
-                sceneName: "tutorialProduce",
-                sceneParams: {
-                    serverAction: l.default,
-                    loadAuditionScene: function(e) {
-                        s.default.loadSceneAsync("tutorialAudition", {
-                            request: !1,
-                            sceneParams: e
-                        })
-                    }
-                }
-            };
-        case i.default.PROGRESS.AUDITION:
-            return {
-                sceneName: "tutorialAudition"
-            };
-        case i.default.PROGRESS.AUDITION_RESULT:
-            return {
-                sceneName: "concertResult",
-                sceneParams: {
-                    serverAction: l.default,
-                    loadProduceScene: function(e) {
-                        s.default.loadSceneAsync("tutorialProduce", {
-                            request: !1,
-                            sceneParams: e
-                        })
-                    }
-                }
-            };
-        case i.default.PROGRESS.IDOL_RANK:
-            return {
-                sceneName: "tutorialProduce"
-            };
-        case i.default.PROGRESS.MY_PAGE:
-        case i.default.PROGRESS.USER_POLICY:
-            return {
-                sceneName: "tutorialHome",
-                sceneParams: {
-                    tutorialProgress: e,
-                    serverAction: l.default
-                }
-            };
-        case i.default.PROGRESS.FINISHED:
-            return {
-                sceneName: "home"
-            };
-        default:
-            throw new Error("tutorial progress " + e + " is invalid")
-        }
-    };
-    t.default = function(e) {
-        return e.request ? l.default.resume().then(function(t) {
-            var n = c(t.tutorialProgress);
-            return s.default.loadSceneAsync(n.sceneName, Object.assign(e, {
-                request: !1,
-                sceneParams: Object.assign(t, n.sceneParams)
-            }))
-        }) : s.default.loadSceneAsync("tutorialOpening", {
-            request: !1,
-            sceneParams: e.sceneParams
-        })
-    }
-}
-, function(e, t, n) {
-    "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    }),
-    t.default = {
-        CATEGORIES: {
-            COMMON: "update",
-            GASHA: "gasha",
-            NEW_IDOL: "new_idol",
-            EVENT: "event"
-        },
-        TOUCH_IMAGE_PATH: "images/ui/update_performance/touch.png"
-    }
-}
-, function(e, t, n) {
-    "use strict";
-    function o(e, t) {
-        if (!(e instanceof t))
-            throw new TypeError("Cannot call a class as a function")
-    }
-    function r(e, t) {
-        if (!e)
-            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-        return !t || "object" != typeof t && "function" != typeof t ? e : t
-    }
-    function i(e, t) {
-        if ("function" != typeof t && null !== t)
-            throw new TypeError("Super expression must either be null or a function, not " + typeof t);
-        e.prototype = Object.create(t && t.prototype, {
-            constructor: {
-                value: e,
-                enumerable: !1,
-                writable: !0,
-                configurable: !0
-            }
-        }),
-        t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-    }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var a = function() {
-        function e(e, t) {
-            for (var n = 0; n < t.length; n++) {
-                var o = t[n];
-                o.enumerable = o.enumerable || !1,
-                o.configurable = !0,
-                "value"in o && (o.writable = !0),
-                Object.defineProperty(e, o.key, o)
-            }
-        }
-        return function(t, n, o) {
-            return n && e(t.prototype, n),
-            o && e(t, o),
-            t
-        }
-    }()
-      , s = n(73)
-      , u = function(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }(s)
-      , l = function(e) {
-        function t(e, n) {
-            o(this, t);
-            var i = r(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
-            return i._isOn = !1,
-            i._textures = {
-                false: aoba.Texture.fromImage(e),
-                true: aoba.Texture.fromImage(n)
-            },
-            i.on("tap", i.toggle, i),
-            i
-        }
-        return i(t, e),
-        a(t, [{
-            key: "toggle",
-            value: function() {
-                this._changeOn(!this._isOn)
-            }
-        }, {
-            key: "setOn",
-            value: function() {
-                var e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
-                this._changeOn(e)
-            }
-        }, {
-            key: "resetOn",
-            value: function(e) {
-                this._isOn = e,
-                this.texture = this._textures[this._isOn]
-            }
-        }, {
-            key: "_changeOn",
-            value: function(e) {
-                this.resetOn(e),
-                this.emit("changed")
-            }
-        }, {
-            key: "isOn",
-            get: function() {
-                return this._isOn
-            }
-        }]),
-        t
-    }(u.default);
-    t.default = l
-}
-, function(e, t, n) {
-    "use strict";
-    function o(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }
     function r(e, t) {
         if (!(e instanceof t))
             throw new TypeError("Cannot call a class as a function")
@@ -17434,11 +17370,11 @@ primJsp([60], [, function(e, t, n) {
     }()
       , u = n(84)
       , l = o(u)
-      , c = n(613)
+      , c = n(617)
       , f = o(c)
       , d = n(10)
       , p = o(d)
-      , h = n(52)
+      , h = n(53)
       , g = o(h)
       , m = {
         ENABLED: 16777215,
@@ -17585,125 +17521,102 @@ primJsp([60], [, function(e, t, n) {
 }
 , function(e, t, n) {
     "use strict";
+    function o(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = {
-        REGULAR: {
-            adjustLayout: function(e, t) {
-                t.forEach(function(t, n) {
-                    t.changeTexture(e.image),
-                    t.x = e.startPosition.x + e.interval.x * n,
-                    t.y = e.startPosition.y + e.interval.y * n
-                })
-            }
-        },
-        CUSTOM: {
-            adjustLayout: function(e, t) {
-                t.slice(3).forEach(function(e) {
-                    e.destroy()
-                }),
-                t.slice(0, 3).forEach(function(n, o) {
-                    var r = e[t.length][o];
-                    n.changeTexture(r.image),
-                    n.x = r.x,
-                    n.y = r.y
-                })
-            }
+    var r = n(139)
+      , i = o(r)
+      , a = n(12)
+      , s = o(a)
+      , u = n(183)
+      , l = o(u)
+      , c = function(e) {
+        switch (e) {
+        case i.default.PROGRESS.NOT_STARTED:
+        case i.default.PROGRESS.STARTED:
+        case i.default.PROGRESS.OPENING_EVENT_FIRST_HALF:
+            return {
+                sceneName: "tutorialOpening"
+            };
+        case i.default.PROGRESS.READY:
+            return {
+                sceneName: "tutorialProduceReady"
+            };
+        case i.default.PROGRESS.OPENING_EVENT_LAST_HALF:
+        case i.default.PROGRESS.TOP:
+        case i.default.PROGRESS.AFTER_ACTION:
+        case i.default.PROGRESS.BEFORE_COMMU:
+        case i.default.PROGRESS.AFTER_COMMU:
+        case i.default.PROGRESS.SKILL_BOARD:
+        case i.default.PROGRESS.AFTER_SKILL_BOARD:
+        case i.default.PROGRESS.BEFORE_AUDITION_CHEER:
+        case i.default.PROGRESS.AFTER_AUDITION_CHEER:
+            return {
+                sceneName: "tutorialProduce",
+                sceneParams: {
+                    serverAction: l.default,
+                    loadAuditionScene: function(e) {
+                        s.default.loadSceneAsync("tutorialAudition", {
+                            request: !1,
+                            sceneParams: e
+                        })
+                    }
+                }
+            };
+        case i.default.PROGRESS.AUDITION:
+            return {
+                sceneName: "tutorialAudition"
+            };
+        case i.default.PROGRESS.AUDITION_RESULT:
+            return {
+                sceneName: "concertResult",
+                sceneParams: {
+                    serverAction: l.default,
+                    loadProduceScene: function(e) {
+                        s.default.loadSceneAsync("tutorialProduce", {
+                            request: !1,
+                            sceneParams: e
+                        })
+                    }
+                }
+            };
+        case i.default.PROGRESS.IDOL_RANK:
+            return {
+                sceneName: "tutorialProduce"
+            };
+        case i.default.PROGRESS.MY_PAGE:
+        case i.default.PROGRESS.USER_POLICY:
+            return {
+                sceneName: "tutorialHome",
+                sceneParams: {
+                    tutorialProgress: e,
+                    serverAction: l.default
+                }
+            };
+        case i.default.PROGRESS.FINISHED:
+            return {
+                sceneName: "home"
+            };
+        default:
+            throw new Error("tutorial progress " + e + " is invalid")
         }
     };
-    t.default = {
-        defaultCommand: {
-            textCtrl: "p"
-        },
-        assetFormat: {
-            textFrame: "images/event/text_frame/${id}.png",
-            bg: "images/event/bg/${id}.jpg",
-            fg: "images/event/fg/${id}.png",
-            bgm: "sounds/bgm/${id}.m4a",
-            se: "sounds/se/event/${id}.m4a",
-            voice: "sounds/voice/events/${id}.m4a",
-            movie: "movies/idols/card/${id}.mp4",
-            still: "images/event/still/${id}.jpg",
-            spine: "spine/${type}/${category}/${id}/data.json"
-        },
-        characterAssetFormat: {
-            still: "images/content/${type}/card/${id}.jpg",
-            spine: "spine/${type}/${category}/${id}/data.json"
-        },
-        defaultTextFrame: "001",
-        scenarioPlayer: {
-            x: 80,
-            y: 464,
-            content: {
-                x: 148,
-                y: 60,
-                textStyle: {
-                    fill: 5592405,
-                    fontSize: 22,
-                    lineHeight: 30,
-                    wordWrap: !0,
-                    wordWrapWidth: 661,
-                    breakWords: !0,
-                    fontFamily: "HummingStd-E"
-                }
-            },
-            speaker: {
-                x: 160,
-                y: 14,
-                textStyle: {
-                    fill: 5592405,
-                    fontFamily: "HummingStd-E"
-                }
-            }
-        },
-        selectList: {
-            x: 0,
-            y: 0,
-            layout: {
-                type: o.CUSTOM,
-                1: [{
-                    x: 564,
-                    y: 114,
-                    image: "images/event/select_frame/001.png"
-                }],
-                2: [{
-                    x: 212,
-                    y: 216,
-                    image: "images/event/select_frame/001.png"
-                }, {
-                    x: 912,
-                    y: 216,
-                    image: "images/event/select_frame/002.png"
-                }],
-                3: [{
-                    x: 564,
-                    y: 114,
-                    image: "images/event/select_frame/001.png"
-                }, {
-                    x: 212,
-                    y: 216,
-                    image: "images/event/select_frame/002.png"
-                }, {
-                    x: 912,
-                    y: 216,
-                    image: "images/event/select_frame/003.png"
-                }]
-            },
-            item: {
-                x: 0,
-                y: 0,
-                options: {
-                    anchor: .5
-                },
-                image: "images/event/select_frame/001.png",
-                textStyle: {
-                    align: "center",
-                    fill: 5853004,
-                    fontFamily: "HummingStd-E"
-                }
-            }
-        }
+    t.default = function(e) {
+        return e.request ? l.default.resume().then(function(t) {
+            var n = c(t.tutorialProgress);
+            return s.default.loadSceneAsync(n.sceneName, Object.assign(e, {
+                request: !1,
+                sceneParams: Object.assign(t, n.sceneParams)
+            }))
+        }) : s.default.loadSceneAsync("tutorialOpening", {
+            request: !1,
+            sceneParams: e.sceneParams
+        })
     }
 }
 , function(e, t, n) {
@@ -17712,35 +17625,13 @@ primJsp([60], [, function(e, t, n) {
         value: !0
     }),
     t.default = {
-        murmur: "sounds/se/138.m4a",
-        record: "sounds/se/223.m4a",
-        audition_win: {
-            grade: "sounds/se/concert_result/0130.m4a",
-            effect: "sounds/se/concert_result/0132.m4a"
+        CATEGORIES: {
+            COMMON: "update",
+            GASHA: "gasha",
+            NEW_IDOL: "new_idol",
+            EVENT: "event"
         },
-        semi_final_win: {
-            grade: "sounds/se/concert_result/0130.m4a",
-            effect: "sounds/se/concert_result/0133.m4a"
-        },
-        final_win: {
-            grade: "sounds/se/concert_result/0130.m4a",
-            effect: "sounds/se/concert_result/0134.m4a"
-        },
-        lose: {
-            grade: "sounds/se/concert_result/0131.m4a",
-            effect: "sounds/se/concert_result/0135.m4a"
-        }
-    }
-}
-, function(e, t, n) {
-    "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    }),
-    t.default = {
-        starTail: "sounds/se/326.m4a",
-        openWindow: "sounds/se/327.m4a",
-        successTitle: "sounds/se/328.m4a"
+        TOUCH_IMAGE_PATH: "images/ui/update_performance/touch.png"
     }
 }
 , function(e, t, n) {
@@ -17778,577 +17669,6 @@ primJsp([60], [, function(e, t, n) {
                 }
             }
             return e
-        }
-    }
-}
-, function(e, t, n) {
-    "use strict";
-    function o(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    }),
-    t.processUserBusinesses = void 0;
-    var r = n(335)
-      , i = o(r)
-      , a = n(75)
-      , s = o(a)
-      , u = n(591)
-      , l = o(u);
-    t.processUserBusinesses = function(e) {
-        var t = !0;
-        return e.forEach(function(e) {
-            e.business && aoba.utils.setPrototypeOf(e.business, i.default),
-            aoba.utils.setPrototypeOf(e, l.default),
-            e.isLocked() && (e.isPurchasable = t,
-            t = !1),
-            e.hasMember() && (e.setActiveMemberRandomIndex(),
-            e.members.forEach(function(e) {
-                aoba.utils.setPrototypeOf(e.userSupportIdol, s.default)
-            }))
-        }),
-        e
-    }
-}
-, function(e, t, n) {
-    "use strict";
-    function o(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var r = n(9)
-      , i = o(r)
-      , a = n(4)
-      , s = o(a)
-      , u = n(194)
-      , l = o(u)
-      , c = n(20)
-      , f = o(c)
-      , d = {
-        getRemainTimeMs: function() {
-            return 60 * this.minute * 1e3
-        },
-        getRemainTimeText: function() {
-            var e = l.default.calc(this.getRemainTimeMs())
-              , t = e.hour
-              , n = e.min
-              , o = "";
-            return t > 0 && (o += i.default.t("common.hour", {
-                hour: t
-            })),
-            o += i.default.t("common.min", {
-                min: f.default.pad(n, 2, "0")
-            })
-        },
-        hasFgImage: function() {
-            return !!this.fgImage
-        },
-        getInterviewerSpinePath: function() {
-            return s.default.createSpinePath("sub_characters", "cb", "ugc")
-        },
-        getAreaImagePath: function() {
-            return s.default.createImagePath("business", "area_label", this.id)
-        },
-        getBgImagePath: function() {
-            return s.default.createImagePath("business", "work_bg", this.bgImage)
-        },
-        getFgImagePath: function() {
-            return s.default.createImagePath("business", "work_fg", this.fgImage)
-        },
-        getTeaTimeBgImagePath: function() {
-            return s.default.createImagePath("business", "work_bg", this.afterTimeBgImage)
-        },
-        getTeaTimeFgImagePath: function() {
-            return s.default.createImagePath("business", "work_fg", this.afterTimeFgImage)
-        },
-        getCompleteBgImagePath: function() {
-            return s.default.createImagePath("business", "work_bg", "end")
-        }
-    };
-    t.default = d
-}
-, function(e, t, n) {
-    "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var o = n(4)
-      , r = function(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }(o)
-      , i = {
-        produce_marathon: "produce_marathons"
-    };
-    t.default = {
-        getAlbumBannerImagePath: function() {
-            return r.default.createImagePath(i[this.eventType], "album_banner", this.id)
-        },
-        canOnlyGetReward: function() {
-            var e = Math.floor(Date.now() / 1e3);
-            return this.closeAt < e && this.rewardCloseAt > e
-        }
-    }
-}
-, function(e, t, n) {
-    "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var o = function(e) {
-        var t = aoba.loader.resources[e];
-        return !(!t || !t.buffer)
-    };
-    t.default = {
-        isAppropriateResourceAsSound: function(e) {
-            return o(e)
-        }
-    }
-}
-, function(e, t, n) {
-    "use strict";
-    function o(e, t) {
-        if (!(e instanceof t))
-            throw new TypeError("Cannot call a class as a function")
-    }
-    function r(e, t) {
-        if (!e)
-            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-        return !t || "object" != typeof t && "function" != typeof t ? e : t
-    }
-    function i(e, t) {
-        if ("function" != typeof t && null !== t)
-            throw new TypeError("Super expression must either be null or a function, not " + typeof t);
-        e.prototype = Object.create(t && t.prototype, {
-            constructor: {
-                value: e,
-                enumerable: !1,
-                writable: !0,
-                configurable: !0
-            }
-        }),
-        t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-    }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var a = function() {
-        function e(e, t) {
-            for (var n = 0; n < t.length; n++) {
-                var o = t[n];
-                o.enumerable = o.enumerable || !1,
-                o.configurable = !0,
-                "value"in o && (o.writable = !0),
-                Object.defineProperty(e, o.key, o)
-            }
-        }
-        return function(t, n, o) {
-            return n && e(t.prototype, n),
-            o && e(t, o),
-            t
-        }
-    }()
-      , s = n(10)
-      , u = function(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }(s)
-      , l = function(e) {
-        function t(e) {
-            o(this, t);
-            var n = r(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this))
-              , i = n.fromData(e, {
-                button: {
-                    class: u.default.DecideButton
-                }
-            });
-            return n._campaignBadge = i.campaignBadge.hide(),
-            n._campaignBadge.mask = aoba.Sprite.new("bubble_mask.png").addTo(n, n._campaignBadge.x, n._campaignBadge.y, {
-                anchor: n._campaignBadge.anchor
-            }),
-            n._button = i.button,
-            n._button.on("tap", function() {
-                return n.emit("tap")
-            }),
-            n
-        }
-        return i(t, e),
-        a(t, [{
-            key: "setIsTrainingSuccessRateCampaignBeingHeld",
-            value: function(e) {
-                this._campaignBadge.visible = e,
-                e && u.default.commonUiHelper.createGlossEffect().addTo(this._campaignBadge)
-            }
-        }]),
-        t
-    }(aoba.Container);
-    t.default = l
-}
-, function(e, t, n) {
-    "use strict";
-    function o(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }
-    function r(e, t) {
-        if (!(e instanceof t))
-            throw new TypeError("Cannot call a class as a function")
-    }
-    function i(e, t) {
-        if (!e)
-            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-        return !t || "object" != typeof t && "function" != typeof t ? e : t
-    }
-    function a(e, t) {
-        if ("function" != typeof t && null !== t)
-            throw new TypeError("Super expression must either be null or a function, not " + typeof t);
-        e.prototype = Object.create(t && t.prototype, {
-            constructor: {
-                value: e,
-                enumerable: !1,
-                writable: !0,
-                configurable: !0
-            }
-        }),
-        t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-    }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var s = function() {
-        function e(e, t) {
-            for (var n = 0; n < t.length; n++) {
-                var o = t[n];
-                o.enumerable = o.enumerable || !1,
-                o.configurable = !0,
-                "value"in o && (o.writable = !0),
-                Object.defineProperty(e, o.key, o)
-            }
-        }
-        return function(t, n, o) {
-            return n && e(t.prototype, n),
-            o && e(t, o),
-            t
-        }
-    }()
-      , u = n(10)
-      , l = o(u)
-      , c = n(519)
-      , f = o(c)
-      , d = n(105)
-      , p = o(d)
-      , h = "common_menu_mission_button.png"
-      , g = function(e) {
-        function t() {
-            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
-                buttonImageKey: h
-            };
-            r(this, t);
-            var n = i(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this))
-              , o = n.fromData(f.default, {
-                badge: p.default.new(),
-                button: {
-                    class: l.default.DecideButton,
-                    key: e.buttonImageKey
-                }
-            });
-            return n._badge = o.badge,
-            n._button = o.button,
-            n._button.on("tap", function() {
-                return n.emit("tap")
-            }),
-            n
-        }
-        return a(t, e),
-        s(t, [{
-            key: "setCleardMissionCount",
-            value: function(e) {
-                this._badge.setNum(e)
-            }
-        }]),
-        t
-    }(aoba.Container);
-    t.default = g
-}
-, function(e, t, n) {
-    "use strict";
-    function o(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }
-    function r(e, t) {
-        if (!(e instanceof t))
-            throw new TypeError("Cannot call a class as a function")
-    }
-    function i(e, t) {
-        if (!e)
-            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-        return !t || "object" != typeof t && "function" != typeof t ? e : t
-    }
-    function a(e, t) {
-        if ("function" != typeof t && null !== t)
-            throw new TypeError("Super expression must either be null or a function, not " + typeof t);
-        e.prototype = Object.create(t && t.prototype, {
-            constructor: {
-                value: e,
-                enumerable: !1,
-                writable: !0,
-                configurable: !0
-            }
-        }),
-        t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-    }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var s = function() {
-        function e(e, t) {
-            for (var n = 0; n < t.length; n++) {
-                var o = t[n];
-                o.enumerable = o.enumerable || !1,
-                o.configurable = !0,
-                "value"in o && (o.writable = !0),
-                Object.defineProperty(e, o.key, o)
-            }
-        }
-        return function(t, n, o) {
-            return n && e(t.prototype, n),
-            o && e(t, o),
-            t
-        }
-    }()
-      , u = n(1)
-      , l = o(u)
-      , c = n(10)
-      , f = o(c)
-      , d = n(524)
-      , p = o(d)
-      , h = n(253)
-      , g = o(h)
-      , m = l.default.app.CAMPAIGN_CATEGORIES
-      , _ = {
-        fill: 16777215,
-        fontFamily: "UDKakugo_SmallPr6-B",
-        fontSize: 14
-    }
-      , y = {
-        fill: 16777215,
-        fontFamily: "UDKakugo_SmallPr6-B",
-        fontSize: 14,
-        stroke: 12058714,
-        strokeThickness: 6
-    }
-      , I = {
-        WIDTH: 68,
-        HEIGHT: 68
-    }
-      , A = {};
-    A[m.AUDITION] = {
-        badgeImage: "common_menu_campaign_badge_produce_audition.png",
-        maskImage: "common_menu_campaign_badge_produce_audition_mask.png",
-        position: {
-            x: 35,
-            y: 23
-        }
-    },
-    A[m.PRODUCE_DROP_UP] = {
-        badgeImage: "common_menu_campaign_badge_drop_up.png",
-        maskImage: "bubble_mask.png",
-        position: {
-            x: 60,
-            y: 23
-        }
-    },
-    A[m.PRODUCE_STAMINA_HALF] = {
-        badgeImage: "common_menu_campaign_badge_stamina_halving.png",
-        maskImage: "bubble_mask.png",
-        position: {
-            x: 60,
-            y: 23
-        }
-    };
-    var C = function(e) {
-        function t() {
-            r(this, t);
-            var e = i(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this))
-              , n = aoba.Gauge.new("common_menu_button_stamina_gauge.png", {
-                value: l.default.app.MAX_STAMINA,
-                maxValue: l.default.app.MAX_STAMINA
-            })
-              , o = e.fromData(p.default, {
-                "button/staminaGauge": n,
-                "button/stamina": {
-                    style: _
-                },
-                "button/nextStaminaRecoveryTime": {
-                    style: y
-                },
-                button: {
-                    class: f.default.DecideButton,
-                    key: "common_menu_produce_start_button.png"
-                }
-            });
-            return e._stamina = o["button/stamina"],
-            e._staminaGauge = o["button/staminaGauge"],
-            e._nextStaminaRecoveryTime = o["button/nextStaminaRecoveryTime"],
-            e._button = o.button,
-            e._idolIconLayer = o["button/idolIconLayer"],
-            e._baloonLayer = aoba.Container.new().addTo(e),
-            e._button.on("tap", function() {
-                return e.emit("tap")
-            }),
-            e.on("added", e._onAdded, e),
-            e.on("removed", e._onRemoved, e),
-            e
-        }
-        return a(t, e),
-        s(t, [{
-            key: "disable",
-            value: function() {
-                this.interactiveChildren = !1;
-                var e = new aoba.filters.ColorMatrixFilter;
-                e.brightness(.6, !0),
-                this.filters = [e]
-            }
-        }, {
-            key: "setUserStamina",
-            value: function(e) {
-                this._userStamina = e,
-                this._updateStamina()
-            }
-        }, {
-            key: "setProduceIdol",
-            value: function(e) {
-                if (this._idolIconLayer.removeChildren(),
-                e) {
-                    this._button.texture = aoba.Texture.fromImage("common_menu_produce_resume_button.png");
-                    var t = aoba.Sprite.new(e.getImagePath("icon")).addTo(this._idolIconLayer);
-                    t.scale = aoba.p(Math.min(I.WIDTH / t.width, I.HEIGHT / t.height))
-                } else
-                    this._button.texture = aoba.Texture.fromImage("common_menu_produce_start_button.png")
-            }
-        }, {
-            key: "setCampaignBalloon",
-            value: function(e) {
-                this._baloonLayer.destroyChildren();
-                var t = A[e]
-                  , n = aoba.Sprite.fromImage(t.badgeImage).addTo(this._baloonLayer, t.position.x, t.position.y, {
-                    anchor: .5
-                });
-                n.mask = aoba.Sprite.new(t.maskImage).addTo(this._baloonLayer, n.x, n.y, {
-                    anchor: .5
-                }),
-                f.default.commonUiHelper.createGlossEffect().addTo(n)
-            }
-        }, {
-            key: "_onAdded",
-            value: function() {
-                var e = this;
-                this._updateStaminaInterval || (this._updateStaminaInterval = setInterval(function() {
-                    return e._updateStamina()
-                }, 1e3)),
-                this._updateStaminaGaugeInterval || (this._updateStaminaGaugeInterval = setInterval(function() {
-                    if (e._staminaGauge.value === e._staminaGauge._viewValue)
-                        return void e._clearUpdateStaminaGaugeInterval();
-                    e._staminaGauge.ezgUpdate()
-                }, 100))
-            }
-        }, {
-            key: "_onRemoved",
-            value: function() {
-                this._updateStaminaInterval && (clearInterval(this._updateStaminaInterval),
-                this._updateStaminaInterval = null),
-                this._updateStaminaGaugeInterval && this._clearUpdateStaminaGaugeInterval()
-            }
-        }, {
-            key: "_clearUpdateStaminaGaugeInterval",
-            value: function() {
-                clearInterval(this._updateStaminaGaugeInterval),
-                this._updateStaminaGaugeInterval = null
-            }
-        }, {
-            key: "_updateStamina",
-            value: function() {
-                if (this._userStamina) {
-                    var e = this._userStamina.calcCurrentStamina();
-                    if (e !== this._prevStamina && (this._setStamina(e),
-                    this._staminaGauge.ezgUpdate(),
-                    this._prevStamina = e),
-                    e < l.default.app.MAX_STAMINA) {
-                        var t = this._userStamina.calcNextStaminaRecoveryTime()
-                          , n = Math.floor(t / 60 / 1e3) % 60
-                          , o = Math.floor(t / 1e3) % 60;
-                        this._nextStaminaRecoveryTime.text = g.default.nextStaminaRecoveryTime(n, o)
-                    } else
-                        this._nextStaminaRecoveryTime.text = ""
-                }
-            }
-        }, {
-            key: "_setStamina",
-            value: function(e) {
-                this._stamina.text = e + "/" + l.default.app.MAX_STAMINA,
-                this._staminaGauge.setValue(e)
-            }
-        }]),
-        t
-    }(aoba.Container);
-    t.default = C
-}
-, function(e, t, n) {
-    "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    }),
-    t.default = {
-        communicationRetry: "communication_retry",
-        promiseRecover: "promise_recover",
-        promiseRejectRecover: "promise_reject_recover",
-        restBoost: "rest_boost",
-        troubleGuard: "trouble_guard",
-        supportEventRate: "support_event_rate",
-        staminaSupport: "stamina_support",
-        tensionBoost: "tension_boost",
-        tagBoost: "tag_boost",
-        friendship: "friendship",
-        perfectMastery: "perfect_mastery",
-        placeMastery: "place_mastery"
-    }
-}
-, function(e, t, n) {
-    "use strict";
-    function o(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var r = n(2)
-      , i = o(r)
-      , a = n(54)
-      , s = o(a)
-      , u = n(107)
-      , l = o(u);
-    t.default = {
-        get: function() {
-            return i.default.get("userProduceItems").then(function(e) {
-                return l.default.processUserItemsResponse(e, s.default.produceItem)
-            })
-        },
-        updateFavorite: function(e) {
-            return i.default.patch("userProduceItems/" + e + "/actions/updateFavorite")
         }
     }
 }
@@ -18415,7 +17735,7 @@ primJsp([60], [, function(e, t, n) {
     }
       , l = n(18)
       , c = o(l)
-      , f = n(133)
+      , f = n(134)
       , d = o(f)
       , p = n(78)
       , h = o(p)
@@ -18423,21 +17743,21 @@ primJsp([60], [, function(e, t, n) {
       , m = o(g)
       , _ = n(58)
       , y = o(_)
-      , I = n(91)
+      , I = n(92)
       , A = o(I)
-      , C = n(108)
+      , C = n(110)
       , v = o(C)
       , b = n(10)
       , P = o(b)
-      , T = n(572)
-      , w = o(T)
-      , O = n(72)
-      , E = o(O)
-      , S = n(102)
+      , T = n(575)
+      , O = o(T)
+      , w = n(72)
+      , E = o(w)
+      , S = n(105)
       , k = o(S)
-      , R = n(47)
+      , R = n(49)
       , x = o(R)
-      , M = n(137)
+      , M = n(138)
       , N = o(M)
       , j = -58
       , B = 16
@@ -18451,7 +17771,7 @@ primJsp([60], [, function(e, t, n) {
         function t(e, n) {
             r(this, t);
             var o = i(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this))
-              , a = o.fromData(w.default, {
+              , a = o.fromData(O.default, {
                 closeButton: {
                     class: P.default.DecideButton
                 },
@@ -18750,6 +18070,486 @@ primJsp([60], [, function(e, t, n) {
 }
 , function(e, t, n) {
     "use strict";
+    function o(e, t) {
+        if (!(e instanceof t))
+            throw new TypeError("Cannot call a class as a function")
+    }
+    function r(e, t) {
+        if (!e)
+            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+        return !t || "object" != typeof t && "function" != typeof t ? e : t
+    }
+    function i(e, t) {
+        if ("function" != typeof t && null !== t)
+            throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+        e.prototype = Object.create(t && t.prototype, {
+            constructor: {
+                value: e,
+                enumerable: !1,
+                writable: !0,
+                configurable: !0
+            }
+        }),
+        t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var a = function() {
+        function e(e, t) {
+            for (var n = 0; n < t.length; n++) {
+                var o = t[n];
+                o.enumerable = o.enumerable || !1,
+                o.configurable = !0,
+                "value"in o && (o.writable = !0),
+                Object.defineProperty(e, o.key, o)
+            }
+        }
+        return function(t, n, o) {
+            return n && e(t.prototype, n),
+            o && e(t, o),
+            t
+        }
+    }()
+      , s = n(73)
+      , u = function(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }(s)
+      , l = function(e) {
+        function t(e, n) {
+            o(this, t);
+            var i = r(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
+            return i._isOn = !1,
+            i._textures = {
+                false: aoba.Texture.fromImage(e),
+                true: aoba.Texture.fromImage(n)
+            },
+            i.on("tap", i.toggle, i),
+            i
+        }
+        return i(t, e),
+        a(t, [{
+            key: "toggle",
+            value: function() {
+                this._changeOn(!this._isOn)
+            }
+        }, {
+            key: "setOn",
+            value: function() {
+                var e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
+                this._changeOn(e)
+            }
+        }, {
+            key: "resetOn",
+            value: function(e) {
+                this._isOn = e,
+                this.texture = this._textures[this._isOn]
+            }
+        }, {
+            key: "_changeOn",
+            value: function(e) {
+                this.resetOn(e),
+                this.emit("changed")
+            }
+        }, {
+            key: "isOn",
+            get: function() {
+                return this._isOn
+            }
+        }]),
+        t
+    }(u.default);
+    t.default = l
+}
+, function(e, t, n) {
+    "use strict";
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var o = {
+        REGULAR: {
+            adjustLayout: function(e, t) {
+                t.forEach(function(t, n) {
+                    t.changeTexture(e.image),
+                    t.x = e.startPosition.x + e.interval.x * n,
+                    t.y = e.startPosition.y + e.interval.y * n
+                })
+            }
+        },
+        CUSTOM: {
+            adjustLayout: function(e, t) {
+                t.slice(3).forEach(function(e) {
+                    e.destroy()
+                }),
+                t.slice(0, 3).forEach(function(n, o) {
+                    var r = e[t.length][o];
+                    n.changeTexture(r.image),
+                    n.x = r.x,
+                    n.y = r.y
+                })
+            }
+        }
+    };
+    t.default = {
+        defaultCommand: {
+            textCtrl: "p"
+        },
+        assetFormat: {
+            textFrame: "images/event/text_frame/${id}.png",
+            bg: "images/event/bg/${id}.jpg",
+            fg: "images/event/fg/${id}.png",
+            bgm: "sounds/bgm/${id}.m4a",
+            se: "sounds/se/event/${id}.m4a",
+            voice: "sounds/voice/events/${id}.m4a",
+            movie: "movies/idols/card/${id}.mp4",
+            still: "images/event/still/${id}.jpg",
+            spine: "spine/${type}/${category}/${id}/data.json"
+        },
+        characterAssetFormat: {
+            still: "images/content/${type}/card/${id}.jpg",
+            spine: "spine/${type}/${category}/${id}/data.json"
+        },
+        defaultTextFrame: "001",
+        scenarioPlayer: {
+            x: 80,
+            y: 464,
+            content: {
+                x: 148,
+                y: 60,
+                textStyle: {
+                    fill: 5592405,
+                    fontSize: 22,
+                    lineHeight: 30,
+                    wordWrap: !0,
+                    wordWrapWidth: 661,
+                    breakWords: !0,
+                    fontFamily: "HummingStd-E"
+                }
+            },
+            speaker: {
+                x: 160,
+                y: 14,
+                textStyle: {
+                    fill: 5592405,
+                    fontFamily: "HummingStd-E"
+                }
+            }
+        },
+        selectList: {
+            x: 0,
+            y: 0,
+            layout: {
+                type: o.CUSTOM,
+                1: [{
+                    x: 564,
+                    y: 114,
+                    image: "images/event/select_frame/001.png"
+                }],
+                2: [{
+                    x: 212,
+                    y: 216,
+                    image: "images/event/select_frame/001.png"
+                }, {
+                    x: 912,
+                    y: 216,
+                    image: "images/event/select_frame/002.png"
+                }],
+                3: [{
+                    x: 564,
+                    y: 114,
+                    image: "images/event/select_frame/001.png"
+                }, {
+                    x: 212,
+                    y: 216,
+                    image: "images/event/select_frame/002.png"
+                }, {
+                    x: 912,
+                    y: 216,
+                    image: "images/event/select_frame/003.png"
+                }]
+            },
+            item: {
+                x: 0,
+                y: 0,
+                options: {
+                    anchor: .5
+                },
+                image: "images/event/select_frame/001.png",
+                textStyle: {
+                    align: "center",
+                    fill: 5853004,
+                    fontFamily: "HummingStd-E"
+                }
+            }
+        }
+    }
+}
+, function(e, t, n) {
+    "use strict";
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    }),
+    t.default = {
+        murmur: "sounds/se/138.m4a",
+        record: "sounds/se/223.m4a",
+        audition_win: {
+            grade: "sounds/se/concert_result/0130.m4a",
+            effect: "sounds/se/concert_result/0132.m4a"
+        },
+        semi_final_win: {
+            grade: "sounds/se/concert_result/0130.m4a",
+            effect: "sounds/se/concert_result/0133.m4a"
+        },
+        final_win: {
+            grade: "sounds/se/concert_result/0130.m4a",
+            effect: "sounds/se/concert_result/0134.m4a"
+        },
+        lose: {
+            grade: "sounds/se/concert_result/0131.m4a",
+            effect: "sounds/se/concert_result/0135.m4a"
+        }
+    }
+}
+, function(e, t, n) {
+    "use strict";
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    }),
+    t.default = {
+        starTail: "sounds/se/326.m4a",
+        openWindow: "sounds/se/327.m4a",
+        successTitle: "sounds/se/328.m4a"
+    }
+}
+, function(e, t, n) {
+    "use strict";
+    function o(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }
+    function r(e, t) {
+        if (!(e instanceof t))
+            throw new TypeError("Cannot call a class as a function")
+    }
+    function i(e, t) {
+        if (!e)
+            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+        return !t || "object" != typeof t && "function" != typeof t ? e : t
+    }
+    function a(e, t) {
+        if ("function" != typeof t && null !== t)
+            throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+        e.prototype = Object.create(t && t.prototype, {
+            constructor: {
+                value: e,
+                enumerable: !1,
+                writable: !0,
+                configurable: !0
+            }
+        }),
+        t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var s = function() {
+        function e(e, t) {
+            for (var n = 0; n < t.length; n++) {
+                var o = t[n];
+                o.enumerable = o.enumerable || !1,
+                o.configurable = !0,
+                "value"in o && (o.writable = !0),
+                Object.defineProperty(e, o.key, o)
+            }
+        }
+        return function(t, n, o) {
+            return n && e(t.prototype, n),
+            o && e(t, o),
+            t
+        }
+    }()
+      , u = n(1)
+      , l = o(u)
+      , c = n(10)
+      , f = o(c)
+      , d = n(527)
+      , p = o(d)
+      , h = n(260)
+      , g = o(h)
+      , m = l.default.app.CAMPAIGN_CATEGORIES
+      , _ = {
+        fill: 16777215,
+        fontFamily: "UDKakugo_SmallPr6-B",
+        fontSize: 14
+    }
+      , y = {
+        fill: 16777215,
+        fontFamily: "UDKakugo_SmallPr6-B",
+        fontSize: 14,
+        stroke: 12058714,
+        strokeThickness: 6
+    }
+      , I = {
+        WIDTH: 68,
+        HEIGHT: 68
+    }
+      , A = {};
+    A[m.AUDITION] = {
+        badgeImage: "common_menu_campaign_badge_produce_audition.png",
+        maskImage: "common_menu_campaign_badge_produce_audition_mask.png",
+        position: {
+            x: 35,
+            y: 23
+        }
+    },
+    A[m.PRODUCE_DROP_UP] = {
+        badgeImage: "common_menu_campaign_badge_drop_up.png",
+        maskImage: "bubble_mask.png",
+        position: {
+            x: 60,
+            y: 23
+        }
+    },
+    A[m.PRODUCE_STAMINA_HALF] = {
+        badgeImage: "common_menu_campaign_badge_stamina_halving.png",
+        maskImage: "bubble_mask.png",
+        position: {
+            x: 60,
+            y: 23
+        }
+    };
+    var C = function(e) {
+        function t() {
+            r(this, t);
+            var e = i(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this))
+              , n = aoba.Gauge.new("common_menu_button_stamina_gauge.png", {
+                value: l.default.app.MAX_STAMINA,
+                maxValue: l.default.app.MAX_STAMINA
+            })
+              , o = e.fromData(p.default, {
+                "button/staminaGauge": n,
+                "button/stamina": {
+                    style: _
+                },
+                "button/nextStaminaRecoveryTime": {
+                    style: y
+                },
+                button: {
+                    class: f.default.DecideButton,
+                    key: "common_menu_produce_start_button.png"
+                }
+            });
+            return e._stamina = o["button/stamina"],
+            e._staminaGauge = o["button/staminaGauge"],
+            e._nextStaminaRecoveryTime = o["button/nextStaminaRecoveryTime"],
+            e._button = o.button,
+            e._idolIconLayer = o["button/idolIconLayer"],
+            e._baloonLayer = aoba.Container.new().addTo(e),
+            e._button.on("tap", function() {
+                return e.emit("tap")
+            }),
+            e.on("added", e._onAdded, e),
+            e.on("removed", e._onRemoved, e),
+            e
+        }
+        return a(t, e),
+        s(t, [{
+            key: "disable",
+            value: function() {
+                this.interactiveChildren = !1;
+                var e = new aoba.filters.ColorMatrixFilter;
+                e.brightness(.6, !0),
+                this.filters = [e]
+            }
+        }, {
+            key: "setUserStamina",
+            value: function(e) {
+                this._userStamina = e,
+                this._updateStamina()
+            }
+        }, {
+            key: "setProduceIdol",
+            value: function(e) {
+                if (this._idolIconLayer.removeChildren(),
+                e) {
+                    this._button.texture = aoba.Texture.fromImage("common_menu_produce_resume_button.png");
+                    var t = aoba.Sprite.new(e.getImagePath("icon")).addTo(this._idolIconLayer);
+                    t.scale = aoba.p(Math.min(I.WIDTH / t.width, I.HEIGHT / t.height))
+                } else
+                    this._button.texture = aoba.Texture.fromImage("common_menu_produce_start_button.png")
+            }
+        }, {
+            key: "setCampaignBalloon",
+            value: function(e) {
+                this._baloonLayer.destroyChildren();
+                var t = A[e]
+                  , n = aoba.Sprite.fromImage(t.badgeImage).addTo(this._baloonLayer, t.position.x, t.position.y, {
+                    anchor: .5
+                });
+                n.mask = aoba.Sprite.new(t.maskImage).addTo(this._baloonLayer, n.x, n.y, {
+                    anchor: .5
+                }),
+                f.default.commonUiHelper.createGlossEffect().addTo(n)
+            }
+        }, {
+            key: "_onAdded",
+            value: function() {
+                var e = this;
+                this._updateStaminaInterval || (this._updateStaminaInterval = setInterval(function() {
+                    return e._updateStamina()
+                }, 1e3)),
+                this._updateStaminaGaugeInterval || (this._updateStaminaGaugeInterval = setInterval(function() {
+                    if (e._staminaGauge.value === e._staminaGauge._viewValue)
+                        return void e._clearUpdateStaminaGaugeInterval();
+                    e._staminaGauge.ezgUpdate()
+                }, 100))
+            }
+        }, {
+            key: "_onRemoved",
+            value: function() {
+                this._updateStaminaInterval && (clearInterval(this._updateStaminaInterval),
+                this._updateStaminaInterval = null),
+                this._updateStaminaGaugeInterval && this._clearUpdateStaminaGaugeInterval()
+            }
+        }, {
+            key: "_clearUpdateStaminaGaugeInterval",
+            value: function() {
+                clearInterval(this._updateStaminaGaugeInterval),
+                this._updateStaminaGaugeInterval = null
+            }
+        }, {
+            key: "_updateStamina",
+            value: function() {
+                if (this._userStamina) {
+                    var e = this._userStamina.calcCurrentStamina();
+                    if (e !== this._prevStamina && (this._setStamina(e),
+                    this._staminaGauge.ezgUpdate(),
+                    this._prevStamina = e),
+                    e < l.default.app.MAX_STAMINA) {
+                        var t = this._userStamina.calcNextStaminaRecoveryTime()
+                          , n = Math.floor(t / 60 / 1e3) % 60
+                          , o = Math.floor(t / 1e3) % 60;
+                        this._nextStaminaRecoveryTime.text = g.default.nextStaminaRecoveryTime(n, o)
+                    } else
+                        this._nextStaminaRecoveryTime.text = ""
+                }
+            }
+        }, {
+            key: "_setStamina",
+            value: function(e) {
+                this._stamina.text = e + "/" + l.default.app.MAX_STAMINA,
+                this._staminaGauge.setValue(e)
+            }
+        }]),
+        t
+    }(aoba.Container);
+    t.default = C
+}
+, function(e, t, n) {
+    "use strict";
     function o(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -18758,7 +18558,297 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(264)
+    var r = n(9)
+      , i = o(r)
+      , a = n(4)
+      , s = o(a)
+      , u = n(198)
+      , l = o(u)
+      , c = n(21)
+      , f = o(c)
+      , d = {
+        getRemainTimeMs: function() {
+            return 60 * this.minute * 1e3
+        },
+        getRemainTimeText: function() {
+            var e = l.default.calc(this.getRemainTimeMs())
+              , t = e.hour
+              , n = e.min
+              , o = "";
+            return t > 0 && (o += i.default.t("common.hour", {
+                hour: t
+            })),
+            o += i.default.t("common.min", {
+                min: f.default.pad(n, 2, "0")
+            })
+        },
+        hasFgImage: function() {
+            return !!this.fgImage
+        },
+        getInterviewerSpinePath: function() {
+            return s.default.createSpinePath("sub_characters", "cb", "ugc")
+        },
+        getAreaImagePath: function() {
+            return s.default.createImagePath("business", "area_label", this.id)
+        },
+        getBgImagePath: function() {
+            return s.default.createImagePath("business", "work_bg", this.bgImage)
+        },
+        getFgImagePath: function() {
+            return s.default.createImagePath("business", "work_fg", this.fgImage)
+        },
+        getTeaTimeBgImagePath: function() {
+            return s.default.createImagePath("business", "work_bg", this.afterTimeBgImage)
+        },
+        getTeaTimeFgImagePath: function() {
+            return s.default.createImagePath("business", "work_fg", this.afterTimeFgImage)
+        },
+        getCompleteBgImagePath: function() {
+            return s.default.createImagePath("business", "work_bg", "end")
+        }
+    };
+    t.default = d
+}
+, function(e, t, n) {
+    "use strict";
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var o = function(e) {
+        var t = aoba.loader.resources[e];
+        return !(!t || !t.buffer)
+    };
+    t.default = {
+        isAppropriateResourceAsSound: function(e) {
+            return o(e)
+        }
+    }
+}
+, function(e, t, n) {
+    "use strict";
+    function o(e, t) {
+        if (!(e instanceof t))
+            throw new TypeError("Cannot call a class as a function")
+    }
+    function r(e, t) {
+        if (!e)
+            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+        return !t || "object" != typeof t && "function" != typeof t ? e : t
+    }
+    function i(e, t) {
+        if ("function" != typeof t && null !== t)
+            throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+        e.prototype = Object.create(t && t.prototype, {
+            constructor: {
+                value: e,
+                enumerable: !1,
+                writable: !0,
+                configurable: !0
+            }
+        }),
+        t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var a = function() {
+        function e(e, t) {
+            for (var n = 0; n < t.length; n++) {
+                var o = t[n];
+                o.enumerable = o.enumerable || !1,
+                o.configurable = !0,
+                "value"in o && (o.writable = !0),
+                Object.defineProperty(e, o.key, o)
+            }
+        }
+        return function(t, n, o) {
+            return n && e(t.prototype, n),
+            o && e(t, o),
+            t
+        }
+    }()
+      , s = n(10)
+      , u = function(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }(s)
+      , l = function(e) {
+        function t(e) {
+            o(this, t);
+            var n = r(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this))
+              , i = n.fromData(e, {
+                button: {
+                    class: u.default.DecideButton
+                }
+            });
+            return n._campaignBadge = i.campaignBadge.hide(),
+            n._campaignBadge.mask = aoba.Sprite.new("bubble_mask.png").addTo(n, n._campaignBadge.x, n._campaignBadge.y, {
+                anchor: n._campaignBadge.anchor
+            }),
+            n._button = i.button,
+            n._button.on("tap", function() {
+                return n.emit("tap")
+            }),
+            n
+        }
+        return i(t, e),
+        a(t, [{
+            key: "setIsTrainingSuccessRateCampaignBeingHeld",
+            value: function(e) {
+                this._campaignBadge.visible = e,
+                e && u.default.commonUiHelper.createGlossEffect().addTo(this._campaignBadge)
+            }
+        }]),
+        t
+    }(aoba.Container);
+    t.default = l
+}
+, function(e, t, n) {
+    "use strict";
+    function o(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }
+    function r(e, t) {
+        if (!(e instanceof t))
+            throw new TypeError("Cannot call a class as a function")
+    }
+    function i(e, t) {
+        if (!e)
+            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+        return !t || "object" != typeof t && "function" != typeof t ? e : t
+    }
+    function a(e, t) {
+        if ("function" != typeof t && null !== t)
+            throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+        e.prototype = Object.create(t && t.prototype, {
+            constructor: {
+                value: e,
+                enumerable: !1,
+                writable: !0,
+                configurable: !0
+            }
+        }),
+        t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var s = function() {
+        function e(e, t) {
+            for (var n = 0; n < t.length; n++) {
+                var o = t[n];
+                o.enumerable = o.enumerable || !1,
+                o.configurable = !0,
+                "value"in o && (o.writable = !0),
+                Object.defineProperty(e, o.key, o)
+            }
+        }
+        return function(t, n, o) {
+            return n && e(t.prototype, n),
+            o && e(t, o),
+            t
+        }
+    }()
+      , u = n(10)
+      , l = o(u)
+      , c = n(523)
+      , f = o(c)
+      , d = n(107)
+      , p = o(d)
+      , h = "common_menu_mission_button.png"
+      , g = function(e) {
+        function t() {
+            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
+                buttonImageKey: h
+            };
+            r(this, t);
+            var n = i(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this))
+              , o = n.fromData(f.default, {
+                badge: p.default.new(),
+                button: {
+                    class: l.default.DecideButton,
+                    key: e.buttonImageKey
+                }
+            });
+            return n._badge = o.badge,
+            n._button = o.button,
+            n._button.on("tap", function() {
+                return n.emit("tap")
+            }),
+            n
+        }
+        return a(t, e),
+        s(t, [{
+            key: "setCleardMissionCount",
+            value: function(e) {
+                this._badge.setNum(e)
+            }
+        }]),
+        t
+    }(aoba.Container);
+    t.default = g
+}
+, function(e, t, n) {
+    "use strict";
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    }),
+    t.default = {
+        communicationRetry: "communication_retry",
+        promiseRecover: "promise_recover",
+        promiseRejectRecover: "promise_reject_recover",
+        restBoost: "rest_boost",
+        troubleGuard: "trouble_guard",
+        supportEventRate: "support_event_rate",
+        staminaSupport: "stamina_support",
+        tensionBoost: "tension_boost",
+        tagBoost: "tag_boost",
+        friendship: "friendship",
+        perfectMastery: "perfect_mastery",
+        placeMastery: "place_mastery"
+    }
+}
+, function(e, t, n) {
+    "use strict";
+    function o(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var r = n(2)
+      , i = o(r)
+      , a = n(47)
+      , s = o(a)
+      , u = n(109)
+      , l = o(u);
+    t.default = {
+        get: function() {
+            return i.default.get("userProduceItems").then(function(e) {
+                return l.default.processUserItemsResponse(e, s.default.produceItem)
+            })
+        },
+        updateFavorite: function(e) {
+            return i.default.patch("userProduceItems/" + e + "/actions/updateFavorite")
+        }
+    }
+}
+, function(e, t, n) {
+    "use strict";
+    function o(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var r = n(270)
       , i = o(r)
       , a = n(2)
       , s = o(a);
@@ -18812,11 +18902,11 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(94)
+      , a = n(97)
       , s = o(a)
       , u = n(4)
       , l = o(u)
-      , c = n(21)
+      , c = n(20)
       , f = o(c)
       , d = function(e) {
         aoba.utils.setPrototypeOf(e, s.default),
@@ -18886,7 +18976,7 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(25)
+      , a = n(24)
       , s = o(a);
     t.default = {
         getList: function() {
@@ -18961,9 +19051,9 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var s = n(611)
+    var s = n(615)
       , u = o(s)
-      , l = n(314)
+      , l = n(319)
       , c = o(l)
       , f = n(9)
       , d = o(f)
@@ -19128,7 +19218,7 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(184)
+    var r = n(186)
       , i = o(r)
       , a = n(2)
       , s = o(a)
@@ -19223,29 +19313,29 @@ primJsp([60], [, function(e, t, n) {
     }()
       , u = n(58)
       , l = o(u)
-      , c = n(504)
+      , c = n(508)
       , f = o(c)
-      , d = n(318)
+      , d = n(324)
       , p = o(d)
-      , h = n(319)
+      , h = n(322)
       , g = o(h)
       , m = n(12)
       , _ = o(m)
-      , y = n(16)
+      , y = n(13)
       , I = o(y)
-      , A = n(179)
+      , A = n(181)
       , C = o(A)
-      , v = n(260)
+      , v = n(267)
       , b = o(v)
-      , P = n(556)
+      , P = n(559)
       , T = o(P)
-      , w = n(343)
-      , O = o(w)
-      , E = n(53)
+      , O = n(335)
+      , w = o(O)
+      , E = n(54)
       , S = o(E)
-      , k = n(103)
+      , k = n(104)
       , R = o(k)
-      , x = n(262)
+      , x = n(269)
       , M = o(x)
       , N = function(e) {
         function t() {
@@ -19383,7 +19473,7 @@ primJsp([60], [, function(e, t, n) {
                         t.emit("showAnnouncePop");
                         var n = aoba.Container.new().addTo(t)
                           , o = R.default.Types.get()[e.announceType]
-                          , r = O.default.new(e, o).on("closeAnnouncePop", function() {
+                          , r = w.default.new(e, o).on("closeAnnouncePop", function() {
                             return t.emit("closeAnnouncePop")
                         }).on("showPfPopup", function() {
                             r.close(),
@@ -19401,7 +19491,7 @@ primJsp([60], [, function(e, t, n) {
                         }
                     })
                 } else
-                    "/produceMarathon" === r ? l.default.directTo(r) : ["/gasha", "/shop", "/boxGasha", "/fourSeasonsFes"].includes(r) && l.default.directTo(e.link)
+                    ["/gasha", "/shop", "/boxGasha", "/fourSeasonsFes", "/produceMarathon", "/characterFanRankingTop"].includes(r) && l.default.directTo(e.link)
             }
         }, {
             key: "_goToPresentBox",
@@ -19549,11 +19639,11 @@ primJsp([60], [, function(e, t, n) {
           , l = o(u)
           , c = n(10)
           , f = o(c)
-          , d = n(513)
+          , d = n(517)
           , p = o(d)
-          , h = n(253)
+          , h = n(260)
           , g = o(h)
-          , m = n(322)
+          , m = n(327)
           , _ = o(m)
           , y = l.default.app.CAMPAIGN_CATEGORIES
           , I = {
@@ -19700,6 +19790,185 @@ primJsp([60], [, function(e, t, n) {
 }
 , function(e, t, n) {
     "use strict";
+    function o(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }
+    function r(e, t) {
+        if (!(e instanceof t))
+            throw new TypeError("Cannot call a class as a function")
+    }
+    function i(e, t) {
+        if (!e)
+            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+        return !t || "object" != typeof t && "function" != typeof t ? e : t
+    }
+    function a(e, t) {
+        if ("function" != typeof t && null !== t)
+            throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+        e.prototype = Object.create(t && t.prototype, {
+            constructor: {
+                value: e,
+                enumerable: !1,
+                writable: !0,
+                configurable: !0
+            }
+        }),
+        t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var s = function() {
+        function e(e, t) {
+            for (var n = 0; n < t.length; n++) {
+                var o = t[n];
+                o.enumerable = o.enumerable || !1,
+                o.configurable = !0,
+                "value"in o && (o.writable = !0),
+                Object.defineProperty(e, o.key, o)
+            }
+        }
+        return function(t, n, o) {
+            return n && e(t.prototype, n),
+            o && e(t, o),
+            t
+        }
+    }()
+      , u = function e(t, n, o) {
+        null === t && (t = Function.prototype);
+        var r = Object.getOwnPropertyDescriptor(t, n);
+        if (void 0 === r) {
+            var i = Object.getPrototypeOf(t);
+            return null === i ? void 0 : e(i, n, o)
+        }
+        if ("value"in r)
+            return r.value;
+        var a = r.get;
+        if (void 0 !== a)
+            return a.call(o)
+    }
+      , l = n(21)
+      , c = o(l)
+      , f = n(9)
+      , d = o(f)
+      , p = n(10)
+      , h = o(p)
+      , g = n(524)
+      , m = o(g)
+      , _ = n(107)
+      , y = o(_)
+      , I = n(198)
+      , A = o(I)
+      , C = "common_menu_work_activity_button.png"
+      , v = function(e) {
+        var t = A.default.calc(e - Date.now())
+          , n = t.hour
+          , o = t.min;
+        return t.isOverTheTime ? d.default.t("common.remainingTimeMessage", {
+            min: "00",
+            sec: "00"
+        }) : d.default.t("common.remainingTimeMessage", {
+            min: n,
+            sec: c.default.pad(o, 2, "0")
+        })
+    }
+      , b = function(e) {
+        function t() {
+            r(this, t);
+            var e = i(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this))
+              , n = e.fromData(m.default, {
+                badge: y.default.new(),
+                commonMenuWorkActivityButton: {
+                    class: h.default.DecideButton,
+                    key: C
+                },
+                finishText: {
+                    visible: !1
+                },
+                finishTime: {
+                    visible: !1,
+                    dy: 3
+                }
+            })
+              , o = n.badge
+              , a = n.commonMenuWorkActivityButton
+              , s = n.finishText
+              , u = n.finishTime;
+            return u.style.stroke = 6378341,
+            u.style.strokeThickness = 6,
+            e._badge = o,
+            e._button = a,
+            e._countMsec = 0,
+            e._finishMsec = 0,
+            e._finishTime = u,
+            e._finishText = s,
+            e._button.on("tap", function() {
+                return e.emit("tap")
+            }),
+            e
+        }
+        return a(t, e),
+        s(t, [{
+            key: "ezgPreDestroy",
+            value: function() {
+                this._finishMsec = 0,
+                u(t.prototype.__proto__ || Object.getPrototypeOf(t.prototype), "ezgPreDestroy", this).call(this)
+            }
+        }, {
+            key: "ezgUpdate",
+            value: function(e) {
+                this._countMsec += e,
+                this._countMsec < 1e3 || (this._countMsec = 0,
+                this._updateRemainTime())
+            }
+        }, {
+            key: "setUserBusinesses",
+            value: function() {
+                var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
+                this._badge.setNum(0, "badge_base.png"),
+                this._finishTime.hide(),
+                this._finishText.hide();
+                var t = e.filter(function(e) {
+                    return e.isWaitReceive() || e.isTeaTime()
+                });
+                if (t.length > 0)
+                    return this._badge.setNum(t.length),
+                    void (this._button.texture = aoba.Texture.fromImage(C));
+                var n = e.filter(function(e) {
+                    return e.isFree()
+                });
+                if (n.length > 0)
+                    return this._badge.setNum(n.length, "badge_base_blue.png"),
+                    void (this._button.texture = aoba.Texture.fromImage(C));
+                var o = e.filter(function(e) {
+                    return e.isWorking()
+                });
+                if (o.length > 0) {
+                    var r = o.sort(function(e, t) {
+                        return e.getWorkFinishAt() - t.getWorkFinishAt()
+                    })[0];
+                    return this._finishMsec = r.getWorkFinishAtMsec(),
+                    this._button.texture = aoba.Texture.fromImage("common_menu_work_activity_button_active.png"),
+                    this._updateRemainTime(),
+                    this._finishTime.show(),
+                    void this._finishText.show()
+                }
+                this._button.texture = aoba.Texture.fromImage(C)
+            }
+        }, {
+            key: "_updateRemainTime",
+            value: function() {
+                this._finishMsec && (this._finishTime.text = v(this._finishMsec))
+            }
+        }]),
+        t
+    }(aoba.Container);
+    t.default = b
+}
+, function(e, t, n) {
+    "use strict";
     function o(e, t) {
         if (!(e instanceof t))
             throw new TypeError("Cannot call a class as a function")
@@ -19764,9 +20033,9 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(54)
+      , a = n(47)
       , s = o(a)
-      , u = n(107)
+      , u = n(109)
       , l = o(u);
     t.default = {
         getList: function() {
@@ -19792,9 +20061,9 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(139)
+      , a = n(140)
       , s = o(a)
-      , u = n(263)
+      , u = n(117)
       , l = o(u);
     t.default = {
         getList: function(e) {
@@ -19963,11 +20232,11 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(151)
+      , a = n(152)
       , s = o(a)
-      , u = n(152)
+      , u = n(153)
       , l = o(u)
-      , c = n(269)
+      , c = n(275)
       , f = o(c)
       , d = function(e) {
         var t = e.shopMerchandise;
@@ -20028,30 +20297,6 @@ primJsp([60], [, function(e, t, n) {
 }
 , function(e, t, n) {
     "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var o = n(88)
-      , r = function(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }(o);
-    t.default = {
-        getSeason: function() {
-            return Math.ceil(this.week / r.default.SEASON_WEEK_NUM)
-        },
-        getRestOfSeasonWeek: function() {
-            var e = this.getSeason();
-            return Math.min(e * r.default.SEASON_WEEK_NUM, r.default.TOTAL_WEEK_NUM) - (this.week - 1)
-        },
-        getActiveProduceItems: function() {
-            return this.activeProduceItems
-        }
-    }
-}
-, function(e, t, n) {
-    "use strict";
     function o(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -20088,9 +20333,9 @@ primJsp([60], [, function(e, t, n) {
             t
         }
     }()
-      , s = n(103)
+      , s = n(104)
       , u = o(s)
-      , l = n(590)
+      , l = n(593)
       , c = o(l)
       , f = function() {
         function e(t) {
@@ -20207,7 +20452,7 @@ primJsp([60], [, function(e, t, n) {
             default: e
         }
     }(o)
-      , i = n(265);
+      , i = n(271);
     t.default = {
         getList: function() {
             return r.default.patch("userFesDecks").then(function(e) {
@@ -20264,13 +20509,13 @@ primJsp([60], [, function(e, t, n) {
       , i = o(r)
       , a = n(77)
       , s = o(a)
-      , u = n(109)
+      , u = n(93)
       , l = o(u)
-      , c = n(25)
+      , c = n(24)
       , f = o(c)
       , d = n(4)
       , p = o(d)
-      , h = n(21)
+      , h = n(20)
       , g = o(h);
     t.default = {
         get: function(e) {
@@ -20316,11 +20561,11 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(269)
+      , a = n(275)
       , s = o(a)
-      , u = n(151)
+      , u = n(152)
       , l = o(u)
-      , c = n(152)
+      , c = n(153)
       , f = o(c)
       , d = n(34)
       , p = o(d)
@@ -20405,13 +20650,13 @@ primJsp([60], [, function(e, t, n) {
           , i = o(r)
           , a = n(75)
           , s = o(a)
-          , u = n(106)
+          , u = n(108)
           , l = o(u)
-          , c = n(21)
+          , c = n(20)
           , f = o(c)
           , d = n(79)
           , p = o(d)
-          , h = n(25)
+          , h = n(24)
           , g = o(h)
           , m = function(e) {
             aoba.utils.setPrototypeOf(e, s.default),
@@ -20500,9 +20745,9 @@ primJsp([60], [, function(e, t, n) {
         });
         var r = n(2)
           , i = o(r)
-          , a = n(54)
+          , a = n(47)
           , s = o(a)
-          , u = n(107)
+          , u = n(109)
           , l = o(u)
           , c = function(e) {
             return e.item.closeAt ? e.item.closeAt : Number.MAX_VALUE
@@ -20521,7 +20766,11 @@ primJsp([60], [, function(e, t, n) {
         };
         t.default = {
             get: function() {
-                return i.default.get("userRecoveryItems?all=true").then(function(e) {
+                var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
+                return i.default.get("userRecoveryItems", {
+                    category: e,
+                    all: !0
+                }).then(function(e) {
                     return l.default.processUserItemsResponse(e, s.default.recoveryItem)
                 }).then(function(e) {
                     return f(e)
@@ -20530,6 +20779,109 @@ primJsp([60], [, function(e, t, n) {
         }
     }
     ).call(t, n(17))
+}
+, function(e, t, n) {
+    "use strict";
+    function o(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var r = n(2)
+      , i = o(r)
+      , a = n(39)
+      , s = o(a)
+      , u = n(154)
+      , l = o(u)
+      , c = n(89)
+      , f = o(c)
+      , d = n(204)
+      , p = o(d)
+      , h = n(47)
+      , g = o(h)
+      , m = n(93)
+      , _ = o(m)
+      , y = n(193)
+      , I = n(20)
+      , A = o(I)
+      , C = n(607)
+      , v = o(C)
+      , b = n(194)
+      , P = o(b)
+      , T = n(117)
+      , O = o(T)
+      , w = n(24)
+      , E = o(w)
+      , S = function(e, t) {
+        e.character = t,
+        A.default.setUserTitleMixin(e.userTitle)
+    };
+    t.default = {
+        getOverall: function(e) {
+            return i.default.get("fanRankingEvents/" + e + "/top").then(function(e) {
+                var t = e.body
+                  , n = t.user
+                  , o = t.userProduce
+                  , r = t.userBusinesses;
+                return n && (aoba.utils.setPrototypeOf(n, l.default),
+                aoba.utils.setPrototypeOf(n.userStamen, f.default)),
+                o && (aoba.utils.setPrototypeOf(o, p.default),
+                o.activeProduceItems && o.activeProduceItems.forEach(function(e) {
+                    A.default.setUserItemMixin(e, g.default.produceItem)
+                }),
+                o.userProduceIdol && (aoba.utils.setPrototypeOf(o.userProduceIdol, _.default),
+                t.produceIdol = o.userProduceIdol),
+                t.produce = o),
+                t.userFanRankingDetails.forEach(function(e) {
+                    aoba.utils.setPrototypeOf(e, v.default)
+                }),
+                aoba.utils.setPrototypeOf(t.gameEvent, P.default),
+                aoba.utils.setPrototypeOf(t.gameEvent.announce, O.default),
+                t.characterFanRankingGroups.forEach(function(e) {
+                    e.characterFanRankingRewards.forEach(function(e) {
+                        aoba.utils.setPrototypeOf(e, E.default)
+                    })
+                }),
+                r && (0,
+                y.processUserBusinesses)(r),
+                t.isBreak = "break" === t.eventState,
+                t
+            })
+        },
+        getCharacterRankingTop: function(e, t) {
+            return i.default.get("fanRankingEvents/" + e + "/rankings", {
+                characterId: t,
+                start: 1,
+                end: 10,
+                isTop: !0
+            }).then(function(e) {
+                var t = e.body;
+                return aoba.utils.setPrototypeOf(t.character, s.default),
+                S(t.userFanRankingScore, t.character),
+                t.userFanRankingScores.forEach(function(e) {
+                    S(e, t.character)
+                }),
+                t
+            })
+        },
+        getCharacterRanking: function(e, t, n, o, r) {
+            return i.default.get("fanRankingEvents/" + e + "/rankings", {
+                characterId: t,
+                start: n,
+                end: o,
+                isTop: !1
+            }).then(function(e) {
+                var t = e.body;
+                return t.userFanRankingScores.forEach(function(e) {
+                    S(e, r)
+                }),
+                t
+            })
+        }
+    }
 }
 , function(e, t, n) {
     "use strict";
@@ -20574,7 +20926,7 @@ primJsp([60], [, function(e, t, n) {
             t
         }
     }()
-      , s = n(371)
+      , s = n(375)
       , u = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -20741,7 +21093,7 @@ primJsp([60], [, function(e, t, n) {
     t.default = c
 }
 , function(e, t, n) {
-    e.exports = n(373)
+    e.exports = n(377)
 }
 , function(e, t, n) {
     "use strict";
@@ -20751,34 +21103,34 @@ primJsp([60], [, function(e, t, n) {
                 default: e
             }
         }
-        n(374);
+        n(378);
         var o = n(1)
           , r = t(o)
           , i = n(58)
           , a = t(i)
           , s = n(9)
           , u = t(s)
-          , l = n(486)
+          , l = n(490)
           , c = t(l)
-          , f = n(487)
+          , f = n(491)
           , d = t(f)
-          , p = n(618)
+          , p = n(622)
           , h = t(p)
-          , g = n(619)
+          , g = n(623)
           , m = t(g)
-          , _ = n(620)
+          , _ = n(624)
           , y = t(_)
           , I = n(55)
           , A = t(I);
-        n(621);
-        var C = n(623)
+        n(625);
+        var C = n(627)
           , v = t(C)
-          , b = n(642)
+          , b = n(646)
           , P = t(b);
-        e._babelPolyfill || window._babelPolyfill || n(274);
+        e._babelPolyfill || window._babelPolyfill || n(279);
         var T = aoba
-          , w = T.game
-          , O = T.loader
+          , O = T.game
+          , w = T.loader
           , E = T.sceneManager
           , S = T.Resolution
           , k = T.utils
@@ -20788,8 +21140,8 @@ primJsp([60], [, function(e, t, n) {
           , N = M.STATS
           , j = M.ASSET_ROOT;
         M.SPEED;
-        O.baseUrl = j,
-        w.setParams({
+        w.baseUrl = j,
+        O.setParams({
             resolution: new S({
                 width: R,
                 height: x,
@@ -20812,13 +21164,9 @@ primJsp([60], [, function(e, t, n) {
 }
 , function(e, t, n) {
     "use strict";
-    n(375),
-    n(376),
     n(379),
-    n(388),
-    n(389),
-    n(390),
-    n(391),
+    n(380),
+    n(383),
     n(392),
     n(393),
     n(394),
@@ -20829,7 +21177,11 @@ primJsp([60], [, function(e, t, n) {
     n(399),
     n(400),
     n(401),
-    n(402)
+    n(402),
+    n(403),
+    n(404),
+    n(405),
+    n(406)
 }
 , function(e, t, n) {
     "use strict";
@@ -20852,9 +21204,9 @@ primJsp([60], [, function(e, t, n) {
     : function(e) {
         return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
     }
-      , i = n(16)
+      , i = n(13)
       , a = o(i)
-      , s = n(47)
+      , s = n(49)
       , u = o(s);
     !function() {
         function e(e) {
@@ -21011,7 +21363,7 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(24)
+    var o = n(25)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -21126,15 +21478,15 @@ primJsp([60], [, function(e, t, n) {
     }()
       , i = n(18)
       , a = o(i)
-      , s = n(16)
+      , s = n(13)
       , u = o(s)
-      , l = n(47)
+      , l = n(49)
       , c = o(l)
-      , f = n(24)
+      , f = n(25)
       , d = o(f)
-      , p = n(38)
+      , p = n(35)
       , h = o(p)
-      , g = n(113)
+      , g = n(94)
       , m = o(g)
       , _ = window.aoba
       , y = u.default.ENABLE_CRYPTO;
@@ -21331,6 +21683,7 @@ primJsp([60], [, function(e, t, n) {
         gashaResult: "022",
         deck: "023",
         produceMarathonTop: "031",
+        characterFanRankingTop: "031",
         fes: "033",
         fesResult: "034",
         workActivity: "023"
@@ -21499,35 +21852,27 @@ primJsp([60], [, function(e, t, n) {
             default: e
         }
     }
-    var r = n(18)
+    var r = n(13)
       , i = o(r)
-      , a = n(16)
+      , a = n(35)
       , s = o(a)
-      , u = n(47)
+      , u = n(208)
       , l = o(u)
-      , c = n(38)
+      , c = n(209)
       , f = o(c)
-      , d = n(113)
+      , d = n(94)
       , p = o(d)
-      , h = n(16)
-      , g = o(h)
-      , m = aoba.BaseTexture
-      , _ = aoba.utils.BaseTextureCache
-      , y = s.default.ASSET_ROOT
-      , I = s.default.ENABLE_CRYPTO
-      , A = function(e) {
-        return e.replace(y, "").split("/").length > 2
-    };
-    m._origFromImage = m.fromImage,
-    m.fromImage = function(e, t, n, o) {
-        if (!_[e]) {
-            var r = f.default.getQueryString(e);
-            if (p.default.isSupportedWebP() && p.default.isWebPResource(e) && (e = p.default.toWebPUrl(e)),
-            I && A(e)) {
-                var a = i.default.extname(e)
-                  , s = i.default.basename(e, a);
-                e = i.default.join(g.default.ASSET_ROOT, l.default.encryptPath(e, s))
-            }
+      , h = aoba.BaseTexture
+      , g = aoba.utils.BaseTextureCache
+      , m = i.default.ENABLE_CRYPTO;
+    h._origFromImage = h.fromImage,
+    h.fromImage = function(e, t, n, o) {
+        if (!g[e]) {
+            var r = s.default.getQueryString(e);
+            p.default.isSupportedWebP() && p.default.isWebPResource(e) && (e = p.default.toWebPUrl(e)),
+            m && (0,
+            l.default)(e) && (e = (0,
+            f.default)(e)),
             r && (e += r)
         }
         return this._origFromImage(e, t, n, o)
@@ -21563,8 +21908,39 @@ primJsp([60], [, function(e, t, n) {
 }
 , function(e, t, n) {
     "use strict";
+    function o(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }
+    var r = n(13)
+      , i = o(r)
+      , a = n(35)
+      , s = o(a)
+      , u = n(208)
+      , l = o(u)
+      , c = n(209)
+      , f = o(c)
+      , d = n(94)
+      , p = o(d);
     PIXI.Texture.fromVideoUrlWithMute = function(e, t) {
         return new PIXI.Texture(PIXI.VideoBaseTexture.fromUrlWithMute(e, t))
+    }
+    ;
+    var h = aoba.Texture
+      , g = aoba.utils.TextureCache
+      , m = i.default.ENABLE_CRYPTO;
+    h._origFromImage = h.fromImage,
+    h.fromImage = function(e, t, n, o) {
+        if (!g[e]) {
+            var r = s.default.getQueryString(e);
+            p.default.isSupportedWebP() && p.default.isWebPResource(e) && (e = p.default.toWebPUrl(e)),
+            m && (0,
+            l.default)(e) && (e = (0,
+            f.default)(e)),
+            r && (e += r)
+        }
+        return this._origFromImage(e, t, n, o)
     }
 }
 , function(e, t, n) {
@@ -21645,11 +22021,11 @@ primJsp([60], [, function(e, t, n) {
             default: e
         }
     }
-    var r = n(89)
+    var r = n(90)
       , i = o(r)
-      , a = n(52)
+      , a = n(53)
       , s = o(a)
-      , u = n(337)
+      , u = n(342)
       , l = o(u)
       , c = aoba
       , f = c.soundManager
@@ -22248,7 +22624,7 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(89)
+    var o = n(90)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -22474,7 +22850,7 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(191)
+    var o = n(195)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -22483,9 +22859,9 @@ primJsp([60], [, function(e, t, n) {
       , i = null
       , a = function(e) {
         return i ? e(i) : r.default.dynamicLoad(function() {
-            return n.e(47).then(n.bind(null, 867))
+            return n.e(49).then(n.bind(null, 871))
         }, function() {
-            return n.e(52).then(n.bind(null, 868))
+            return n.e(54).then(n.bind(null, 872))
         }).then(function(t) {
             i = t,
             e(t)
@@ -22498,7 +22874,7 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(24)
+    var o = n(25)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -22602,15 +22978,15 @@ primJsp([60], [, function(e, t, n) {
       , a = o(i)
       , s = n(17)
       , u = o(s)
-      , l = n(92)
+      , l = n(95)
       , c = o(l)
       , f = n(115)
       , d = o(f)
-      , p = n(49)
+      , p = n(39)
       , h = o(p)
-      , g = n(232)
+      , g = n(239)
       , m = o(g)
-      , _ = n(146)
+      , _ = n(147)
       , y = o(_)
       , I = {
         idols: c.default,
@@ -22677,9 +23053,9 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(233)
+    var o = n(240)
       , r = function() {
-        return n(483),
+        return n(487),
         new Promise(function(e, t) {
             o.load({
                 timeout: 1e4,
@@ -22699,18 +23075,18 @@ primJsp([60], [, function(e, t, n) {
     t.default = r
 }
 , function(e, t, n) {
-    var o = n(484);
+    var o = n(488);
     "string" == typeof o && (o = [[e.i, o, ""]]);
     var r = {
         hmr: !0
     };
     r.transform = void 0;
-    n(235)(o, r);
+    n(242)(o, r);
     o.locals && (e.exports = o.locals)
 }
 , function(e, t, n) {
-    t = e.exports = n(234)(void 0),
-    t.push([e.i, '@font-face {\n    font-family: "HummingStd-E";\n    src: url("/assets/fonts/primula-HummingStd-E.woff2?v=1d0ba3b3570b907aafec99d58822929a");\n}\n\n@font-face {\n    font-family: "UDKakugo_SmallPr6-B";\n    src: url("/assets/fonts/primula-UDKakugo_SmallPr6-B.woff2?v=4357cd091e0bbf007a32f91177ab90c7");\n}\n', ""])
+    t = e.exports = n(241)(void 0),
+    t.push([e.i, '@font-face {\n    font-family: "HummingStd-E";\n    src: url("/assets/fonts/primula-HummingStd-E.woff2?v=ddfd17bfee79818ce81069158a942293");\n}\n\n@font-face {\n    font-family: "UDKakugo_SmallPr6-B";\n    src: url("/assets/fonts/primula-UDKakugo_SmallPr6-B.woff2?v=c725c5c10a842d4994895b3dd78b7763");\n}\n', ""])
 }
 , function(e, t) {
     e.exports = function(e) {
@@ -22799,19 +23175,19 @@ primJsp([60], [, function(e, t, n) {
         value: !0
     }),
     t.default = r;
-    var i = n(488)
+    var i = n(492)
       , a = o(i)
       , s = n(12)
       , u = o(s)
-      , l = n(148)
+      , l = n(149)
       , c = o(l)
       , f = n(2)
       , d = o(f)
-      , p = n(112)
+      , p = n(113)
       , h = o(p)
       , g = n(1)
       , m = o(g)
-      , _ = n(46)
+      , _ = n(48)
       , y = n(87)
       , I = aoba
       , A = I.loader
@@ -22861,7 +23237,7 @@ primJsp([60], [, function(e, t, n) {
             t
         }
     }()
-      , s = n(131)
+      , s = n(132)
       , u = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -22950,26 +23326,26 @@ primJsp([60], [, function(e, t, n) {
         if (void 0 !== a)
             return a.call(o)
     }
-      , l = n(236)
+      , l = n(243)
       , c = o(l)
-      , f = n(237)
+      , f = n(244)
       , d = o(f)
-      , p = n(241)
+      , p = n(248)
       , h = o(p)
-      , g = n(242)
+      , g = n(249)
       , m = o(g)
-      , _ = n(243)
+      , _ = n(250)
       , y = o(_)
-      , I = n(244)
+      , I = n(251)
       , A = o(I)
-      , C = n(246)
+      , C = n(253)
       , v = o(C)
-      , b = n(248)
+      , b = n(255)
       , P = o(b)
-      , T = n(249)
-      , w = o(T)
-      , O = n(147)
-      , E = o(O)
+      , T = n(256)
+      , O = o(T)
+      , w = n(148)
+      , E = o(w)
       , S = {
         FREE: Symbol("FREE"),
         PLAYING: Symbol("PLAYING"),
@@ -23018,7 +23394,7 @@ primJsp([60], [, function(e, t, n) {
             o._effectLayer = null,
             o._movieLayer = null,
             o._soundController = new P.default,
-            o._trackManager = new w.default(e),
+            o._trackManager = new O.default(e),
             o._schedule = new E.default,
             o._currentVoice = null,
             o._setupDefaultComponents(n),
@@ -23244,8 +23620,8 @@ primJsp([60], [, function(e, t, n) {
                   , b = e.charPosition
                   , P = e.charScale
                   , T = e.charAnim1
-                  , w = e.charAnim2
-                  , O = e.charAnim3
+                  , O = e.charAnim2
+                  , w = e.charAnim3
                   , E = e.charAnim4
                   , k = e.charAnim1Loop
                   , x = e.charAnim2Loop
@@ -23283,8 +23659,8 @@ primJsp([60], [, function(e, t, n) {
                         position: b,
                         scale: P,
                         anim1: T,
-                        anim2: w,
-                        anim3: O,
+                        anim2: O,
+                        anim3: w,
                         anim4: E,
                         anim1Loop: k,
                         anim2Loop: x,
@@ -23782,13 +24158,13 @@ primJsp([60], [, function(e, t, n) {
     }
       , l = n(59)
       , c = o(l)
-      , f = n(16)
+      , f = n(13)
       , d = o(f)
       , p = n(10)
       , h = o(p)
-      , g = n(136)
+      , g = n(137)
       , m = o(g)
-      , _ = n(193)
+      , _ = n(197)
       , y = o(_)
       , I = function(e) {
         var t = void 0
@@ -24169,7 +24545,7 @@ primJsp([60], [, function(e, t, n) {
     }()
       , u = n(59)
       , l = o(u)
-      , c = n(136)
+      , c = n(137)
       , f = o(c)
       , d = function(e) {
         function t() {
@@ -24286,7 +24662,7 @@ primJsp([60], [, function(e, t, n) {
     }
       , l = n(59)
       , c = o(l)
-      , f = n(311)
+      , f = n(316)
       , d = o(f)
       , p = n(9)
       , h = o(p)
@@ -24447,7 +24823,7 @@ primJsp([60], [, function(e, t, n) {
     }()
       , u = n(59)
       , l = o(u)
-      , c = n(89)
+      , c = n(90)
       , f = o(c)
       , d = {
         BGM: "bgm",
@@ -24688,7 +25064,7 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(92)
+      , a = n(95)
       , s = o(a)
       , u = n(115)
       , l = o(u);
@@ -24764,9 +25140,9 @@ primJsp([60], [, function(e, t, n) {
     }()
       , u = n(10)
       , l = o(u)
-      , c = n(251)
+      , c = n(258)
       , f = o(c)
-      , d = n(135)
+      , d = n(136)
       , p = o(d)
       , h = {
         hasGlobalMenu: !0
@@ -24979,35 +25355,35 @@ primJsp([60], [, function(e, t, n) {
       , l = o(u)
       , c = n(1)
       , f = o(c)
-      , d = n(252)
+      , d = n(259)
       , p = o(d)
       , h = n(10)
       , g = o(h)
-      , m = n(505)
+      , m = n(509)
       , _ = o(m)
-      , y = n(105)
+      , y = n(107)
       , I = o(y)
-      , A = n(507)
+      , A = n(511)
       , C = o(A)
-      , v = n(509)
+      , v = n(513)
       , b = o(v)
-      , P = n(511)
+      , P = n(515)
       , T = o(P)
-      , w = n(356)
-      , O = o(w)
-      , E = n(515)
+      , O = n(359)
+      , w = o(O)
+      , E = n(519)
       , S = o(E)
-      , k = n(517)
+      , k = n(521)
       , R = o(k)
-      , x = n(339)
+      , x = n(344)
       , M = o(x)
-      , N = n(520)
+      , N = n(360)
       , j = o(N)
-      , B = n(522)
+      , B = n(525)
       , D = o(B)
       , L = n(340)
       , F = o(L)
-      , U = n(525)
+      , U = n(528)
       , G = o(U)
       , H = n(74)
       , V = o(H)
@@ -25030,7 +25406,7 @@ primJsp([60], [, function(e, t, n) {
                 bannerList: C.default.new(),
                 bannerSlide: b.default.new(),
                 eventBanner: T.default.new(),
-                fesButton: O.default.new(),
+                fesButton: w.default.new(),
                 gashaButton: S.default.new(),
                 idolButton: R.default.new(),
                 missionButton: M.default.new(),
@@ -25500,11 +25876,11 @@ primJsp([60], [, function(e, t, n) {
     }()
       , u = n(10)
       , l = o(u)
-      , c = n(508)
+      , c = n(512)
       , f = o(c)
-      , d = n(99)
+      , d = n(102)
       , p = o(d)
-      , h = n(98)
+      , h = n(101)
       , g = o(h)
       , m = n(9)
       , _ = o(m)
@@ -25738,13 +26114,13 @@ primJsp([60], [, function(e, t, n) {
     }()
       , u = n(10)
       , l = o(u)
-      , c = n(510)
+      , c = n(514)
       , f = o(c)
-      , d = n(323)
+      , d = n(328)
       , p = o(d)
       , h = n(30)
       , g = o(h)
-      , m = n(324)
+      , m = n(329)
       , _ = o(m)
       , y = function(e) {
         function t() {
@@ -26029,7 +26405,7 @@ primJsp([60], [, function(e, t, n) {
     }()
       , u = n(10)
       , l = o(u)
-      , c = n(512)
+      , c = n(516)
       , f = o(c)
       , d = n(30)
       , p = o(d)
@@ -26310,7 +26686,7 @@ primJsp([60], [, function(e, t, n) {
     }()
       , u = n(10)
       , l = o(u)
-      , c = n(516)
+      , c = n(520)
       , f = o(c)
       , d = {
         SSR_RATE_UP: "common_menu_campaign_badge_ssr_rate.png",
@@ -26460,9 +26836,9 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var s = n(338)
+    var s = n(343)
       , u = o(s)
-      , l = n(518)
+      , l = n(522)
       , c = o(l)
       , f = function(e) {
         function t() {
@@ -26541,185 +26917,6 @@ primJsp([60], [, function(e, t, n) {
         x: 680,
         y: 519
     }
-}
-, function(e, t, n) {
-    "use strict";
-    function o(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }
-    function r(e, t) {
-        if (!(e instanceof t))
-            throw new TypeError("Cannot call a class as a function")
-    }
-    function i(e, t) {
-        if (!e)
-            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-        return !t || "object" != typeof t && "function" != typeof t ? e : t
-    }
-    function a(e, t) {
-        if ("function" != typeof t && null !== t)
-            throw new TypeError("Super expression must either be null or a function, not " + typeof t);
-        e.prototype = Object.create(t && t.prototype, {
-            constructor: {
-                value: e,
-                enumerable: !1,
-                writable: !0,
-                configurable: !0
-            }
-        }),
-        t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-    }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var s = function() {
-        function e(e, t) {
-            for (var n = 0; n < t.length; n++) {
-                var o = t[n];
-                o.enumerable = o.enumerable || !1,
-                o.configurable = !0,
-                "value"in o && (o.writable = !0),
-                Object.defineProperty(e, o.key, o)
-            }
-        }
-        return function(t, n, o) {
-            return n && e(t.prototype, n),
-            o && e(t, o),
-            t
-        }
-    }()
-      , u = function e(t, n, o) {
-        null === t && (t = Function.prototype);
-        var r = Object.getOwnPropertyDescriptor(t, n);
-        if (void 0 === r) {
-            var i = Object.getPrototypeOf(t);
-            return null === i ? void 0 : e(i, n, o)
-        }
-        if ("value"in r)
-            return r.value;
-        var a = r.get;
-        if (void 0 !== a)
-            return a.call(o)
-    }
-      , l = n(20)
-      , c = o(l)
-      , f = n(9)
-      , d = o(f)
-      , p = n(10)
-      , h = o(p)
-      , g = n(521)
-      , m = o(g)
-      , _ = n(105)
-      , y = o(_)
-      , I = n(194)
-      , A = o(I)
-      , C = "common_menu_work_activity_button.png"
-      , v = function(e) {
-        var t = A.default.calc(e - Date.now())
-          , n = t.hour
-          , o = t.min;
-        return t.isOverTheTime ? d.default.t("common.remainingTimeMessage", {
-            min: "00",
-            sec: "00"
-        }) : d.default.t("common.remainingTimeMessage", {
-            min: n,
-            sec: c.default.pad(o, 2, "0")
-        })
-    }
-      , b = function(e) {
-        function t() {
-            r(this, t);
-            var e = i(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this))
-              , n = e.fromData(m.default, {
-                badge: y.default.new(),
-                commonMenuWorkActivityButton: {
-                    class: h.default.DecideButton,
-                    key: C
-                },
-                finishText: {
-                    visible: !1
-                },
-                finishTime: {
-                    visible: !1,
-                    dy: 3
-                }
-            })
-              , o = n.badge
-              , a = n.commonMenuWorkActivityButton
-              , s = n.finishText
-              , u = n.finishTime;
-            return u.style.stroke = 6378341,
-            u.style.strokeThickness = 6,
-            e._badge = o,
-            e._button = a,
-            e._countMsec = 0,
-            e._finishMsec = 0,
-            e._finishTime = u,
-            e._finishText = s,
-            e._button.on("tap", function() {
-                return e.emit("tap")
-            }),
-            e
-        }
-        return a(t, e),
-        s(t, [{
-            key: "ezgPreDestroy",
-            value: function() {
-                this._finishMsec = 0,
-                u(t.prototype.__proto__ || Object.getPrototypeOf(t.prototype), "ezgPreDestroy", this).call(this)
-            }
-        }, {
-            key: "ezgUpdate",
-            value: function(e) {
-                this._countMsec += e,
-                this._countMsec < 1e3 || (this._countMsec = 0,
-                this._updateRemainTime())
-            }
-        }, {
-            key: "setUserBusinesses",
-            value: function() {
-                var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
-                this._badge.setNum(0, "badge_base.png"),
-                this._finishTime.hide(),
-                this._finishText.hide();
-                var t = e.filter(function(e) {
-                    return e.isWaitReceive() || e.isTeaTime()
-                });
-                if (t.length > 0)
-                    return this._badge.setNum(t.length),
-                    void (this._button.texture = aoba.Texture.fromImage(C));
-                var n = e.filter(function(e) {
-                    return e.isFree()
-                });
-                if (n.length > 0)
-                    return this._badge.setNum(n.length, "badge_base_blue.png"),
-                    void (this._button.texture = aoba.Texture.fromImage(C));
-                var o = e.filter(function(e) {
-                    return e.isWorking()
-                });
-                if (o.length > 0) {
-                    var r = o.sort(function(e, t) {
-                        return e.getWorkFinishAt() - t.getWorkFinishAt()
-                    })[0];
-                    return this._finishMsec = r.getWorkFinishAtMsec(),
-                    this._button.texture = aoba.Texture.fromImage("common_menu_work_activity_button_active.png"),
-                    this._updateRemainTime(),
-                    this._finishTime.show(),
-                    void this._finishText.show()
-                }
-                this._button.texture = aoba.Texture.fromImage(C)
-            }
-        }, {
-            key: "_updateRemainTime",
-            value: function() {
-                this._finishMsec && (this._finishTime.text = v(this._finishMsec))
-            }
-        }]),
-        t
-    }(aoba.Container);
-    t.default = b
 }
 , function(e, t, n) {
     "use strict";
@@ -26836,9 +27033,9 @@ primJsp([60], [, function(e, t, n) {
     }()
       , u = n(10)
       , l = o(u)
-      , c = n(523)
+      , c = n(526)
       , f = o(c)
-      , d = n(105)
+      , d = n(107)
       , p = o(d)
       , h = function(e) {
         function t() {
@@ -27021,13 +27218,13 @@ primJsp([60], [, function(e, t, n) {
             t
         }
     }()
-      , u = n(20)
+      , u = n(21)
       , l = o(u)
       , c = n(10)
       , f = o(c)
-      , d = n(526)
+      , d = n(529)
       , p = o(d)
-      , h = n(333)
+      , h = n(334)
       , g = o(h)
       , m = function(e) {
         function t() {
@@ -27189,13 +27386,13 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(16)
+    var r = n(13)
       , i = o(r)
-      , a = n(187)
+      , a = n(189)
       , s = o(a)
       , u = n(34)
       , l = o(u)
-      , c = n(46)
+      , c = n(48)
       , f = !i.default.PF_URI;
     t.default = {
         signupForm: function() {
@@ -27249,11 +27446,11 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var s = n(20)
+    var s = n(21)
       , u = o(s)
       , l = n(9)
       , c = o(l)
-      , f = n(529)
+      , f = n(532)
       , d = o(f)
       , p = 96
       , h = function(e) {
@@ -27635,19 +27832,19 @@ primJsp([60], [, function(e, t, n) {
             t
         }
     }()
-      , u = n(532)
+      , u = n(535)
       , l = o(u)
-      , c = n(533)
+      , c = n(536)
       , f = o(c)
-      , d = n(534)
+      , d = n(537)
       , p = o(d)
-      , h = n(535)
+      , h = n(538)
       , g = o(h)
-      , m = n(536)
+      , m = n(539)
       , _ = o(m)
-      , y = n(357)
+      , y = n(361)
       , I = o(y)
-      , A = n(132)
+      , A = n(133)
       , C = o(A)
       , v = n(85)
       , b = o(v)
@@ -28008,7 +28205,7 @@ primJsp([60], [, function(e, t, n) {
     }()
       , u = n(1)
       , l = o(u)
-      , c = n(538)
+      , c = n(541)
       , f = o(c)
       , d = n(85)
       , p = o(d)
@@ -28175,13 +28372,13 @@ primJsp([60], [, function(e, t, n) {
             t
         }
     }()
-      , u = n(540)
+      , u = n(543)
       , l = o(u)
-      , c = n(541)
+      , c = n(544)
       , f = o(c)
-      , d = n(542)
+      , d = n(545)
       , p = o(d)
-      , h = n(543)
+      , h = n(546)
       , g = o(h)
       , m = n(85)
       , _ = o(m)
@@ -28592,7 +28789,7 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(20)
+    var o = n(21)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -28800,15 +28997,15 @@ primJsp([60], [, function(e, t, n) {
     }()
       , u = n(10)
       , l = o(u)
-      , c = n(553)
+      , c = n(556)
       , f = o(c)
       , d = n(23)
       , p = o(d)
-      , h = n(98)
+      , h = n(101)
       , g = o(h)
-      , m = n(99)
+      , m = n(102)
       , _ = o(m)
-      , y = n(554)
+      , y = n(557)
       , I = o(y)
       , A = n(9)
       , C = o(A)
@@ -28946,7 +29143,7 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var a = n(555)
+    var a = n(558)
       , s = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -29100,25 +29297,25 @@ primJsp([60], [, function(e, t, n) {
         if (void 0 !== a)
             return a.call(o)
     }
-      , l = n(252)
+      , l = n(259)
       , c = o(l)
       , f = n(73)
       , d = o(f)
-      , p = n(100)
+      , p = n(103)
       , h = o(p)
-      , g = n(557)
+      , g = n(560)
       , m = o(g)
       , _ = n(86)
       , y = o(_)
-      , I = n(316)
+      , I = n(321)
       , A = o(I)
-      , C = n(262)
+      , C = n(269)
       , v = o(C)
-      , b = n(38)
+      , b = n(35)
       , P = o(b)
-      , T = n(110)
-      , w = o(T)
-      , O = function(e) {
+      , T = n(111)
+      , O = o(T)
+      , w = function(e) {
         function t() {
             return r(this, t),
             i(this, (t.__proto__ || Object.getPrototypeOf(t)).apply(this, arguments))
@@ -29164,7 +29361,7 @@ primJsp([60], [, function(e, t, n) {
             }
         }]),
         t
-    }(O)
+    }(w)
       , S = A.default.SIZE_LIST.L
       , k = {
         LARGE: 570,
@@ -29194,29 +29391,29 @@ primJsp([60], [, function(e, t, n) {
                     dy: 2
                 },
                 menuAlbumButton: {
-                    class: O
+                    class: w
                 },
                 menuItemButton: {
-                    class: O
+                    class: w
                 },
                 menuInfoButton: {
-                    class: O
+                    class: w
                 },
                 menuOptionButton: {
-                    class: O
+                    class: w
                 },
                 menuComicButton: {
-                    class: O
+                    class: w
                 },
                 menuHomeUnitButton: {
-                    class: O
+                    class: w
                 },
                 menuDownloadButton: {
                     class: E,
                     visible: !1
                 },
                 menuDeleteButton: {
-                    class: O,
+                    class: w,
                     visible: !1
                 },
                 cancelButton: {
@@ -29266,13 +29463,13 @@ primJsp([60], [, function(e, t, n) {
             s.some(function(e) {
                 return e.category === c.default.CATEGORIES.COMIC
             }) && _.setNewBadge();
-            var w = {};
+            var O = {};
             return s.some(function(e) {
                 return e.category === c.default.CATEGORIES.OPTION
-            }) && (w.noticeCategory = "option",
+            }) && (O.noticeCategory = "option",
             C.setNewBadge()),
             C.on("tap", function() {
-                n.emit("tapOption", w),
+                n.emit("tapOption", O),
                 C.destroyNewBadge()
             }),
             _.on("tap", function() {
@@ -29285,7 +29482,7 @@ primJsp([60], [, function(e, t, n) {
             key: "updateDownloadButtons",
             value: function() {
                 var e = P.default.getLatestVersion()
-                  , t = w.default.getCachedVersion();
+                  , t = O.default.getCachedVersion();
                 this._menuDownloadButton.setVersion(e, t),
                 this._menuDownloadButton.setAvailable(e !== t),
                 this._menuDownloadButton.show(),
@@ -29507,7 +29704,7 @@ primJsp([60], [, function(e, t, n) {
       , u = o(s)
       , l = n(23)
       , c = o(l)
-      , f = n(559)
+      , f = n(562)
       , d = o(f)
       , p = function(e) {
         function t(e) {
@@ -29672,9 +29869,9 @@ primJsp([60], [, function(e, t, n) {
       , l = o(u)
       , c = n(23)
       , f = o(c)
-      , d = n(182)
+      , d = n(184)
       , p = o(d)
-      , h = n(561)
+      , h = n(564)
       , g = o(h)
       , m = n(87)
       , _ = o(m)
@@ -29967,7 +30164,7 @@ primJsp([60], [, function(e, t, n) {
       , u = o(s)
       , l = n(23)
       , c = o(l)
-      , f = n(564)
+      , f = n(567)
       , d = o(f)
       , p = function(e) {
         function t() {
@@ -30087,7 +30284,7 @@ primJsp([60], [, function(e, t, n) {
       , u = o(s)
       , l = n(23)
       , c = o(l)
-      , f = n(566)
+      , f = n(569)
       , d = o(f)
       , p = function(e) {
         function t() {
@@ -30177,7 +30374,7 @@ primJsp([60], [, function(e, t, n) {
       , u = o(s)
       , l = n(23)
       , c = o(l)
-      , f = n(568)
+      , f = n(571)
       , d = o(f)
       , p = function(e) {
         function t() {
@@ -30291,7 +30488,7 @@ primJsp([60], [, function(e, t, n) {
       , u = o(s)
       , l = n(23)
       , c = o(l)
-      , f = n(570)
+      , f = n(573)
       , d = o(f)
       , p = function(e) {
         function t() {
@@ -30432,11 +30629,11 @@ primJsp([60], [, function(e, t, n) {
     }()
       , a = n(55)
       , s = o(a)
-      , u = n(137)
+      , u = n(138)
       , l = o(u)
-      , c = n(110)
+      , c = n(111)
       , f = o(c)
-      , d = n(38)
+      , d = n(35)
       , p = o(d)
       , h = null
       , g = function() {
@@ -30697,28 +30894,28 @@ primJsp([60], [, function(e, t, n) {
       , a = o(i)
       , s = n(60)
       , u = (o(s),
-    n(94))
+    n(97))
       , l = o(u)
-      , c = n(49)
+      , c = n(39)
       , f = o(c)
-      , d = n(21)
+      , d = n(20)
       , p = o(d)
-      , h = n(111)
+      , h = n(112)
       , g = o(h)
-      , m = n(190)
+      , m = n(192)
       , _ = o(m)
       , y = n(4)
       , I = o(y)
-      , A = n(25)
+      , A = n(24)
       , C = o(A)
-      , v = n(90)
+      , v = n(91)
       , b = o(v)
-      , P = n(54)
+      , P = n(47)
       , T = o(P)
-      , w = n(265)
-      , O = n(263)
-      , E = o(O)
-      , S = n(104)
+      , O = n(271)
+      , w = n(117)
+      , E = o(w)
+      , S = n(106)
       , k = o(S)
       , R = function(e) {
         var t = e.body
@@ -30801,7 +30998,7 @@ primJsp([60], [, function(e, t, n) {
           , T = P.userFesIdol;
         T.isCenter = !0,
         T.displayParams = Object.assign({}, u.userFesDeckParameter);
-        var w = [].concat(r(i.map(function(e) {
+        var O = [].concat(r(i.map(function(e) {
             return Object.assign(e.rival, {
                 id: e.id
             })
@@ -30810,14 +31007,14 @@ primJsp([60], [, function(e, t, n) {
             mental: u.userFesDeckParameter.mental,
             isPlayer: !0
         }]);
-        w.forEach(function(e) {
+        O.forEach(function(e) {
             aoba.utils.setPrototypeOf(e.character, f.default)
         });
-        var O = !0
+        var w = !0
           , E = !1
           , S = void 0;
         try {
-            for (var k, R = a[Symbol.iterator](); !(O = (k = R.next()).done); O = !0)
+            for (var k, R = a[Symbol.iterator](); !(w = (k = R.next()).done); w = !0)
                 !function() {
                     var e = k.value
                       , t = s.find(function(t) {
@@ -30830,7 +31027,7 @@ primJsp([60], [, function(e, t, n) {
             S = e
         } finally {
             try {
-                !O && R.return && R.return()
+                !w && R.return && R.return()
             } finally {
                 if (E)
                     throw S
@@ -30846,7 +31043,7 @@ primJsp([60], [, function(e, t, n) {
         x.skillEffects = x.memoryAppealEffects),
         t.userFesDeck = u,
         t.judges = a,
-        t.rivals = w,
+        t.rivals = O,
         t.activeSkills = h,
         t.idols = d,
         t.musicPath = I.default.createConcertMusicPath("main", n.id),
@@ -30881,7 +31078,7 @@ primJsp([60], [, function(e, t, n) {
                   , a = t.fesMatchGradeRewards
                   , s = t.clearedBeginnerMissions
                   , u = (0,
-                w.createEditorUserFesDeckModel)(t.userFesDeck);
+                O.createEditorUserFesDeckModel)(t.userFesDeck);
                 if (o && o.announce && aoba.utils.setPrototypeOf(o.announce, E.default),
                 "0" === r.fesMatchGradeId && (r.fesMatchGradeId = "1"),
                 aoba.utils.setPrototypeOf(n, b.default),
@@ -30999,11 +31196,11 @@ primJsp([60], [, function(e, t, n) {
       , i = o(r)
       , a = n(60)
       , s = (o(a),
-    n(577))
+    n(580))
       , u = o(s)
-      , l = n(578)
+      , l = n(581)
       , c = o(l)
-      , f = n(25)
+      , f = n(24)
       , d = o(f)
       , p = n(34)
       , h = o(p)
@@ -31123,7 +31320,7 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(20)
+    var r = n(21)
       , i = o(r)
       , a = n(18)
       , s = o(a)
@@ -31194,7 +31391,7 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(20)
+    var r = n(21)
       , i = o(r)
       , a = n(18)
       , s = o(a)
@@ -31248,13 +31445,13 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(266)
+      , a = n(272)
       , s = o(a)
-      , u = n(146)
+      , u = n(147)
       , l = o(u)
-      , c = n(267)
+      , c = n(273)
       , f = o(c)
-      , d = n(25)
+      , d = n(24)
       , p = o(d);
     t.default = {
         getList: function() {
@@ -31344,13 +31541,13 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(199)
+      , a = n(203)
       , s = o(a)
-      , u = n(49)
+      , u = n(39)
       , l = o(u)
-      , c = n(39)
+      , c = n(40)
       , f = o(c)
-      , d = n(268)
+      , d = n(274)
       , p = o(d);
     t.default = {
         get: function() {
@@ -31425,11 +31622,11 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(25)
+      , a = n(24)
       , s = o(a)
-      , u = n(21)
+      , u = n(20)
       , l = o(u)
-      , c = n(92)
+      , c = n(95)
       , f = o(c)
       , d = n(77)
       , p = o(d)
@@ -31476,7 +31673,7 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(583)
+      , a = n(586)
       , s = o(a);
     t.default = {
         get: function(e) {
@@ -31534,7 +31731,7 @@ primJsp([60], [, function(e, t, n) {
             default: e
         }
     }(o)
-      , i = n(585);
+      , i = n(588);
     t.default = {
         get: function() {
             return r.default.post("userLoginBonuses").then(function(e) {
@@ -31555,9 +31752,9 @@ primJsp([60], [, function(e, t, n) {
         value: !0
     }),
     t.processGetResponse = void 0;
-    var r = n(20)
+    var r = n(21)
       , i = o(r)
-      , a = n(25)
+      , a = n(24)
       , s = o(a)
       , u = n(4)
       , l = o(u)
@@ -31804,7 +32001,7 @@ primJsp([60], [, function(e, t, n) {
     : function(e) {
         return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
     }
-      , a = n(103)
+      , a = n(104)
       , s = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -32032,9 +32229,9 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(336)
+      , a = n(194)
       , s = o(a)
-      , u = n(25)
+      , u = n(24)
       , l = o(u)
       , c = function(e) {
         var t = e.body;
@@ -32051,20 +32248,9 @@ primJsp([60], [, function(e, t, n) {
         t
     };
     t.default = {
-        getOpened: function() {
-            return Promise.resolve().then(function() {
-                return i.default.get("produceMarathons")
-            }).then(function(e) {
-                var t = e.body;
-                return 0 === t.length ? Promise.reject() : Promise.resolve(t[0])
-            }).then(function(e) {
-                return i.default.post("produceMarathons/" + e.id + "/top")
-            }, function() {
-                return window.location.href = "/home",
-                new Promise(function(e) {}
-                )
-            }).then(function(e) {
-                return c(e)
+        get: function(e) {
+            return i.default.post("produceMarathons/" + e + "/top").then(function(e) {
+                return e.body ? c(e) : null
             })
         }
     }
@@ -32083,13 +32269,13 @@ primJsp([60], [, function(e, t, n) {
       , i = o(r)
       , a = n(2)
       , s = o(a)
-      , u = n(21)
+      , u = n(20)
       , l = o(u)
       , c = n(75)
       , f = o(c)
       , d = n(115)
       , p = o(d)
-      , h = n(106)
+      , h = n(108)
       , g = o(h)
       , m = n(79)
       , _ = o(m)
@@ -32163,13 +32349,13 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(151)
+      , a = n(152)
       , s = o(a)
-      , u = n(152)
+      , u = n(153)
       , l = o(u)
-      , c = n(596)
+      , c = n(599)
       , f = o(c)
-      , d = n(272)
+      , d = n(277)
       , p = o(d)
       , h = n(1)
       , g = o(h)
@@ -32307,7 +32493,7 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(267)
+      , a = n(273)
       , s = o(a);
     t.default = {
         getList: function() {
@@ -32344,11 +32530,11 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(25)
+      , a = n(24)
       , s = o(a)
       , u = n(77)
       , l = o(u)
-      , c = n(21)
+      , c = n(20)
       , f = o(c)
       , d = n(79)
       , p = o(d)
@@ -32432,7 +32618,7 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(601)
+      , a = n(604)
       , s = o(a)
       , u = function(e) {
         var t = e.body;
@@ -32455,7 +32641,7 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(272)
+    var o = n(277)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -32527,9 +32713,9 @@ primJsp([60], [, function(e, t, n) {
       , i = o(r)
       , a = n(77)
       , s = o(a)
-      , u = n(21)
+      , u = n(20)
       , l = o(u)
-      , c = n(25)
+      , c = n(24)
       , f = o(c)
       , d = n(79)
       , p = o(d)
@@ -32590,7 +32776,7 @@ primJsp([60], [, function(e, t, n) {
       , i = o(r)
       , a = n(75)
       , s = o(a)
-      , u = n(21)
+      , u = n(20)
       , l = o(u)
       , c = function(e) {
         aoba.utils.setPrototypeOf(e, s.default)
@@ -32624,6 +32810,26 @@ primJsp([60], [, function(e, t, n) {
                 num: n,
                 userSupportIdolIds: o
             })
+        }
+    }
+}
+, function(e, t, n) {
+    "use strict";
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var o = n(4)
+      , r = function(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }(o);
+    t.default = {
+        getCharacterIconPath: function() {
+            return r.default.createImagePath("characters", "event_idol_ranking", this.character.id)
+        },
+        getCharacterName: function() {
+            return this.character.name
         }
     }
 }
@@ -33135,15 +33341,15 @@ primJsp([60], [, function(e, t, n) {
       , i = o(r)
       , a = n(23)
       , s = o(a)
-      , u = n(609)
+      , u = n(613)
       , l = o(u)
-      , c = n(610)
+      , c = n(614)
       , f = o(c)
-      , d = n(348)
+      , d = n(351)
       , p = o(d)
-      , h = n(98)
+      , h = n(101)
       , g = o(h)
-      , m = n(99)
+      , m = n(102)
       , _ = o(m)
       , y = n(9)
       , I = o(y)
@@ -33492,15 +33698,15 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(16)
+    var r = n(13)
       , i = o(r)
       , a = n(34)
       , s = o(a)
-      , u = n(24)
+      , u = n(25)
       , l = o(u)
-      , c = n(273)
+      , c = n(278)
       , f = o(c)
-      , d = n(46)
+      , d = n(48)
       , p = function() {
         return !!i.default.PF_URI
     }
@@ -33727,7 +33933,7 @@ primJsp([60], [, function(e, t, n) {
         value: !0
     }),
     t.default = o;
-    var r = n(273)
+    var r = n(278)
       , i = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -33739,7 +33945,7 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(24)
+    var o = n(25)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -33977,6 +34183,7 @@ primJsp([60], [, function(e, t, n) {
             sdkLoginLoadFailed: "認証に失敗しました。\n通信環境を確認の上、ページの再読み込みをお試しください。\n何度も発生する場合はブラウザキャッシュクリアをお試しください。\n\nゲストメンバーの方はデータ消失の恐れがあります。\nenza にメンバー登録する事で中断データの復帰が可能になります。\nenza メンバー登録の上、キャッシュクリアをお試しください。\n",
             accountFreezeShort: "調査の為、一時的にご利用を制限しております。\n対応が完了次第制限解除いたしますので\nしばらくお待ち下さい。\nお客様にはご迷惑をお掛けいたしますが\nご協力をお願いいたします。",
             earthPaymentFailure: "プラットフォームの決済処理が\n正常に行われませんでした。\n再度時間をおいてお試しください。\n\n\n何度も発生する場合は\nゲーム内の「お知らせ」→「お問い合わせ」より\nお問い合わせください。\n\nお問い合わせID: %{requestId}\nエラーコード: %{errorCode}",
+            earthPaymentFailureFatal: "プラットフォームの決済処理が\n正常に行われませんでした。ゲーム内の「お知らせ」→「お問い合わせ」より\nお問い合わせください。\n\nお問い合わせID: %{requestId}\nエラーコード: %{errorCode}",
             sceneMaintenance: "本機能は、一時的にご利用を制限しております。\n対応が完了次第制限解除いたしますので\nしばらくお待ち下さい。\nお客様にはご迷惑をお掛けいたしますが\nご協力をお願いいたします。",
             playMovie: "動画再生に失敗しました。",
             businessIsNotFinished: "営業が完了していません。\n少し時間を置いてから再度完了してください。"
@@ -34326,7 +34533,8 @@ primJsp([60], [, function(e, t, n) {
             titleSetting: "称号設定",
             workActivity: "営業",
             workActivitySelectIdol: "営業アイドル選択",
-            workActivitySelectItem: "お手製差し入れ持ち込み"
+            workActivitySelectItem: "お手製差し入れ持ち込み",
+            idolRanking: "%{name}のランキング"
         },
         homeDeckBackgroundImage: "ホームユニット背景",
         homeDeck: {
@@ -34891,6 +35099,19 @@ primJsp([60], [, function(e, t, n) {
                 idolName: "【%{name}】累計ファン人数",
                 count: "%{count}人"
             }
+        },
+        individualRanking: {
+            heldAt: "%{time}まで",
+            tallyAt: "%{time}まで",
+            rewardAt: "%{time}から",
+            outOfRanking: "圏外",
+            popup: {
+                title: "ランキング報酬",
+                headingBorder: "順位",
+                rewardBorder: "%{start}位",
+                rewardBorderRange: "%{start}位〜%{end}位",
+                itemNameNum: "%{type} ×%{num}"
+            }
         }
     }
 }
@@ -34973,17 +35194,17 @@ primJsp([60], [, function(e, t, n) {
     }
 }
 , function(e, t, n) {
-    var o = n(622);
+    var o = n(626);
     "string" == typeof o && (o = [[e.i, o, ""]]);
     var r = {
         hmr: !0
     };
     r.transform = void 0;
-    n(235)(o, r);
+    n(242)(o, r);
     o.locals && (e.exports = o.locals)
 }
 , function(e, t, n) {
-    t = e.exports = n(234)(void 0),
+    t = e.exports = n(241)(void 0),
     t.push([e.i, 'a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}.notice_block{font-family:UDKakugo_SmallPr6-B;color:#615466}.ruled{clear:both;text-align:center;margin-left:5vw;margin-right:5vw;font-size:18px}.ruled section{display:inline-block;width:100%}.ruled section:after,.ruled section:before{content:"";display:table}.ruled section:after{clear:both}h5{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA/wAAAAoCAIAAADMhGYIAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAACDNJREFUeNrs3etXk8kdwHEeSEjihQSUPLlxFSIVUTSIKwrq1m679nLaF33Z/6n/QN+0r3pO93SPbfW46npdoFzFACIgyiUhT3BDEqIkBJJOMhAjVNY33aD9fg4nzswz8/OcefXLZJ4ZJZ1OFwEAAAD4dBUzBQAAAMCnTffhXf1ziwF/UPNp4VAkvpoQLUaTwVJhVp2qzWF1VNuZTQAAAGAPUn5we8/8C5/m1ybHplffxHfpZtpndDc3qA61qs7JtAIAAAAfR9Ifi8ZG+kcnvJOyqtornTUO1amWV5gNJoNoSawmlkMRzaf5Zv3a4pLs1tTiPnnm+IGyA0wuAAAAsKeT/smx6d77/cm1pKIono5Wm1NVHdZdAmn+YMCnDXY/FgH1pfrPLp5xNzcwvwAAAMAeTfr7Hw0+GRgThYam+pPtLZYKsyhHlqOzz+d9s/5wKByPZ/f0Gw2WCouzxlFzpMpcXiZawqHISJ93emJGlE+0NZ+54GGKAQAAgD2X9Pc9HPQOZjL+zp91yNX6wII22DMc8AV3CWRzWj3nTtlcalH2V4KHt7pFocXT3N5J3g8AAADspaT/2ejUo9s9onD5ale9u3ZjfaP3fn9uW/8Pampxf3bxTImuZGby5d3rD0TLhSvnjh5vZKIBAACAQnnnnP5oZKX3Xr8odH1xXmT8iXji+lfffHjGL4jOYogYKIaLIKJFBBRhmWgAAABgTyT93oGx9fX1xmNHxJ8o3Pz6TnDrTJ730Zfqt7WIIWJgfhxv9vUAAAAAAAVO+udfLEx4JxVFOdF2vCi7Qr8UeLVzwP4D+3Jlg9Fw5deXjNnjO/OJgfIXAxFKBBRhRXDmGgAAAChw0h/waeLT03HKUmEOLGjPRqd29rY51ctXu0z7TbKaiCce3uqRt/MWlxTbnNYSXYl8JIaLICKUCJgLDgAAAKBgSf/G+sbTJ5m9+/L4nYHu4fxOMpXX63Xm8jKR8ZeZD+YexaIxWei4fPaXv//FlV9dyj2SQWRAEVz8F0w3AAAAULCkP+DTkmtJZ7VdtVeGlpY1/zunc9Y11IjPZHL92ejU7Wt3tz0VXLVOeUSPKJRZNr8SiG4iVOYe32q7CL7IYj8AAABQwKRf5vGqM7Mq/3J6Nr+HaZ+xvdNT11gjq8vfh7eFyOz5+bIzVzUY327xl6HkYr+26zH/AAAAAP5HdPIfefGWzWnNlLcW8vWl+np3bevZE6b9pktfdlrtleMjz1ay528qinLYeshV66iurzqsHsqFi6/GQ6+Wc9XNsA41G5aVfgAAAKBwSX9kOSI+LeXmTDkUkY3JteTU0+f79ptOn2vV/EHv0Pib2BujyXDsZFNTizv3Om/OWmJt/PGECPL9Uig/rLm8THxGl6NMNwAAAFCwpF+ewGPIHr4Zjydyj1MbqeF/Pyk/XN79ba/oc/R4Y3unp9RQui1KOp2Orbx+vfJGfD2wudQbX93aDBvPC7uaYLoBAACAgiX9uxvqeSxS9gtXzsm3dXdSFOVg2QHxV5RZ3WdFHwAAANhDNl/klRdsJbKL8Ubj9su2wqHI6XOt78v4860l1ryD47mqDLUZdscdXgAAAAB+vKTfnN3NH5Zb8CvM2zqVmQ+ePNOS35JcS6bT6fyWVCrln1/8x19vyDd988PKtf+y7M5+AAAAAIVJ+jfP7dk8bMe6rVP90driYkWWRQafuW3XF3wxNeufW5SNq2/ioaVlq71y28Ct44C0oq0zfAAAAAAUJulXs4m+lr0/q7ahZlun8kPlufLifODo8caqOme9u1ZRlJXsjbymfcbD6qGgfym8dfKPJEPJ7xKq08p0AwAAAAVL+m1OVV+q980taotLFZXl6ruL/clkUhY21jdKjW+P7rG51PmZBVn2zy3evfEgf5QIIkKJgL5ZvwhuI+kHAAAACmHz9J4SXclPTrifDIwFFjTVXtnWcepff7uZ6yS+DMi3eEW3RN7Jm+FQpOde39jw01Q6FYu+3hba09EqPkVA8SmC63Q6phsAAAD48RXnSjZnZs/9YPewSOVtLrWpxZ179HJqdm5rRd9eZZOFdDo98GhIFKKRlZ0Zvxhud9lEqKGe4VxwAAAAAIVM+qvqXCJTF6n8SL9XVM9ebKu0Hc7l93f+ea/v4eDq61VL9myfaHjl1rW7cy8W/mtQMVAMFwURKpVKZ98BcDHXAAAAQEEo+SdvrkRjf//LtWRyveuL843HjiTiiZtf31kKvHrbW1EOmg+mNjZiK6/fF1Fk/D//7U8NRsPU+PMH33yn1+t+94ffyHu7AAAAABQ46ReejU49ut0jCp9f7apz126sb/Te75/wTn5guKYW99mLbTqd7sXky2+vZ97r3eUeXwAAAAAFSPqFvoeD3sExUZDr/UXZl3EHvhvSFpd2CaTaKz3nT9ldmR3/co1fFFo8ze2dHmYZAAAA2FtJf37e39BUf7K9Re7jD4ciczPzC7N+UZBn+BhMBvHIVeOorq/K9Rnp805PzJDxAwAAAHs66Rcmx6Z77/cn15KKorSdP21zWndeuJsvuLgU8AUHu4dSqbS+VH+2q41dPQAAAMCeTvqFWDQ20j+a29CvOqzOGofI/i0VFoPRIFoS8UQ4FBa5vm/Wr/mDspvI9VvbWw7w5i4AAACw95N+aW5mQfNrk2PT8bxruXYymgzu5gbVoVbXczonAAAA8FEl/TlyOT/gC4ZD4UR8TbQYjKWWCovNaZU/AjCbAAAAwMed9AMAAAD4GBUzBQAAAMD/RdL/pz/+WfzlWqlSpUqVKlWqVKlSpfrJVFnpBwAAAD5x/xFgAFVQO+cUesp6AAAAAElFTkSuQmCC) no-repeat;background-size:100% 100%;margin-top:16px;margin-bottom:3px}h4,h5{display:inline-block;display:block;height:40px;text-align:left;line-height:2.3;text-indent:40px}h4{clear:both;font-family:HummingStd-E;color:#fff;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABBoAAAAoCAYAAABQIZnqAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAADVJJREFUeNrs3VlsVNcdx/G/x+N9wbuNDdhgjMFgNmMKpGkJzUKahJZQJa2C/BBXSqsmkR+jqs1DU6mPQUoitRVECs2iSkmVIpKqQQFKmpBAgBCIwRizeF8xXhgbj216/sdzHduMxzMWojF8P9LfM3Pn3jvjufMyP53zP2E7X35DpsFlqtTUfabWmFpkKsdUnKkoAQAAAAAAM8V1U9dMNZg6Z+pLUwdMHTU17OxUXlEW1MncIb74HFO/MfWUqblcCwAAAAAAZrwoX6WYKja1zbe9ztRbpl4zVR/sycKCHNGQauoPpn5pKlI3pGelSVZOhrlNl6TkRImNjxW32y3h7nAuEQAAAAAAM8TQ4JAMDg6Kp9cjVzu7pa25TZobWs1tu7PLgKmdpl4sryjrmOp8wQQNT8hIepGmDxYU5knRisWSmZ3B1QAAAAAA4A7V0tgqlSfPyoWqS84mTR6eLa8o+3ug4wIFDTqt4hVTv9IHuflzZfX6lZKSlmyf7O2+JherL9ukQxMPTT40AdEkBAAAAAAAzAw6M0FnKOhMBZ2xoDMX5hfkSnxinH3+SnunHD/8lVyuqXMO+bOp58orygZDCRpiTWlC8ag+WL9xrRStXGyf0KET58/USOXJKq4GAAAAAAB3qKIVhbJwSb5tnaB0dMPhA0ecp/eaerK8oswz8Th/QYOOZHjP1Ja4hDh56Kc/kuTUJPvEkU+Oyalj3/BpAwAAAABwlyguWSpr7y2x9zs7rsq/3/9YrvXoIhWyx9S2iSMbXH7O8aqpLTpk4pGfPWhDBm0C8f7bewkZAAAAAAC4y2gW8P5be202oBmBZgWaGRhbZCRDGGdi0PCkqWfCwsJk89b7JWFWgtRfbpR9e/ZLR+uVab8pV7iLKwMAAAAAwAzV0XbFZgOaEWhWoJmBZgfGM7t27P7FuAxgzH1dwtImEes2lvpGMrTIwQ8PycD1gSlfdLIwITYuVtb9oFTCw1n2EgAAAACA75Ko6Kig99VsQDMCzQo0M9B+jj6v7tqxO300HxhzzB9NpenqErp8pfr84FG5HkTIoOYX5InLFXbT9tj4GImOjZaomCiuIAAAAAAA3yFJKbNC2l8zAqch5JIVhZK7cJ7eTTH1krOPEzToM+V6p2TDKrtBGz/q0IipRES4ZUFhnmy4b61s3HyvJCYljHu+vaVDDn30qV3+cuw/sup7yyU1I4WrCgAAAADA/0lObnbIx+hyl18c+tLeL1m/0tn89K4du23q4AQNv9bMIH/xfDv8QZewDNT40eVy2VJe76B4evtkaGhY+jz90t93/ab9B73fNqCMiIyQzY8/IKvNm3n0ic12bgcAAAAAALi9IqMiZU5utv2dHqrTxyttdqAZgmYJ+nPfly3YoEFruz5YsrzQHlBdWRPwhDpqIWFW/OhjnZ+hacYXh45O2c+h9J7VEjfSnVLcbrd5zUVcXQAAAAAAbrPsuVkS5gqzYcN0ONmBkyUY23ft2G2HJZSampOelSaZ2RnS290rZ76uCniy+QW5smBR3rhtF89dkuHhGwGPK1xWYOdwjJWSlszVBQAAAADgNtIVI3wjEWThkvzRWQuh0OxAMwTNEjRTMOaYKtUzbdJHWTkZI4FBdW3AE2XNyZTlpcts6X3H8PDwpMdEx0TLmntWyYZN6256zuv1coUBAAAAALiNdCBAfOLITAVdxGHR0oXTOo+TITiZgnGf2/wp0XvpWSMrUbQ1t910oK4mkZyWLMUlS+1IBt9amfLjbQ/KhapLcur4N3KlrVNu3Ph2RENaZqrMyc2R7HlZ5gUzR4+ZSI8HAAAAAADB0/4KA0GuEjlR9tzZNmiYGDx0d/VIY21TSOdyMgQnUzDWaNBg5zIkJSfaLVc7u286UKdEdLResUtYDA0OjSYdOh9DV6e43j/SADImNlqWriqSgiULJNbXhyGQs6fO2X8EAAAAAAAET/sm6u/0UOgAAA0UFi0zv+knjgUIG+mpWDWrWqpOV48bSBCIkyE4mYJmDBo0zLYhQdxIMNB3zTPpCTRQ+GTfZxITG2Mf633lCndJ8eqldsnKcHf4lG9El8JobWyTzJwMWVy8SPbt2S+1F+r5pgAAAAAAEITM2RlBBw06+kEbP2pPBme6hP8kQqSwuEBycmdLzdmL0ljXPOWoCSdDcDIFzRg0aLDrS0ZEuu0W78DglG9Sp0o4dAWK+x/daKdWBGNoaMg2gBzbBDIiMpJvCQAAAAAAQUhMSpTomCh723212+8+seaHf2pGsmTMTpecedl2dYlgaRixYm2xLF+zTBpqG6W1qU06WjvF42dggpMhOJmCZgzu6fxT7S0d9lbDhYcff8BOmQhWePj4EQ/aRLKprolvCgAAAAAAU9DpD9oLUeltT1eP32kOGgp4Lnqk7mKDnDpWKTnzZsuCwrzAIxp8dCUJ7afYUNs0rT4QGjRok4RUTSHCY8JtCjHUNxTwIO+AV6KiIuWhn2wKKWTw5/TxSvMB9PFtAQAAAABgipAhN3+exPraGeht3sJ5cul8bcCeChoWXKy+bPfTHg22EaS/AQ7mFNqfIZQeDX5mR/ToFh1OkKrzKnTohc6r6O+7PuXJSjaskriEuGl/QMNDw3Lii6/l5NFTfFsAAAAAAAhAp0lon4XYuJhx25NTkyQqOsr2U5hsGsVojnDjxuiiDNr4cVzYcEPk6KfHQ151wk+/xyYNGqpMLdNOkToVQjtFdrZ3BjyRNpLwt8am1ztoV6IY9HpF37E2kEhNT/n2+QGvHYLRY2rA3G9raQ86JQEAAAAA4G4SERkhCYnxkpmdEXA2gYYPCxfPlz5Pv7Q0ttrf3Pr7ezIaJujqEtr40aGjGEINGZSfFSyrNGg4ZmpbW3O7zC/IlfSsNDukIpAs809OXF1CR0GcPlEpxauLbJqiNHTo6eq1QzmcD0nDDKdxZNWpar45AAAAAAD4oWGBrtqoNdmIBqXtCIIZ0TCWBgs5udkSnxgnnt4+OffN+Wm9x/SsdHvb1tzmbPrSZf4c0HvNDS12i4YNU0lISrj5TZ46JytLi0dDBlVQlC9dnd12pYmJGuuaRl8TAAAAAABMTkMEDQc6O66O266PdXsoIYPS2QU1Zy/Y++fP1NiFGqZjfsHIwILmhlZn0wENGo6YqtcRDTrEQjtQFq0oDHiioUE/zSLDwsQdcfMiFmkZKdLZPv6DaK5vkY/3/odvCgAAAAAAIYQD2tDR4xlZUEFvL9fUTrslgY6CuDF8Q+ovN07reM0ONEPQLEEzBc0WTB3VZEBjizdNvVB58qyd+7FwSb5Unqya9GTtrR03bevv67f/nHbBHEuHcBw+eMQupREVE22Xxqy/1EBvBgAAAAAAphE2NNY2254Mejs8PP3f1roahYYMgfo5BKLZgdIswefN8oqyYZfvwWv6GrpOps790D4NxSVLJw8aWjqkqb553DZdYkPTkInOn7lgp09ocHHi85NSd7GekAEAAAAAgGnSaRLaJzHU6RL+NExzNINmBpod6NQNzRI0U/BlC+IEDTq8YafeOX74K7th7b0lkpKePOlJD/7rExsgOLJyMiQlbfz+Z05W2V4MAAAAAADg1mlpar0l5+nq7Ar5GF3gQTMDdeyzE87m18sryjRbGA0a1IumOi7X1I1Om1i/ca1ERUX6PbFOifjnOx/IV0dOjQ6zcJbbuN5/XY7+97idMgEAAAAAAG4tXeHxVtCREaHQjGDDxrX2/pmvq0QzBM0STP3O2Sds58tvjD3m56be0T4LW7c/JsmpSXa+xv69B8XrHZz0hdxut6RlpkhcQpxc6/XYqRWDAfYHAAAAAAAzS0RkhGx65IcyJzdbrl7pkn/8bY/TGuGp8oqyt539wrds3jr2uNOmZptac/lCneTlz5X0zDTJzMmQjrYr0ufp9/tiugxGb881u7pEb/e1aS+LAQAAAAAAvnu0VcLGzd+X7LmzpaerRz587yNndsNfyyvK/jR2X5ef4583tcfT6zEH7rONHbJyMmXrU49JcUkRny4AAAAAAHcRzQJ01oNmA5oRfPjuR6KZgbHH1HMT9584dcIRa+pdUw/rNIp1G9fa9TGVro15/kxNwOUvAQAAAADAzKY5gC5hqatLKF3wQXsx+qZLfGDqifKKMs/E4yYLGlSEqVdMPaMPcvPnSsmGVbZvg+rp7pVL1bXS1twmVzu7bZqhwyaYNgEAAAAAwMzhcrls/4XY+FhJSk6U9Kx0ySuYJwmJ8fZ5HcWgq0v4Gj+qv5h6rryizOvvfIGCBoc2iNTAwUYYCwrzpGjFYsnMzuBqAAAAAABwh2ppbJXKk2flQtUlZ1O7qefLK8reCXRcMEGD0pDhJVNPm7LrXerQiaycDJt0aOKhyUdERIS4wl1cDQAAAAAAZojhoWHxer12poLOWNCZC80NrbZ1gs+AqddN/b68oqx9qvMFGzQ45ph61tR2UzlcDgAAAAAA7lgNpt409aqp+vKKsqAOcof4IvWmXjD1W1OlpjaZKjG1SEZCCJ3AEcG1AAAAAABgxtBeC72+3/znTB0ztd/UUVMhN2L8nwADALkRrc2RhJVpAAAAAElFTkSuQmCC) no-repeat;background-size:100% 100%;margin-left:-10px;margin-top:23px;margin-bottom:5px;*zoom:1}.ruled{margin-left:1.3vw;margin-right:1.3vw}img{margin:auto;margin-bottom:16px;line-height:1}img.floatR{float:right}img.floatL{float:left}img.floatL,img.floatR{margin-bottom:0}p{text-align:left;margin-bottom:16px;line-height:1.5}table{border:1px solid #cac4ce;margin:auto;margin-bottom:16px;min-width:848px}th{background:#908895;color:#fff}td,th{padding:6px;border:1px solid #cac4ce;text-align:center;vertical-align:middle;line-height:1.5}ul{margin-bottom:16px}ul li{margin-left:18px;text-align:left;list-style-type:none;line-height:1.5}ul li:before{content:"\\30FB";margin-left:-18px}ul.caution{margin-bottom:16px}ul.caution:before{content:"\\3054\\6CE8\\610F";display:block;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gQNBgQWBIdi0wAAAB90RVh0RmlsZSBOYW1lAGljb25fbm90aWNlX3JlZF9sLnBuZyVod5sAADgaaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0MiA3OS4xNjA5MjQsIDIwMTcvMDcvMTMtMDE6MDY6MzkgICAgICAgICI+CiAgIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICAgICAgICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgICAgICAgICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgICAgICAgICB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgICAgICAgICB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgICAgICAgICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iPgogICAgICAgICA8eG1wOkNyZWF0b3JUb29sPkFkb2JlIFBob3Rvc2hvcCBDQyAoV2luZG93cyk8L3htcDpDcmVhdG9yVG9vbD4KICAgICAgICAgPHhtcDpDcmVhdGVEYXRlPjIwMTgtMDQtMTNUMTU6MDI6MzkrMDk6MDA8L3htcDpDcmVhdGVEYXRlPgogICAgICAgICA8eG1wOk1vZGlmeURhdGU+MjAxOC0wNC0xM1QxNTowNDoyMiswOTowMDwveG1wOk1vZGlmeURhdGU+CiAgICAgICAgIDx4bXA6TWV0YWRhdGFEYXRlPjIwMTgtMDQtMTNUMTU6MDQ6MjIrMDk6MDA8L3htcDpNZXRhZGF0YURhdGU+CiAgICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2UvcG5nPC9kYzpmb3JtYXQ+CiAgICAgICAgIDxwaG90b3Nob3A6Q29sb3JNb2RlPjM8L3Bob3Rvc2hvcDpDb2xvck1vZGU+CiAgICAgICAgIDx4bXBNTTpJbnN0YW5jZUlEPnhtcC5paWQ6OGNjYTU4MmUtZjBkNC01ZDQ2LWE4NjItNWRkMmY2MmFiNmM1PC94bXBNTTpJbnN0YW5jZUlEPgogICAgICAgICA8eG1wTU06RG9jdW1lbnRJRD54bXAuZGlkOjhjY2E1ODJlLWYwZDQtNWQ0Ni1hODYyLTVkZDJmNjJhYjZjNTwveG1wTU06RG9jdW1lbnRJRD4KICAgICAgICAgPHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD54bXAuZGlkOjhjY2E1ODJlLWYwZDQtNWQ0Ni1hODYyLTVkZDJmNjJhYjZjNTwveG1wTU06T3JpZ2luYWxEb2N1bWVudElEPgogICAgICAgICA8eG1wTU06SGlzdG9yeT4KICAgICAgICAgICAgPHJkZjpTZXE+CiAgICAgICAgICAgICAgIDxyZGY6bGkgcmRmOnBhcnNlVHlwZT0iUmVzb3VyY2UiPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6YWN0aW9uPmNyZWF0ZWQ8L3N0RXZ0OmFjdGlvbj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0Omluc3RhbmNlSUQ+eG1wLmlpZDo4Y2NhNTgyZS1mMGQ0LTVkNDYtYTg2Mi01ZGQyZjYyYWI2YzU8L3N0RXZ0Omluc3RhbmNlSUQ+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDp3aGVuPjIwMTgtMDQtMTNUMTU6MDI6MzkrMDk6MDA8L3N0RXZ0OndoZW4+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDpzb2Z0d2FyZUFnZW50PkFkb2JlIFBob3Rvc2hvcCBDQyAoV2luZG93cyk8L3N0RXZ0OnNvZnR3YXJlQWdlbnQ+CiAgICAgICAgICAgICAgIDwvcmRmOmxpPgogICAgICAgICAgICA8L3JkZjpTZXE+CiAgICAgICAgIDwveG1wTU06SGlzdG9yeT4KICAgICAgICAgPHRpZmY6T3JpZW50YXRpb24+MTwvdGlmZjpPcmllbnRhdGlvbj4KICAgICAgICAgPHRpZmY6WFJlc29sdXRpb24+NzIwMDAwLzEwMDAwPC90aWZmOlhSZXNvbHV0aW9uPgogICAgICAgICA8dGlmZjpZUmVzb2x1dGlvbj43MjAwMDAvMTAwMDA8L3RpZmY6WVJlc29sdXRpb24+CiAgICAgICAgIDx0aWZmOlJlc29sdXRpb25Vbml0PjI8L3RpZmY6UmVzb2x1dGlvblVuaXQ+CiAgICAgICAgIDxleGlmOkNvbG9yU3BhY2U+NjU1MzU8L2V4aWY6Q29sb3JTcGFjZT4KICAgICAgICAgPGV4aWY6UGl4ZWxYRGltZW5zaW9uPjE2PC9leGlmOlBpeGVsWERpbWVuc2lvbj4KICAgICAgICAgPGV4aWY6UGl4ZWxZRGltZW5zaW9uPjE2PC9leGlmOlBpeGVsWURpbWVuc2lvbj4KICAgICAgPC9yZGY6RGVzY3JpcHRpb24+CiAgIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgCjw/eHBhY2tldCBlbmQ9InciPz7Rd3jDAAAAGHRFWHRTb2Z0d2FyZQBBZG9iZSBQaG90b3Nob3A0y45nAAAAD3RFWHRXcml0ZXIAU3VwZXJQTkfFxK/dAAADUUlEQVQ4yz2STWwUdQDFfzPz3+9PWgpb+pHU2qqxfkDpwaqNoGDCQSwqRg/Eg0mjCTGi4aKpEeIFNRoTFXsTNdFYqVYNxkATjCI2cMCVtmLZlmgp3Xa32+3OzszOzP/vYY2nl7zkHd57P+2tzh0AaLqOs25irZaa0ze3Pbnxru6+WFPjFqe8Xlz5YzZbvJz7PBCNzEQ2pFBSAvDS7AQCQDN0KjdWiDSmXnv4yKsv9wwMxFNaFJQBSCyjtm/q4uQr546NjBT+nD+UbN7sKKUAEJquYy4VtNQtbWP7P3t3b3OsE36YhrkcpIJQrBLZGKd390Oie3zH86PPvtBz7efJXcnmTA1Ar5lVRDp6+OkT7+1tLmdQR79Hnr+CuicDz/XCI12omb9Rx74m8VuRpz44PrCh+6ZPqqslAHRztZDuPzw03KR3oD48i4oYYGhofa0QC0JfG6ohiowI5OgE4ewau4de3O+69nYAPdnSdmBbQ3+UT39CGjWUpqM8hbI9ALBdlOvWNSRg/Ay3buqh5c7eIQCxpf3unYlLNvL8N/iJNIQTaF4Y/b+llVJgO0jbgqCOVi6h523au3r7AUQq2tSGU8GTDnK9CGsrqKqLEE/U740Eka6DqrmAjutUCS2tkQg0dlB3XIlTQ3oSJTUkAmm7yGwOADk9jzd1CVnJo6z1eh1TgiV9AFEsLVylJrdrvsKXLugGRELYwx8jzmbxfp2CcgmkDeYquvKgJigVCzkA/frK9LcFq0og1orvmCjPQ1YsjF3bEI/fj3jsPqTSUJ7CtysIZeAWC8xfO3eqfqO9+uWFhQtlPXMvmuvi2xayYhM6OIjR20Xo4KOocAC/UgW7QqDlAbL5y/JGYWYEQE8EU7XJuVMH5sqLJNr3oHsuvreO9f5J/NwC9kfj+Pk8yjNJtjxIyYgzcWX0zWgwngPQ3u7cieWZBER0eLDrmde7RCMsX6S6dLUOkukQbmhFb9rKYsDg5OyJ7wrmP/viobR76K/TCIUiEohjuZUjX0wfz27NDBy9I3nb7Q3xDgK2h79JkBcwU5kpTC6eecf2zDfioTRK1TkRdVgkERHDU97Y5PUfx35f/mUwFd7cFzPiGdu3CmvO8lSlVvoqKqLleCD5fxjgX7gioLoFqQkKAAAAAElFTkSuQmCC) no-repeat 0;color:#f72d66;margin-bottom:10px;padding-left:18px;text-align:left;width:1074px;height:18px}ul.caution li{margin-left:18px;color:#f72d66;text-align:left;list-style-type:none;line-height:1.5}ul.caution li:before{content:"\\30FB";margin-left:-18px}a{text-decoration:underline}a,strong{color:#f72d66}h5+.idol_skill,h5+.idol_status{margin-top:1rem}.idol_skill td,.idol_skill th{text-align:left}.idol_status th{text-align:center}.idol_status td{text-align:right}.idol_point{margin-bottom:0}h5+.normal_table{margin-top:1rem}.normal_table th{text-align:center}.normal_table td{text-align:left}', ""])
 }
 , function(e, t, n) {
@@ -34996,43 +35217,43 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(624)
+    var r = n(628)
       , i = o(r)
-      , a = n(625)
+      , a = n(629)
       , s = o(a)
-      , u = n(626)
+      , u = n(630)
       , l = o(u)
-      , c = n(627)
+      , c = n(631)
       , f = o(c)
-      , d = n(628)
+      , d = n(632)
       , p = o(d)
-      , h = n(629)
+      , h = n(633)
       , g = o(h)
-      , m = n(630)
+      , m = n(634)
       , _ = o(m)
-      , y = n(326)
+      , y = n(332)
       , I = o(y)
-      , A = n(631)
+      , A = n(635)
       , C = o(A)
-      , v = n(632)
+      , v = n(636)
       , b = o(v)
-      , P = n(633)
+      , P = n(637)
       , T = o(P)
-      , w = n(634)
-      , O = o(w)
-      , E = n(635)
+      , O = n(638)
+      , w = o(O)
+      , E = n(639)
       , S = o(E)
-      , k = n(636)
+      , k = n(640)
       , R = o(k)
-      , x = n(637)
+      , x = n(641)
       , M = o(x)
-      , N = n(638)
+      , N = n(642)
       , j = o(N)
-      , B = n(639)
+      , B = n(643)
       , D = o(B)
-      , L = n(640)
+      , L = n(644)
       , F = o(L)
-      , U = n(641)
+      , U = n(645)
       , G = o(U)
       , H = n(1)
       , V = o(H)
@@ -35066,9 +35287,9 @@ primJsp([60], [, function(e, t, n) {
         "/item": "item",
         "/mission": j.default,
         "/present": "present",
-        "/produceMarathon": "produceMarathonTop",
+        "/produceMarathon/:gameEventId": "produceMarathonTop",
         "/produceReady": C.default,
-        "/redrawGashaAnimation": O.default,
+        "/redrawGashaAnimation": w.default,
         "/redrawGashaResult": T.default,
         "/skinExchange": "skinExchange",
         "/training": "trainingIdolList",
@@ -35082,7 +35303,8 @@ primJsp([60], [, function(e, t, n) {
         "/tutorial": I.default,
         "/workActivity": "workActivityTop",
         "/workActivity/ready/:businessId/:userBusinessSlotNumber": "workActivityReady",
-        "/workActivity/result/:userBusinessSlotNumber": "workActivityResult"
+        "/workActivity/result/:userBusinessSlotNumber": "workActivityResult",
+        "/characterFanRankingTop/:gameEventId": "characterFanRankingTop"
     };
     V.default.env.PF_URI || Object.assign(W, {
         "/login": "login"
@@ -35101,9 +35323,9 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(12)
       , i = o(r)
-      , a = n(53)
+      , a = n(54)
       , s = o(a)
-      , u = n(104)
+      , u = n(106)
       , l = o(u);
     t.default = function(e) {
         return s.default.fes.top().then(function(t) {
@@ -35140,9 +35362,9 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(12)
       , i = o(r)
-      , a = n(53)
+      , a = n(54)
       , s = o(a)
-      , u = n(104)
+      , u = n(106)
       , l = o(u);
     t.default = function(e) {
         if (!e.request) {
@@ -35255,7 +35477,7 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(12)
       , i = o(r)
-      , a = n(198)
+      , a = n(202)
       , s = o(a);
     t.default = function(e) {
         if (!e.request) {
@@ -35327,7 +35549,7 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(12)
       , i = o(r)
-      , a = n(134)
+      , a = n(135)
       , s = o(a)
       , u = n(88)
       , l = o(u)
@@ -35383,7 +35605,7 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(12)
       , i = o(r)
-      , a = n(53)
+      , a = n(54)
       , s = o(a);
     t.default = function(e) {
         return s.default.gashaGroup.getList().then(function(t) {
@@ -35413,7 +35635,7 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(12)
       , i = o(r)
-      , a = n(53)
+      , a = n(54)
       , s = o(a);
     t.default = function(e) {
         return s.default.gashaGroup.getList().then(function(t) {
@@ -35459,7 +35681,7 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(12)
       , i = o(r)
-      , a = n(53)
+      , a = n(54)
       , s = o(a);
     t.default = function(e) {
         return s.default.gasha.checkDrawResult() ? i.default.loadSceneAsync("gashaResult", e) : (location.replace("/gasha"),
@@ -35479,7 +35701,7 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(12)
       , i = o(r)
-      , a = n(53)
+      , a = n(54)
       , s = o(a);
     t.default = function(e) {
         return s.default.gasha.checkDrawResult() ? i.default.loadSceneAsync("gashaAnimation", e) : (location.replace("/gasha"),
@@ -35499,7 +35721,7 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(12)
       , i = o(r)
-      , a = n(140)
+      , a = n(141)
       , s = o(a);
     t.default = function(e) {
         return e.sceneParams.produceData ? i.default.loadSceneAsync("mission", e) : s.default.get().then(function(t) {
@@ -35565,7 +35787,7 @@ primJsp([60], [, function(e, t, n) {
     });
     var r = n(12)
       , i = o(r)
-      , a = n(140)
+      , a = n(141)
       , s = o(a);
     t.default = function(e) {
         return e.sceneParams.produceData ? i.default.loadSceneAsync("beginnerMission", e) : s.default.get().then(function(t) {
@@ -35593,164 +35815,164 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(643)
+    var r = n(647)
       , i = o(r)
-      , a = n(644)
+      , a = n(648)
       , s = o(a)
       , u = [{
         name: "album",
         class: function() {
-            return n.e(1).then(n.bind(null, 874))
+            return n.e(1).then(n.bind(null, 879))
         }
     }, {
         name: "beginnerMission",
         class: function() {
-            return n.e(34).then(n.bind(null, 875))
+            return n.e(35).then(n.bind(null, 880))
         }
     }, {
         name: "boxGashaTop",
         class: function() {
-            return n.e(1).then(n.bind(null, 876))
+            return n.e(1).then(n.bind(null, 881))
         }
     }, {
         name: "comic",
         class: function() {
-            return n.e(1).then(n.bind(null, 877))
+            return n.e(1).then(n.bind(null, 882))
         }
     }, {
         name: "comicList",
         class: function() {
-            return n.e(1).then(n.bind(null, 878))
+            return n.e(1).then(n.bind(null, 883))
         }
     }, {
         name: "concertResult",
         class: function() {
-            return n.e(15).then(n.bind(null, 879))
+            return n.e(15).then(n.bind(null, 884))
         }
     }, {
         name: "deck",
         class: function() {
-            return n.e(2).then(n.bind(null, 880))
+            return n.e(2).then(n.bind(null, 885))
         }
     }, {
         name: "evolutionIdolList",
         class: function() {
-            return n.e(7).then(n.bind(null, 881))
+            return n.e(7).then(n.bind(null, 886))
         }
     }, {
         name: "evolution",
         class: function() {
-            return n.e(23).then(n.bind(null, 882))
+            return n.e(23).then(n.bind(null, 887))
         }
     }, {
         name: "fesConcert",
         class: function() {
-            return n.e(0).then(n.bind(null, 883))
+            return n.e(0).then(n.bind(null, 888))
         }
     }, {
         name: "fesDeck",
         class: function() {
-            return n.e(12).then(n.bind(null, 884))
+            return n.e(12).then(n.bind(null, 889))
         }
     }, {
         name: "fesDeckView",
         class: function() {
-            return n.e(32).then(n.bind(null, 885))
+            return n.e(32).then(n.bind(null, 890))
         }
     }, {
         name: "fesMatchConcert",
         class: function() {
-            return n.e(0).then(n.bind(null, 886))
+            return n.e(0).then(n.bind(null, 891))
         }
     }, {
         name: "fesMatchReady",
         class: function() {
-            return n.e(31).then(n.bind(null, 887))
+            return n.e(31).then(n.bind(null, 892))
         }
     }, {
         name: "fesMarathonTop",
         class: function() {
-            return n.e(28).then(n.bind(null, 888))
+            return n.e(28).then(n.bind(null, 893))
         }
     }, {
         name: "fesTop",
         class: function() {
-            return n.e(10).then(n.bind(null, 889))
+            return n.e(10).then(n.bind(null, 894))
         }
     }, {
         name: "fesResult",
         class: function() {
-            return n.e(42).then(n.bind(null, 861))
+            return n.e(44).then(n.bind(null, 865))
         }
     }, {
         name: "fesMatchResult",
         class: function() {
-            return n.e(29).then(n.bind(null, 890))
+            return n.e(29).then(n.bind(null, 895))
         }
     }, {
         name: "fesMatchRanking",
         class: function() {
-            return n.e(33).then(n.bind(null, 891))
+            return n.e(34).then(n.bind(null, 896))
         }
     }, {
         name: "fesIdolDetail",
         class: function() {
-            return n.e(19).then(n.bind(null, 892))
+            return n.e(19).then(n.bind(null, 897))
         }
     }, {
         name: "eventPlayer",
         class: function() {
-            return n.e(48).then(n.bind(null, 893))
+            return n.e(50).then(n.bind(null, 898))
         }
     }, {
         name: "gasha",
         class: function() {
-            return n.e(11).then(n.bind(null, 894))
+            return n.e(11).then(n.bind(null, 899))
         }
     }, {
         name: "gashaAnimation",
         class: function() {
-            return n.e(8).then(n.bind(null, 862))
+            return n.e(8).then(n.bind(null, 866))
         }
     }, {
         name: "gashaResult",
         class: function() {
-            return n.e(25).then(n.bind(null, 895))
+            return n.e(25).then(n.bind(null, 900))
         }
     }, {
         name: "homeDeck",
         class: function() {
-            return n.e(16).then(n.bind(null, 896))
+            return n.e(16).then(n.bind(null, 901))
         }
     }, {
         name: "home",
         class: function() {
-            return n.e(6).then(n.bind(null, 863))
+            return n.e(6).then(n.bind(null, 867))
         }
     }, {
         name: "idolDetail",
         class: function() {
-            return n.e(3).then(n.bind(null, 897))
+            return n.e(3).then(n.bind(null, 902))
         }
     }, {
         name: "idolList",
         class: function() {
-            return n.e(26).then(n.bind(null, 898))
+            return n.e(26).then(n.bind(null, 903))
         }
     }, {
         name: "idolPortal",
         class: function() {
-            return n.e(41).then(n.bind(null, 899))
+            return n.e(43).then(n.bind(null, 904))
         }
     }, {
         name: "invitation",
         class: function() {
-            return n.e(45).then(n.bind(null, 900))
+            return n.e(47).then(n.bind(null, 905))
         }
     }, {
         name: "item",
         class: function() {
-            return n.e(30).then(n.bind(null, 901))
+            return n.e(30).then(n.bind(null, 906))
         }
     }, {
         name: "loading",
@@ -35758,112 +35980,112 @@ primJsp([60], [, function(e, t, n) {
     }, {
         name: "loginBonus",
         class: function() {
-            return n.e(40).then(n.bind(null, 902))
+            return n.e(42).then(n.bind(null, 907))
         }
     }, {
         name: "login",
         class: function() {
-            return n.e(53).then(n.bind(null, 903))
+            return n.e(55).then(n.bind(null, 908))
         }
     }, {
         name: "memorialShop",
         class: function() {
-            return n.e(5).then(n.bind(null, 904))
+            return n.e(5).then(n.bind(null, 909))
         }
     }, {
         name: "mission",
         class: function() {
-            return n.e(27).then(n.bind(null, 905))
+            return n.e(27).then(n.bind(null, 910))
         }
     }, {
         name: "missionAchievement",
         class: function() {
-            return n.e(50).then(n.bind(null, 906))
+            return n.e(52).then(n.bind(null, 911))
         }
     }, {
         name: "notFound",
         class: function() {
-            return n.e(54).then(n.bind(null, 907))
+            return n.e(56).then(n.bind(null, 912))
         }
     }, {
         name: "notice",
         class: function() {
-            return n.e(43).then(n.bind(null, 908))
+            return n.e(45).then(n.bind(null, 913))
         }
     }, {
         name: "option",
         class: function() {
-            return n.e(20).then(n.bind(null, 909))
+            return n.e(20).then(n.bind(null, 914))
         }
     }, {
         name: "present",
         class: function() {
-            return n.e(35).then(n.bind(null, 910))
+            return n.e(36).then(n.bind(null, 915))
         }
     }, {
         name: "produce",
         class: function() {
-            return n.e(4).then(n.bind(null, 864))
+            return n.e(4).then(n.bind(null, 868))
         }
     }, {
         name: "produceAudition",
         class: function() {
-            return n.e(0).then(n.bind(null, 911))
+            return n.e(0).then(n.bind(null, 916))
         }
     }, {
         name: "produceConcert",
         class: function() {
-            return n.e(0).then(n.bind(null, 912))
+            return n.e(0).then(n.bind(null, 917))
         }
     }, {
         name: "produceEnding",
         class: function() {
-            return n.e(9).then(n.bind(null, 913))
+            return n.e(9).then(n.bind(null, 918))
         }
     }, {
         name: "produceIdolDetail",
         class: function() {
-            return n.e(3).then(n.bind(null, 914))
+            return n.e(3).then(n.bind(null, 919))
         }
     }, {
         name: "produceMarathonTop",
         class: function() {
-            return n.e(24).then(n.bind(null, 915))
+            return n.e(24).then(n.bind(null, 920))
         }
     }, {
         name: "produceReady",
         class: function() {
-            return n.e(2).then(n.bind(null, 916))
+            return n.e(2).then(n.bind(null, 921))
         }
     }, {
         name: "redrawGashaAnimation",
         class: function() {
-            return n.e(8).then(n.bind(null, 917))
+            return n.e(8).then(n.bind(null, 922))
         }
     }, {
         name: "redrawGashaResult",
         class: function() {
-            return n.e(36).then(n.bind(null, 918))
+            return n.e(37).then(n.bind(null, 923))
         }
     }, {
         name: "shop",
         class: function() {
-            return n.e(5).then(n.bind(null, 919))
+            return n.e(5).then(n.bind(null, 924))
         }
     }, {
         name: "shopPortal",
         class: function() {
-            return n.e(49).then(n.bind(null, 920))
+            return n.e(51).then(n.bind(null, 925))
         }
     }, {
         name: "skillBoard",
         class: function() {
-            return n.e(13).then(n.bind(null, 921))
+            return n.e(14).then(n.bind(null, 926))
         }
     }, {
         name: "skinExchange",
         class: function() {
-            return n.e(18).then(n.bind(null, 922))
+            return n.e(18).then(n.bind(null, 927))
         }
     }, {
         name: "start",
@@ -35871,72 +36093,82 @@ primJsp([60], [, function(e, t, n) {
     }, {
         name: "supportIdolDetail",
         class: function() {
-            return n.e(3).then(n.bind(null, 923))
+            return n.e(3).then(n.bind(null, 928))
         }
     }, {
         name: "titleSetting",
         class: function() {
-            return n.e(39).then(n.bind(null, 924))
+            return n.e(41).then(n.bind(null, 929))
         }
     }, {
         name: "trainingIdolList",
         class: function() {
-            return n.e(7).then(n.bind(null, 925))
+            return n.e(7).then(n.bind(null, 930))
         }
     }, {
         name: "training",
         class: function() {
-            return n.e(17).then(n.bind(null, 926))
+            return n.e(17).then(n.bind(null, 931))
         }
     }, {
         name: "tutorialAudition",
         class: function() {
-            return n.e(0).then(n.bind(null, 927))
+            return n.e(0).then(n.bind(null, 932))
         }
     }, {
         name: "tutorialHome",
         class: function() {
-            return n.e(6).then(n.bind(null, 928))
+            return n.e(6).then(n.bind(null, 933))
         }
     }, {
         name: "tutorialOpening",
         class: function() {
-            return n.e(38).then(n.bind(null, 929))
+            return n.e(40).then(n.bind(null, 934))
         }
     }, {
         name: "tutorialProduce",
         class: function() {
-            return n.e(4).then(n.bind(null, 930))
+            return n.e(4).then(n.bind(null, 935))
         }
     }, {
         name: "tutorialProduceReady",
         class: function() {
-            return n.e(2).then(n.bind(null, 931))
+            return n.e(2).then(n.bind(null, 936))
         }
     }, {
         name: "twitter",
         class: function() {
-            return n.e(37).then(n.bind(null, 932))
+            return n.e(39).then(n.bind(null, 937))
         }
     }, {
         name: "updateInformation",
         class: function() {
-            return n.e(44).then(n.bind(null, 933))
+            return n.e(46).then(n.bind(null, 938))
         }
     }, {
         name: "workActivityTop",
         class: function() {
-            return n.e(14).then(n.bind(null, 934))
+            return n.e(13).then(n.bind(null, 939))
         }
     }, {
         name: "workActivityReady",
         class: function() {
-            return n.e(21).then(n.bind(null, 935))
+            return n.e(21).then(n.bind(null, 940))
         }
     }, {
         name: "workActivityResult",
         class: function() {
-            return n.e(22).then(n.bind(null, 936))
+            return n.e(22).then(n.bind(null, 941))
+        }
+    }, {
+        name: "characterFanRankingTop",
+        class: function() {
+            return n.e(33).then(n.bind(null, 942))
+        }
+    }, {
+        name: "characterFanRanking",
+        class: function() {
+            return n.e(38).then(n.bind(null, 943))
         }
     }];
     t.default = u
@@ -35973,7 +36205,7 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var s = n(131)
+    var s = n(132)
       , u = o(s)
       , l = n(58)
       , c = o(l)
@@ -36060,60 +36292,60 @@ primJsp([60], [, function(e, t, n) {
             t
         }
     }()
-      , c = n(20)
+      , c = n(21)
       , f = o(c)
       , d = n(1)
       , p = o(d)
-      , h = n(138)
+      , h = n(139)
       , g = o(h)
       , m = n(58)
       , _ = o(m)
-      , y = n(91)
+      , y = n(92)
       , I = o(y)
-      , A = n(184)
+      , A = n(186)
       , C = o(A)
-      , v = n(180)
+      , v = n(182)
       , b = o(v)
       , P = n(10)
       , T = o(P)
-      , w = n(645)
-      , O = o(w)
-      , E = n(653)
+      , O = n(649)
+      , w = o(O)
+      , E = n(657)
       , S = o(E)
-      , k = n(654)
+      , k = n(658)
       , R = o(k)
-      , x = n(131)
+      , x = n(132)
       , M = o(x)
-      , N = n(200)
+      , N = n(205)
       , j = o(N)
-      , B = n(181)
+      , B = n(183)
       , D = o(B)
-      , L = n(16)
+      , L = n(13)
       , F = o(L)
       , U = n(34)
       , G = o(U)
-      , H = n(195)
+      , H = n(199)
       , V = o(H)
-      , W = n(149)
+      , W = n(150)
       , Y = o(W)
-      , z = n(4)
-      , K = o(z)
-      , q = n(24)
+      , K = n(4)
+      , z = o(K)
+      , q = n(25)
       , X = o(q)
-      , J = n(655)
+      , J = n(659)
       , Z = o(J)
-      , Q = n(108)
+      , Q = n(110)
       , $ = o(Q)
-      , ee = n(317)
+      , ee = n(323)
       , te = o(ee)
-      , ne = n(260)
+      , ne = n(267)
       , oe = o(ne)
       , re = function() {
         var e = Math.floor(Math.random() * (p.default.app.CHARACTER_NUM + 1));
         if (0 === e)
-            return K.default.createVoicePath("unison", "title_1_unison");
+            return z.default.createVoicePath("unison", "title_1_unison");
         var t = f.default.pad(e, 3, "0");
-        return K.default.createVoicePath("characters", t, t + "_title_1")
+        return z.default.createVoicePath("characters", t, t + "_title_1")
     }
       , ie = null
       , ae = function() {
@@ -36193,7 +36425,7 @@ primJsp([60], [, function(e, t, n) {
             key: "importModuleAsync",
             value: function() {
                 return C.default.startBackGroundSetting.effect ? Promise.resolve().then(function() {
-                    return n(656)("./" + C.default.startBackGroundSetting.effect + "/Particle")
+                    return n(660)("./" + C.default.startBackGroundSetting.effect + "/Particle")
                 }).then(function(e) {
                     ie = e.default
                 }) : (ie = null,
@@ -36207,7 +36439,7 @@ primJsp([60], [, function(e, t, n) {
         }, {
             key: "uiResources",
             get: function() {
-                var e = [].concat(R.default, O.default.manifests);
+                var e = [].concat(R.default, w.default.manifests);
                 return e.push(ae()),
                 ie && e.push.apply(e, r(ie.resources)),
                 e
@@ -36356,13 +36588,13 @@ primJsp([60], [, function(e, t, n) {
         }, {
             key: "_getDeprecationType",
             value: function(e) {
-                return e ? X.default.isSafari() ? O.default.TYPES.PRIVATE_SAFARI : O.default.TYPES.PRIVATE_OTHER : X.default.isAndroid() ? O.default.TYPES.ANDROID : X.default.isLine() ? O.default.TYPES.IOS_LINE : X.default.isFaceBookMessenger() ? O.default.TYPES.IOS_FB_MS : X.default.isFaceBook() ? O.default.TYPES.IOS_FB : O.default.TYPES.IOS
+                return e ? X.default.isSafari() ? w.default.TYPES.PRIVATE_SAFARI : w.default.TYPES.PRIVATE_OTHER : X.default.isAndroid() ? w.default.TYPES.ANDROID : X.default.isLine() ? w.default.TYPES.IOS_LINE : X.default.isFaceBookMessenger() ? w.default.TYPES.IOS_FB_MS : X.default.isFaceBook() ? w.default.TYPES.IOS_FB : w.default.TYPES.IOS
             }
         }, {
             key: "_exitWithDeprecationPopup",
             value: function(e) {
                 this._spotLight.showSpotLight(),
-                O.default.new({
+                w.default.new({
                     type: this._getDeprecationType(e)
                 }).addTo(this)
             }
@@ -36447,26 +36679,26 @@ primJsp([60], [, function(e, t, n) {
             t
         }
     }()
-      , u = n(91)
+      , u = n(92)
       , l = o(u)
-      , c = n(646)
+      , c = n(650)
       , f = o(c)
-      , d = n(647)
+      , d = n(651)
       , p = o(d)
-      , h = n(648)
+      , h = n(652)
       , g = o(h)
-      , m = n(649)
+      , m = n(653)
       , _ = o(m)
-      , y = n(650)
+      , y = n(654)
       , I = o(y)
-      , A = n(651)
+      , A = n(655)
       , C = o(A)
-      , v = n(652)
+      , v = n(656)
       , b = o(v)
-      , P = n(108)
+      , P = n(110)
       , T = o(P)
-      , w = n(10)
-      , O = o(w)
+      , O = n(10)
+      , w = o(O)
       , E = {
         ANDROID: "android",
         IOS: "ios",
@@ -36549,7 +36781,7 @@ primJsp([60], [, function(e, t, n) {
                         text: t
                     },
                     buttonDeprecationUrlCopy: {
-                        class: O.default.DecideButton
+                        class: w.default.DecideButton
                     },
                     buttonDeprecationStart: {
                         visible: !1
@@ -37501,9 +37733,9 @@ primJsp([60], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(149)
+    var r = n(150)
       , i = o(r)
-      , a = n(183)
+      , a = n(185)
       , s = o(a);
     t.default = ["images/ui/start/start_notice.jpg", "images/ui/start/parts.json", "images/ui/start_and_common/parts.json", "particles/common/tap_effect/particle.json", "particles/common/tap_effect/feather.json", "particles/common/tap_effect/images.json"].concat(function(e) {
         if (Array.isArray(e)) {
@@ -37546,7 +37778,7 @@ primJsp([60], [, function(e, t, n) {
         value: !0
     }),
     t.default = o;
-    var r = n(24)
+    var r = n(25)
       , i = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -37561,18 +37793,19 @@ primJsp([60], [, function(e, t, n) {
         }) : Promise.reject(new Error("Cannot find module '" + e + "'."))
     }
     var r = {
-        "./1/Particle": [869, 59],
-        "./2/Particle": [870, 58],
-        "./3/Particle": [871, 57],
-        "./4/Particle": [872, 56],
-        "./5/Particle": [873, 55]
+        "./1/Particle": [873, 62],
+        "./2/Particle": [874, 61],
+        "./3/Particle": [875, 60],
+        "./4/Particle": [876, 59],
+        "./5/Particle": [877, 58],
+        "./6/Particle": [878, 57]
     };
     o.keys = function() {
         return Object.keys(r)
     }
     ,
-    o.id = 656,
+    o.id = 660,
     e.exports = o
 }
-], [372]);
-//# sourceMappingURL=app-ca18adfe13303602a19f.js.map
+], [376]);
+//# sourceMappingURL=app-2042391b6c2e241158c2.js.map
