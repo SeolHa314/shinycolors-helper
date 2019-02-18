@@ -1,4 +1,4 @@
-primJsp([63], [, function(e, t, n) {
+primJsp([64], [, function(e, t, n) {
     "use strict";
     function o(e) {
         return e && e.__esModule ? e : {
@@ -8,17 +8,17 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(84)
+    var r = n(87)
       , i = o(r)
-      , a = n(90)
+      , a = n(93)
       , s = o(a)
-      , u = n(389)
+      , u = n(390)
       , l = o(u)
-      , c = n(390)
+      , c = n(391)
       , f = o(c)
-      , d = n(13)
+      , d = n(12)
       , p = o(d)
-      , h = n(391)
+      , h = n(392)
       , g = o(h);
     t.default = {
         app: i.default,
@@ -51,17 +51,17 @@ primJsp([63], [, function(e, t, n) {
       , s = o(a)
       , u = n(17)
       , l = o(u)
-      , c = n(13)
+      , c = n(12)
       , f = o(c)
       , d = n(55)
       , p = o(d)
-      , h = n(84)
+      , h = n(87)
       , g = o(h)
-      , m = n(220)
+      , m = n(221)
       , _ = o(m)
       , y = n(134)
       , I = o(y)
-      , A = n(431)
+      , A = n(432)
       , C = o(A)
       , v = {
         ERROR_WITHOUT_ERROR_LOG: 299,
@@ -320,7 +320,7 @@ primJsp([63], [, function(e, t, n) {
         }
     }
 }
-, , function(e, t, n) {
+, function(e, t, n) {
     "use strict";
     function o(e) {
         return e && e.__esModule ? e : {
@@ -352,8 +352,8 @@ primJsp([63], [, function(e, t, n) {
       , b = h.MOVIE_EXTENSION
       , P = h.SOUND_EXTENSION
       , T = h.CONCERT_MUSIC_PATH
-      , O = h.SPINE_FILE_NAME
-      , w = function(e) {
+      , w = h.SPINE_FILE_NAME
+      , O = function(e) {
         return e ? e + "_" : ""
     }
       , E = function(e, t) {
@@ -363,12 +363,12 @@ primJsp([63], [, function(e, t, n) {
         var o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : ""
           , r = E(e, n)
           , i = C[e] && C[e][t] || v;
-        return "" + w(o) + r + i
+        return "" + O(o) + r + i
     }
       , k = function(e, t) {
         var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : ""
           , o = E(e, t);
-        return "" + w(n) + o + b
+        return "" + O(n) + o + b
     }
       , R = function(e, t, n) {
         var o = E(e, t);
@@ -394,7 +394,7 @@ primJsp([63], [, function(e, t, n) {
             e
         },
         createSpinePath: function(e, t, n) {
-            return i.default.join(y, e, t, E(e, n), O)
+            return i.default.join(y, e, t, E(e, n), w)
         },
         createVoicePath: function(e, t, n) {
             var o = [I, e, R(e, t, n)].filter(function(e) {
@@ -412,7 +412,7 @@ primJsp([63], [, function(e, t, n) {
     };
     t.default = x
 }
-, , , , , function(e, t, n) {
+, , , , , , function(e, t, n) {
     "use strict";
     function o(e, t) {
         if (!(e instanceof t))
@@ -455,7 +455,7 @@ primJsp([63], [, function(e, t, n) {
             t
         }
     }()
-      , s = n(213)
+      , s = n(214)
       , u = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -506,13 +506,13 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(325)
+    var r = n(326)
       , i = o(r)
-      , a = n(326)
+      , a = n(327)
       , s = o(a)
-      , u = n(506)
+      , u = n(507)
       , l = o(u)
-      , c = n(86)
+      , c = n(89)
       , f = o(c)
       , d = n(103)
       , p = o(d)
@@ -520,57 +520,57 @@ primJsp([63], [, function(e, t, n) {
       , g = o(h)
       , m = n(23)
       , _ = o(m)
-      , y = n(315)
+      , y = n(317)
       , I = o(y)
-      , A = n(184)
+      , A = n(185)
       , C = o(A)
-      , v = n(608)
+      , v = n(611)
       , b = o(v)
-      , P = n(609)
+      , P = n(612)
       , T = o(P)
-      , O = n(610)
-      , w = o(O)
-      , E = n(330)
+      , w = n(613)
+      , O = o(w)
+      , E = n(331)
       , S = o(E)
-      , k = n(197)
+      , k = n(198)
       , R = o(k)
       , x = n(149)
       , M = o(x)
       , N = n(133)
       , j = o(N)
-      , B = n(314)
+      , B = n(316)
       , D = o(B)
-      , L = n(612)
+      , L = n(615)
       , F = o(L)
-      , U = n(102)
+      , U = n(86)
       , G = o(U)
-      , H = n(317)
+      , H = n(182)
       , V = o(H)
-      , W = n(374)
+      , W = n(375)
       , Y = o(W)
-      , K = n(101)
+      , K = n(85)
       , z = o(K)
-      , q = n(616)
-      , X = o(q)
+      , X = n(619)
+      , q = o(X)
       , J = n(72)
       , Z = o(J)
-      , Q = n(320)
+      , Q = n(321)
       , $ = o(Q)
-      , ee = n(336)
+      , ee = n(337)
       , te = o(ee)
-      , ne = n(137)
+      , ne = n(138)
       , oe = o(ne)
-      , re = n(191)
+      , re = n(192)
       , ie = o(re)
-      , ae = n(261)
+      , ae = n(263)
       , se = o(ae)
-      , ue = n(262)
+      , ue = n(264)
       , le = o(ue)
-      , ce = n(331)
+      , ce = n(332)
       , fe = o(ce)
-      , de = n(618)
+      , de = n(621)
       , pe = o(de)
-      , he = n(619)
+      , he = n(622)
       , ge = o(he)
       , me = n(136)
       , _e = o(me);
@@ -588,7 +588,7 @@ primJsp([63], [, function(e, t, n) {
         Gauge: C.default,
         ImageLabel: b.default,
         InteractionBox: T.default,
-        graphics: w.default,
+        graphics: O.default,
         MovingBg: S.default,
         MuteVideo: M.default,
         MuteVideoAndSEPlayer: R.default,
@@ -599,7 +599,7 @@ primJsp([63], [, function(e, t, n) {
         ScrollBarBase: V.default,
         ScrollMap: Y.default,
         ScrollRect: z.default,
-        SelectButton: X.default,
+        SelectButton: q.default,
         Spine: $.default,
         StretchSprite: Z.default,
         ToggleButton: te.default,
@@ -615,6 +615,33 @@ primJsp([63], [, function(e, t, n) {
 }
 , , function(e, t, n) {
     "use strict";
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var o = window.primEnv
+      , r = o.API_ROOT
+      , i = o.TRACKING_URI
+      , a = o.ASSET_ROOT
+      , s = o.ENABLE_CRYPTO
+      , u = o.STATS
+      , l = o.GAME_ID
+      , c = o.PF_URI
+      , f = o.X_VERSION
+      , d = o.SPEED;
+    t.default = {
+        API_ROOT: r,
+        TRACKING_URI: i,
+        ASSET_ROOT: a,
+        ENABLE_CRYPTO: s,
+        STATS: u,
+        GAME_ID: l,
+        PF_URI: c,
+        X_VERSION: f,
+        SPEED: d
+    }
+}
+, function(e, t, n) {
+    "use strict";
     function o(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -625,9 +652,9 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(53)
       , i = o(r)
-      , a = n(188)
+      , a = n(189)
       , s = o(a)
-      , u = n(432)
+      , u = n(433)
       , l = o(u)
       , c = n(55)
       , f = o(c)
@@ -789,33 +816,6 @@ primJsp([63], [, function(e, t, n) {
         }
     }
 }
-, function(e, t, n) {
-    "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var o = window.primEnv
-      , r = o.API_ROOT
-      , i = o.TRACKING_URI
-      , a = o.ASSET_ROOT
-      , s = o.ENABLE_CRYPTO
-      , u = o.STATS
-      , l = o.GAME_ID
-      , c = o.PF_URI
-      , f = o.X_VERSION
-      , d = o.SPEED;
-    t.default = {
-        API_ROOT: r,
-        TRACKING_URI: i,
-        ASSET_ROOT: a,
-        ENABLE_CRYPTO: s,
-        STATS: u,
-        GAME_ID: l,
-        PF_URI: c,
-        X_VERSION: f,
-        SPEED: d
-    }
-}
 , , , , , function(e, t, n) {
     (function(e) {
         // Copyright Joyent, Inc. and other Node contributors.
@@ -948,7 +948,7 @@ primJsp([63], [, function(e, t, n) {
             e.substr(t, n)
         }
     }
-    ).call(t, n(187))
+    ).call(t, n(188))
 }
 , , function(e, t, n) {
     "use strict";
@@ -960,15 +960,15 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(79)
+    var r = n(80)
       , i = o(r)
-      , a = n(549)
+      , a = n(550)
       , s = o(a)
-      , u = n(550)
+      , u = n(551)
       , l = o(u)
-      , c = n(551)
+      , c = n(552)
       , f = o(c)
-      , d = n(91)
+      , d = n(94)
       , p = o(d)
       , h = n(47)
       , g = o(h)
@@ -1066,7 +1066,7 @@ primJsp([63], [, function(e, t, n) {
       , f = o(c)
       , d = n(103)
       , p = o(d)
-      , h = n(86)
+      , h = n(89)
       , g = o(h)
       , m = n(72)
       , _ = o(m)
@@ -1112,9 +1112,9 @@ primJsp([63], [, function(e, t, n) {
               , b = e.width
               , P = void 0 === b ? null : b
               , T = e.height
-              , O = void 0 === T ? null : T
-              , w = e.isCenter
-              , E = void 0 !== w && w
+              , w = void 0 === T ? null : T
+              , O = e.isCenter
+              , E = void 0 !== O && O
               , S = e.marginTop
               , k = void 0 === S ? 20 : S
               , R = e.marginMain
@@ -1126,13 +1126,13 @@ primJsp([63], [, function(e, t, n) {
               , j = void 0
               , B = void 0
               , D = void 0;
-            P && O ? (N = _.default.new("pop_stretch.png", {
+            P && w ? (N = _.default.new("pop_stretch.png", {
                 left: 80,
                 top: 80,
                 right: 80,
                 bottom: 20,
                 width: P,
-                height: O
+                height: w
             }),
             D = 82) : (N = aoba.Sprite.new("pop_" + o + "_top.png"),
             j = aoba.Sprite.new("pop_" + o + "_middle.png"),
@@ -1183,7 +1183,7 @@ primJsp([63], [, function(e, t, n) {
             U.pivot.set(U.width / 2, 0),
             N.addTo(L),
             j) {
-                var H = O || F.height;
+                var H = w || F.height;
                 j.height = H + U.height + x,
                 j.addTo(L, 0, N.height)
             }
@@ -1348,11 +1348,11 @@ primJsp([63], [, function(e, t, n) {
       , s = o(a)
       , u = n(151)
       , l = o(u)
-      , c = n(318)
+      , c = n(319)
       , f = o(c)
       , d = n(9)
       , p = o(d)
-      , h = n(4)
+      , h = n(3)
       , g = o(h)
       , m = {
         circle_twinkle_bronze: ["twinkle_kira_bronze.png"],
@@ -1493,14 +1493,14 @@ primJsp([63], [, function(e, t, n) {
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var r = n(34)
+        var r = n(31)
           , i = o(r)
-          , a = n(13)
+          , a = n(12)
           , s = o(a)
           , u = void 0;
-        e.GLOBAL ? u = n(206) : (n(382),
+        e.GLOBAL ? u = n(207) : (n(383),
         e.GLOBAL = e,
-        u = n(206));
+        u = n(207));
         var l = new u
           , c = /\sLine\//
           , f = /FBAN\/FB/
@@ -1603,14 +1603,14 @@ primJsp([63], [, function(e, t, n) {
         }
     }
 }
-, , , , function(e, t, n) {
+, function(e, t, n) {
     "use strict";
     Object.defineProperty(t, "__esModule", {
         value: !0
     }),
     t.default = window.ezpf
 }
-, function(e, t, n) {
+, , , , function(e, t, n) {
     "use strict";
     function o(e) {
         return e && e.__esModule ? e : {
@@ -1622,7 +1622,7 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(18)
       , i = o(r)
-      , a = n(13)
+      , a = n(12)
       , s = o(a)
       , u = n(113)
       , l = o(u)
@@ -1720,13 +1720,13 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(4)
+    var r = n(3)
       , i = o(r)
-      , a = n(485)
+      , a = n(486)
       , s = o(a)
-      , u = n(90)
+      , u = n(93)
       , l = o(u)
-      , c = n(96)
+      , c = n(79)
       , f = o(c);
     t.default = {
         getSpinePath: function(e) {
@@ -1776,7 +1776,7 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(1)
       , i = o(r)
-      , a = n(4)
+      , a = n(3)
       , s = o(a)
       , u = i.default.asset.costumeIndependentResources.imageTypes
       , l = i.default.asset.costumeIndependentResources.movieTypes
@@ -1879,9 +1879,9 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(1)
       , i = o(r)
-      , a = n(264)
+      , a = n(266)
       , s = o(a)
-      , u = n(346)
+      , u = n(347)
       , l = o(u)
       , c = {
         recoveryItem: {
@@ -2006,7 +2006,7 @@ primJsp([63], [, function(e, t, n) {
         value: !0
     }),
     t.setErrorEvent = t.claims = void 0;
-    var r = n(219)
+    var r = n(220)
       , i = o(r)
       , a = n(1)
       , s = o(a)
@@ -2014,11 +2014,11 @@ primJsp([63], [, function(e, t, n) {
       , l = o(u)
       , c = n(55)
       , f = o(c)
-      , d = n(13)
+      , d = n(12)
       , p = o(d)
-      , h = n(34)
+      , h = n(31)
       , g = o(h)
-      , m = n(354)
+      , m = n(355)
       , _ = (o(m),
     void 0)
       , y = t.claims = Object.create(null)
@@ -2081,7 +2081,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(195)
+    var o = n(196)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -2091,9 +2091,9 @@ primJsp([63], [, function(e, t, n) {
       , a = {
         preload: function() {
             return r.default.dynamicLoad(function() {
-                return n.e(48).then(n.bind(null, 869))
+                return n.e(49).then(n.bind(null, 872))
             }, function() {
-                return n.e(53).then(n.bind(null, 870))
+                return n.e(54).then(n.bind(null, 873))
             }).then(function(e) {
                 return i = e,
                 e
@@ -2118,7 +2118,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(352)
+    var o = n(353)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -2159,79 +2159,79 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(363)
+    var r = n(364)
       , i = o(r)
-      , a = n(347)
+      , a = n(348)
       , s = o(a)
       , u = n(105)
       , l = o(u)
-      , c = n(576)
+      , c = n(579)
       , f = o(c)
-      , d = n(202)
+      , d = n(203)
       , p = o(d)
-      , h = n(578)
+      , h = n(581)
       , g = o(h)
-      , m = n(579)
+      , m = n(582)
       , _ = o(m)
-      , y = n(582)
+      , y = n(585)
       , I = o(y)
-      , A = n(583)
+      , A = n(586)
       , C = o(A)
-      , v = n(584)
+      , v = n(587)
       , b = o(v)
-      , P = n(585)
+      , P = n(588)
       , T = o(P)
-      , O = n(264)
-      , w = o(O)
-      , E = n(365)
+      , w = n(266)
+      , O = o(w)
+      , E = n(366)
       , S = o(E)
-      , k = n(366)
+      , k = n(367)
       , R = o(k)
-      , x = n(587)
+      , x = n(590)
       , M = o(x)
       , N = n(141)
       , j = o(N)
       , B = n(135)
       , D = o(B)
-      , L = n(595)
+      , L = n(598)
       , F = o(L)
-      , U = n(596)
+      , U = n(599)
       , G = o(U)
-      , H = n(597)
+      , H = n(600)
       , V = o(H)
-      , W = n(205)
+      , W = n(206)
       , Y = o(W)
-      , K = n(348)
+      , K = n(349)
       , z = o(K)
-      , q = n(598)
-      , X = o(q)
-      , J = n(368)
+      , X = n(601)
+      , q = o(X)
+      , J = n(369)
       , Z = o(J)
-      , Q = n(349)
+      , Q = n(350)
       , $ = o(Q)
-      , ee = n(600)
+      , ee = n(603)
       , te = o(ee)
-      , ne = n(601)
+      , ne = n(604)
       , oe = o(ne)
-      , re = n(602)
+      , re = n(605)
       , ie = o(re)
-      , ae = n(350)
+      , ae = n(351)
       , se = o(ae)
-      , ue = n(369)
+      , ue = n(370)
       , le = o(ue)
-      , ce = n(370)
+      , ce = n(371)
       , fe = o(ce)
-      , de = n(603)
+      , de = n(606)
       , pe = o(de)
-      , he = n(371)
+      , he = n(372)
       , ge = o(he)
-      , me = n(372)
+      , me = n(373)
       , _e = o(me)
-      , ye = n(605)
+      , ye = n(608)
       , Ie = o(ye)
-      , Ae = n(606)
+      , Ae = n(609)
       , Ce = o(Ae)
-      , ve = n(373)
+      , ve = n(374)
       , be = o(ve);
     t.default = {
         announce: i.default,
@@ -2245,7 +2245,7 @@ primJsp([63], [, function(e, t, n) {
         homeDeck: C.default,
         idol: b.default,
         invitation: T.default,
-        item: w.default,
+        item: O.default,
         loginBonus: M.default,
         memorialShop: S.default,
         myPage: j.default,
@@ -2256,7 +2256,7 @@ primJsp([63], [, function(e, t, n) {
         updateInformation: V.default,
         user: Y.default,
         userEnhancementItem: z.default,
-        userExchangeItemShop: X.default,
+        userExchangeItemShop: q.default,
         userFesDeck: Z.default,
         userFesIdol: $.default,
         userGashaTicket: te.default,
@@ -2283,11 +2283,11 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(13)
+    var r = n(12)
       , i = o(r)
       , a = n(25)
       , s = o(a)
-      , u = n(34)
+      , u = n(31)
       , l = o(u)
       , c = {
         SENTRY_DSN: 'https://14d9deb0a65d43acbbc59df15a20503d@sentry.io/1188061'
@@ -2300,8 +2300,8 @@ primJsp([63], [, function(e, t, n) {
                 var e = l.default && l.default.VERSION ? l.default.VERSION : ""
                   , t = {
                     tags: {
-                        buildDate: "2019-2-7 11:50:31",
-                        buildVersion: "65dd85d",
+                        buildDate: "2019-2-15 09:41:45",
+                        buildVersion: "8f51ce1",
                         pfSdkVersion: e,
                         isAndroidDefaultBrowser: "" + s.default.isAndroidDefaultBrowser(),
                         xVersion: i.default.X_VERSION
@@ -2388,28 +2388,28 @@ primJsp([63], [, function(e, t, n) {
             t
         }
     }()
-      , s = n(210)
+      , s = n(211)
       , u = o(s)
-      , l = n(211)
+      , l = n(212)
       , c = o(l)
-      , f = n(12)
+      , f = n(13)
       , d = o(f)
-      , p = n(433)
+      , p = n(434)
       , h = o(p)
-      , g = n(92)
+      , g = n(95)
       , m = o(g)
       , _ = n(111)
       , y = o(_)
-      , I = n(13)
+      , I = n(12)
       , A = o(I)
-      , C = n(212)
+      , C = n(213)
       , v = o(C)
-      , b = n(222)
+      , b = n(223)
       , P = o(b)
-      , T = n(220)
-      , O = o(T)
-      , w = n(486)
-      , E = o(w)
+      , T = n(221)
+      , w = o(T)
+      , O = n(487)
+      , E = o(O)
       , S = n(35)
       , k = o(S)
       , R = n(48)
@@ -2420,17 +2420,17 @@ primJsp([63], [, function(e, t, n) {
       , B = o(j)
       , D = n(49)
       , L = o(D)
-      , F = n(355)
+      , F = n(356)
       , U = o(F)
-      , G = n(138)
+      , G = n(137)
       , H = o(G)
-      , V = n(223)
+      , V = n(224)
       , W = o(V)
       , Y = aoba
       , K = Y.game
       , z = Y.soundManager
-      , q = Y.sceneManager
-      , X = !1
+      , X = Y.sceneManager
+      , q = !1
       , J = function(e) {
         var t = (new Date).getTime().toString();
         H.default.send(H.default.EVENT_LABEL.CHANGE_PAGE, {
@@ -2441,7 +2441,7 @@ primJsp([63], [, function(e, t, n) {
       , Z = function(e) {
         k.default.fetchHashMap(),
         J(e),
-        e.split("/")[1] && "/login" !== e && O.default.setPreUrlToStorage()
+        e.split("/")[1] && "/login" !== e && w.default.setPreUrlToStorage()
     }
       , Q = function() {
         return Promise.resolve().then(function() {
@@ -2578,7 +2578,7 @@ primJsp([63], [, function(e, t, n) {
                 e.then(function() {
                     (0,
                     h.default)(z),
-                    q.loadScene("loading", {}, !0),
+                    X.loadScene("loading", {}, !0),
                     K.run(),
                     m.default.start(K)
                 })
@@ -2602,13 +2602,13 @@ primJsp([63], [, function(e, t, n) {
                   , n = Object.assign({
                     route: this._route
                 }, this._options);
-                if (X)
+                if (q)
                     return Promise.resolve();
-                X = !0;
+                q = !0;
                 var o = n.route.sceneName;
                 if (N.default.webViewInApp() && "/" !== e && "" !== e && "/login" !== e)
                     return window.location.replace(window.location.href),
-                    X = !1,
+                    q = !1,
                     new Promise(function(e, t) {}
                     );
                 var r = Promise.resolve();
@@ -2622,7 +2622,7 @@ primJsp([63], [, function(e, t, n) {
                 r.then(function() {
                     var o = n.path || e;
                     Z(o),
-                    X = !1,
+                    q = !1,
                     t._onLoading = !1
                 })
             }
@@ -2652,35 +2652,35 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(493)
+    var r = n(494)
       , i = o(r)
-      , a = n(495)
+      , a = n(496)
       , s = o(a)
-      , u = n(243)
+      , u = n(245)
       , l = o(u)
-      , c = n(245)
+      , c = n(247)
       , f = o(c)
-      , d = n(244)
+      , d = n(246)
       , p = o(d)
-      , h = n(248)
+      , h = n(250)
       , g = o(h)
-      , m = n(246)
+      , m = n(248)
       , _ = o(m)
-      , y = n(249)
+      , y = n(251)
       , I = o(y)
-      , A = n(250)
+      , A = n(252)
       , C = o(A)
-      , v = n(251)
+      , v = n(253)
       , b = o(v)
-      , P = n(254)
+      , P = n(256)
       , T = o(P)
-      , O = n(253)
-      , w = o(O)
-      , E = n(255)
+      , w = n(255)
+      , O = o(w)
+      , E = n(257)
       , S = o(E)
-      , k = n(252)
+      , k = n(254)
       , R = o(k)
-      , x = n(256)
+      , x = n(258)
       , M = o(x);
     t.default = {
         AdvPlayer: i.default,
@@ -2694,7 +2694,7 @@ primJsp([63], [, function(e, t, n) {
         MovieLayer: C.default,
         ScenarioPlayer: b.default,
         SelectItem: T.default,
-        SelectList: w.default,
+        SelectList: O.default,
         SoundController: S.default,
         TextPlayer: R.default,
         TrackManager: M.default
@@ -3322,7 +3322,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(95)
+    var r = n(98)
       , i = o(r)
       , a = n(40)
       , s = o(a);
@@ -3421,8 +3421,21 @@ primJsp([63], [, function(e, t, n) {
     "use strict";
     Object.defineProperty(t, "__esModule", {
         value: !0
+    }),
+    t.default = {
+        cloneAndEmptyHashProperty: function(e) {
+            return Object.assign(Object.create(aoba.utils.getPrototypeOf(e)), e, {
+                hash: ""
+            })
+        }
+    }
+}
+, function(e, t, n) {
+    "use strict";
+    Object.defineProperty(t, "__esModule", {
+        value: !0
     });
-    var o = n(4)
+    var o = n(3)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -3439,10 +3452,325 @@ primJsp([63], [, function(e, t, n) {
 }
 , , , , , function(e, t, n) {
     "use strict";
+    function o(e, t) {
+        if (!(e instanceof t))
+            throw new TypeError("Cannot call a class as a function")
+    }
+    function r(e, t) {
+        if (!e)
+            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+        return !t || "object" != typeof t && "function" != typeof t ? e : t
+    }
+    function i(e, t) {
+        if ("function" != typeof t && null !== t)
+            throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+        e.prototype = Object.create(t && t.prototype, {
+            constructor: {
+                value: e,
+                enumerable: !1,
+                writable: !0,
+                configurable: !0
+            }
+        }),
+        t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+    }
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = {
+    var a = function() {
+        function e(e, t) {
+            for (var n = 0; n < t.length; n++) {
+                var o = t[n];
+                o.enumerable = o.enumerable || !1,
+                o.configurable = !0,
+                "value"in o && (o.writable = !0),
+                Object.defineProperty(e, o.key, o)
+            }
+        }
+        return function(t, n, o) {
+            return n && e(t.prototype, n),
+            o && e(t, o),
+            t
+        }
+    }()
+      , s = aoba
+      , u = s.Container
+      , l = s.Graphics
+      , c = function(e) {
+        function t() {
+            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
+                maskX: 0,
+                maskY: 0
+            };
+            o(this, t);
+            var n = r(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
+            return n.mask = l.new().beginFill(0),
+            e.round ? n.mask.drawRoundedRect(e.maskX, e.maskY, e.width, e.height, e.round) : n.mask.drawRect(e.maskX, e.maskY, e.width, e.height),
+            n.mask.addTo(n),
+            n._container = e.container.addTo(n),
+            n._scrollBarBase = e.scrollBarBase,
+            n._scrollBar = e.scrollBar,
+            n._fixedHeight = e.fixedHeight || 0,
+            n._overflow = 0,
+            n._scrollOverflow = 0,
+            n._time = 0,
+            n._prevTime = 0,
+            n._swiping = !1,
+            n._prevPosition = null,
+            n._diffPosition = null,
+            n.interactive = !0,
+            n.moreReadPositionY = null,
+            n._scrollBarBase && n._scrollBar ? (n._scrollBar.parent && n._scrollBar.parent.removeChild(n._scrollBar),
+            n._scrollBarBaseHeight = n._scrollBarBase.height,
+            n._scrollBar.addTo(n._scrollBarBase, (n._scrollBarBase.width - n._scrollBar.width) / 2, 0),
+            n.updateScrollBarTransform(),
+            n._updateScrollBarPosition()) : n._updateOverflow(n._fixedHeight || n._container.height),
+            n.on("touchstart", n._onTouchStart, n),
+            n.on("touchmove", n._onTouchMove, n),
+            n.on("touchend", n._onTouchEnd, n),
+            n.on("touchendoutside", n._onTouchEnd, n),
+            n._scrollBar && n._scrollBar.on("moved", n._updateScrollBarPosition, n),
+            n
+        }
+        return i(t, e),
+        a(t, [{
+            key: "_updateScrollBarPosition",
+            value: function() {
+                if (this._scrollBar) {
+                    var e = this._scrollBar.y
+                      , t = this._scrollBar.y + this._scrollOverflow;
+                    this._scrollBar.y = Math.max(this._scrollBar.y, e),
+                    this._scrollBar.y = Math.min(this._scrollBar.y, t),
+                    this._scrollOverflow > 0 && !this._swiping && this._updateContainerWithPositionRate(this._scrollBar.y / this._scrollOverflow)
+                }
+            }
+        }, {
+            key: "_updateOverflow",
+            value: function(e) {
+                this._overflow = Math.max(0, e - this.mask.height)
+            }
+        }, {
+            key: "updateScrollBarTransform",
+            value: function() {
+                var e = this._fixedHeight || this._container.height;
+                if (this._updateOverflow(e),
+                this._scrollBarBase && this._scrollBar) {
+                    this._scrollBarBase.visible = this._overflow > 0;
+                    var t = Math.min(1, this.mask.height / e);
+                    t = Math.max(.1, t);
+                    var n = this._scrollBarBaseHeight * t;
+                    this._scrollBar.updateMaxY(this._scrollBarBaseHeight - n),
+                    this._scrollBar.updateHeight(n),
+                    this._scrollOverflow = this._scrollBarBaseHeight - this._scrollBar.height
+                }
+            }
+        }, {
+            key: "_onTouchStart",
+            value: function(e) {
+                this._swiping || (this._diffPosition = null,
+                this._swiping = !0,
+                this._targetInitialPos = this._container.y,
+                this._pointInitialPos = e.data.global.y,
+                this._prevPosition = e.data.global.y,
+                this._prevTime = this._time)
+            }
+        }, {
+            key: "_onTouchMove",
+            value: function(e) {
+                if (this._swiping) {
+                    var t = this._targetInitialPos
+                      , n = this._pointInitialPos
+                      , o = e.data.global.y
+                      , r = n - o
+                      , i = this._time - this._prevTime;
+                    this._container.interactiveChildren && Math.abs(r) >= 8 && (this._container.interactiveChildren = !1),
+                    this.updateContainerPos(t - r),
+                    this._diffPosition = i > 0 ? (o - this._prevPosition) / i : 0,
+                    this._prevPosition = o,
+                    this._prevTime = this._time,
+                    this._checkBorder()
+                }
+            }
+        }, {
+            key: "_onTouchEnd",
+            value: function() {
+                this._swiping && (this._swiping = !1,
+                this._container.interactiveChildren = !0)
+            }
+        }, {
+            key: "_checkBorder",
+            value: function() {
+                this._container.y > 0 && this.updateContainerPos(0),
+                this._container.y < -this._overflow && this.updateContainerPos(-this._overflow)
+            }
+        }, {
+            key: "checkBorder",
+            value: function() {
+                this._checkBorder()
+            }
+        }, {
+            key: "updateContainerPos",
+            value: function(e) {
+                if (this._container.y = e,
+                this._scrollBar) {
+                    var t = this._overflow > 0 ? -e / this._overflow : 0;
+                    this._scrollBar.y = this._scrollOverflow * t
+                }
+            }
+        }, {
+            key: "_updateContainerWithPositionRate",
+            value: function(e) {
+                this._container.y = -this._overflow * e
+            }
+        }, {
+            key: "ezgUpdate",
+            value: function(e) {
+                if (this._time += e,
+                this.moreReadPositionY && this._container.y < this.moreReadPositionY && this.emit("reachedMax"),
+                !this._swiping && this._diffPosition) {
+                    var t = this._diffPosition;
+                    this.updateContainerPos(this._container.y + t * e),
+                    this._checkBorder(),
+                    t *= Math.pow(.92, e / (1e3 / 60)),
+                    Math.abs(t) < .02 && (t = null),
+                    this._diffPosition = t
+                }
+            }
+        }, {
+            key: "fixedHeight",
+            set: function(e) {
+                this._fixedHeight = e
+            }
+        }, {
+            key: "containerBottomY",
+            get: function() {
+                return -this._overflow
+            }
+        }]),
+        t
+    }(u);
+    t.default = c
+}
+, function(e, t, n) {
+    "use strict";
+    function o(e, t) {
+        if (!(e instanceof t))
+            throw new TypeError("Cannot call a class as a function")
+    }
+    function r(e, t) {
+        if (!e)
+            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+        return !t || "object" != typeof t && "function" != typeof t ? e : t
+    }
+    function i(e, t) {
+        if ("function" != typeof t && null !== t)
+            throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+        e.prototype = Object.create(t && t.prototype, {
+            constructor: {
+                value: e,
+                enumerable: !1,
+                writable: !0,
+                configurable: !0
+            }
+        }),
+        t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var a = function() {
+        function e(e, t) {
+            for (var n = 0; n < t.length; n++) {
+                var o = t[n];
+                o.enumerable = o.enumerable || !1,
+                o.configurable = !0,
+                "value"in o && (o.writable = !0),
+                Object.defineProperty(e, o.key, o)
+            }
+        }
+        return function(t, n, o) {
+            return n && e(t.prototype, n),
+            o && e(t, o),
+            t
+        }
+    }()
+      , s = aoba
+      , u = s.Graphics
+      , l = 2
+      , c = function(e) {
+        function t(e) {
+            var n;
+            o(this, t);
+            var i = e.width
+              , a = i + 2 * l;
+            return (n = r(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this))).beginFill(6378598).drawRoundedRect(0, 0, a, 0, a / 2).beginFill(16777215).drawRoundedRect(l, 0, i, 0, i / 2),
+            n._swiping = !1,
+            n._prevPosition = null,
+            n._diffPosition = null,
+            n.interactive = !0,
+            n.on("touchstart", n._onTouchStart, n),
+            n.on("touchmove", n._onTouchMove, n),
+            n.on("touchend", n._onTouchEnd, n),
+            n.on("touchendoutside", n._onTouchEnd, n),
+            n
+        }
+        return i(t, e),
+        a(t, [{
+            key: "updateMaxY",
+            value: function(e) {
+                this._maxY = e
+            }
+        }, {
+            key: "updateHeight",
+            value: function(e) {
+                var t = this.width
+                  , n = t - 2 * l
+                  , o = e - 2 * l;
+                this.clear().beginFill(6378598).drawRoundedRect(0, 0, t, e, t / 2).beginFill(16777215).drawRoundedRect(l, l, n, o, n / 2)
+            }
+        }, {
+            key: "_onTouchStart",
+            value: function(e) {
+                this._swiping || (this._swiping = !0,
+                this._startY = this.y,
+                this._pointerStartY = e.data.global.y)
+            }
+        }, {
+            key: "_onTouchMove",
+            value: function(e) {
+                if (this._swiping) {
+                    var t = this._startY + (e.data.global.y - this._pointerStartY);
+                    t = Math.max(0, t),
+                    t = Math.min(this._maxY, t),
+                    this.y = t,
+                    this.emit("moved")
+                }
+            }
+        }, {
+            key: "_onTouchEnd",
+            value: function() {
+                this._swiping && (this._swiping = !1)
+            }
+        }]),
+        t
+    }(u);
+    t.default = c
+}
+, function(e, t, n) {
+    "use strict";
+    function o(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var r = n(31)
+      , i = o(r)
+      , a = n(12)
+      , s = o(a)
+      , u = {
         MANO: 1,
         HIORI: 2,
         MEGURU: 3,
@@ -3460,14 +3788,32 @@ primJsp([63], [, function(e, t, n) {
         TENKA: 15,
         CHIYUKI: 16
     }
-      , r = Object.keys(o).length
-      , i = ["1", "2", "3", "4"]
-      , a = i.length
-      , s = Object.freeze({
+      , l = Object.keys(u).length
+      , c = ["1", "2", "3", "4"]
+      , f = c.length
+      , d = Object.freeze({
         SAFE: 0,
         LIMIT_OVER: 1,
         UNREGISTERED_USER: 2
-    });
+    })
+      , p = {
+        image: "to_title_button.png",
+        callback: function() {
+            window.location.href = "/"
+        }
+    }
+      , h = {
+        image: "reload_button.png",
+        callback: function() {
+            window.location.reload()
+        }
+    }
+      , g = {
+        image: "inquiry_button_l.png",
+        callback: function() {
+            s.default.PF_URI && i.default.ui.showInquiryDialog("horizontal")
+        }
+    };
     t.default = {
         CACHE_STORAGE_NAME: "shinycolors.assets",
         TMP_STATUS_FOR_HOT_FIX: 0,
@@ -3489,8 +3835,8 @@ primJsp([63], [, function(e, t, n) {
         MAX_TENSION: 5,
         MAX_MEMORY_APPEAL_LEVEL: 5,
         FES_IDOL_SELECTABLE_ACTIVE_SKILL_NUM: 2,
-        UNIT_IDS: i,
-        UNIT_NUM: a,
+        UNIT_IDS: c,
+        UNIT_NUM: f,
         PRODUCE_ITEM_SORT_TYPES: {
             recoveryStamina: ["recovery_stamina"],
             recoveryTension: ["recovery_tension"],
@@ -3584,8 +3930,8 @@ primJsp([63], [, function(e, t, n) {
             GASHA_RESULT: "gashaResult"
         },
         RIVAL_COLORS: [16731254, 7002879, 9041004, 16771114, 14583295],
-        CHARACTERS: o,
-        CHARACTER_NUM: r,
+        CHARACTERS: u,
+        CHARACTER_NUM: l,
         COSTUME_TYPES: {
             INVALID: "none",
             PLAIN: "plain",
@@ -3625,33 +3971,29 @@ primJsp([63], [, function(e, t, n) {
         }, {
             code: 1020,
             dialogTitleKey: "errorDialog.errorTitle",
-            dialogContentKey: "errorDialog.produceDuplicate",
-            needsInquiryButton: !1
+            dialogContentKey: "errorDialog.produceDuplicate"
         }, {
             code: 1030,
             dialogTitleKey: "errorDialog.confirmTitle",
-            dialogContentKey: "errorDialog.fesSeason",
-            needsInquiryButton: !1
+            dialogContentKey: "errorDialog.fesSeason"
         }, {
             code: 1040,
             dialogTitleKey: "errorDialog.confirmTitle",
-            dialogContentKey: "errorDialog.updateVersion",
-            needsInquiryButton: !1
+            dialogContentKey: "errorDialog.updateVersion"
         }, {
             code: 1050,
             dialogTitleKey: "errorDialog.confirmTitle",
-            dialogContentKey: "errorDialog.unavailableGasha",
-            needsInquiryButton: !1
+            dialogContentKey: "errorDialog.unavailableGasha"
         }, {
             code: 1070,
             dialogTitleKey: "errorDialog.errorTitle",
             dialogContentKey: "errorDialog.earthPaymentFailure",
-            needsInquiryButton: !0
+            dialogNoteKey: "errorDialog.note.noSettlementProcess",
+            buttons: [g, h, p]
         }, {
             code: 1080,
             dialogTitleKey: "errorDialog.fesResumeTitle",
             dialogContentKey: "errorDialog.fesMatchRivalsError",
-            needsInquiryButton: !1,
             buttons: [{
                 image: "close_button.png",
                 callback: function() {
@@ -3662,7 +4004,6 @@ primJsp([63], [, function(e, t, n) {
             code: 1100,
             dialogTitleKey: "errorDialog.errorTitle",
             dialogContentKey: "errorDialog.businessIsNotFinished",
-            needsInquiryButton: !1,
             buttons: [{
                 image: "close_button.png",
                 callback: function() {
@@ -3697,57 +4038,41 @@ primJsp([63], [, function(e, t, n) {
             code: 3010,
             dialogTitleKey: "announce.maintenance",
             dialogContentKey: "errorDialog.sceneMaintenance",
-            buttons: [{
-                image: "to_title_button.png",
-                callback: function() {
-                    window.location.href = "/"
-                }
-            }]
+            buttons: [p]
         }],
         FORBIDDEN_ERRROR_STATUS: {
             dialogTitleKey: "errorDialog.errorTitle",
-            dialogContentKey: "errorDialog.forbidden",
-            needsInquiryButton: !1
+            dialogContentKey: "errorDialog.forbidden"
         },
         TIMEOUT_ERRROR_STATUS: {
             dialogTitleKey: "errorDialog.errorTitle",
             dialogContentKey: "errorDialog.timeout",
-            needsInquiryButton: !1
+            dialogNoteKey: "errorDialog.note.noSettlementProcess",
+            buttons: [h, p]
         },
         DEFAULT_ERROR_STATUS: {
             dialogTitleKey: "errorDialog.errorTitle",
             dialogContentKey: "errorDialog.simpleOther",
-            needsInquiryButton: !0
+            dialogNoteKey: "errorDialog.note.noSettlementProcess",
+            buttons: [g, h, p]
         },
         RESOURCE_ERROR_STATUS: {
             dialogTitleKey: "errorDialog.errorTitle",
             dialogContentKey: "errorDialog.resourceLoadFailed",
-            needsInquiryButton: !1,
-            buttons: [{
-                image: "reload_button.png",
-                callback: function() {
-                    window.location.reload()
-                }
-            }]
+            buttons: [h]
         },
         CLIENT_SDK_ERROR_STATUS: {
             dialogSize: "m",
             dialogTitleKey: "errorDialog.errorTitle",
             dialogContentKey: "errorDialog.sdkLoginLoadFailed",
-            needsInquiryButton: !1,
-            buttons: [{
-                image: "reload_button.png",
-                callback: function() {
-                    return window.location.reload(!0)
-                }
-            }, {
+            buttons: [h, {
                 image: "enza_button.png",
                 callback: function() {
                     return window.location.href = "https://enza.fun"
                 }
             }]
         },
-        AVAILABLE_BALANCE_STATUS: s
+        AVAILABLE_BALANCE_STATUS: d
     }
 }
 , function(e, t, n) {
@@ -3905,7 +4230,7 @@ primJsp([63], [, function(e, t, n) {
       , p = o(d)
       , h = n(35)
       , g = o(h)
-      , m = n(94)
+      , m = n(97)
       , _ = o(m)
       , y = n(113)
       , I = o(y)
@@ -4513,6 +4838,9 @@ primJsp([63], [, function(e, t, n) {
             var e = this.itemCategory.iconPath;
             return "gasha_tickets/icon" === e ? s.default.join(d, e, this._getGashaIcon() + ".png") : s.default.join(d, e, i.default.pad(this.getItemId(), 3, "0") + ".png")
         },
+        getLabelImagePath: function() {
+            return this.getImagePath("label")
+        },
         getImagePath: function(e) {
             return s.default.join(d, this.itemCategory.imagePath, e, i.default.pad(this.getItemId(), 3, "0") + ".png")
         },
@@ -4788,11 +5116,11 @@ primJsp([63], [, function(e, t, n) {
     });
     var i = n(1)
       , a = o(i)
-      , s = n(4)
+      , s = n(3)
       , u = o(s)
       , l = n(39)
       , c = o(l)
-      , f = n(96)
+      , f = n(79)
       , d = o(f)
       , p = a.default.asset.imageTypes
       , h = a.default.asset.spineTypes
@@ -4886,19 +5214,6 @@ primJsp([63], [, function(e, t, n) {
 }
 , function(e, t, n) {
     "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    }),
-    t.default = {
-        cloneAndEmptyHashProperty: function(e) {
-            return Object.assign(Object.create(aoba.utils.getPrototypeOf(e)), e, {
-                hash: ""
-            })
-        }
-    }
-}
-, function(e, t, n) {
-    "use strict";
     function o(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -4909,7 +5224,7 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(20)
       , i = o(r)
-      , a = n(95)
+      , a = n(98)
       , s = o(a)
       , u = n(40)
       , l = o(u)
@@ -5007,312 +5322,6 @@ primJsp([63], [, function(e, t, n) {
     t.default = c
 }
 , , , , function(e, t, n) {
-    "use strict";
-    function o(e, t) {
-        if (!(e instanceof t))
-            throw new TypeError("Cannot call a class as a function")
-    }
-    function r(e, t) {
-        if (!e)
-            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-        return !t || "object" != typeof t && "function" != typeof t ? e : t
-    }
-    function i(e, t) {
-        if ("function" != typeof t && null !== t)
-            throw new TypeError("Super expression must either be null or a function, not " + typeof t);
-        e.prototype = Object.create(t && t.prototype, {
-            constructor: {
-                value: e,
-                enumerable: !1,
-                writable: !0,
-                configurable: !0
-            }
-        }),
-        t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-    }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var a = function() {
-        function e(e, t) {
-            for (var n = 0; n < t.length; n++) {
-                var o = t[n];
-                o.enumerable = o.enumerable || !1,
-                o.configurable = !0,
-                "value"in o && (o.writable = !0),
-                Object.defineProperty(e, o.key, o)
-            }
-        }
-        return function(t, n, o) {
-            return n && e(t.prototype, n),
-            o && e(t, o),
-            t
-        }
-    }()
-      , s = aoba
-      , u = s.Container
-      , l = s.Graphics
-      , c = function(e) {
-        function t() {
-            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
-                maskX: 0,
-                maskY: 0
-            };
-            o(this, t);
-            var n = r(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
-            return n.mask = l.new().beginFill(0),
-            e.round ? n.mask.drawRoundedRect(e.maskX, e.maskY, e.width, e.height, e.round) : n.mask.drawRect(e.maskX, e.maskY, e.width, e.height),
-            n.mask.addTo(n),
-            n._container = e.container.addTo(n),
-            n._scrollBarBase = e.scrollBarBase,
-            n._scrollBar = e.scrollBar,
-            n._fixedHeight = e.fixedHeight || 0,
-            n._overflow = 0,
-            n._scrollOverflow = 0,
-            n._time = 0,
-            n._prevTime = 0,
-            n._swiping = !1,
-            n._prevPosition = null,
-            n._diffPosition = null,
-            n.interactive = !0,
-            n.moreReadPositionY = null,
-            n._scrollBarBase && n._scrollBar ? (n._scrollBar.parent && n._scrollBar.parent.removeChild(n._scrollBar),
-            n._scrollBarBaseHeight = n._scrollBarBase.height,
-            n._scrollBar.addTo(n._scrollBarBase, (n._scrollBarBase.width - n._scrollBar.width) / 2, 0),
-            n.updateScrollBarTransform(),
-            n._updateScrollBarPosition()) : n._updateOverflow(n._fixedHeight || n._container.height),
-            n.on("touchstart", n._onTouchStart, n),
-            n.on("touchmove", n._onTouchMove, n),
-            n.on("touchend", n._onTouchEnd, n),
-            n.on("touchendoutside", n._onTouchEnd, n),
-            n._scrollBar && n._scrollBar.on("moved", n._updateScrollBarPosition, n),
-            n
-        }
-        return i(t, e),
-        a(t, [{
-            key: "_updateScrollBarPosition",
-            value: function() {
-                if (this._scrollBar) {
-                    var e = this._scrollBar.y
-                      , t = this._scrollBar.y + this._scrollOverflow;
-                    this._scrollBar.y = Math.max(this._scrollBar.y, e),
-                    this._scrollBar.y = Math.min(this._scrollBar.y, t),
-                    this._scrollOverflow > 0 && !this._swiping && this._updateContainerWithPositionRate(this._scrollBar.y / this._scrollOverflow)
-                }
-            }
-        }, {
-            key: "_updateOverflow",
-            value: function(e) {
-                this._overflow = Math.max(0, e - this.mask.height)
-            }
-        }, {
-            key: "updateScrollBarTransform",
-            value: function() {
-                var e = this._fixedHeight || this._container.height;
-                if (this._updateOverflow(e),
-                this._scrollBarBase && this._scrollBar) {
-                    this._scrollBarBase.visible = this._overflow > 0;
-                    var t = Math.min(1, this.mask.height / e);
-                    t = Math.max(.1, t);
-                    var n = this._scrollBarBaseHeight * t;
-                    this._scrollBar.updateMaxY(this._scrollBarBaseHeight - n),
-                    this._scrollBar.updateHeight(n),
-                    this._scrollOverflow = this._scrollBarBaseHeight - this._scrollBar.height
-                }
-            }
-        }, {
-            key: "_onTouchStart",
-            value: function(e) {
-                this._swiping || (this._diffPosition = null,
-                this._swiping = !0,
-                this._targetInitialPos = this._container.y,
-                this._pointInitialPos = e.data.global.y,
-                this._prevPosition = e.data.global.y,
-                this._prevTime = this._time)
-            }
-        }, {
-            key: "_onTouchMove",
-            value: function(e) {
-                if (this._swiping) {
-                    var t = this._targetInitialPos
-                      , n = this._pointInitialPos
-                      , o = e.data.global.y
-                      , r = n - o
-                      , i = this._time - this._prevTime;
-                    this._container.interactiveChildren && Math.abs(r) >= 8 && (this._container.interactiveChildren = !1),
-                    this.updateContainerPos(t - r),
-                    this._diffPosition = i > 0 ? (o - this._prevPosition) / i : 0,
-                    this._prevPosition = o,
-                    this._prevTime = this._time,
-                    this._checkBorder()
-                }
-            }
-        }, {
-            key: "_onTouchEnd",
-            value: function() {
-                this._swiping && (this._swiping = !1,
-                this._container.interactiveChildren = !0)
-            }
-        }, {
-            key: "_checkBorder",
-            value: function() {
-                this._container.y > 0 && this.updateContainerPos(0),
-                this._container.y < -this._overflow && this.updateContainerPos(-this._overflow)
-            }
-        }, {
-            key: "checkBorder",
-            value: function() {
-                this._checkBorder()
-            }
-        }, {
-            key: "updateContainerPos",
-            value: function(e) {
-                if (this._container.y = e,
-                this._scrollBar) {
-                    var t = this._overflow > 0 ? -e / this._overflow : 0;
-                    this._scrollBar.y = this._scrollOverflow * t
-                }
-            }
-        }, {
-            key: "_updateContainerWithPositionRate",
-            value: function(e) {
-                this._container.y = -this._overflow * e
-            }
-        }, {
-            key: "ezgUpdate",
-            value: function(e) {
-                if (this._time += e,
-                this.moreReadPositionY && this._container.y < this.moreReadPositionY && this.emit("reachedMax"),
-                !this._swiping && this._diffPosition) {
-                    var t = this._diffPosition;
-                    this.updateContainerPos(this._container.y + t * e),
-                    this._checkBorder(),
-                    t *= Math.pow(.92, e / (1e3 / 60)),
-                    Math.abs(t) < .02 && (t = null),
-                    this._diffPosition = t
-                }
-            }
-        }, {
-            key: "fixedHeight",
-            set: function(e) {
-                this._fixedHeight = e
-            }
-        }, {
-            key: "containerBottomY",
-            get: function() {
-                return -this._overflow
-            }
-        }]),
-        t
-    }(u);
-    t.default = c
-}
-, function(e, t, n) {
-    "use strict";
-    function o(e, t) {
-        if (!(e instanceof t))
-            throw new TypeError("Cannot call a class as a function")
-    }
-    function r(e, t) {
-        if (!e)
-            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-        return !t || "object" != typeof t && "function" != typeof t ? e : t
-    }
-    function i(e, t) {
-        if ("function" != typeof t && null !== t)
-            throw new TypeError("Super expression must either be null or a function, not " + typeof t);
-        e.prototype = Object.create(t && t.prototype, {
-            constructor: {
-                value: e,
-                enumerable: !1,
-                writable: !0,
-                configurable: !0
-            }
-        }),
-        t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-    }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var a = function() {
-        function e(e, t) {
-            for (var n = 0; n < t.length; n++) {
-                var o = t[n];
-                o.enumerable = o.enumerable || !1,
-                o.configurable = !0,
-                "value"in o && (o.writable = !0),
-                Object.defineProperty(e, o.key, o)
-            }
-        }
-        return function(t, n, o) {
-            return n && e(t.prototype, n),
-            o && e(t, o),
-            t
-        }
-    }()
-      , s = aoba
-      , u = s.Graphics
-      , l = 2
-      , c = function(e) {
-        function t(e) {
-            var n;
-            o(this, t);
-            var i = e.width
-              , a = i + 2 * l;
-            return (n = r(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this))).beginFill(6378598).drawRoundedRect(0, 0, a, 0, a / 2).beginFill(16777215).drawRoundedRect(l, 0, i, 0, i / 2),
-            n._swiping = !1,
-            n._prevPosition = null,
-            n._diffPosition = null,
-            n.interactive = !0,
-            n.on("touchstart", n._onTouchStart, n),
-            n.on("touchmove", n._onTouchMove, n),
-            n.on("touchend", n._onTouchEnd, n),
-            n.on("touchendoutside", n._onTouchEnd, n),
-            n
-        }
-        return i(t, e),
-        a(t, [{
-            key: "updateMaxY",
-            value: function(e) {
-                this._maxY = e
-            }
-        }, {
-            key: "updateHeight",
-            value: function(e) {
-                var t = this.width
-                  , n = t - 2 * l
-                  , o = e - 2 * l;
-                this.clear().beginFill(6378598).drawRoundedRect(0, 0, t, e, t / 2).beginFill(16777215).drawRoundedRect(l, l, n, o, n / 2)
-            }
-        }, {
-            key: "_onTouchStart",
-            value: function(e) {
-                this._swiping || (this._swiping = !0,
-                this._startY = this.y,
-                this._pointerStartY = e.data.global.y)
-            }
-        }, {
-            key: "_onTouchMove",
-            value: function(e) {
-                if (this._swiping) {
-                    var t = this._startY + (e.data.global.y - this._pointerStartY);
-                    t = Math.max(0, t),
-                    t = Math.min(this._maxY, t),
-                    this.y = t,
-                    this.emit("moved")
-                }
-            }
-        }, {
-            key: "_onTouchEnd",
-            value: function() {
-                this._swiping && (this._swiping = !1)
-            }
-        }]),
-        t
-    }(u);
-    t.default = c
-}
-, function(e, t, n) {
     "use strict";
     function o(e, t) {
         if (!(e instanceof t))
@@ -5467,16 +5476,16 @@ primJsp([63], [, function(e, t, n) {
       , i = o(r)
       , a = n(9)
       , s = o(a)
-      , u = n(265)
+      , u = n(267)
       , l = o(u)
       , c = n(48)
-      , f = n(97)
+      , f = n(99)
       , d = o(f)
       , p = n(112)
       , h = o(p)
       , g = n(20)
       , m = o(g)
-      , _ = n(4)
+      , _ = n(3)
       , y = o(_)
       , I = function() {
         var e = {
@@ -5656,7 +5665,7 @@ primJsp([63], [, function(e, t, n) {
             t
         }
     }()
-      , s = n(510)
+      , s = n(511)
       , u = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -5714,9 +5723,9 @@ primJsp([63], [, function(e, t, n) {
       , i = o(r)
       , a = n(18)
       , s = o(a)
-      , u = n(345)
+      , u = n(346)
       , l = o(u)
-      , c = n(4)
+      , c = n(3)
       , f = o(c)
       , d = {
         getSpinePath: function(e) {
@@ -5834,11 +5843,11 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(91)
+    var r = n(94)
       , i = o(r)
-      , a = n(89)
+      , a = n(92)
       , s = o(a)
-      , u = n(201)
+      , u = n(202)
       , l = o(u)
       , c = function(e, t) {
         var n = e && e.body ? e.body : [];
@@ -5875,7 +5884,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(268)
+    var r = n(270)
       , i = o(r)
       , a = n(1)
       , s = o(a)
@@ -5950,26 +5959,26 @@ primJsp([63], [, function(e, t, n) {
       , i = o(r)
       , a = n(17)
       , s = o(a)
-      , u = n(223)
+      , u = n(224)
       , l = o(u)
-      , c = n(435)
+      , c = n(436)
       , f = o(c)
-      , d = n(211)
+      , d = n(212)
       , p = o(d)
       , h = n(35)
       , g = o(h)
-      , m = n(84)
+      , m = n(87)
       , _ = o(m)
-      , y = n(94)
+      , y = n(97)
       , I = o(y)
-      , A = n(13)
+      , A = n(12)
       , C = o(A)
       , v = n(49)
       , b = o(v)
       , P = window
       , T = P.caches
-      , O = _.default.CACHE_STORAGE_NAME
-      , w = function(e) {
+      , w = _.default.CACHE_STORAGE_NAME
+      , O = function(e) {
         var t = e;
         if (I.default.isSupportedWebP() && I.default.isWebPResource(t) && (t = I.default.toWebPUrl(t)),
         C.default.ENABLE_CRYPTO) {
@@ -5998,11 +6007,11 @@ primJsp([63], [, function(e, t, n) {
             var t = E.find(function(t) {
                 return t.key === e
             });
-            return w(t ? t.url : e)
+            return O(t ? t.url : e)
         })
     }
       , R = function() {
-        return T.open(O)
+        return T.open(w)
     };
     t.default = {
         init: function() {
@@ -6067,7 +6076,7 @@ primJsp([63], [, function(e, t, n) {
         },
         _deleteCachesByTargets: function() {
             return Promise.resolve().then(function() {
-                return T.open(O)
+                return T.open(w)
             }).then(function(e) {
                 return S(k(), 100).reduce(function(t, n) {
                     return t.then(function() {
@@ -6080,7 +6089,7 @@ primJsp([63], [, function(e, t, n) {
         },
         _deleteCachesByKeys: function() {
             return Promise.resolve().then(function() {
-                return T.open(O)
+                return T.open(w)
             }).then(function(e) {
                 return e.keys().then(function(t) {
                     return Promise.all(t.map(function(t) {
@@ -6134,7 +6143,7 @@ primJsp([63], [, function(e, t, n) {
     }()
       , a = n(17)
       , s = o(a)
-      , u = n(266)
+      , u = n(268)
       , l = o(u)
       , c = function() {
         function e(t) {
@@ -6339,11 +6348,11 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(1)
       , i = o(r)
-      , a = n(4)
+      , a = n(3)
       , s = o(a)
       , u = n(39)
       , l = o(u)
-      , c = n(96)
+      , c = n(79)
       , f = o(c)
       , d = i.default.asset.imageTypes
       , p = i.default.asset.voiceIds
@@ -6466,15 +6475,15 @@ primJsp([63], [, function(e, t, n) {
         value: !0
     }),
     t.processConcertResultResponse = t.processAuditionResultResponse = t.processConcertResumeResponse = t.processConcertStartResponse = t.processConcertReadyResponse = void 0;
-    var i = n(93)
+    var i = n(96)
       , a = o(i)
-      , s = n(263)
+      , s = n(265)
       , u = o(s)
       , l = n(39)
       , c = o(l)
-      , f = n(190)
+      , f = n(191)
       , d = o(f)
-      , p = n(4)
+      , p = n(3)
       , h = o(p)
       , g = n(20)
       , m = o(g)
@@ -6537,8 +6546,8 @@ primJsp([63], [, function(e, t, n) {
           , b = void 0;
         try {
             for (var P, T = d[Symbol.iterator](); !(C = (P = T.next()).done); C = !0) {
-                var O = P.value;
-                aoba.utils.setPrototypeOf(O.character, c.default)
+                var w = P.value;
+                aoba.utils.setPrototypeOf(w.character, c.default)
             }
         } catch (e) {
             v = !0,
@@ -6551,14 +6560,14 @@ primJsp([63], [, function(e, t, n) {
                     throw b
             }
         }
-        var w = o.memoryAppeal;
-        w && (w.idol = o.userIdol.idol,
-        w.imagePaths = {
+        var O = o.memoryAppeal;
+        O && (O.idol = o.userIdol.idol,
+        O.imagePaths = {
             card: o.getImagePath("concert_card"),
             icon: "memory_skill_icon.png"
         },
-        w.isMemoryAppeal = !0,
-        w.skillEffects = w.memoryAppealEffects),
+        O.isMemoryAppeal = !0,
+        O.skillEffects = O.memoryAppealEffects),
         o.activeSkills.map(function(e) {
             return e.idol = o.userIdol.idol,
             e.belongsToSupportIdol = !1,
@@ -6761,7 +6770,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(4)
+    var r = n(3)
       , i = o(r)
       , a = n(104)
       , s = o(a)
@@ -6847,7 +6856,7 @@ primJsp([63], [, function(e, t, n) {
       , c = o(l)
       , f = n(136)
       , d = o(f)
-      , p = n(258)
+      , p = n(260)
       , h = o(p)
       , g = n(23)
       , m = o(g)
@@ -6855,15 +6864,15 @@ primJsp([63], [, function(e, t, n) {
       , y = o(_)
       , I = n(1)
       , A = o(I)
-      , C = n(620)
+      , C = n(623)
       , v = o(C)
       , b = n(25)
       , P = o(b)
-      , T = n(621)
-      , O = o(T)
-      , w = n(34)
-      , E = o(w)
-      , S = n(13)
+      , T = n(624)
+      , w = o(T)
+      , O = n(31)
+      , E = o(O)
+      , S = n(12)
       , k = o(S)
       , R = n(72)
       , x = o(R)
@@ -6886,7 +6895,7 @@ primJsp([63], [, function(e, t, n) {
             e.on("removed", e._onRemoved, e),
             e.on("enter", e.onEnter, e),
             e.on("exit", e._onExit, e),
-            P.default.isAndroid() && P.default.isChrome() && e.once("tap", O.default),
+            P.default.isAndroid() && P.default.isChrome() && e.once("tap", w.default),
             e
         }
         return s(t, e),
@@ -7001,26 +7010,45 @@ primJsp([63], [, function(e, t, n) {
                     r = A.default.app.DEFAULT_ERROR_STATUS
                 }
                 var s = r.buttons;
-                s || (s = [{
-                    image: "to_title_button.png",
-                    callback: function() {
-                        window.location.replace("/")
-                    }
-                }],
+                s || (s = [],
                 r.needsInquiryButton && s.push({
                     image: "inquiry_button_l.png",
                     callback: function() {
                         k.default.PF_URI && E.default.ui.showInquiryDialog("horizontal")
                     }
-                })),
+                }),
+                s.push({
+                    image: "to_title_button.png",
+                    callback: function() {
+                        window.location.replace("/")
+                    }
+                }));
+                var u = {
+                    align: "center",
+                    fill: 5063497,
+                    fontFamily: "HummingStd-E",
+                    fontSize: 20
+                }
+                  , l = aoba.Container.new()
+                  , c = aoba.Text.new(y.default.t(r.dialogContentKey, {
+                    requestId: n,
+                    errorCode: o
+                }), u).addTo(l, 0, 0, {
+                    anchor: aoba.p(.5, 0)
+                });
+                r.dialogNoteKey && aoba.Text.new(y.default.t(r.dialogNoteKey), {
+                    align: "center",
+                    fill: 5063497,
+                    fontFamily: "HummingStd-E",
+                    fontSize: 16
+                }).addTo(l, 0, c.height + 10, {
+                    anchor: aoba.p(.5, 0)
+                }),
                 this.interactiveChildren = !0,
                 m.default.new({
                     size: r.dialogSize || "s",
                     title: y.default.t(r.dialogTitleKey),
-                    text: y.default.t(r.dialogContentKey, {
-                        requestId: n,
-                        errorCode: o
-                    }),
+                    container: l,
                     buttons: s
                 }).on("normal", function() {
                     k.default.PF_URI && E.default.ui.showInquiryDialog("horizontal")
@@ -7368,7 +7396,7 @@ primJsp([63], [, function(e, t, n) {
         r.default)(e, t, n, o)
     }
     ;
-    var o = n(221)
+    var o = n(222)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -7387,11 +7415,11 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(88)
+      , a = n(91)
       , s = o(a)
       , u = n(60)
       , l = (o(u),
-    n(200))
+    n(201))
       , c = n(116)
       , f = function() {
         return i.default.post("produces/1/actions/next").then(l.processNextResponse)
@@ -7586,7 +7614,7 @@ primJsp([63], [, function(e, t, n) {
             t
         }
     }()
-      , u = n(87)
+      , u = n(90)
       , l = o(u)
       , c = n(74)
       , f = o(c)
@@ -7634,6 +7662,45 @@ primJsp([63], [, function(e, t, n) {
         t
     }(aoba.Container);
     t.default = p
+}
+, function(e, t, n) {
+    "use strict";
+    function o(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    }),
+    t.EVENT_LABEL = void 0;
+    var r = n(78)
+      , i = o(r)
+      , a = n(12)
+      , s = o(a)
+      , u = n(48)
+      , l = t.EVENT_LABEL = {
+        CHANGE_PAGE: "changePage",
+        PRODUCE_EVENT_PLAY: "produceEventPlay",
+        EVENT_PLAY: "eventPlay",
+        FULL_DOWNLOAD_START: "fullDownloadStart",
+        VIEW_EVENT: "viewEvent",
+        VIEW_EVENT_IN_PRODUCE: "viewEventInProduce",
+        OPEN_ANNOUNCE: "openAnnounce",
+        VIEW_HELP_ARTICLE: "viewHelpArticle"
+    }
+      , c = function(e, t) {
+        s.default.TRACKING_URI && i.default.get(s.default.TRACKING_URI).query({
+            p: JSON.stringify(Object.assign({}, t, {
+                label: e,
+                userId: u.claims.id
+            }))
+        }).end()
+    };
+    t.default = {
+        send: c,
+        EVENT_LABEL: l
+    }
 }
 , function(e, t, n) {
     "use strict";
@@ -7754,44 +7821,6 @@ primJsp([63], [, function(e, t, n) {
 }
 , function(e, t, n) {
     "use strict";
-    function o(e) {
-        return e && e.__esModule ? e : {
-            default: e
-        }
-    }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    }),
-    t.EVENT_LABEL = void 0;
-    var r = n(78)
-      , i = o(r)
-      , a = n(13)
-      , s = o(a)
-      , u = n(48)
-      , l = t.EVENT_LABEL = {
-        CHANGE_PAGE: "changePage",
-        PRODUCE_EVENT_PLAY: "produceEventPlay",
-        EVENT_PLAY: "eventPlay",
-        FULL_DOWNLOAD_START: "fullDownloadStart",
-        VIEW_EVENT: "viewEvent",
-        VIEW_EVENT_IN_PRODUCE: "viewEventInProduce",
-        OPEN_ANNOUNCE: "openAnnounce"
-    }
-      , c = function(e, t) {
-        s.default.TRACKING_URI && i.default.get(s.default.TRACKING_URI).query({
-            p: JSON.stringify(Object.assign({}, t, {
-                label: e,
-                userId: u.claims.id
-            }))
-        }).end()
-    };
-    t.default = {
-        send: c,
-        EVENT_LABEL: l
-    }
-}
-, function(e, t, n) {
-    "use strict";
     Object.defineProperty(t, "__esModule", {
         value: !0
     }),
@@ -7830,7 +7859,7 @@ primJsp([63], [, function(e, t, n) {
             default: e
         }
     }(o)
-      , i = n(276);
+      , i = n(278);
     t.default = {
         get: function() {
             return r.default.post("myPage").then(function(e) {
@@ -7842,72 +7871,80 @@ primJsp([63], [, function(e, t, n) {
 }
 , , , , , , function(e, t, n) {
     "use strict";
-    function o(e) {
-        return e && e.__esModule ? e : {
-            default: e
+    (function(e) {
+        function o(e) {
+            return e && e.__esModule ? e : {
+                default: e
+            }
+        }
+        Object.defineProperty(t, "__esModule", {
+            value: !0
+        });
+        var r = n(3)
+          , i = o(r)
+          , a = n(190)
+          , s = o(a)
+          , u = n(79)
+          , l = o(u)
+          , c = n(241)
+          , f = o(c)
+          , d = {
+            gashaTicket: "gasha_ticket",
+            platinum: "platinum"
+        }
+          , p = s.default.independentGashaGroupIds;
+        t.default = {
+            getTitleImagePath: function() {
+                return "gasha_ticket" === this.name || "0" === this.image ? "gasha_ticket.png" : i.default.createImagePath("gasha", "title", this.image, this.hash)
+            },
+            getBgImagePath: function() {
+                return "gasha_ticket" === this.name ? "bg.jpg" : i.default.createImagePath("gasha", "bg", this.image, this.hash)
+            },
+            getStepupCardBaseImagePath: function() {
+                return i.default.createImagePath("gasha", "stepup_card_base", this.image, this.hash)
+            },
+            getHashPrefixAssets: function() {
+                var t = l.default.cloneAndEmptyHashProperty(this)
+                  , n = [{
+                    url: this.getTitleImagePath(),
+                    key: t.getTitleImagePath()
+                }];
+                return this.gashaDetailBanners ? (this.gashaDetailBanners.forEach(function(e) {
+                    return aoba.utils.setPrototypeOf(e, f.default)
+                }),
+                e.flatten([n, this.gashaDetailBanners.map(function(e) {
+                    return e.getHashPrefixAssets()
+                })])) : n
+            },
+            isGashaTicketGroup: function() {
+                return "gasha_ticket" === this.initialCurrencyType
+            },
+            isStepUpGasha: function() {
+                return "step_up" === this.gashaType
+            },
+            isBanaCoinOnlyGasha: function() {
+                return this.gashas.every(function(e) {
+                    return "bana_coin" === e.currencyType
+                })
+            },
+            hasTicketGasha: function() {
+                return this.gashas.every(function(e) {
+                    return "gasha_ticket" === e.currencyType
+                })
+            },
+            isIndependentGashaTicketTabGroup: function() {
+                return p.includes(this.id)
+            },
+            getProbabilityType: function() {
+                return this.isGashaTicketGroup() ? this.gashaRates ? this.gashas[0].userGashaTicket.gashaTicket.image : d.gashaTicket : d.platinum
+            },
+            getRemainingTime: function() {
+                var e = Math.floor((new Date).getTime() / 1e3);
+                return this.closeAt - e
+            }
         }
     }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var r = n(4)
-      , i = o(r)
-      , a = n(189)
-      , s = o(a)
-      , u = n(96)
-      , l = o(u)
-      , c = {
-        gashaTicket: "gasha_ticket",
-        platinum: "platinum"
-    }
-      , f = s.default.independentGashaGroupIds;
-    t.default = {
-        getTitleImagePath: function() {
-            return "gasha_ticket" === this.name || "0" === this.image ? "gasha_ticket.png" : i.default.createImagePath("gasha", "title", this.image, this.hash)
-        },
-        getBgImagePath: function() {
-            return "gasha_ticket" === this.name ? "bg.jpg" : i.default.createImagePath("gasha", "bg", this.image, this.hash)
-        },
-        getBannerImagePath: function(e) {
-            return i.default.createImagePath("gasha", "banner", e)
-        },
-        getStepupCardBaseImagePath: function() {
-            return i.default.createImagePath("gasha", "stepup_card_base", this.image, this.hash)
-        },
-        getHashPrefixAssets: function() {
-            var e = l.default.cloneAndEmptyHashProperty(this);
-            return [{
-                url: this.getTitleImagePath(),
-                key: e.getTitleImagePath()
-            }]
-        },
-        isGashaTicketGroup: function() {
-            return "gasha_ticket" === this.initialCurrencyType
-        },
-        isStepUpGasha: function() {
-            return "step_up" === this.gashaType
-        },
-        isBanaCoinOnlyGasha: function() {
-            return this.gashas.every(function(e) {
-                return "bana_coin" === e.currencyType
-            })
-        },
-        hasTicketGasha: function() {
-            return this.gashas.every(function(e) {
-                return "gasha_ticket" === e.currencyType
-            })
-        },
-        isIndependentGashaTicketTabGroup: function() {
-            return f.includes(this.id)
-        },
-        getProbabilityType: function() {
-            return this.isGashaTicketGroup() ? this.gashaRates ? this.gashas[0].userGashaTicket.gashaTicket.image : c.gashaTicket : c.platinum
-        },
-        getRemainingTime: function() {
-            var e = Math.floor((new Date).getTime() / 1e3);
-            return this.closeAt - e
-        }
-    }
+    ).call(t, n(17))
 }
 , function(e, t, n) {
     "use strict";
@@ -8414,7 +8451,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var i = n(4)
+    var i = n(3)
       , a = o(i)
       , s = n(1)
       , u = o(s);
@@ -8487,13 +8524,13 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(34)
+    var r = n(31)
       , i = o(r)
-      , a = n(530)
+      , a = n(531)
       , s = o(a)
       , u = n(48)
       , l = o(u)
-      , c = n(199)
+      , c = n(200)
       , f = o(c);
     t.default = {
         sdk: i.default,
@@ -8507,6 +8544,72 @@ primJsp([63], [, function(e, t, n) {
 }
 , function(e, t, n) {
     "use strict";
+    function o(e, t) {
+        if (!(e instanceof t))
+            throw new TypeError("Cannot call a class as a function")
+    }
+    function r(e, t) {
+        if (!e)
+            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+        return !t || "object" != typeof t && "function" != typeof t ? e : t
+    }
+    function i(e, t) {
+        if ("function" != typeof t && null !== t)
+            throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+        e.prototype = Object.create(t && t.prototype, {
+            constructor: {
+                value: e,
+                enumerable: !1,
+                writable: !0,
+                configurable: !0
+            }
+        }),
+        t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var a = function() {
+        function e(e, t) {
+            for (var n = 0; n < t.length; n++) {
+                var o = t[n];
+                o.enumerable = o.enumerable || !1,
+                o.configurable = !0,
+                "value"in o && (o.writable = !0),
+                Object.defineProperty(e, o.key, o)
+            }
+        }
+        return function(t, n, o) {
+            return n && e(t.prototype, n),
+            o && e(t, o),
+            t
+        }
+    }()
+      , s = aoba
+      , u = s.Graphics
+      , l = function(e) {
+        function t(e) {
+            var n;
+            o(this, t);
+            var i = e.width
+              , a = e.height;
+            return (n = r(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this))).beginFill(7827066).drawRoundedRect(0, 0, i, a, i / 2),
+            n._scrollBar = null,
+            n
+        }
+        return i(t, e),
+        a(t, [{
+            key: "addScrollBar",
+            value: function(e) {
+                this._scrollBar = e.addTo(this)
+            }
+        }]),
+        t
+    }(u);
+    t.default = l
+}
+, function(e, t, n) {
+    "use strict";
     function o(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -8517,15 +8620,15 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(134)
       , i = o(r)
-      , a = n(357)
+      , a = n(358)
       , s = o(a)
       , u = n(60)
       , l = o(u)
       , c = n(53)
       , f = o(c)
-      , d = n(188)
+      , d = n(189)
       , p = o(d)
-      , h = n(257)
+      , h = n(259)
       , g = o(h)
       , m = function(e) {
         return e >= 0 ? "+" + e : "" + e
@@ -8587,10 +8690,10 @@ primJsp([63], [, function(e, t, n) {
       , a = o(i)
       , s = n(139)
       , u = o(s)
-      , l = n(200)
+      , l = n(201)
       , c = n(116)
-      , f = n(276)
-      , d = n(272)
+      , f = n(278)
+      , d = n(274)
       , p = o(d)
       , h = n(147)
       , g = o(h)
@@ -9229,9 +9332,9 @@ primJsp([63], [, function(e, t, n) {
     });
     var i = n(17)
       , a = o(i)
-      , s = n(212)
+      , s = n(213)
       , u = o(s)
-      , l = n(222)
+      , l = n(223)
       , c = o(l)
       , f = [].concat(r(u.default), r(c.default))
       , d = aoba.loader.resources
@@ -9325,19 +9428,19 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(17)
       , i = o(r)
-      , a = n(88)
+      , a = n(91)
       , s = o(a)
-      , u = n(534)
+      , u = n(535)
       , l = o(u)
-      , c = n(540)
+      , c = n(541)
       , f = o(c)
-      , d = n(542)
+      , d = n(543)
       , p = o(d)
-      , h = n(191)
+      , h = n(192)
       , g = o(h)
-      , m = n(261)
+      , m = n(263)
       , _ = o(m)
-      , y = n(262)
+      , y = n(264)
       , I = o(y)
       , A = {
         getDataPath: function(e) {
@@ -9677,11 +9780,11 @@ primJsp([63], [, function(e, t, n) {
         value: !0
     }),
     t.processUserBusinesses = void 0;
-    var r = n(341)
+    var r = n(342)
       , i = o(r)
       , a = n(75)
       , s = o(a)
-      , u = n(594)
+      , u = n(597)
       , l = o(u);
     t.processUserBusinesses = function(e) {
         var t = !0;
@@ -9703,7 +9806,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(4)
+    var o = n(3)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -9742,7 +9845,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(381)
+    var r = n(382)
       , i = o(r)
       , a = n(55)
       , s = o(a)
@@ -9818,12 +9921,12 @@ primJsp([63], [, function(e, t, n) {
       , l = o(u)
       , c = n(103)
       , f = o(c)
-      , d = n(409)
+      , d = n(410)
       , p = o(d)
       , h = n(9)
       , g = o(h)
       , m = n(48)
-      , _ = n(86)
+      , _ = n(89)
       , y = o(_)
       , I = "images/ui/common/join_recommend_banner.png"
       , A = "popJoinRecommend.textDefault"
@@ -10162,7 +10265,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(13)
+    var o = n(12)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -10219,33 +10322,33 @@ primJsp([63], [, function(e, t, n) {
     t.processResultRewardResponse = t.processConsumeProduceItemResponse = t.processChangeCostumeResponse = t.processResumeResponse = t.processDecksResponse = t.processFinishResponse = t.processSkillBoardResponse = t.processProduceTopResponse = t.processEndWeekResponse = t.processActResponse = t.processNextResponse = t.processReadyResponse = t.processDeckResponse = void 0;
     var i = n(1)
       , a = o(i)
-      , s = n(88)
+      , s = n(91)
       , u = o(s)
-      , l = n(190)
+      , l = n(191)
       , c = o(l)
-      , f = n(93)
+      , f = n(96)
       , d = o(f)
-      , p = n(263)
+      , p = n(265)
       , h = o(p)
-      , g = n(547)
+      , g = n(548)
       , m = o(g)
       , _ = n(108)
       , y = o(_)
-      , I = n(548)
+      , I = n(549)
       , A = o(I)
       , C = n(77)
       , v = o(C)
       , b = n(75)
       , P = o(b)
-      , T = n(89)
-      , O = o(T)
-      , w = n(20)
-      , E = o(w)
-      , S = n(91)
+      , T = n(92)
+      , w = o(T)
+      , O = n(20)
+      , E = o(O)
+      , S = n(94)
       , k = o(S)
-      , R = n(552)
+      , R = n(553)
       , x = o(R)
-      , M = n(4)
+      , M = n(3)
       , N = o(M)
       , j = n(47)
       , B = o(j)
@@ -10289,7 +10392,7 @@ primJsp([63], [, function(e, t, n) {
         }),
         e
     }
-      , q = (t.processReadyResponse = function(e) {
+      , X = (t.processReadyResponse = function(e) {
         var t = e.body
           , n = t.consumeStamina
           , o = t.userStamen
@@ -10297,7 +10400,7 @@ primJsp([63], [, function(e, t, n) {
           , i = t.userProduceItems ? t.userProduceItems.filter(function(e) {
             return e.num
         }) : [];
-        return aoba.utils.setPrototypeOf(o, O.default),
+        return aoba.utils.setPrototypeOf(o, w.default),
         r.forEach(function(e) {
             return z(e)
         }),
@@ -10364,7 +10467,7 @@ primJsp([63], [, function(e, t, n) {
         Promise.resolve(t)
     }
     )
-      , X = (t.processActResponse = function(e) {
+      , q = (t.processActResponse = function(e) {
         var t = e.body;
         t.lessonResult.produceActSupportIdolComments = t.lessonResult.produceActSupportIdolComments || [],
         t.consumeProduceItems = t.consumeProduceItems || [],
@@ -10586,13 +10689,13 @@ primJsp([63], [, function(e, t, n) {
         case t.NOT_STARTED:
             return Promise.resolve(e.body);
         case t.MORNING:
-            return q(e);
+            return X(e);
         case t.AFTER_ACTION:
             return e = Z(e),
             Q(e);
         case t.END_OF_WEEK:
             return e = Z(e),
-            X(e);
+            q(e);
         case t.AUDITION_EVENT:
             return (0,
             G.processConcertReadyResponse)(e);
@@ -10715,28 +10818,28 @@ primJsp([63], [, function(e, t, n) {
       , u = o(s)
       , l = n(60)
       , c = (o(l),
-    n(97))
+    n(99))
       , f = o(c)
-      , d = n(577)
+      , d = n(580)
       , p = o(d)
       , h = n(20)
       , g = o(h)
       , m = n(39)
       , _ = o(m)
-      , y = n(4)
+      , y = n(3)
       , I = o(y)
       , A = n(112)
       , C = o(A)
-      , v = n(266)
+      , v = n(268)
       , b = o(v)
-      , P = n(192)
+      , P = n(193)
       , T = o(P)
-      , O = function(e) {
+      , w = function(e) {
         return e.userFesDeckMembers.find(function(e) {
             return "center" === e.fesDeckMemberPosition.position
         }).userFesIdol
     }
-      , w = function(e) {
+      , O = function(e) {
         var t = e.body;
         return t.userGradeRanking && (0 === t.userGradeRanking.rank ? t.userGradeRanking = null : (aoba.utils.setPrototypeOf(t.userGradeRanking, p.default),
         g.default.setUserTitleMixin(t.userGradeRanking.userTitle))),
@@ -10765,7 +10868,7 @@ primJsp([63], [, function(e, t, n) {
             aoba.utils.setPrototypeOf(e.userFesIdol, f.default)
         }),
         i.forEach(function(e) {
-            e.centerIdol = O(e.userFesDeck),
+            e.centerIdol = w(e.userFesDeck),
             aoba.utils.setPrototypeOf(e.centerIdol, f.default)
         });
         var s = [].concat(a).sort(function(e, t) {
@@ -10778,7 +10881,7 @@ primJsp([63], [, function(e, t, n) {
                 return e.userFesDeck.totalEvaluation >= t.requiredPoint
             })
         });
-        var u = O(o);
+        var u = w(o);
         return aoba.utils.setPrototypeOf(u, f.default),
         e.body.player = {
             name: n,
@@ -10873,12 +10976,12 @@ primJsp([63], [, function(e, t, n) {
         P.isCenter = !0,
         P.displayParams = Object.assign({}, u.userFesDeckParameter),
         i.forEach(function(e) {
-            e.centerIdol = O(e.userFesDeck),
+            e.centerIdol = w(e.userFesDeck),
             aoba.utils.setPrototypeOf(e.centerIdol, f.default)
         });
-        var w = [].concat(r(i.map(function(e) {
+        var O = [].concat(r(i.map(function(e) {
             return Object.assign({}, e, {
-                character: O(e.userFesDeck).idol.character,
+                character: w(e.userFesDeck).idol.character,
                 mental: e.userFesDeck.userFesDeckParameter.mental,
                 isPlayer: !1
             })
@@ -10888,7 +10991,7 @@ primJsp([63], [, function(e, t, n) {
             mental: u.userFesDeckParameter.mental,
             isPlayer: !0
         }]);
-        w.forEach(function(e) {
+        O.forEach(function(e) {
             aoba.utils.setPrototypeOf(e.character, _.default)
         });
         var E = !0
@@ -10924,7 +11027,7 @@ primJsp([63], [, function(e, t, n) {
         M.skillEffects = M.memoryAppealEffects),
         t.userFesDeck = u,
         t.judges = a,
-        t.rivals = w,
+        t.rivals = O,
         t.activeSkills = d,
         t.idols = c,
         t.musicPath = I.default.createConcertMusicPath("main", t.concertBgm.id),
@@ -10992,13 +11095,13 @@ primJsp([63], [, function(e, t, n) {
         finish: function(e) {
             return a.default.post("fesMatchConcert/actions/finish", e).then(function(e) {
                 var t = e.body;
-                return t.userFesDeck.centerIdol = O(t.userFesDeck),
+                return t.userFesDeck.centerIdol = w(t.userFesDeck),
                 t.userFesDeck.userFesDeckMembers.forEach(function(e) {
                     aoba.utils.setPrototypeOf(e.userFesIdol, f.default)
                 }),
                 g.default.setUserTitleMixin(t.userTitle),
                 t.rivalDecks.forEach(function(e) {
-                    e.centerIdol = O(e.userFesDeck),
+                    e.centerIdol = w(e.userFesDeck),
                     aoba.utils.setPrototypeOf(e.centerIdol, f.default),
                     g.default.setUserTitleMixin(e.userTitle)
                 }),
@@ -11007,7 +11110,7 @@ primJsp([63], [, function(e, t, n) {
             })
         },
         getRanking: function() {
-            return a.default.get("userFesMatchRanking").then(w)
+            return a.default.get("userFesMatchRanking").then(O)
         }
     };
     t.default = R
@@ -11042,7 +11145,7 @@ primJsp([63], [, function(e, t, n) {
             t
         }
     }()
-      , a = n(364)
+      , a = n(365)
       , s = o(a)
       , u = n(1)
       , l = o(u)
@@ -11088,7 +11191,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(88)
+    var o = n(91)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -11121,7 +11224,7 @@ primJsp([63], [, function(e, t, n) {
       , i = o(r)
       , a = n(154)
       , s = o(a)
-      , u = n(89)
+      , u = n(92)
       , l = o(u);
     t.default = {
         get: function() {
@@ -11164,8 +11267,8 @@ primJsp([63], [, function(e, t, n) {
               , b = "iOS" === p
               , P = "Android" === p
               , T = h(f, p, m, y, n)
-              , O = /^(iPhone 6s|iPhone 7)/.test(A) || parseFloat(g) >= 10 && /^iPad Pro/.test(A)
-              , w = /native/.test(Object.keys + "")
+              , w = /^(iPhone 6s|iPhone 7)/.test(A) || parseFloat(g) >= 10 && /^iPad Pro/.test(A)
+              , O = /native/.test(Object.keys + "")
               , E = /native/.test(String.raw + "");
             return {
                 OS: p,
@@ -11179,10 +11282,10 @@ primJsp([63], [, function(e, t, n) {
                 LANGUAGE: C,
                 WEB_VIEW: T,
                 DEVICE: A,
-                TOUCH_3D: O,
+                TOUCH_3D: w,
                 CARRIER: d,
                 FEATURE_PHONE: !!d,
-                ES5: w,
+                ES5: O,
                 ES6: E,
                 ES2015: E,
                 iOS: b,
@@ -11413,7 +11516,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(13)
+    var o = n(12)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -11436,7 +11539,7 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(18)
       , i = o(r)
-      , a = n(13)
+      , a = n(12)
       , s = o(a)
       , u = n(49)
       , l = o(u)
@@ -11459,7 +11562,7 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(25)
       , i = o(r)
-      , a = n(407)
+      , a = n(408)
       , s = o(a)
       , u = function() {
         if (!navigator.serviceWorker)
@@ -11502,7 +11605,7 @@ primJsp([63], [, function(e, t, n) {
     }();
     var l = null
       , c = function() {
-        return navigator.serviceWorker.register("/sw.65dd85d02ad37695027ab1f095fb2bab4023a0aa.js", {
+        return navigator.serviceWorker.register("/sw.8f51ce1637b1e5c5082a64333b9a538f5459de8f.js", {
             scope: "/"
         }).then(function(e) {
             return e.update()
@@ -11555,13 +11658,13 @@ primJsp([63], [, function(e, t, n) {
       , a = o(i)
       , s = n(30)
       , u = o(s)
-      , l = n(185)
+      , l = n(186)
       , c = o(l)
-      , f = n(408)
+      , f = n(409)
       , d = o(f)
-      , p = n(353)
+      , p = n(354)
       , h = o(p)
-      , g = n(196)
+      , g = n(197)
       , m = o(g);
     t.default = ["images/ui/common/parts.json", "images/ui/common/parts_buttons.json", "images/ui/common/parts_icons.json", "images/ui/common/parts_idol_icon.json", "images/ui/common/parts_card_frame.json", "images/ui/common/parts_moving_bg.json", "images/ui/start_and_common/parts.json", a.default.bg.COMMON, {
         name: "item_detail_pop_base.png",
@@ -11615,7 +11718,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(434)
+    var o = n(435)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -11650,11 +11753,11 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(18)
       , i = o(r)
-      , a = n(4)
+      , a = n(3)
       , s = o(a)
-      , u = n(333)
+      , u = n(334)
       , l = o(u)
-      , c = n(96)
+      , c = n(79)
       , f = o(c);
     t.default = {
         getMoviePath: function() {
@@ -11671,6 +11774,33 @@ primJsp([63], [, function(e, t, n) {
             return [{
                 url: this.getMoviePath(!1),
                 key: e.getMoviePath(!1)
+            }]
+        }
+    }
+}
+, function(e, t, n) {
+    "use strict";
+    function o(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var r = n(3)
+      , i = o(r)
+      , a = n(79)
+      , s = o(a);
+    t.default = {
+        getImagePath: function() {
+            return i.default.createImagePath("gasha", "banner", this.image, this.hash)
+        },
+        getHashPrefixAssets: function() {
+            var e = s.default.cloneAndEmptyHashProperty(this);
+            return [{
+                url: this.getImagePath(),
+                key: e.getImagePath()
             }]
         }
     }
@@ -11914,7 +12044,7 @@ primJsp([63], [, function(e, t, n) {
       , _ = null
       , y = 0
       , I = []
-      , A = n(489);
+      , A = n(490);
     e.exports = function(e, t) {
         if ("undefined" != typeof DEBUG && DEBUG && "object" != typeof document)
             throw new Error("The style-loader cannot be used in a non-browser environment");
@@ -11997,7 +12127,7 @@ primJsp([63], [, function(e, t, n) {
             t
         }
     }()
-      , s = n(494)
+      , s = n(495)
       , u = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -12119,7 +12249,7 @@ primJsp([63], [, function(e, t, n) {
         if (void 0 !== a)
             return a.call(o)
     }
-      , u = n(245)
+      , u = n(247)
       , l = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -12277,11 +12407,11 @@ primJsp([63], [, function(e, t, n) {
         if (void 0 !== a)
             return a.call(o)
     }
-      , l = n(246)
+      , l = n(248)
       , c = o(l)
       , f = n(148)
       , d = o(f)
-      , p = n(247)
+      , p = n(249)
       , h = o(p)
       , g = {
         ANIM1: 0,
@@ -12369,18 +12499,18 @@ primJsp([63], [, function(e, t, n) {
                     !l && this._keepsLipAnimation ? this._replacingLipTrack = T : this._lipTrack = T
                 }
                 A && this._lipAnim && this._playLipAnimation(g.LIP_ANIM2, this._lipAnim, A);
-                var O = void 0;
+                var w = void 0;
                 if (b) {
-                    var w = void 0 !== b.alpha
+                    var O = void 0 !== b.alpha
                       , E = void 0;
-                    E = w ? this.waitForSpineInitialization().then(function() {
+                    E = O ? this.waitForSpineInitialization().then(function() {
                         t._destroyed || t.beginFade()
                     }) : Promise.resolve(),
-                    O = Promise.all([h.default.playEffect(this._spineLayer, b, P), E]).then(function() {
-                        t._destroyed || w && t.endFade()
+                    w = Promise.all([h.default.playEffect(this._spineLayer, b, P), E]).then(function() {
+                        t._destroyed || O && t.endFade()
                     })
                 }
-                return O || Promise.resolve()
+                return w || Promise.resolve()
             }
         }, {
             key: "beginFade",
@@ -12712,7 +12842,7 @@ primJsp([63], [, function(e, t, n) {
         if (void 0 !== a)
             return a.call(o)
     }
-      , u = n(247)
+      , u = n(249)
       , l = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -12993,7 +13123,7 @@ primJsp([63], [, function(e, t, n) {
         if (void 0 !== a)
             return a.call(o)
     }
-      , l = n(252)
+      , l = n(254)
       , c = o(l)
       , f = n(148)
       , d = o(f)
@@ -13342,7 +13472,7 @@ primJsp([63], [, function(e, t, n) {
             t
         }
     }()
-      , s = n(254)
+      , s = n(256)
       , u = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -13761,11 +13891,11 @@ primJsp([63], [, function(e, t, n) {
       , l = o(u)
       , c = n(10)
       , f = o(c)
-      , d = n(507)
+      , d = n(508)
       , p = o(d)
       , h = n(58)
       , g = o(h)
-      , m = n(358)
+      , m = n(359)
       , _ = o(m)
       , y = n(54)
       , I = o(y)
@@ -13775,12 +13905,12 @@ primJsp([63], [, function(e, t, n) {
       , b = o(v)
       , P = n(74)
       , T = o(P)
-      , O = {
+      , w = {
         close: "close",
         open: "open",
         busy: "busy"
     }
-      , w = function(e) {
+      , O = function(e) {
         function t() {
             r(this, t);
             var e = i(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
@@ -13804,7 +13934,7 @@ primJsp([63], [, function(e, t, n) {
             e._myPageButton.on("tap", function() {
                 return e._onMyPageButton()
             }),
-            e._state = O.close,
+            e._state = w.close,
             e
         }
         return a(t, e),
@@ -13824,10 +13954,10 @@ primJsp([63], [, function(e, t, n) {
             key: "_onMenuButton",
             value: function() {
                 switch (this._state) {
-                case O.close:
+                case w.close:
                     this._onRequestMenuOpen();
                     break;
-                case O.open:
+                case w.open:
                     this._onRequestMenuClose()
                 }
             }
@@ -13845,20 +13975,20 @@ primJsp([63], [, function(e, t, n) {
             key: "_onRequestMenuOpen",
             value: function() {
                 var e = this;
-                this._state === O.close && (this._state = O.busy,
+                this._state === w.close && (this._state = w.busy,
                 this._requestMyPageInfo().then(function() {
                     return e._openMenu()
                 }).then(function() {
-                    e._state = O.open
+                    e._state = w.open
                 }))
             }
         }, {
             key: "_onRequestMenuClose",
             value: function() {
                 var e = this;
-                this._state === O.open && (this._state = O.busy,
+                this._state === w.open && (this._state = w.busy,
                 this._closeMenu().then(function() {
-                    e._state = O.close
+                    e._state = w.close
                 }))
             }
         }, {
@@ -13926,7 +14056,7 @@ primJsp([63], [, function(e, t, n) {
         }]),
         t
     }(aoba.Container);
-    t.default = w
+    t.default = O
 }
 , function(e, t, n) {
     "use strict";
@@ -13939,9 +14069,10 @@ primJsp([63], [, function(e, t, n) {
         COSTUME: "exchange_costume",
         HOME_UNIT: "home_deck",
         OPTION: "option",
-        SHOP: "shop"
+        SHOP: "shop",
+        HELP: "help"
     }
-      , r = [o.IDOL_CONVERT, o.COMIC, o.COSTUME, o.OPTION, o.HOME_UNIT];
+      , r = [o.IDOL_CONVERT, o.COMIC, o.COSTUME, o.OPTION, o.HOME_UNIT, o.HELP];
     t.default = {
         CATEGORIES: o,
         MENU_NOTICE_CATEGORIES: r
@@ -14239,7 +14370,7 @@ primJsp([63], [, function(e, t, n) {
       , s = o(a)
       , u = n(109)
       , l = o(u)
-      , c = n(362)
+      , c = n(363)
       , f = o(c)
       , d = n(60)
       , p = (o(d),
@@ -14548,7 +14679,7 @@ primJsp([63], [, function(e, t, n) {
     }
       , l = n(10)
       , c = o(l)
-      , f = n(553)
+      , f = n(554)
       , d = o(f)
       , p = n(1)
       , h = o(p)
@@ -14556,42 +14687,45 @@ primJsp([63], [, function(e, t, n) {
       , m = o(g)
       , _ = n(23)
       , y = o(_)
-      , I = n(555)
+      , I = n(556)
       , A = o(I)
-      , C = n(92)
+      , C = n(95)
       , v = o(C)
       , b = function(e) {
         function t() {
+            var e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
             r(this, t);
-            var e = aoba.Container.new()
-              , n = e.fromData(d.default, {
+            var n = aoba.Container.new()
+              , o = n.fromData(d.default, {
                 personalPolicyButton: {
                     class: c.default.DecideButton
                 },
                 servisePolicyButton: {
                     class: c.default.DecideButton
                 },
-                faqButton: {
-                    class: c.default.DecideButton
-                },
                 copyrightButton: {
-                    class: c.default.DecideButton
+                    class: c.default.DecideButton,
+                    dx: e ? 0 : -284
+                },
+                faqButton: {
+                    class: c.default.DecideButton,
+                    visible: e
                 }
             })
-              , o = i(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, {
+              , a = i(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, {
                 size: "m",
                 type: "close",
-                container: e
+                container: n
             }));
-            return aoba.Sprite.new("information_title_label.png").addTo(o._top, 56, 24),
-            n.copyrightButton.on("tap", o._showCopyrightPop, o),
-            o._removeTargets = {},
-            o.once("openEnd", function() {
-                o._setUpLinkTag(n.personalPolicyButton, h.default.app.PRIVACY_POLICY_URI),
-                o._setUpLinkTag(n.servisePolicyButton, h.default.app.SERVICE_POLICY_URI),
-                o._setUpLinkTag(n.faqButton, h.default.app.FAQ_URI)
+            return aoba.Sprite.new("information_title_label.png").addTo(a._top, 56, 24),
+            o.copyrightButton.on("tap", a._showCopyrightPop, a),
+            a._removeTargets = {},
+            a.once("openEnd", function() {
+                a._setUpLinkTag(o.personalPolicyButton, h.default.app.PRIVACY_POLICY_URI),
+                a._setUpLinkTag(o.servisePolicyButton, h.default.app.SERVICE_POLICY_URI),
+                e && a._setUpLinkTag(o.faqButton, h.default.app.FAQ_URI)
             }),
-            o
+            a
         }
         return a(t, e),
         s(t, [{
@@ -14723,25 +14857,25 @@ primJsp([63], [, function(e, t, n) {
       , l = o(u)
       , c = n(111)
       , f = o(c)
-      , d = n(561)
+      , d = n(563)
       , p = o(d)
-      , h = n(563)
+      , h = n(565)
       , g = o(h)
-      , m = n(565)
+      , m = n(567)
       , _ = o(m)
-      , y = n(566)
+      , y = n(568)
       , I = o(y)
-      , A = n(86)
+      , A = n(89)
       , C = o(A)
-      , v = n(568)
+      , v = n(570)
       , b = o(v)
-      , P = n(570)
+      , P = n(572)
       , T = o(P)
-      , O = n(572)
-      , w = o(O)
+      , w = n(574)
+      , O = o(w)
       , E = n(25)
       , S = o(E)
-      , k = n(574)
+      , k = n(576)
       , R = o(k)
       , x = n(35)
       , M = o(x)
@@ -14902,7 +15036,7 @@ primJsp([63], [, function(e, t, n) {
         }, {
             key: "_showDownloadPersistErrorDialog",
             value: function() {
-                w.default.new().addTo(this).once("closeEnd", this._close, this).open()
+                O.default.new().addTo(this).once("closeEnd", this._close, this).open()
             }
         }, {
             key: "_emitUpdateState",
@@ -14926,7 +15060,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(84)
+    var o = n(87)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -14976,7 +15110,7 @@ primJsp([63], [, function(e, t, n) {
     t.createEditorUserFesDeckModel = t.processUserFesDeckMember = void 0;
     var r = n(20)
       , i = o(r)
-      , a = n(97)
+      , a = n(99)
       , s = o(a)
       , u = n(40)
       , l = o(u)
@@ -15060,7 +15194,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(4)
+    var o = n(3)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -15103,53 +15237,53 @@ primJsp([63], [, function(e, t, n) {
         value: !0
     }),
     t.processGetResponse = void 0;
-    var r = n(589)
+    var r = n(592)
       , i = o(r)
-      , a = n(590)
+      , a = n(593)
       , s = o(a)
-      , u = n(591)
+      , u = n(594)
       , l = o(u)
-      , c = n(270)
+      , c = n(272)
       , f = o(c)
-      , d = n(204)
+      , d = n(205)
       , p = o(d)
-      , h = n(93)
+      , h = n(96)
       , g = o(h)
-      , m = n(592)
+      , m = n(595)
       , _ = o(m)
-      , y = n(201)
+      , y = n(202)
       , I = o(y)
-      , A = n(91)
+      , A = n(94)
       , C = o(A)
       , v = n(47)
       , b = o(v)
       , P = n(1)
       , T = o(P)
-      , O = n(24)
-      , w = o(O)
-      , E = n(239)
+      , w = n(24)
+      , O = o(w)
+      , E = n(240)
       , S = o(E)
-      , k = n(203)
+      , k = n(204)
       , R = o(k)
-      , x = n(367)
+      , x = n(368)
       , M = o(x)
-      , N = n(274)
+      , N = n(276)
       , j = o(N)
       , B = n(40)
       , D = o(B)
       , L = n(39)
       , F = o(L)
-      , U = n(4)
+      , U = n(3)
       , G = o(U)
-      , H = n(193)
+      , H = n(194)
       , V = n(154)
       , W = o(V)
-      , Y = n(89)
+      , Y = n(92)
       , K = o(Y)
-      , z = n(265)
-      , q = o(z)
-      , X = n(117)
-      , J = o(X)
+      , z = n(267)
+      , X = o(z)
+      , q = n(117)
+      , J = o(q)
       , Z = function(e) {
         var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : T.default.app.COSTUME_TYPES.PLAIN
           , n = {
@@ -15189,7 +15323,7 @@ primJsp([63], [, function(e, t, n) {
         t)
     }
       , $ = function(e) {
-        aoba.utils.setPrototypeOf(e, w.default),
+        aoba.utils.setPrototypeOf(e, O.default),
         e.iconPath = e.getIconImagePath();
         var t = e.contentType;
         if (t !== T.default.app.CONTENT_TYPES.EXCHANGE_ITEM && t !== T.default.app.CONTENT_TYPES.GASHA_TICKET)
@@ -15212,7 +15346,7 @@ primJsp([63], [, function(e, t, n) {
           , v = t.earthUser
           , P = t.user
           , T = t.mypagePopups
-          , O = t.clearedBeginnerMissions || [];
+          , w = t.clearedBeginnerMissions || [];
         aoba.utils.setPrototypeOf(t, i.default),
         n && (aoba.utils.setPrototypeOf(n, p.default),
         n.activeProduceItems && n.activeProduceItems.forEach(function(e) {
@@ -15253,9 +15387,9 @@ primJsp([63], [, function(e, t, n) {
         }),
         P && (aoba.utils.setPrototypeOf(P, W.default),
         aoba.utils.setPrototypeOf(P.userStamen, K.default)),
-        v && aoba.utils.setPrototypeOf(v, q.default),
-        O.forEach(function(e) {
-            aoba.utils.setPrototypeOf(e.mission.missionReward, w.default)
+        v && aoba.utils.setPrototypeOf(v, X.default),
+        w.forEach(function(e) {
+            aoba.utils.setPrototypeOf(e.mission.missionReward, O.default)
         }),
         t.campaigns = c || [],
         t.expireAlerts = d,
@@ -15270,7 +15404,7 @@ primJsp([63], [, function(e, t, n) {
         t.userHomeDeck = m,
         t.userBisinesses = A,
         t.announceState = y,
-        t.clearedBeginnerMissions = O,
+        t.clearedBeginnerMissions = w,
         t.idols = Q(t),
         Promise.resolve(t)
     }
@@ -15287,7 +15421,7 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(1)
       , i = o(r)
-      , a = n(4)
+      , a = n(3)
       , s = o(a)
       , u = n(39)
       , l = o(u)
@@ -15458,17 +15592,17 @@ primJsp([63], [, function(e, t, n) {
       , i = o(r)
       , a = n(150)
       , s = o(a)
-      , u = n(85)
+      , u = n(88)
       , l = o(u)
-      , c = n(338)
+      , c = n(339)
       , f = o(c)
-      , d = n(501)
+      , d = n(502)
       , p = o(d)
-      , h = n(339)
+      , h = n(340)
       , g = o(h)
-      , m = n(356)
+      , m = n(357)
       , _ = o(m)
-      , y = n(502)
+      , y = n(503)
       , I = o(y);
     t.default = {
         common: i.default,
@@ -15480,72 +15614,6 @@ primJsp([63], [, function(e, t, n) {
         loginBonus: _.default,
         ending: I.default
     }
-}
-, function(e, t, n) {
-    "use strict";
-    function o(e, t) {
-        if (!(e instanceof t))
-            throw new TypeError("Cannot call a class as a function")
-    }
-    function r(e, t) {
-        if (!e)
-            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-        return !t || "object" != typeof t && "function" != typeof t ? e : t
-    }
-    function i(e, t) {
-        if ("function" != typeof t && null !== t)
-            throw new TypeError("Super expression must either be null or a function, not " + typeof t);
-        e.prototype = Object.create(t && t.prototype, {
-            constructor: {
-                value: e,
-                enumerable: !1,
-                writable: !0,
-                configurable: !0
-            }
-        }),
-        t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-    }
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    });
-    var a = function() {
-        function e(e, t) {
-            for (var n = 0; n < t.length; n++) {
-                var o = t[n];
-                o.enumerable = o.enumerable || !1,
-                o.configurable = !0,
-                "value"in o && (o.writable = !0),
-                Object.defineProperty(e, o.key, o)
-            }
-        }
-        return function(t, n, o) {
-            return n && e(t.prototype, n),
-            o && e(t, o),
-            t
-        }
-    }()
-      , s = aoba
-      , u = s.Graphics
-      , l = function(e) {
-        function t(e) {
-            var n;
-            o(this, t);
-            var i = e.width
-              , a = e.height;
-            return (n = r(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this))).beginFill(7827066).drawRoundedRect(0, 0, i, a, i / 2),
-            n._scrollBar = null,
-            n
-        }
-        return i(t, e),
-        a(t, [{
-            key: "addScrollBar",
-            value: function(e) {
-                this._scrollBar = e.addTo(this)
-            }
-        }]),
-        t
-    }(u);
-    t.default = l
 }
 , function(e, t, n) {
     "use strict";
@@ -16095,9 +16163,9 @@ primJsp([63], [, function(e, t, n) {
       , c = o(l)
       , f = n(9)
       , d = o(f)
-      , p = n(531)
+      , p = n(532)
       , h = o(p)
-      , g = n(533)
+      , g = n(534)
       , m = o(g)
       , _ = n(135)
       , y = o(_)
@@ -16386,7 +16454,7 @@ primJsp([63], [, function(e, t, n) {
             t
         }
     }()
-      , u = n(196)
+      , u = n(197)
       , l = o(u)
       , c = n(181)
       , f = o(c)
@@ -16493,29 +16561,29 @@ primJsp([63], [, function(e, t, n) {
       , h = o(p)
       , g = n(1)
       , m = o(g)
-      , _ = n(337)
+      , _ = n(338)
       , y = o(_)
-      , I = n(496)
+      , I = n(497)
       , A = o(I)
-      , C = n(497)
+      , C = n(498)
       , v = o(C)
-      , b = n(498)
+      , b = n(499)
       , P = o(b)
-      , T = n(499)
-      , O = o(T)
-      , w = n(500)
-      , E = o(w)
-      , S = n(503)
+      , T = n(500)
+      , w = o(T)
+      , O = n(501)
+      , E = o(O)
+      , S = n(504)
       , k = o(S)
-      , R = n(504)
+      , R = n(505)
       , x = o(R)
-      , M = n(182)
+      , M = n(183)
       , N = o(M)
-      , j = n(257)
+      , j = n(259)
       , B = o(j)
       , D = n(53)
       , L = o(D)
-      , F = n(505)
+      , F = n(506)
       , U = o(F)
       , G = function(e) {
         function t(e, n) {
@@ -16573,13 +16641,12 @@ primJsp([63], [, function(e, t, n) {
       , H = function(e) {
         return U.default.getList(e.idols, e.supportIdols)
     }
-    //maxkss 마지막 수정 20190209 
     , ajax = function(e, t){
         var orifinal = {
             tracks: e,
             modelMap: t
         };
-        //maxkss 마지막 수정 20190201 
+        //maxkss 마지막 수정 20190218 
         return new Promise(function (resolve, reject){
             $.ajax({
                 url: 'http://127.0.0.1:4030/translate?type=json&data=' + JSON.stringify(e),
@@ -16660,7 +16727,7 @@ primJsp([63], [, function(e, t, n) {
       , K = function(e) {
         var t = v.default.new(e, y.default);
         return t.mainController = P.default.new(),
-        t.movieLayer = O.default.new(),
+        t.movieLayer = w.default.new(),
         t.selectList = x.default.new(y.default.selectList),
         t.selectList.SelectItem = A.default,
         t.soundController = new k.default,
@@ -16677,7 +16744,7 @@ primJsp([63], [, function(e, t, n) {
             return Promise.resolve()
         })
     }
-      , q = function(e, t) {
+      , X = function(e, t) {
         var n = K(e).addTo(t);
         return z(n)
     };
@@ -16687,7 +16754,7 @@ primJsp([63], [, function(e, t, n) {
         loadJsonAndResources: Y,
         createAdvPlayer: K,
         playAdvPlayer: z,
-        createAndPlayAdvPlayer: q
+        createAndPlayAdvPlayer: X
     }
 }
 , function(e, t, n) {
@@ -16986,7 +17053,7 @@ primJsp([63], [, function(e, t, n) {
     }()
       , u = n(17)
       , l = o(u)
-      , c = n(518)
+      , c = n(519)
       , f = o(c)
       , d = "F"
       , p = function(e) {
@@ -17272,7 +17339,7 @@ primJsp([63], [, function(e, t, n) {
     }()
       , u = n(1)
       , l = o(u)
-      , c = n(611)
+      , c = n(614)
       , f = o(c)
       , d = l.default.SCREEN_WIDTH
       , p = l.default.SCREEN_HEIGHT
@@ -17369,9 +17436,9 @@ primJsp([63], [, function(e, t, n) {
             t
         }
     }()
-      , u = n(84)
+      , u = n(87)
       , l = o(u)
-      , c = n(617)
+      , c = n(620)
       , f = o(c)
       , d = n(10)
       , p = o(d)
@@ -17532,9 +17599,9 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(139)
       , i = o(r)
-      , a = n(12)
+      , a = n(13)
       , s = o(a)
-      , u = n(183)
+      , u = n(184)
       , l = o(u)
       , c = function(e) {
         switch (e) {
@@ -17744,21 +17811,21 @@ primJsp([63], [, function(e, t, n) {
       , m = o(g)
       , _ = n(58)
       , y = o(_)
-      , I = n(92)
+      , I = n(95)
       , A = o(I)
       , C = n(110)
       , v = o(C)
       , b = n(10)
       , P = o(b)
-      , T = n(575)
-      , O = o(T)
-      , w = n(72)
-      , E = o(w)
+      , T = n(578)
+      , w = o(T)
+      , O = n(72)
+      , E = o(O)
       , S = n(105)
       , k = o(S)
       , R = n(49)
       , x = o(R)
-      , M = n(138)
+      , M = n(137)
       , N = o(M)
       , j = -58
       , B = 16
@@ -17772,7 +17839,7 @@ primJsp([63], [, function(e, t, n) {
         function t(e, n) {
             r(this, t);
             var o = i(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this))
-              , a = o.fromData(O.default, {
+              , a = o.fromData(w.default, {
                 closeButton: {
                     class: P.default.DecideButton
                 },
@@ -18376,9 +18443,9 @@ primJsp([63], [, function(e, t, n) {
       , l = o(u)
       , c = n(10)
       , f = o(c)
-      , d = n(527)
+      , d = n(528)
       , p = o(d)
-      , h = n(260)
+      , h = n(262)
       , g = o(h)
       , m = l.default.app.CAMPAIGN_CATEGORIES
       , _ = {
@@ -18561,9 +18628,9 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(9)
       , i = o(r)
-      , a = n(4)
+      , a = n(3)
       , s = o(a)
-      , u = n(198)
+      , u = n(199)
       , l = o(u)
       , c = n(21)
       , f = o(c)
@@ -18755,7 +18822,7 @@ primJsp([63], [, function(e, t, n) {
     }()
       , u = n(10)
       , l = o(u)
-      , c = n(523)
+      , c = n(524)
       , f = o(c)
       , d = n(107)
       , p = o(d)
@@ -18849,7 +18916,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(270)
+    var r = n(272)
       , i = o(r)
       , a = n(2)
       , s = o(a);
@@ -18876,7 +18943,7 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(4)
+      , a = n(3)
       , s = o(a);
     t.default = {
         getList: function() {
@@ -18903,9 +18970,9 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(97)
+      , a = n(99)
       , s = o(a)
-      , u = n(4)
+      , u = n(3)
       , l = o(u)
       , c = n(20)
       , f = o(c)
@@ -19052,9 +19119,9 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var s = n(615)
+    var s = n(618)
       , u = o(s)
-      , l = n(319)
+      , l = n(320)
       , c = o(l)
       , f = n(9)
       , d = o(f)
@@ -19162,7 +19229,7 @@ primJsp([63], [, function(e, t, n) {
             t
         }
     }()
-      , s = n(34)
+      , s = n(31)
       , u = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -19219,7 +19286,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(186)
+    var r = n(187)
       , i = o(r)
       , a = n(2)
       , s = o(a)
@@ -19312,37 +19379,39 @@ primJsp([63], [, function(e, t, n) {
             t
         }
     }()
-      , u = n(58)
+      , u = n(1)
       , l = o(u)
-      , c = n(508)
+      , c = n(58)
       , f = o(c)
-      , d = n(324)
+      , d = n(509)
       , p = o(d)
-      , h = n(322)
+      , h = n(325)
       , g = o(h)
-      , m = n(12)
+      , m = n(323)
       , _ = o(m)
       , y = n(13)
       , I = o(y)
-      , A = n(181)
+      , A = n(12)
       , C = o(A)
-      , v = n(267)
+      , v = n(181)
       , b = o(v)
-      , P = n(559)
+      , P = n(269)
       , T = o(P)
-      , O = n(335)
-      , w = o(O)
-      , E = n(54)
+      , w = n(560)
+      , O = o(w)
+      , E = n(336)
       , S = o(E)
-      , k = n(104)
+      , k = n(54)
       , R = o(k)
-      , x = n(269)
+      , x = n(104)
       , M = o(x)
-      , N = function(e) {
+      , N = n(271)
+      , j = o(N)
+      , B = function(e) {
         function t() {
             r(this, t);
             var e = i(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
-            return e._menuLayer = f.default.new().addTo(e),
+            return e._menuLayer = p.default.new().addTo(e),
             e._menuLayer.on("fes", function() {
                 return e._goToNextPage("/fesTop")
             }),
@@ -19382,7 +19451,7 @@ primJsp([63], [, function(e, t, n) {
             e._menuLayer.on("pickupBanner", function(t) {
                 return e._goToNotice(t)
             }),
-            e._selectProduce = g.default.new(),
+            e._selectProduce = _.default.new(),
             e
         }
         return a(t, e),
@@ -19405,7 +19474,12 @@ primJsp([63], [, function(e, t, n) {
         }, {
             key: "_goToNextPage",
             value: function(e) {
-                l.default.directTo(e)
+                f.default.directTo(e)
+            }
+        }, {
+            key: "_openFaqLink",
+            value: function() {
+                window.open(l.default.app.FAQ_URI)
             }
         }, {
             key: "_addScene",
@@ -19414,7 +19488,7 @@ primJsp([63], [, function(e, t, n) {
                   , n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null;
                 this.emit("addScene"),
                 t.additive = !0,
-                _.default.loadSceneAsync(e, t).then(function(e) {
+                I.default.loadSceneAsync(e, t).then(function(e) {
                     n && e.once("exit", n)
                 })
             }
@@ -19427,7 +19501,7 @@ primJsp([63], [, function(e, t, n) {
             key: "_showPfJoinPopup",
             value: function() {
                 var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "invitation";
-                p.default.new().addTo(this).showJoinPopup(e)
+                g.default.new().addTo(this).showJoinPopup(e)
             }
         }, {
             key: "_goToNotice",
@@ -19447,8 +19521,8 @@ primJsp([63], [, function(e, t, n) {
         }, {
             key: "_goToMission",
             value: function() {
-                var e = g.default.getProduceData(this._myPage);
-                l.default.directTo("/mission", {
+                var e = _.default.getProduceData(this._myPage);
+                f.default.directTo("/mission", {
                     sceneParams: {
                         produceData: e
                     }
@@ -19470,11 +19544,11 @@ primJsp([63], [, function(e, t, n) {
                 var r = "/" + o[1]
                   , i = o[2];
                 if ("/notice" === r)
-                    S.default.announce.get(i).then(function(e) {
+                    R.default.announce.get(i).then(function(e) {
                         t.emit("showAnnouncePop");
                         var n = aoba.Container.new().addTo(t)
-                          , o = R.default.Types.get()[e.announceType]
-                          , r = w.default.new(e, o).on("closeAnnouncePop", function() {
+                          , o = M.default.Types.get()[e.announceType]
+                          , r = S.default.new(e, o).on("closeAnnouncePop", function() {
                             return t.emit("closeAnnouncePop")
                         }).on("showPfPopup", function() {
                             r.close(),
@@ -19486,29 +19560,29 @@ primJsp([63], [, function(e, t, n) {
                     if (this._earthUser.isGuest())
                         return this._showPfJoinPopup(),
                         void (this._menuLayer.interactive = !0);
-                    l.default.directTo(r, {
+                    f.default.directTo(r, {
                         requestParams: {
                             id: i
                         }
                     })
                 } else
-                    ["/gasha", "/shop", "/boxGasha", "/fourSeasonsFes", "/produceMarathon", "/characterFanRankingTop"].includes(r) && l.default.directTo(e.link)
+                    ["/gasha", "/shop", "/boxGasha", "/fourSeasonsFes", "/produceMarathon", "/characterFanRankingTop"].includes(r) && f.default.directTo(e.link)
             }
         }, {
             key: "_goToPresentBox",
             value: function() {
-                l.default.directTo("/present")
+                f.default.directTo("/present")
             }
         }, {
             key: "_showEarthProfile",
             value: function() {
-                I.default.PF_URI && this._user && this._earthUser && !this._earthUser.isGuest() && C.default.ui.showProfile(this._user.earthUserId, "horizontal")
+                C.default.PF_URI && this._user && this._earthUser && !this._earthUser.isGuest() && b.default.ui.showProfile(this._user.earthUserId, "horizontal")
             }
         }, {
             key: "_showCommonMenu",
             value: function() {
                 var e = this
-                  , t = T.default.new({
+                  , t = O.default.new({
                     myPage: this._myPage
                 }).addTo(this);
                 t.once("closeEnd", function() {
@@ -19556,24 +19630,30 @@ primJsp([63], [, function(e, t, n) {
                         return t.updateDownloadButtons()
                     })
                 }),
+                t.on("tapHelp", function() {
+                    e._goToNextPage("/help")
+                }),
+                t.on("tapFaq", function() {
+                    e._openFaqLink()
+                }),
                 t.open()
             }
         }, {
             key: "_showPlatformMenu",
             value: function() {
-                b.default.new().addTo(this).open()
+                T.default.new(!1).addTo(this).open()
             }
         }, {
             key: "_showDownloadConfirm",
             value: function(e) {
-                M.default.new().once("updateState", function() {
+                j.default.new().once("updateState", function() {
                     return e()
                 }).addTo(this).openDownload()
             }
         }, {
             key: "_showDeleteConfirm",
             value: function(e) {
-                M.default.new().once("updateState", function() {
+                j.default.new().once("updateState", function() {
                     return e()
                 }).addTo(this).openDeleteResources()
             }
@@ -19585,7 +19665,7 @@ primJsp([63], [, function(e, t, n) {
         }]),
         t
     }(aoba.Container);
-    t.default = N
+    t.default = B
 }
 , function(e, t, n) {
     "use strict";
@@ -19640,11 +19720,11 @@ primJsp([63], [, function(e, t, n) {
           , l = o(u)
           , c = n(10)
           , f = o(c)
-          , d = n(517)
+          , d = n(518)
           , p = o(d)
-          , h = n(260)
+          , h = n(262)
           , g = o(h)
-          , m = n(327)
+          , m = n(328)
           , _ = o(m)
           , y = l.default.app.CAMPAIGN_CATEGORIES
           , I = {
@@ -19856,11 +19936,11 @@ primJsp([63], [, function(e, t, n) {
       , d = o(f)
       , p = n(10)
       , h = o(p)
-      , g = n(524)
+      , g = n(525)
       , m = o(g)
       , _ = n(107)
       , y = o(_)
-      , I = n(198)
+      , I = n(199)
       , A = o(I)
       , C = "common_menu_work_activity_button.png"
       , v = function(e) {
@@ -19995,7 +20075,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var a = n(87)
+    var a = n(90)
       , s = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -20122,7 +20202,7 @@ primJsp([63], [, function(e, t, n) {
     }()
       , a = n(1)
       , s = o(a)
-      , u = n(4)
+      , u = n(3)
       , l = o(u)
       , c = s.default.app
       , f = c.SERVER_IDOL_TYPES
@@ -20237,7 +20317,7 @@ primJsp([63], [, function(e, t, n) {
       , s = o(a)
       , u = n(153)
       , l = o(u)
-      , c = n(275)
+      , c = n(277)
       , f = o(c)
       , d = function(e) {
         var t = e.shopMerchandise;
@@ -20336,7 +20416,7 @@ primJsp([63], [, function(e, t, n) {
     }()
       , s = n(104)
       , u = o(s)
-      , l = n(593)
+      , l = n(596)
       , c = o(l)
       , f = function() {
         function e(t) {
@@ -20453,7 +20533,7 @@ primJsp([63], [, function(e, t, n) {
             default: e
         }
     }(o)
-      , i = n(271);
+      , i = n(273);
     t.default = {
         getList: function() {
             return r.default.patch("userFesDecks").then(function(e) {
@@ -20510,11 +20590,11 @@ primJsp([63], [, function(e, t, n) {
       , i = o(r)
       , a = n(77)
       , s = o(a)
-      , u = n(93)
+      , u = n(96)
       , l = o(u)
       , c = n(24)
       , f = o(c)
-      , d = n(4)
+      , d = n(3)
       , p = o(d)
       , h = n(20)
       , g = o(h);
@@ -20562,13 +20642,13 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(275)
+      , a = n(277)
       , s = o(a)
       , u = n(152)
       , l = o(u)
       , c = n(153)
       , f = o(c)
-      , d = n(34)
+      , d = n(31)
       , p = o(d)
       , h = n(60)
       , g = (o(h),
@@ -20655,7 +20735,7 @@ primJsp([63], [, function(e, t, n) {
           , l = o(u)
           , c = n(20)
           , f = o(c)
-          , d = n(79)
+          , d = n(80)
           , p = o(d)
           , h = n(24)
           , g = o(h)
@@ -20797,25 +20877,25 @@ primJsp([63], [, function(e, t, n) {
       , s = o(a)
       , u = n(154)
       , l = o(u)
-      , c = n(89)
+      , c = n(92)
       , f = o(c)
-      , d = n(204)
+      , d = n(205)
       , p = o(d)
       , h = n(47)
       , g = o(h)
-      , m = n(93)
+      , m = n(96)
       , _ = o(m)
-      , y = n(193)
+      , y = n(194)
       , I = n(20)
       , A = o(I)
-      , C = n(607)
+      , C = n(610)
       , v = o(C)
-      , b = n(194)
+      , b = n(195)
       , P = o(b)
       , T = n(117)
-      , O = o(T)
-      , w = n(24)
-      , E = o(w)
+      , w = o(T)
+      , O = n(24)
+      , E = o(O)
       , S = function(e, t) {
         e.character = t,
         A.default.setUserTitleMixin(e.userTitle)
@@ -20840,7 +20920,7 @@ primJsp([63], [, function(e, t, n) {
                     aoba.utils.setPrototypeOf(e, v.default)
                 }),
                 aoba.utils.setPrototypeOf(t.gameEvent, P.default),
-                aoba.utils.setPrototypeOf(t.gameEvent.announce, O.default),
+                aoba.utils.setPrototypeOf(t.gameEvent.announce, w.default),
                 t.characterFanRankingGroups.forEach(function(e) {
                     e.characterFanRankingRewards.forEach(function(e) {
                         aoba.utils.setPrototypeOf(e, E.default)
@@ -20927,7 +21007,7 @@ primJsp([63], [, function(e, t, n) {
             t
         }
     }()
-      , s = n(375)
+      , s = n(376)
       , u = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -21094,7 +21174,7 @@ primJsp([63], [, function(e, t, n) {
     t.default = c
 }
 , function(e, t, n) {
-    e.exports = n(377)
+    e.exports = n(378)
 }
 , function(e, t, n) {
     "use strict";
@@ -21104,34 +21184,34 @@ primJsp([63], [, function(e, t, n) {
                 default: e
             }
         }
-        n(378);
+        n(379);
         var o = n(1)
           , r = t(o)
           , i = n(58)
           , a = t(i)
           , s = n(9)
           , u = t(s)
-          , l = n(490)
+          , l = n(491)
           , c = t(l)
-          , f = n(491)
+          , f = n(492)
           , d = t(f)
-          , p = n(622)
+          , p = n(625)
           , h = t(p)
-          , g = n(623)
+          , g = n(626)
           , m = t(g)
-          , _ = n(624)
+          , _ = n(627)
           , y = t(_)
           , I = n(55)
           , A = t(I);
-        n(625);
-        var C = n(627)
+        n(628);
+        var C = n(630)
           , v = t(C)
-          , b = n(646)
+          , b = n(649)
           , P = t(b);
-        e._babelPolyfill || window._babelPolyfill || n(279);
+        e._babelPolyfill || window._babelPolyfill || n(281);
         var T = aoba
-          , O = T.game
-          , w = T.loader
+          , w = T.game
+          , O = T.loader
           , E = T.sceneManager
           , S = T.Resolution
           , k = T.utils
@@ -21141,8 +21221,8 @@ primJsp([63], [, function(e, t, n) {
           , N = M.STATS
           , j = M.ASSET_ROOT;
         M.SPEED;
-        w.baseUrl = j,
-        O.setParams({
+        O.baseUrl = j,
+        w.setParams({
             resolution: new S({
                 width: R,
                 height: x,
@@ -21165,10 +21245,9 @@ primJsp([63], [, function(e, t, n) {
 }
 , function(e, t, n) {
     "use strict";
-    n(379),
     n(380),
-    n(383),
-    n(392),
+    n(381),
+    n(384),
     n(393),
     n(394),
     n(395),
@@ -21182,7 +21261,8 @@ primJsp([63], [, function(e, t, n) {
     n(403),
     n(404),
     n(405),
-    n(406)
+    n(406),
+    n(407)
 }
 , function(e, t, n) {
     "use strict";
@@ -21205,7 +21285,7 @@ primJsp([63], [, function(e, t, n) {
     : function(e) {
         return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
     }
-      , i = n(13)
+      , i = n(12)
       , a = o(i)
       , s = n(49)
       , u = o(s);
@@ -21479,7 +21559,7 @@ primJsp([63], [, function(e, t, n) {
     }()
       , i = n(18)
       , a = o(i)
-      , s = n(13)
+      , s = n(12)
       , u = o(s)
       , l = n(49)
       , c = o(l)
@@ -21487,7 +21567,7 @@ primJsp([63], [, function(e, t, n) {
       , d = o(f)
       , p = n(35)
       , h = o(p)
-      , g = n(94)
+      , g = n(97)
       , m = o(g)
       , _ = window.aoba
       , y = u.default.ENABLE_CRYPTO;
@@ -21853,15 +21933,15 @@ primJsp([63], [, function(e, t, n) {
             default: e
         }
     }
-    var r = n(13)
+    var r = n(12)
       , i = o(r)
       , a = n(35)
       , s = o(a)
-      , u = n(208)
+      , u = n(209)
       , l = o(u)
-      , c = n(209)
+      , c = n(210)
       , f = o(c)
-      , d = n(94)
+      , d = n(97)
       , p = o(d)
       , h = aoba.BaseTexture
       , g = aoba.utils.BaseTextureCache
@@ -21914,15 +21994,15 @@ primJsp([63], [, function(e, t, n) {
             default: e
         }
     }
-    var r = n(13)
+    var r = n(12)
       , i = o(r)
       , a = n(35)
       , s = o(a)
-      , u = n(208)
+      , u = n(209)
       , l = o(u)
-      , c = n(209)
+      , c = n(210)
       , f = o(c)
-      , d = n(94)
+      , d = n(97)
       , p = o(d);
     PIXI.Texture.fromVideoUrlWithMute = function(e, t) {
         return new PIXI.Texture(PIXI.VideoBaseTexture.fromUrlWithMute(e, t))
@@ -22022,11 +22102,11 @@ primJsp([63], [, function(e, t, n) {
             default: e
         }
     }
-    var r = n(90)
+    var r = n(93)
       , i = o(r)
       , a = n(53)
       , s = o(a)
-      , u = n(342)
+      , u = n(343)
       , l = o(u)
       , c = aoba
       , f = c.soundManager
@@ -22625,7 +22705,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(90)
+    var o = n(93)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -22851,7 +22931,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(195)
+    var o = n(196)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -22860,9 +22940,9 @@ primJsp([63], [, function(e, t, n) {
       , i = null
       , a = function(e) {
         return i ? e(i) : r.default.dynamicLoad(function() {
-            return n.e(49).then(n.bind(null, 871))
+            return n.e(50).then(n.bind(null, 874))
         }, function() {
-            return n.e(54).then(n.bind(null, 872))
+            return n.e(55).then(n.bind(null, 875))
         }).then(function(t) {
             i = t,
             e(t)
@@ -22979,13 +23059,13 @@ primJsp([63], [, function(e, t, n) {
       , a = o(i)
       , s = n(17)
       , u = o(s)
-      , l = n(95)
+      , l = n(98)
       , c = o(l)
       , f = n(115)
       , d = o(f)
       , p = n(39)
       , h = o(p)
-      , g = n(239)
+      , g = n(240)
       , m = o(g)
       , _ = n(147)
       , y = o(_)
@@ -23037,7 +23117,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(4)
+    var o = n(3)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -23054,9 +23134,9 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(240)
+    var o = n(242)
       , r = function() {
-        return n(487),
+        return n(488),
         new Promise(function(e, t) {
             o.load({
                 timeout: 1e4,
@@ -23076,18 +23156,18 @@ primJsp([63], [, function(e, t, n) {
     t.default = r
 }
 , function(e, t, n) {
-    var o = n(488);
+    var o = n(489);
     "string" == typeof o && (o = [[e.i, o, ""]]);
     var r = {
         hmr: !0
     };
     r.transform = void 0;
-    n(242)(o, r);
+    n(244)(o, r);
     o.locals && (e.exports = o.locals)
 }
 , function(e, t, n) {
-    t = e.exports = n(241)(void 0),
-    t.push([e.i, '@font-face {\n    font-family: "HummingStd-E";\n    src: url("/assets/fonts/primula-HummingStd-E.woff2?v=ddfd17bfee79818ce81069158a942293");\n}\n\n@font-face {\n    font-family: "UDKakugo_SmallPr6-B";\n    src: url("/assets/fonts/primula-UDKakugo_SmallPr6-B.woff2?v=c725c5c10a842d4994895b3dd78b7763");\n}\n', ""])
+    t = e.exports = n(243)(void 0),
+    t.push([e.i, '@font-face {\n    font-family: "HummingStd-E";\n    src: url("/assets/fonts/primula-HummingStd-E.woff2?v=9fb3ef7bc08d871382609c8b9eb0c00e");\n}\n\n@font-face {\n    font-family: "UDKakugo_SmallPr6-B";\n    src: url("/assets/fonts/primula-UDKakugo_SmallPr6-B.woff2?v=1ba44bf92170ad94b699f3bb39510596");\n}\n', ""])
 }
 , function(e, t) {
     e.exports = function(e) {
@@ -23176,9 +23256,9 @@ primJsp([63], [, function(e, t, n) {
         value: !0
     }),
     t.default = r;
-    var i = n(492)
+    var i = n(493)
       , a = o(i)
-      , s = n(12)
+      , s = n(13)
       , u = o(s)
       , l = n(149)
       , c = o(l)
@@ -23189,7 +23269,7 @@ primJsp([63], [, function(e, t, n) {
       , g = n(1)
       , m = o(g)
       , _ = n(48)
-      , y = n(87)
+      , y = n(90)
       , I = aoba
       , A = I.loader
       , C = I.sceneManager
@@ -23327,26 +23407,26 @@ primJsp([63], [, function(e, t, n) {
         if (void 0 !== a)
             return a.call(o)
     }
-      , l = n(243)
+      , l = n(245)
       , c = o(l)
-      , f = n(244)
+      , f = n(246)
       , d = o(f)
-      , p = n(248)
+      , p = n(250)
       , h = o(p)
-      , g = n(249)
+      , g = n(251)
       , m = o(g)
-      , _ = n(250)
+      , _ = n(252)
       , y = o(_)
-      , I = n(251)
+      , I = n(253)
       , A = o(I)
-      , C = n(253)
+      , C = n(255)
       , v = o(C)
-      , b = n(255)
+      , b = n(257)
       , P = o(b)
-      , T = n(256)
-      , O = o(T)
-      , w = n(148)
-      , E = o(w)
+      , T = n(258)
+      , w = o(T)
+      , O = n(148)
+      , E = o(O)
       , S = {
         FREE: Symbol("FREE"),
         PLAYING: Symbol("PLAYING"),
@@ -23395,7 +23475,7 @@ primJsp([63], [, function(e, t, n) {
             o._effectLayer = null,
             o._movieLayer = null,
             o._soundController = new P.default,
-            o._trackManager = new O.default(e),
+            o._trackManager = new w.default(e),
             o._schedule = new E.default,
             o._currentVoice = null,
             o._setupDefaultComponents(n),
@@ -23621,8 +23701,8 @@ primJsp([63], [, function(e, t, n) {
                   , b = e.charPosition
                   , P = e.charScale
                   , T = e.charAnim1
-                  , O = e.charAnim2
-                  , w = e.charAnim3
+                  , w = e.charAnim2
+                  , O = e.charAnim3
                   , E = e.charAnim4
                   , k = e.charAnim1Loop
                   , x = e.charAnim2Loop
@@ -23660,8 +23740,8 @@ primJsp([63], [, function(e, t, n) {
                         position: b,
                         scale: P,
                         anim1: T,
-                        anim2: O,
-                        anim3: w,
+                        anim2: w,
+                        anim3: O,
                         anim4: E,
                         anim1Loop: k,
                         anim2Loop: x,
@@ -24159,13 +24239,13 @@ primJsp([63], [, function(e, t, n) {
     }
       , l = n(59)
       , c = o(l)
-      , f = n(13)
+      , f = n(12)
       , d = o(f)
       , p = n(10)
       , h = o(p)
-      , g = n(137)
+      , g = n(138)
       , m = o(g)
-      , _ = n(197)
+      , _ = n(198)
       , y = o(_)
       , I = function(e) {
         var t = void 0
@@ -24546,7 +24626,7 @@ primJsp([63], [, function(e, t, n) {
     }()
       , u = n(59)
       , l = o(u)
-      , c = n(137)
+      , c = n(138)
       , f = o(c)
       , d = function(e) {
         function t() {
@@ -24663,7 +24743,7 @@ primJsp([63], [, function(e, t, n) {
     }
       , l = n(59)
       , c = o(l)
-      , f = n(316)
+      , f = n(318)
       , d = o(f)
       , p = n(9)
       , h = o(p)
@@ -24824,7 +24904,7 @@ primJsp([63], [, function(e, t, n) {
     }()
       , u = n(59)
       , l = o(u)
-      , c = n(90)
+      , c = n(93)
       , f = o(c)
       , d = {
         BGM: "bgm",
@@ -24943,7 +25023,7 @@ primJsp([63], [, function(e, t, n) {
     }
       , l = n(59)
       , c = o(l)
-      , f = n(85)
+      , f = n(88)
       , d = o(f)
       , p = function(e) {
         return new Promise(function(t) {
@@ -25065,7 +25145,7 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(95)
+      , a = n(98)
       , s = o(a)
       , u = n(115)
       , l = o(u);
@@ -25141,7 +25221,7 @@ primJsp([63], [, function(e, t, n) {
     }()
       , u = n(10)
       , l = o(u)
-      , c = n(258)
+      , c = n(260)
       , f = o(c)
       , d = n(136)
       , p = o(d)
@@ -25356,35 +25436,35 @@ primJsp([63], [, function(e, t, n) {
       , l = o(u)
       , c = n(1)
       , f = o(c)
-      , d = n(259)
+      , d = n(261)
       , p = o(d)
       , h = n(10)
       , g = o(h)
-      , m = n(509)
+      , m = n(510)
       , _ = o(m)
       , y = n(107)
       , I = o(y)
-      , A = n(511)
+      , A = n(512)
       , C = o(A)
-      , v = n(513)
+      , v = n(514)
       , b = o(v)
-      , P = n(515)
+      , P = n(516)
       , T = o(P)
-      , O = n(359)
-      , w = o(O)
-      , E = n(519)
+      , w = n(360)
+      , O = o(w)
+      , E = n(520)
       , S = o(E)
-      , k = n(521)
+      , k = n(522)
       , R = o(k)
-      , x = n(344)
+      , x = n(345)
       , M = o(x)
-      , N = n(360)
+      , N = n(361)
       , j = o(N)
-      , B = n(525)
+      , B = n(526)
       , D = o(B)
-      , L = n(340)
+      , L = n(341)
       , F = o(L)
-      , U = n(528)
+      , U = n(529)
       , G = o(U)
       , H = n(74)
       , V = o(H)
@@ -25407,7 +25487,7 @@ primJsp([63], [, function(e, t, n) {
                 bannerList: C.default.new(),
                 bannerSlide: b.default.new(),
                 eventBanner: T.default.new(),
-                fesButton: w.default.new(),
+                fesButton: O.default.new(),
                 gashaButton: S.default.new(),
                 idolButton: R.default.new(),
                 missionButton: M.default.new(),
@@ -25877,11 +25957,11 @@ primJsp([63], [, function(e, t, n) {
     }()
       , u = n(10)
       , l = o(u)
-      , c = n(512)
+      , c = n(513)
       , f = o(c)
-      , d = n(102)
+      , d = n(86)
       , p = o(d)
-      , h = n(101)
+      , h = n(85)
       , g = o(h)
       , m = n(9)
       , _ = o(m)
@@ -26115,13 +26195,13 @@ primJsp([63], [, function(e, t, n) {
     }()
       , u = n(10)
       , l = o(u)
-      , c = n(514)
+      , c = n(515)
       , f = o(c)
-      , d = n(328)
+      , d = n(329)
       , p = o(d)
       , h = n(30)
       , g = o(h)
-      , m = n(329)
+      , m = n(330)
       , _ = o(m)
       , y = function(e) {
         function t() {
@@ -26406,7 +26486,7 @@ primJsp([63], [, function(e, t, n) {
     }()
       , u = n(10)
       , l = o(u)
-      , c = n(516)
+      , c = n(517)
       , f = o(c)
       , d = n(30)
       , p = o(d)
@@ -26687,7 +26767,7 @@ primJsp([63], [, function(e, t, n) {
     }()
       , u = n(10)
       , l = o(u)
-      , c = n(520)
+      , c = n(521)
       , f = o(c)
       , d = {
         SSR_RATE_UP: "common_menu_campaign_badge_ssr_rate.png",
@@ -26837,9 +26917,9 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var s = n(343)
+    var s = n(344)
       , u = o(s)
-      , l = n(522)
+      , l = n(523)
       , c = o(l)
       , f = function(e) {
         function t() {
@@ -27034,7 +27114,7 @@ primJsp([63], [, function(e, t, n) {
     }()
       , u = n(10)
       , l = o(u)
-      , c = n(526)
+      , c = n(527)
       , f = o(c)
       , d = n(107)
       , p = o(d)
@@ -27223,9 +27303,9 @@ primJsp([63], [, function(e, t, n) {
       , l = o(u)
       , c = n(10)
       , f = o(c)
-      , d = n(529)
+      , d = n(530)
       , p = o(d)
-      , h = n(334)
+      , h = n(335)
       , g = o(h)
       , m = function(e) {
         function t() {
@@ -27387,11 +27467,11 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(13)
+    var r = n(12)
       , i = o(r)
-      , a = n(189)
+      , a = n(190)
       , s = o(a)
-      , u = n(34)
+      , u = n(31)
       , l = o(u)
       , c = n(48)
       , f = !i.default.PF_URI;
@@ -27451,7 +27531,7 @@ primJsp([63], [, function(e, t, n) {
       , u = o(s)
       , l = n(9)
       , c = o(l)
-      , f = n(532)
+      , f = n(533)
       , d = o(f)
       , p = 96
       , h = function(e) {
@@ -27833,21 +27913,21 @@ primJsp([63], [, function(e, t, n) {
             t
         }
     }()
-      , u = n(535)
+      , u = n(536)
       , l = o(u)
-      , c = n(536)
+      , c = n(537)
       , f = o(c)
-      , d = n(537)
+      , d = n(538)
       , p = o(d)
-      , h = n(538)
+      , h = n(539)
       , g = o(h)
-      , m = n(539)
+      , m = n(540)
       , _ = o(m)
-      , y = n(361)
+      , y = n(362)
       , I = o(y)
       , A = n(133)
       , C = o(A)
-      , v = n(85)
+      , v = n(88)
       , b = o(v)
       , P = {
         normal: null,
@@ -28206,9 +28286,9 @@ primJsp([63], [, function(e, t, n) {
     }()
       , u = n(1)
       , l = o(u)
-      , c = n(541)
+      , c = n(542)
       , f = o(c)
-      , d = n(85)
+      , d = n(88)
       , p = o(d)
       , h = function(e) {
         function t(e) {
@@ -28373,15 +28453,15 @@ primJsp([63], [, function(e, t, n) {
             t
         }
     }()
-      , u = n(543)
+      , u = n(544)
       , l = o(u)
-      , c = n(544)
+      , c = n(545)
       , f = o(c)
-      , d = n(545)
+      , d = n(546)
       , p = o(d)
-      , h = n(546)
+      , h = n(547)
       , g = o(h)
-      , m = n(85)
+      , m = n(88)
       , _ = o(m)
       , y = function(e) {
         function t(e) {
@@ -28998,15 +29078,15 @@ primJsp([63], [, function(e, t, n) {
     }()
       , u = n(10)
       , l = o(u)
-      , c = n(556)
+      , c = n(557)
       , f = o(c)
       , d = n(23)
       , p = o(d)
-      , h = n(101)
+      , h = n(85)
       , g = o(h)
-      , m = n(102)
+      , m = n(86)
       , _ = o(m)
-      , y = n(557)
+      , y = n(558)
       , I = o(y)
       , A = n(9)
       , C = o(A)
@@ -29144,7 +29224,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var a = n(558)
+    var a = n(559)
       , s = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -29285,205 +29365,128 @@ primJsp([63], [, function(e, t, n) {
             t
         }
     }()
-      , u = function e(t, n, o) {
-        null === t && (t = Function.prototype);
-        var r = Object.getOwnPropertyDescriptor(t, n);
-        if (void 0 === r) {
-            var i = Object.getPrototypeOf(t);
-            return null === i ? void 0 : e(i, n, o)
-        }
-        if ("value"in r)
-            return r.value;
-        var a = r.get;
-        if (void 0 !== a)
-            return a.call(o)
-    }
-      , l = n(259)
-      , c = o(l)
-      , f = n(73)
-      , d = o(f)
-      , p = n(103)
-      , h = o(p)
-      , g = n(560)
-      , m = o(g)
-      , _ = n(86)
-      , y = o(_)
-      , I = n(321)
-      , A = o(I)
-      , C = n(269)
-      , v = o(C)
-      , b = n(35)
-      , P = o(b)
-      , T = n(111)
-      , O = o(T)
-      , w = function(e) {
-        function t() {
-            return r(this, t),
-            i(this, (t.__proto__ || Object.getPrototypeOf(t)).apply(this, arguments))
-        }
-        return a(t, e),
-        s(t, [{
-            key: "setNewBadge",
-            value: function() {
-                u(t.prototype.__proto__ || Object.getPrototypeOf(t.prototype), "setNewBadge", this).call(this, {
-                    x: this.width / 2 - 20
-                })
-            }
-        }]),
-        t
-    }(d.default)
-      , E = function(e) {
-        function t() {
-            return r(this, t),
-            i(this, (t.__proto__ || Object.getPrototypeOf(t)).apply(this, arguments))
-        }
-        return a(t, e),
-        s(t, [{
-            key: "setAvailable",
-            value: function(e) {
-                this._versionLabel && (this._versionLabel.tint = e ? 16777215 : 10066329),
-                u(t.prototype.__proto__ || Object.getPrototypeOf(t.prototype), "setAvailable", this).call(this, e)
-            }
-        }, {
-            key: "setVersion",
-            value: function(e, t) {
-                this._versionLabel && this._versionLabel.destroy();
-                var n = "ver: " + e;
-                e === t && (n += ". downloaded"),
-                this._versionLabel = aoba.Text.new(n, {
-                    fill: 8485787,
-                    fontFamily: "UDKakugo_SmallPr6-B",
-                    fontSize: 16
-                }).addTo(this, 15, 0, {
-                    anchor: .5
-                }),
-                this._versionLabel.style.stroke = 16777215,
-                this._versionLabel.style.strokeThickness = 4
-            }
-        }]),
-        t
-    }(w)
-      , S = A.default.SIZE_LIST.L
-      , k = {
+      , u = n(261)
+      , l = o(u)
+      , c = n(103)
+      , f = o(c)
+      , d = n(561)
+      , p = o(d)
+      , h = n(86)
+      , g = o(h)
+      , m = n(182)
+      , _ = o(m)
+      , y = n(85)
+      , I = o(y)
+      , A = n(562)
+      , C = o(A)
+      , v = n(89)
+      , b = o(v)
+      , P = n(322)
+      , T = o(P)
+      , w = n(271)
+      , O = o(w)
+      , E = n(577)
+      , S = o(E)
+      , k = n(35)
+      , R = o(k)
+      , x = n(111)
+      , M = o(x)
+      , N = 3
+      , j = 280
+      , B = 110
+      , D = 860
+      , L = 336
+      , F = T.default.SIZE_LIST.L
+      , U = {
         LARGE: 570,
         SMALL: 464
     }
-      , R = function(e) {
+      , G = function(e) {
         function t() {
             var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
             r(this, t);
             var n = i(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this))
-              , o = v.default.detectSupportBrowser()
+              , o = O.default.detectSupportBrowser()
               , a = e.myPage
               , s = a.newNotifications;
             n._overlay = (0,
-            y.default)().addTo(n),
+            b.default)().addTo(n),
             n._popContainer = aoba.Container.new().addTo(n, n._overlay.width / 2, n._overlay.height / 2);
             var u = aoba.Container.new()
-              , l = o ? k.LARGE : k.SMALL
-              , f = u.fromData(m.default, {
+              , c = aoba.Container.new()
+              , d = u.fromData(C.default, {
                 base: {
-                    instance: A.default.new({
-                        size: S,
-                        height: l
+                    instance: T.default.new({
+                        size: F,
+                        height: U.LARGE
                     })
                 },
                 title: {
                     dy: 2
                 },
-                menuAlbumButton: {
-                    class: w
-                },
-                menuItemButton: {
-                    class: w
-                },
-                menuInfoButton: {
-                    class: w
-                },
-                menuOptionButton: {
-                    class: w
-                },
-                menuComicButton: {
-                    class: w
-                },
-                menuHomeUnitButton: {
-                    class: w
-                },
-                menuDownloadButton: {
-                    class: E,
-                    visible: !1
-                },
-                menuDeleteButton: {
-                    class: w,
-                    visible: !1
-                },
                 cancelButton: {
-                    class: h.default,
-                    key: "close_button.png",
-                    dy: o ? 0 : -110
-                },
-                lineL: {
-                    dy: o ? 0 : -110
+                    class: f.default,
+                    key: "close_button.png"
                 }
             })
-              , d = f.menuAlbumButton
-              , p = f.menuItemButton
-              , g = f.menuInfoButton
-              , _ = f.menuComicButton
-              , I = f.cancelButton
-              , C = f.menuOptionButton
-              , b = f.menuHomeUnitButton
-              , P = f.menuDownloadButton
-              , T = f.menuDeleteButton;
-            u.addTo(n._popContainer, 0, o ? 0 : 50),
-            I.on("tap", n.close, n),
-            d.on("tap", function() {
-                return n.emit("tapAlbum")
+              , h = d.cancelButton
+              , m = d.menuButtonLayer
+              , y = d.scrollBase;
+            u.addTo(n._popContainer, 0, 0);
+            var A = []
+              , v = S.default.BUTTONS.default;
+            return o && (v = v.concat(S.default.BUTTONS.resourceDownload)),
+            v.forEach(function(e, t) {
+                var o = t % N
+                  , r = Math.floor(t / N)
+                  , i = p.default.new(e).addTo(c, 155 + o * j, 55 + r * B);
+                i.on("tapMenuButton", function(t) {
+                    n.emit(e.emit, t),
+                    i.destroyNewBadge()
+                }),
+                A[e.name] = i
             }),
-            p.on("tap", function() {
-                return n.emit("tapItem")
-            }),
-            g.on("tap", function() {
-                return n.emit("tapInfo")
-            }),
-            b.on("tap", function() {
-                return n.emit("tapHomeDeck")
-            }),
-            P.on("tap", function() {
-                return n.emit("tapDownload")
-            }),
-            T.on("tap", function() {
-                return n.emit("tapDelete")
-            }),
-            n._menuDownloadButton = P,
-            n._menuDeleteButton = T,
+            h.on("tap", n.close, n),
+            n._menuDownloadButton = A.menuDownloadButton,
+            n._menuDeleteButton = A.menuDeleteButton,
             o && n.updateDownloadButtons(),
             s.some(function(e) {
-                return e.category === c.default.CATEGORIES.HOME_UNIT
-            }) && b.setNewBadge(),
+                return e.category === l.default.CATEGORIES.HOME_UNIT
+            }) && A.menuHomeUnitButton.setNewBadge(),
             s.some(function(e) {
-                return e.category === c.default.CATEGORIES.COMIC
-            }) && _.setNewBadge();
-            var O = {};
-            return s.some(function(e) {
-                return e.category === c.default.CATEGORIES.OPTION
-            }) && (O.noticeCategory = "option",
-            C.setNewBadge()),
-            C.on("tap", function() {
-                n.emit("tapOption", O),
-                C.destroyNewBadge()
-            }),
-            _.on("tap", function() {
-                return n.emit("tapComic")
-            }),
+                return e.category === l.default.CATEGORIES.COMIC
+            }) && A.menuComicButton.setNewBadge(),
+            s.some(function(e) {
+                return e.category === l.default.CATEGORIES.HELP
+            }) && A.menuHelpButton.setNewBadge(),
+            s.some(function(e) {
+                return e.category === l.default.CATEGORIES.OPTION
+            }) && (A.menuOptionButton.setNewBadge(),
+            A.menuOptionButton.setEmitParams({
+                noticeCategory: "option"
+            })),
+            _.default.new({
+                width: 6,
+                height: 355
+            }).addTo(y),
+            I.default.new({
+                width: D,
+                height: L,
+                container: c,
+                scrollBar: g.default.new({
+                    width: 12
+                }),
+                scrollBarBase: y,
+                fixedHeight: c.height + 15
+            }).addTo(m),
             n
         }
         return a(t, e),
         s(t, [{
             key: "updateDownloadButtons",
             value: function() {
-                var e = P.default.getLatestVersion()
-                  , t = O.default.getCachedVersion();
+                var e = R.default.getLatestVersion()
+                  , t = M.default.getCachedVersion();
                 this._menuDownloadButton.setVersion(e, t),
                 this._menuDownloadButton.setAvailable(e !== t),
                 this._menuDownloadButton.show(),
@@ -29520,7 +29523,122 @@ primJsp([63], [, function(e, t, n) {
         }]),
         t
     }(aoba.Container);
-    t.default = R
+    t.default = G
+}
+, function(e, t, n) {
+    "use strict";
+    function o(e, t) {
+        if (!(e instanceof t))
+            throw new TypeError("Cannot call a class as a function")
+    }
+    function r(e, t) {
+        if (!e)
+            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+        return !t || "object" != typeof t && "function" != typeof t ? e : t
+    }
+    function i(e, t) {
+        if ("function" != typeof t && null !== t)
+            throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+        e.prototype = Object.create(t && t.prototype, {
+            constructor: {
+                value: e,
+                enumerable: !1,
+                writable: !0,
+                configurable: !0
+            }
+        }),
+        t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var a = function() {
+        function e(e, t) {
+            for (var n = 0; n < t.length; n++) {
+                var o = t[n];
+                o.enumerable = o.enumerable || !1,
+                o.configurable = !0,
+                "value"in o && (o.writable = !0),
+                Object.defineProperty(e, o.key, o)
+            }
+        }
+        return function(t, n, o) {
+            return n && e(t.prototype, n),
+            o && e(t, o),
+            t
+        }
+    }()
+      , s = function e(t, n, o) {
+        null === t && (t = Function.prototype);
+        var r = Object.getOwnPropertyDescriptor(t, n);
+        if (void 0 === r) {
+            var i = Object.getPrototypeOf(t);
+            return null === i ? void 0 : e(i, n, o)
+        }
+        if ("value"in r)
+            return r.value;
+        var a = r.get;
+        if (void 0 !== a)
+            return a.call(o)
+    }
+      , u = n(73)
+      , l = function(e) {
+        return e && e.__esModule ? e : {
+            default: e
+        }
+    }(u)
+      , c = function(e) {
+        function t(e) {
+            o(this, t);
+            var n = r(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e.key));
+            return n._emitParams = {},
+            n.on("tap", function() {
+                return n.emit("tapMenuButton", {
+                    emitParams: n._emitParams
+                })
+            }),
+            n
+        }
+        return i(t, e),
+        a(t, [{
+            key: "setEmitParams",
+            value: function() {
+                var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+                this._emitParams = e
+            }
+        }, {
+            key: "setNewBadge",
+            value: function() {
+                s(t.prototype.__proto__ || Object.getPrototypeOf(t.prototype), "setNewBadge", this).call(this, {
+                    x: this.width / 2 - 20
+                })
+            }
+        }, {
+            key: "setAvailable",
+            value: function(e) {
+                this._versionLabel && (this._versionLabel.tint = e ? 16777215 : 10066329),
+                s(t.prototype.__proto__ || Object.getPrototypeOf(t.prototype), "setAvailable", this).call(this, e)
+            }
+        }, {
+            key: "setVersion",
+            value: function(e, t) {
+                this._versionLabel && this._versionLabel.destroy();
+                var n = "ver: " + e;
+                e === t && (n += ". downloaded"),
+                this._versionLabel = aoba.Text.new(n, {
+                    fill: 8485787,
+                    fontFamily: "UDKakugo_SmallPr6-B",
+                    fontSize: 16
+                }).addTo(this, 15, 0, {
+                    anchor: .5
+                }),
+                this._versionLabel.style.stroke = 16777215,
+                this._versionLabel.style.strokeThickness = 4
+            }
+        }]),
+        t
+    }(l.default);
+    t.default = c
 }
 , function(e, t, n) {
     "use strict";
@@ -29559,93 +29677,17 @@ primJsp([63], [, function(e, t, n) {
             x: -394,
             y: -250
         }, {
-            name: "menuItemButton",
-            fullName: "menuItemButton",
-            anchor: {
-                x: .5,
-                y: .5
-            },
-            type: "sprite",
-            key: "menu_item_button.png",
-            x: -282,
-            y: -135
+            name: "menuButtonLayer",
+            fullName: "menuButtonLayer",
+            type: "container",
+            x: -447,
+            y: -193
         }, {
-            name: "menuAlbumButton",
-            fullName: "menuAlbumButton",
-            anchor: {
-                x: .5,
-                y: .5
-            },
-            type: "sprite",
-            key: "menu_album_button.png",
-            x: -2,
-            y: -135
-        }, {
-            name: "menuHomeUnitButton",
-            fullName: "menuHomeUnitButton",
-            anchor: {
-                x: .5,
-                y: .5
-            },
-            type: "sprite",
-            key: "menu_home_unit_button.png",
-            x: 278,
-            y: -135
-        }, {
-            name: "menuComicButton",
-            fullName: "menuComicButton",
-            anchor: {
-                x: .5,
-                y: .5
-            },
-            type: "sprite",
-            key: "menu_comic_button.png",
-            x: -282,
-            y: -25
-        }, {
-            name: "menuOptionButton",
-            fullName: "menuOptionButton",
-            anchor: {
-                x: .5,
-                y: .5
-            },
-            type: "sprite",
-            key: "menu_option_button.png",
-            x: 278,
-            y: -25
-        }, {
-            name: "menuInfoButton",
-            fullName: "menuInfoButton",
-            anchor: {
-                x: .5,
-                y: .5
-            },
-            type: "sprite",
-            key: "menu_info_button.png",
-            x: -2,
-            y: -25
-        }, {
-            name: "menuDownloadButton",
-            fullName: "menuDownloadButton",
-            anchor: {
-                x: .5,
-                y: .5
-            },
-            type: "sprite",
-            key: "menu_download_button.png",
-            x: -282,
-            y: 85
-        }, {
-            name: "menuDeleteButton",
-            fullName: "menuDeleteButton",
-            anchor: {
-                x: .5,
-                y: .5
-            },
-            type: "sprite",
-            key: "menu_delete_button.png",
-            x: -2,
-            y: 85
+            name: "scrollBase",
+            fullName: "scrollBase",
+            type: "container",
+            x: 425,
+            y: -205
         }, {
             name: "cancelButton",
             fullName: "cancelButton",
@@ -29705,7 +29747,7 @@ primJsp([63], [, function(e, t, n) {
       , u = o(s)
       , l = n(23)
       , c = o(l)
-      , f = n(562)
+      , f = n(564)
       , d = o(f)
       , p = function(e) {
         function t(e) {
@@ -29870,11 +29912,11 @@ primJsp([63], [, function(e, t, n) {
       , l = o(u)
       , c = n(23)
       , f = o(c)
-      , d = n(184)
+      , d = n(185)
       , p = o(d)
-      , h = n(564)
+      , h = n(566)
       , g = o(h)
-      , m = n(87)
+      , m = n(90)
       , _ = o(m)
       , y = function(e) {
         function t() {
@@ -30049,7 +30091,7 @@ primJsp([63], [, function(e, t, n) {
       , l = o(u)
       , c = n(23)
       , f = o(c)
-      , d = n(87)
+      , d = n(90)
       , p = o(d)
       , h = function(e) {
         function t() {
@@ -30165,7 +30207,7 @@ primJsp([63], [, function(e, t, n) {
       , u = o(s)
       , l = n(23)
       , c = o(l)
-      , f = n(567)
+      , f = n(569)
       , d = o(f)
       , p = function(e) {
         function t() {
@@ -30285,7 +30327,7 @@ primJsp([63], [, function(e, t, n) {
       , u = o(s)
       , l = n(23)
       , c = o(l)
-      , f = n(569)
+      , f = n(571)
       , d = o(f)
       , p = function(e) {
         function t() {
@@ -30375,7 +30417,7 @@ primJsp([63], [, function(e, t, n) {
       , u = o(s)
       , l = n(23)
       , c = o(l)
-      , f = n(571)
+      , f = n(573)
       , d = o(f)
       , p = function(e) {
         function t() {
@@ -30489,7 +30531,7 @@ primJsp([63], [, function(e, t, n) {
       , u = o(s)
       , l = n(23)
       , c = o(l)
-      , f = n(573)
+      , f = n(575)
       , d = o(f)
       , p = function(e) {
         function t() {
@@ -30630,7 +30672,7 @@ primJsp([63], [, function(e, t, n) {
     }()
       , a = n(55)
       , s = o(a)
-      , u = n(138)
+      , u = n(137)
       , l = o(u)
       , c = n(111)
       , f = o(c)
@@ -30753,6 +30795,58 @@ primJsp([63], [, function(e, t, n) {
         e
     }();
     t.default = y
+}
+, function(e, t, n) {
+    "use strict";
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    }),
+    t.default = {
+        BUTTONS: {
+            default: [{
+                name: "menuItemButton",
+                key: "menu_item_button.png",
+                emit: "tapItem"
+            }, {
+                name: "menuAlbumButton",
+                key: "menu_album_button.png",
+                emit: "tapAlbum"
+            }, {
+                name: "menuHomeUnitButton",
+                key: "menu_home_unit_button.png",
+                emit: "tapHomeDeck"
+            }, {
+                name: "menuComicButton",
+                key: "menu_comic_button.png",
+                emit: "tapComic"
+            }, {
+                name: "menuInfoButton",
+                key: "menu_info_button.png",
+                emit: "tapInfo"
+            }, {
+                name: "menuOptionButton",
+                key: "menu_option_button.png",
+                emit: "tapOption"
+            }, {
+                name: "menuHelpButton",
+                key: "menu_help_button.png",
+                emit: "tapHelp"
+            }, {
+                name: "menuFaqButton",
+                key: "menu_faq_button.png",
+                emit: "tapFaq"
+            }],
+            resourceDownload: [{
+                name: "menuDownloadButton",
+                key: "menu_download_button.png",
+                emit: "tapDownload"
+            }, {
+                name: "menuDeleteButton",
+                key: "menu_delete_button.png",
+                emit: "tapDelete"
+            }]
+        }
+    }
 }
 , function(e, t, n) {
     "use strict";
@@ -30895,7 +30989,7 @@ primJsp([63], [, function(e, t, n) {
       , a = o(i)
       , s = n(60)
       , u = (o(s),
-    n(97))
+    n(99))
       , l = o(u)
       , c = n(39)
       , f = o(c)
@@ -30903,19 +30997,19 @@ primJsp([63], [, function(e, t, n) {
       , p = o(d)
       , h = n(112)
       , g = o(h)
-      , m = n(192)
+      , m = n(193)
       , _ = o(m)
-      , y = n(4)
+      , y = n(3)
       , I = o(y)
       , A = n(24)
       , C = o(A)
-      , v = n(91)
+      , v = n(94)
       , b = o(v)
       , P = n(47)
       , T = o(P)
-      , O = n(271)
-      , w = n(117)
-      , E = o(w)
+      , w = n(273)
+      , O = n(117)
+      , E = o(O)
       , S = n(106)
       , k = o(S)
       , R = function(e) {
@@ -30999,7 +31093,7 @@ primJsp([63], [, function(e, t, n) {
           , T = P.userFesIdol;
         T.isCenter = !0,
         T.displayParams = Object.assign({}, u.userFesDeckParameter);
-        var O = [].concat(r(i.map(function(e) {
+        var w = [].concat(r(i.map(function(e) {
             return Object.assign(e.rival, {
                 id: e.id
             })
@@ -31008,14 +31102,14 @@ primJsp([63], [, function(e, t, n) {
             mental: u.userFesDeckParameter.mental,
             isPlayer: !0
         }]);
-        O.forEach(function(e) {
+        w.forEach(function(e) {
             aoba.utils.setPrototypeOf(e.character, f.default)
         });
-        var w = !0
+        var O = !0
           , E = !1
           , S = void 0;
         try {
-            for (var k, R = a[Symbol.iterator](); !(w = (k = R.next()).done); w = !0)
+            for (var k, R = a[Symbol.iterator](); !(O = (k = R.next()).done); O = !0)
                 !function() {
                     var e = k.value
                       , t = s.find(function(t) {
@@ -31028,7 +31122,7 @@ primJsp([63], [, function(e, t, n) {
             S = e
         } finally {
             try {
-                !w && R.return && R.return()
+                !O && R.return && R.return()
             } finally {
                 if (E)
                     throw S
@@ -31044,7 +31138,7 @@ primJsp([63], [, function(e, t, n) {
         x.skillEffects = x.memoryAppealEffects),
         t.userFesDeck = u,
         t.judges = a,
-        t.rivals = O,
+        t.rivals = w,
         t.activeSkills = h,
         t.idols = d,
         t.musicPath = I.default.createConcertMusicPath("main", n.id),
@@ -31079,7 +31173,7 @@ primJsp([63], [, function(e, t, n) {
                   , a = t.fesMatchGradeRewards
                   , s = t.clearedBeginnerMissions
                   , u = (0,
-                O.createEditorUserFesDeckModel)(t.userFesDeck);
+                w.createEditorUserFesDeckModel)(t.userFesDeck);
                 if (o && o.announce && aoba.utils.setPrototypeOf(o.announce, E.default),
                 "0" === r.fesMatchGradeId && (r.fesMatchGradeId = "1"),
                 aoba.utils.setPrototypeOf(n, b.default),
@@ -31148,7 +31242,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(4)
+    var o = n(3)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -31197,13 +31291,13 @@ primJsp([63], [, function(e, t, n) {
       , i = o(r)
       , a = n(60)
       , s = (o(a),
-    n(580))
+    n(583))
       , u = o(s)
-      , l = n(581)
+      , l = n(584)
       , c = o(l)
       , f = n(24)
       , d = o(f)
-      , p = n(34)
+      , p = n(31)
       , h = o(p)
       , g = function(e) {
         return e.forEach(function(e) {
@@ -31327,7 +31421,7 @@ primJsp([63], [, function(e, t, n) {
       , s = o(a)
       , u = n(1)
       , l = o(u)
-      , c = n(4)
+      , c = n(3)
       , f = o(c)
       , d = l.default.asset.SPINE_PATH
       , p = l.default.asset.imageTypes.characters
@@ -31398,7 +31492,7 @@ primJsp([63], [, function(e, t, n) {
       , s = o(a)
       , u = n(1)
       , l = o(u)
-      , c = n(4)
+      , c = n(3)
       , f = o(c)
       , d = l.default.asset.SPINE_PATH
       , p = l.default.asset.imageTypes.characters
@@ -31446,14 +31540,16 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(272)
+      , a = n(274)
       , s = o(a)
       , u = n(147)
       , l = o(u)
-      , c = n(273)
+      , c = n(275)
       , f = o(c)
       , d = n(24)
-      , p = o(d);
+      , p = o(d)
+      , h = n(241)
+      , g = o(h);
     t.default = {
         getList: function() {
             var e = this;
@@ -31468,6 +31564,7 @@ primJsp([63], [, function(e, t, n) {
                         return aoba.utils.setPrototypeOf(e, s.default)
                     }),
                     t.gashaGroupStamp && e._setStampRewardMixin(t.gashaGroupStamp),
+                    e._setGashaDetailBannerMixin(t.gashaDetailBanners),
                     e._setGashaTicketMixin(t.userGashaTicket),
                     !t.hasTicketGasha() || t.isIndependentGashaTicketTabGroup())
                         return t.isIndependentGashaTicketTabGroup() && (t.gashas[0].userGashaTicket = t.userGashaTicket),
@@ -31508,6 +31605,11 @@ primJsp([63], [, function(e, t, n) {
                 })
             })
         },
+        _setGashaDetailBannerMixin: function(e) {
+            e && e.forEach(function(e) {
+                aoba.utils.setPrototypeOf(e, g.default)
+            })
+        },
         _setGashaTicketMixin: function(e) {
             e && aoba.utils.setPrototypeOf(e.gashaTicket, f.default)
         },
@@ -31542,13 +31644,13 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(203)
+      , a = n(204)
       , s = o(a)
       , u = n(39)
       , l = o(u)
       , c = n(40)
       , f = o(c)
-      , d = n(274)
+      , d = n(276)
       , p = o(d);
     t.default = {
         get: function() {
@@ -31627,11 +31729,11 @@ primJsp([63], [, function(e, t, n) {
       , s = o(a)
       , u = n(20)
       , l = o(u)
-      , c = n(95)
+      , c = n(98)
       , f = o(c)
       , d = n(77)
       , p = o(d)
-      , h = n(79)
+      , h = n(80)
       , g = o(h)
       , m = function(e) {
         aoba.utils.setPrototypeOf(e, f.default);
@@ -31674,7 +31776,7 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(586)
+      , a = n(589)
       , s = o(a);
     t.default = {
         get: function(e) {
@@ -31732,7 +31834,7 @@ primJsp([63], [, function(e, t, n) {
             default: e
         }
     }(o)
-      , i = n(588);
+      , i = n(591);
     t.default = {
         get: function() {
             return r.default.post("userLoginBonuses").then(function(e) {
@@ -31757,7 +31859,7 @@ primJsp([63], [, function(e, t, n) {
       , i = o(r)
       , a = n(24)
       , s = o(a)
-      , u = n(4)
+      , u = n(3)
       , l = o(u)
       , c = {
         NORMAL: "normal",
@@ -31889,7 +31991,7 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(1)
       , i = o(r)
-      , a = n(4)
+      , a = n(3)
       , s = o(a)
       , u = i.default.asset.imageTypes
       , l = i.default.asset.voiceIds;
@@ -31940,7 +32042,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(4)
+    var o = n(3)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -32230,7 +32332,7 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(194)
+      , a = n(195)
       , s = o(a)
       , u = n(24)
       , l = o(u)
@@ -32278,7 +32380,7 @@ primJsp([63], [, function(e, t, n) {
       , p = o(d)
       , h = n(108)
       , g = o(h)
-      , m = n(79)
+      , m = n(80)
       , _ = o(m)
       , y = function(e) {
         aoba.utils.setPrototypeOf(e, p.default),
@@ -32354,9 +32456,9 @@ primJsp([63], [, function(e, t, n) {
       , s = o(a)
       , u = n(153)
       , l = o(u)
-      , c = n(599)
+      , c = n(602)
       , f = o(c)
-      , d = n(277)
+      , d = n(279)
       , p = o(d)
       , h = n(1)
       , g = o(h)
@@ -32404,7 +32506,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(4)
+    var o = n(3)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -32494,7 +32596,7 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(273)
+      , a = n(275)
       , s = o(a);
     t.default = {
         getList: function() {
@@ -32537,7 +32639,7 @@ primJsp([63], [, function(e, t, n) {
       , l = o(u)
       , c = n(20)
       , f = o(c)
-      , d = n(79)
+      , d = n(80)
       , p = o(d)
       , h = function(e) {
         aoba.utils.setPrototypeOf(e, l.default)
@@ -32619,7 +32721,7 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(2)
       , i = o(r)
-      , a = n(604)
+      , a = n(607)
       , s = o(a)
       , u = function(e) {
         var t = e.body;
@@ -32642,7 +32744,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(277)
+    var o = n(279)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -32718,7 +32820,7 @@ primJsp([63], [, function(e, t, n) {
       , l = o(u)
       , c = n(24)
       , f = o(c)
-      , d = n(79)
+      , d = n(80)
       , p = o(d)
       , h = function(e) {
         aoba.utils.setPrototypeOf(e, s.default)
@@ -32819,7 +32921,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(4)
+    var o = n(3)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -33342,15 +33444,15 @@ primJsp([63], [, function(e, t, n) {
       , i = o(r)
       , a = n(23)
       , s = o(a)
-      , u = n(613)
+      , u = n(616)
       , l = o(u)
-      , c = n(614)
+      , c = n(617)
       , f = o(c)
-      , d = n(351)
+      , d = n(352)
       , p = o(d)
-      , h = n(101)
+      , h = n(85)
       , g = o(h)
-      , m = n(102)
+      , m = n(86)
       , _ = o(m)
       , y = n(9)
       , I = o(y)
@@ -33699,13 +33801,13 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(13)
+    var r = n(12)
       , i = o(r)
-      , a = n(34)
+      , a = n(31)
       , s = o(a)
       , u = n(25)
       , l = o(u)
-      , c = n(278)
+      , c = n(280)
       , f = o(c)
       , d = n(48)
       , p = function() {
@@ -33934,7 +34036,7 @@ primJsp([63], [, function(e, t, n) {
         value: !0
     }),
     t.default = o;
-    var r = n(278)
+    var r = n(280)
       , i = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -34181,13 +34283,16 @@ primJsp([63], [, function(e, t, n) {
             resourceDownloadError: "通信中にエラーが発生しました。\nネットワーク環境をご確認の上\nもう一度お試しください。",
             unavailableGasha: "ガシャのラインナップが更新されました。",
             resourceLoadFailed: "リソースの読み込みに失敗しました。\nページの再読み込みをお試しください。",
-            sdkLoginLoadFailed: "認証に失敗しました。\n通信環境を確認の上、ページの再読み込みをお試しください。\n何度も発生する場合はブラウザキャッシュクリアをお試しください。\n\nゲストメンバーの方はデータ消失の恐れがあります。\nenza にメンバー登録する事で中断データの復帰が可能になります。\nenza メンバー登録の上、キャッシュクリアをお試しください。\n",
+            sdkLoginLoadFailed: "認証に失敗しました。\n通信環境をご確認の上、ページの再読み込みをお試しください。\n何度も発生する場合はブラウザキャッシュクリアをお試しください。\n\nゲストメンバーの方はデータ消失の恐れがあります。\nenza にメンバー登録する事で中断データの復帰が可能になります。\nenza メンバー登録の上、キャッシュクリアをお試しください。\n",
             accountFreezeShort: "調査の為、一時的にご利用を制限しております。\n対応が完了次第制限解除いたしますので\nしばらくお待ち下さい。\nお客様にはご迷惑をお掛けいたしますが\nご協力をお願いいたします。",
-            earthPaymentFailure: "プラットフォームの決済処理が\n正常に行われませんでした。\n再度時間をおいてお試しください。\n\n\n何度も発生する場合は\nゲーム内の「お知らせ」→「お問い合わせ」より\nお問い合わせください。\n\nお問い合わせID: %{requestId}\nエラーコード: %{errorCode}",
+            earthPaymentFailure: "プラットフォームの決済処理が\n正常に行われませんでした。\n再度時間をおいてお試しください。\n\n何度も発生する場合は\nゲーム内の「お知らせ」→「お問い合わせ」より\nお問い合わせください。\n\nお問い合わせID: %{requestId}\nエラーコード: %{errorCode}",
             earthPaymentFailureFatal: "プラットフォームの決済処理が\n正常に行われませんでした。ゲーム内の「お知らせ」→「お問い合わせ」より\nお問い合わせください。\n\nお問い合わせID: %{requestId}\nエラーコード: %{errorCode}",
             sceneMaintenance: "本機能は、一時的にご利用を制限しております。\n対応が完了次第制限解除いたしますので\nしばらくお待ち下さい。\nお客様にはご迷惑をお掛けいたしますが\nご協力をお願いいたします。",
             playMovie: "動画再生に失敗しました。",
-            businessIsNotFinished: "営業が完了していません。\n少し時間を置いてから再度完了してください。"
+            businessIsNotFinished: "営業が完了していません。\n少し時間を置いてから再度完了してください。",
+            note: {
+                noSettlementProcess: "※再読み込みしてもバナコイン、フェザージュエル\n決済処理が多重に行われることはありません。"
+            }
         },
         evolutionItem: "特訓はづきさん",
         exchangeItem: {
@@ -34456,6 +34561,8 @@ primJsp([63], [, function(e, t, n) {
             probabilityDescription: {
                 one: "・提供アイドル一覧は小数第4位を切り捨てして表示しているため、合計値\rが100％にならない場合があります。\r・本ガシャからは重複するアイドルが出現する可能性があります。\r・開催期間は予告なく変更する場合があります。\r・イベントガシャで登場するアイドルは開催期間終了後、プラチナガシャ\rから登場します。\r・本ガシャに登場するアイドルが保有するスキル、ステータス、イラスト\rなどのコンテンツは変更する場合があります。",
                 ten: "・10連ガシャのうち1回はSR以上のプロデュースまたはサポートアイドル\rが出現します。提供割合は「SR以上確定」一覧に準じます。\r・提供アイドル一覧は小数第4位を切り捨てして表示しているため、合計値\rが100％にならない場合があります。\r・本ガシャからは重複するアイドルが出現する可能性があります。\r・開催期間は予告なく変更する場合があります。\r・イベントガシャで登場するアイドルは開催期間終了後、プラチナガシャ\rから登場します。\r・本ガシャに登場するアイドルが保有するスキル、ステータス、イラスト\rなどのコンテンツは変更する場合があります。",
+                birthdayOne: "・提供アイドル一覧は小数第4位を切り捨てして表示しているため、合計値\rが100％にならない場合があります。\r・本ガシャからは重複するアイドルが出現する可能性があります。\r・開催期間は予告なく変更する場合があります。\r・本ガシャに登場するアイドルが保有するスキル、ステータス、イラスト\rなどのコンテンツは変更する場合があります。",
+                birthdayTen: "・10連ガシャのうち1回はSR以上のプロデュースまたはサポートアイドル\rが出現します。提供割合は「SR以上確定」一覧に準じます。\r・提供アイドル一覧は小数第4位を切り捨てして表示しているため、合計値\rが100％にならない場合があります。\r・本ガシャからは重複するアイドルが出現する可能性があります。\r・開催期間は予告なく変更する場合があります。\r・本ガシャに登場するアイドルが保有するスキル、ステータス、イラスト\rなどのコンテンツは変更する場合があります。",
                 belowTenSrUp: "・%{maxTimes}連ガシャのうち1回はSR以上のプロデュースまたはサポートアイドル\rが出現します。提供割合は「SR以上確定」一覧に準じます。\r・提供割合アップ期間は、＜提供割合アップ対象アイドル＞の提供割合が\r同種かつ、同レアリティの他アイドルよりも高くなります。\r・提供アイドル一覧は小数第4位を切り捨てして表示しているため、合計値\rが100％にならない場合があります。\r・本ガシャからは重複するアイドルが出現する可能性があります。\r・開催期間は予告なく変更する場合があります。\r・イベントガシャで登場するアイドルは開催期間終了後、プラチナガシャ\rから登場します。\r・本ガシャに登場するアイドルが保有するスキル、ステータス、イラスト\rなどのコンテンツは変更する場合があります。",
                 belowTenSrUpFix: "・提供割合アップ期間は、＜提供割合アップ対象アイドル＞の提供割合が\r同種かつ、同レアリティの他アイドルよりも高くなります。\r・提供アイドル一覧は小数第4位を切り捨てして表示しているため、合計値\rが100％にならない場合があります。\r・本ガシャからは重複するアイドルが出現する可能性があります。\r・開催期間は予告なく変更する場合があります。\r・イベントガシャで登場するアイドルは開催期間終了後、プラチナガシャ\rから登場します。\r・本ガシャに登場するアイドルが保有するスキル、ステータス、イラスト\rなどのコンテンツは変更する場合があります。",
                 revivalOne: "・提供アイドル一覧は小数第4位を切り捨てして表示しているため、合計値\rが100％にならない場合があります。\r・本ガシャからは重複するアイドルが出現する可能性があります。\r・開催期間は予告なく変更する場合があります。\r・本ガシャに登場するアイドルが保有するスキル、ステータス、イラスト\rなどのコンテンツは変更する場合があります。",
@@ -34521,6 +34628,7 @@ primJsp([63], [, function(e, t, n) {
             produceDeckInformation: "プロデュースユニット確認",
             produceActivity: "スケジュール選択",
             gasha: "ガシャ",
+            help: "ヘルプ",
             homeDeck: "ホームユニット",
             homeDeckAnimationBgChange: "背景選択",
             homeDeckAnimationCharacterChange: "アイドル選択",
@@ -35195,17 +35303,17 @@ primJsp([63], [, function(e, t, n) {
     }
 }
 , function(e, t, n) {
-    var o = n(626);
+    var o = n(629);
     "string" == typeof o && (o = [[e.i, o, ""]]);
     var r = {
         hmr: !0
     };
     r.transform = void 0;
-    n(242)(o, r);
+    n(244)(o, r);
     o.locals && (e.exports = o.locals)
 }
 , function(e, t, n) {
-    t = e.exports = n(241)(void 0),
+    t = e.exports = n(243)(void 0),
     t.push([e.i, 'a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}.notice_block{font-family:UDKakugo_SmallPr6-B;color:#615466}.ruled{clear:both;text-align:center;margin-left:5vw;margin-right:5vw;font-size:18px}.ruled section{display:inline-block;width:100%}.ruled section:after,.ruled section:before{content:"";display:table}.ruled section:after{clear:both}h5{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA/wAAAAoCAIAAADMhGYIAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAACDNJREFUeNrs3etXk8kdwHEeSEjihQSUPLlxFSIVUTSIKwrq1m679nLaF33Z/6n/QN+0r3pO93SPbfW46npdoFzFACIgyiUhT3BDEqIkBJJOMhAjVNY33aD9fg4nzswz8/OcefXLZJ4ZJZ1OFwEAAAD4dBUzBQAAAMCnTffhXf1ziwF/UPNp4VAkvpoQLUaTwVJhVp2qzWF1VNuZTQAAAGAPUn5we8/8C5/m1ybHplffxHfpZtpndDc3qA61qs7JtAIAAAAfR9Ifi8ZG+kcnvJOyqtornTUO1amWV5gNJoNoSawmlkMRzaf5Zv3a4pLs1tTiPnnm+IGyA0wuAAAAsKeT/smx6d77/cm1pKIono5Wm1NVHdZdAmn+YMCnDXY/FgH1pfrPLp5xNzcwvwAAAMAeTfr7Hw0+GRgThYam+pPtLZYKsyhHlqOzz+d9s/5wKByPZ/f0Gw2WCouzxlFzpMpcXiZawqHISJ93emJGlE+0NZ+54GGKAQAAgD2X9Pc9HPQOZjL+zp91yNX6wII22DMc8AV3CWRzWj3nTtlcalH2V4KHt7pFocXT3N5J3g8AAADspaT/2ejUo9s9onD5ale9u3ZjfaP3fn9uW/8Pampxf3bxTImuZGby5d3rD0TLhSvnjh5vZKIBAACAQnnnnP5oZKX3Xr8odH1xXmT8iXji+lfffHjGL4jOYogYKIaLIKJFBBRhmWgAAABgTyT93oGx9fX1xmNHxJ8o3Pz6TnDrTJ730Zfqt7WIIWJgfhxv9vUAAAAAAAVO+udfLEx4JxVFOdF2vCi7Qr8UeLVzwP4D+3Jlg9Fw5deXjNnjO/OJgfIXAxFKBBRhRXDmGgAAAChw0h/waeLT03HKUmEOLGjPRqd29rY51ctXu0z7TbKaiCce3uqRt/MWlxTbnNYSXYl8JIaLICKUCJgLDgAAAKBgSf/G+sbTJ5m9+/L4nYHu4fxOMpXX63Xm8jKR8ZeZD+YexaIxWei4fPaXv//FlV9dyj2SQWRAEVz8F0w3AAAAULCkP+DTkmtJZ7VdtVeGlpY1/zunc9Y11IjPZHL92ejU7Wt3tz0VXLVOeUSPKJRZNr8SiG4iVOYe32q7CL7IYj8AAABQwKRf5vGqM7Mq/3J6Nr+HaZ+xvdNT11gjq8vfh7eFyOz5+bIzVzUY327xl6HkYr+26zH/AAAAAP5HdPIfefGWzWnNlLcW8vWl+np3bevZE6b9pktfdlrtleMjz1ay528qinLYeshV66iurzqsHsqFi6/GQ6+Wc9XNsA41G5aVfgAAAKBwSX9kOSI+LeXmTDkUkY3JteTU0+f79ptOn2vV/EHv0Pib2BujyXDsZFNTizv3Om/OWmJt/PGECPL9Uig/rLm8THxGl6NMNwAAAFCwpF+ewGPIHr4Zjydyj1MbqeF/Pyk/XN79ba/oc/R4Y3unp9RQui1KOp2Orbx+vfJGfD2wudQbX93aDBvPC7uaYLoBAACAgiX9uxvqeSxS9gtXzsm3dXdSFOVg2QHxV5RZ3WdFHwAAANhDNl/klRdsJbKL8Ubj9su2wqHI6XOt78v4860l1ryD47mqDLUZdscdXgAAAAB+vKTfnN3NH5Zb8CvM2zqVmQ+ePNOS35JcS6bT6fyWVCrln1/8x19vyDd988PKtf+y7M5+AAAAAIVJ+jfP7dk8bMe6rVP90driYkWWRQafuW3XF3wxNeufW5SNq2/ioaVlq71y28Ct44C0oq0zfAAAAAAUJulXs4m+lr0/q7ahZlun8kPlufLifODo8caqOme9u1ZRlJXsjbymfcbD6qGgfym8dfKPJEPJ7xKq08p0AwAAAAVL+m1OVV+q980taotLFZXl6ruL/clkUhY21jdKjW+P7rG51PmZBVn2zy3evfEgf5QIIkKJgL5ZvwhuI+kHAAAACmHz9J4SXclPTrifDIwFFjTVXtnWcepff7uZ6yS+DMi3eEW3RN7Jm+FQpOde39jw01Q6FYu+3hba09EqPkVA8SmC63Q6phsAAAD48RXnSjZnZs/9YPewSOVtLrWpxZ179HJqdm5rRd9eZZOFdDo98GhIFKKRlZ0Zvxhud9lEqKGe4VxwAAAAAIVM+qvqXCJTF6n8SL9XVM9ebKu0Hc7l93f+ea/v4eDq61VL9myfaHjl1rW7cy8W/mtQMVAMFwURKpVKZ98BcDHXAAAAQEEo+SdvrkRjf//LtWRyveuL843HjiTiiZtf31kKvHrbW1EOmg+mNjZiK6/fF1Fk/D//7U8NRsPU+PMH33yn1+t+94ffyHu7AAAAABQ46ReejU49ut0jCp9f7apz126sb/Te75/wTn5guKYW99mLbTqd7sXky2+vZ97r3eUeXwAAAAAFSPqFvoeD3sExUZDr/UXZl3EHvhvSFpd2CaTaKz3nT9ldmR3/co1fFFo8ze2dHmYZAAAA2FtJf37e39BUf7K9Re7jD4ciczPzC7N+UZBn+BhMBvHIVeOorq/K9Rnp805PzJDxAwAAAHs66Rcmx6Z77/cn15KKorSdP21zWndeuJsvuLgU8AUHu4dSqbS+VH+2q41dPQAAAMCeTvqFWDQ20j+a29CvOqzOGofI/i0VFoPRIFoS8UQ4FBa5vm/Wr/mDspvI9VvbWw7w5i4AAACw95N+aW5mQfNrk2PT8bxruXYymgzu5gbVoVbXczonAAAA8FEl/TlyOT/gC4ZD4UR8TbQYjKWWCovNaZU/AjCbAAAAwMed9AMAAAD4GBUzBQAAAMD/RdL/pz/+WfzlWqlSpUqVKlWqVKlSpfrJVFnpBwAAAD5x/xFgAFVQO+cUesp6AAAAAElFTkSuQmCC) no-repeat;background-size:100% 100%;margin-top:16px;margin-bottom:3px}h4,h5{display:inline-block;display:block;height:40px;text-align:left;line-height:2.3;text-indent:40px}h4{clear:both;font-family:HummingStd-E;color:#fff;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABBoAAAAoCAYAAABQIZnqAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAADVJJREFUeNrs3VlsVNcdx/G/x+N9wbuNDdhgjMFgNmMKpGkJzUKahJZQJa2C/BBXSqsmkR+jqs1DU6mPQUoitRVECs2iSkmVIpKqQQFKmpBAgBCIwRizeF8xXhgbj216/sdzHduMxzMWojF8P9LfM3Pn3jvjufMyP53zP2E7X35DpsFlqtTUfabWmFpkKsdUnKkoAQAAAAAAM8V1U9dMNZg6Z+pLUwdMHTU17OxUXlEW1MncIb74HFO/MfWUqblcCwAAAAAAZrwoX6WYKja1zbe9ztRbpl4zVR/sycKCHNGQauoPpn5pKlI3pGelSVZOhrlNl6TkRImNjxW32y3h7nAuEQAAAAAAM8TQ4JAMDg6Kp9cjVzu7pa25TZobWs1tu7PLgKmdpl4sryjrmOp8wQQNT8hIepGmDxYU5knRisWSmZ3B1QAAAAAA4A7V0tgqlSfPyoWqS84mTR6eLa8o+3ug4wIFDTqt4hVTv9IHuflzZfX6lZKSlmyf7O2+JherL9ukQxMPTT40AdEkBAAAAAAAzAw6M0FnKOhMBZ2xoDMX5hfkSnxinH3+SnunHD/8lVyuqXMO+bOp58orygZDCRpiTWlC8ag+WL9xrRStXGyf0KET58/USOXJKq4GAAAAAAB3qKIVhbJwSb5tnaB0dMPhA0ecp/eaerK8oswz8Th/QYOOZHjP1Ja4hDh56Kc/kuTUJPvEkU+Oyalj3/BpAwAAAABwlyguWSpr7y2x9zs7rsq/3/9YrvXoIhWyx9S2iSMbXH7O8aqpLTpk4pGfPWhDBm0C8f7bewkZAAAAAAC4y2gW8P5be202oBmBZgWaGRhbZCRDGGdi0PCkqWfCwsJk89b7JWFWgtRfbpR9e/ZLR+uVab8pV7iLKwMAAAAAwAzV0XbFZgOaEWhWoJmBZgfGM7t27P7FuAxgzH1dwtImEes2lvpGMrTIwQ8PycD1gSlfdLIwITYuVtb9oFTCw1n2EgAAAACA75Ko6Kig99VsQDMCzQo0M9B+jj6v7tqxO300HxhzzB9NpenqErp8pfr84FG5HkTIoOYX5InLFXbT9tj4GImOjZaomCiuIAAAAAAA3yFJKbNC2l8zAqch5JIVhZK7cJ7eTTH1krOPEzToM+V6p2TDKrtBGz/q0IipRES4ZUFhnmy4b61s3HyvJCYljHu+vaVDDn30qV3+cuw/sup7yyU1I4WrCgAAAADA/0lObnbIx+hyl18c+tLeL1m/0tn89K4du23q4AQNv9bMIH/xfDv8QZewDNT40eVy2VJe76B4evtkaGhY+jz90t93/ab9B73fNqCMiIyQzY8/IKvNm3n0ic12bgcAAAAAALi9IqMiZU5utv2dHqrTxyttdqAZgmYJ+nPfly3YoEFruz5YsrzQHlBdWRPwhDpqIWFW/OhjnZ+hacYXh45O2c+h9J7VEjfSnVLcbrd5zUVcXQAAAAAAbrPsuVkS5gqzYcN0ONmBkyUY23ft2G2HJZSampOelSaZ2RnS290rZ76uCniy+QW5smBR3rhtF89dkuHhGwGPK1xWYOdwjJWSlszVBQAAAADgNtIVI3wjEWThkvzRWQuh0OxAMwTNEjRTMOaYKtUzbdJHWTkZI4FBdW3AE2XNyZTlpcts6X3H8PDwpMdEx0TLmntWyYZN6256zuv1coUBAAAAALiNdCBAfOLITAVdxGHR0oXTOo+TITiZgnGf2/wp0XvpWSMrUbQ1t910oK4mkZyWLMUlS+1IBt9amfLjbQ/KhapLcur4N3KlrVNu3Ph2RENaZqrMyc2R7HlZ5gUzR4+ZSI8HAAAAAADB0/4KA0GuEjlR9tzZNmiYGDx0d/VIY21TSOdyMgQnUzDWaNBg5zIkJSfaLVc7u286UKdEdLResUtYDA0OjSYdOh9DV6e43j/SADImNlqWriqSgiULJNbXhyGQs6fO2X8EAAAAAAAET/sm6u/0UOgAAA0UFi0zv+knjgUIG+mpWDWrWqpOV48bSBCIkyE4mYJmDBo0zLYhQdxIMNB3zTPpCTRQ+GTfZxITG2Mf633lCndJ8eqldsnKcHf4lG9El8JobWyTzJwMWVy8SPbt2S+1F+r5pgAAAAAAEITM2RlBBw06+kEbP2pPBme6hP8kQqSwuEBycmdLzdmL0ljXPOWoCSdDcDIFzRg0aLDrS0ZEuu0W78DglG9Sp0o4dAWK+x/daKdWBGNoaMg2gBzbBDIiMpJvCQAAAAAAQUhMSpTomCh723212+8+seaHf2pGsmTMTpecedl2dYlgaRixYm2xLF+zTBpqG6W1qU06WjvF42dggpMhOJmCZgzu6fxT7S0d9lbDhYcff8BOmQhWePj4EQ/aRLKprolvCgAAAAAAU9DpD9oLUeltT1eP32kOGgp4Lnqk7mKDnDpWKTnzZsuCwrzAIxp8dCUJ7afYUNs0rT4QGjRok4RUTSHCY8JtCjHUNxTwIO+AV6KiIuWhn2wKKWTw5/TxSvMB9PFtAQAAAABgipAhN3+exPraGeht3sJ5cul8bcCeChoWXKy+bPfTHg22EaS/AQ7mFNqfIZQeDX5mR/ToFh1OkKrzKnTohc6r6O+7PuXJSjaskriEuGl/QMNDw3Lii6/l5NFTfFsAAAAAAAhAp0lon4XYuJhx25NTkyQqOsr2U5hsGsVojnDjxuiiDNr4cVzYcEPk6KfHQ151wk+/xyYNGqpMLdNOkToVQjtFdrZ3BjyRNpLwt8am1ztoV6IY9HpF37E2kEhNT/n2+QGvHYLRY2rA3G9raQ86JQEAAAAA4G4SERkhCYnxkpmdEXA2gYYPCxfPlz5Pv7Q0ttrf3Pr7ezIaJujqEtr40aGjGEINGZSfFSyrNGg4ZmpbW3O7zC/IlfSsNDukIpAs809OXF1CR0GcPlEpxauLbJqiNHTo6eq1QzmcD0nDDKdxZNWpar45AAAAAAD4oWGBrtqoNdmIBqXtCIIZ0TCWBgs5udkSnxgnnt4+OffN+Wm9x/SsdHvb1tzmbPrSZf4c0HvNDS12i4YNU0lISrj5TZ46JytLi0dDBlVQlC9dnd12pYmJGuuaRl8TAAAAAABMTkMEDQc6O66O266PdXsoIYPS2QU1Zy/Y++fP1NiFGqZjfsHIwILmhlZn0wENGo6YqtcRDTrEQjtQFq0oDHiioUE/zSLDwsQdcfMiFmkZKdLZPv6DaK5vkY/3/odvCgAAAAAAIYQD2tDR4xlZUEFvL9fUTrslgY6CuDF8Q+ovN07reM0ONEPQLEEzBc0WTB3VZEBjizdNvVB58qyd+7FwSb5Unqya9GTtrR03bevv67f/nHbBHEuHcBw+eMQupREVE22Xxqy/1EBvBgAAAAAAphE2NNY2254Mejs8PP3f1roahYYMgfo5BKLZgdIswefN8oqyYZfvwWv6GrpOps790D4NxSVLJw8aWjqkqb553DZdYkPTkInOn7lgp09ocHHi85NSd7GekAEAAAAAgGnSaRLaJzHU6RL+NExzNINmBpod6NQNzRI0U/BlC+IEDTq8YafeOX74K7th7b0lkpKePOlJD/7rExsgOLJyMiQlbfz+Z05W2V4MAAAAAADg1mlpar0l5+nq7Ar5GF3gQTMDdeyzE87m18sryjRbGA0a1IumOi7X1I1Om1i/ca1ERUX6PbFOifjnOx/IV0dOjQ6zcJbbuN5/XY7+97idMgEAAAAAAG4tXeHxVtCREaHQjGDDxrX2/pmvq0QzBM0STP3O2Sds58tvjD3m56be0T4LW7c/JsmpSXa+xv69B8XrHZz0hdxut6RlpkhcQpxc6/XYqRWDAfYHAAAAAAAzS0RkhGx65IcyJzdbrl7pkn/8bY/TGuGp8oqyt539wrds3jr2uNOmZptac/lCneTlz5X0zDTJzMmQjrYr0ufp9/tiugxGb881u7pEb/e1aS+LAQAAAAAAvnu0VcLGzd+X7LmzpaerRz587yNndsNfyyvK/jR2X5ef4583tcfT6zEH7rONHbJyMmXrU49JcUkRny4AAAAAAHcRzQJ01oNmA5oRfPjuR6KZgbHH1HMT9584dcIRa+pdUw/rNIp1G9fa9TGVro15/kxNwOUvAQAAAADAzKY5gC5hqatLKF3wQXsx+qZLfGDqifKKMs/E4yYLGlSEqVdMPaMPcvPnSsmGVbZvg+rp7pVL1bXS1twmVzu7bZqhwyaYNgEAAAAAwMzhcrls/4XY+FhJSk6U9Kx0ySuYJwmJ8fZ5HcWgq0v4Gj+qv5h6rryizOvvfIGCBoc2iNTAwUYYCwrzpGjFYsnMzuBqAAAAAABwh2ppbJXKk2flQtUlZ1O7qefLK8reCXRcMEGD0pDhJVNPm7LrXerQiaycDJt0aOKhyUdERIS4wl1cDQAAAAAAZojhoWHxer12poLOWNCZC80NrbZ1gs+AqddN/b68oqx9qvMFGzQ45ph61tR2UzlcDgAAAAAA7lgNpt409aqp+vKKsqAOcof4IvWmXjD1W1OlpjaZKjG1SEZCCJ3AEcG1AAAAAABgxtBeC72+3/znTB0ztd/UUVMhN2L8nwADALkRrc2RhJVpAAAAAElFTkSuQmCC) no-repeat;background-size:100% 100%;margin-left:-10px;margin-top:23px;margin-bottom:5px;*zoom:1}.ruled{margin-left:1.3vw;margin-right:1.3vw}img{margin:auto;margin-bottom:16px;line-height:1}img.floatR{float:right}img.floatL{float:left}img.floatL,img.floatR{margin-bottom:0}p{text-align:left;margin-bottom:16px;line-height:1.5}table{border:1px solid #cac4ce;margin:auto;margin-bottom:16px;min-width:848px}th{background:#908895;color:#fff}td,th{padding:6px;border:1px solid #cac4ce;text-align:center;vertical-align:middle;line-height:1.5}ul{margin-bottom:16px}ul li{margin-left:18px;text-align:left;list-style-type:none;line-height:1.5}ul li:before{content:"\\30FB";margin-left:-18px}ul.caution{margin-bottom:16px}ul.caution:before{content:"\\3054\\6CE8\\610F";display:block;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gQNBgQWBIdi0wAAAB90RVh0RmlsZSBOYW1lAGljb25fbm90aWNlX3JlZF9sLnBuZyVod5sAADgaaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0MiA3OS4xNjA5MjQsIDIwMTcvMDcvMTMtMDE6MDY6MzkgICAgICAgICI+CiAgIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICAgICAgICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgICAgICAgICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgICAgICAgICB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgICAgICAgICB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgICAgICAgICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iPgogICAgICAgICA8eG1wOkNyZWF0b3JUb29sPkFkb2JlIFBob3Rvc2hvcCBDQyAoV2luZG93cyk8L3htcDpDcmVhdG9yVG9vbD4KICAgICAgICAgPHhtcDpDcmVhdGVEYXRlPjIwMTgtMDQtMTNUMTU6MDI6MzkrMDk6MDA8L3htcDpDcmVhdGVEYXRlPgogICAgICAgICA8eG1wOk1vZGlmeURhdGU+MjAxOC0wNC0xM1QxNTowNDoyMiswOTowMDwveG1wOk1vZGlmeURhdGU+CiAgICAgICAgIDx4bXA6TWV0YWRhdGFEYXRlPjIwMTgtMDQtMTNUMTU6MDQ6MjIrMDk6MDA8L3htcDpNZXRhZGF0YURhdGU+CiAgICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2UvcG5nPC9kYzpmb3JtYXQ+CiAgICAgICAgIDxwaG90b3Nob3A6Q29sb3JNb2RlPjM8L3Bob3Rvc2hvcDpDb2xvck1vZGU+CiAgICAgICAgIDx4bXBNTTpJbnN0YW5jZUlEPnhtcC5paWQ6OGNjYTU4MmUtZjBkNC01ZDQ2LWE4NjItNWRkMmY2MmFiNmM1PC94bXBNTTpJbnN0YW5jZUlEPgogICAgICAgICA8eG1wTU06RG9jdW1lbnRJRD54bXAuZGlkOjhjY2E1ODJlLWYwZDQtNWQ0Ni1hODYyLTVkZDJmNjJhYjZjNTwveG1wTU06RG9jdW1lbnRJRD4KICAgICAgICAgPHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD54bXAuZGlkOjhjY2E1ODJlLWYwZDQtNWQ0Ni1hODYyLTVkZDJmNjJhYjZjNTwveG1wTU06T3JpZ2luYWxEb2N1bWVudElEPgogICAgICAgICA8eG1wTU06SGlzdG9yeT4KICAgICAgICAgICAgPHJkZjpTZXE+CiAgICAgICAgICAgICAgIDxyZGY6bGkgcmRmOnBhcnNlVHlwZT0iUmVzb3VyY2UiPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6YWN0aW9uPmNyZWF0ZWQ8L3N0RXZ0OmFjdGlvbj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0Omluc3RhbmNlSUQ+eG1wLmlpZDo4Y2NhNTgyZS1mMGQ0LTVkNDYtYTg2Mi01ZGQyZjYyYWI2YzU8L3N0RXZ0Omluc3RhbmNlSUQ+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDp3aGVuPjIwMTgtMDQtMTNUMTU6MDI6MzkrMDk6MDA8L3N0RXZ0OndoZW4+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDpzb2Z0d2FyZUFnZW50PkFkb2JlIFBob3Rvc2hvcCBDQyAoV2luZG93cyk8L3N0RXZ0OnNvZnR3YXJlQWdlbnQ+CiAgICAgICAgICAgICAgIDwvcmRmOmxpPgogICAgICAgICAgICA8L3JkZjpTZXE+CiAgICAgICAgIDwveG1wTU06SGlzdG9yeT4KICAgICAgICAgPHRpZmY6T3JpZW50YXRpb24+MTwvdGlmZjpPcmllbnRhdGlvbj4KICAgICAgICAgPHRpZmY6WFJlc29sdXRpb24+NzIwMDAwLzEwMDAwPC90aWZmOlhSZXNvbHV0aW9uPgogICAgICAgICA8dGlmZjpZUmVzb2x1dGlvbj43MjAwMDAvMTAwMDA8L3RpZmY6WVJlc29sdXRpb24+CiAgICAgICAgIDx0aWZmOlJlc29sdXRpb25Vbml0PjI8L3RpZmY6UmVzb2x1dGlvblVuaXQ+CiAgICAgICAgIDxleGlmOkNvbG9yU3BhY2U+NjU1MzU8L2V4aWY6Q29sb3JTcGFjZT4KICAgICAgICAgPGV4aWY6UGl4ZWxYRGltZW5zaW9uPjE2PC9leGlmOlBpeGVsWERpbWVuc2lvbj4KICAgICAgICAgPGV4aWY6UGl4ZWxZRGltZW5zaW9uPjE2PC9leGlmOlBpeGVsWURpbWVuc2lvbj4KICAgICAgPC9yZGY6RGVzY3JpcHRpb24+CiAgIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgCjw/eHBhY2tldCBlbmQ9InciPz7Rd3jDAAAAGHRFWHRTb2Z0d2FyZQBBZG9iZSBQaG90b3Nob3A0y45nAAAAD3RFWHRXcml0ZXIAU3VwZXJQTkfFxK/dAAADUUlEQVQ4yz2STWwUdQDFfzPz3+9PWgpb+pHU2qqxfkDpwaqNoGDCQSwqRg/Eg0mjCTGi4aKpEeIFNRoTFXsTNdFYqVYNxkATjCI2cMCVtmLZlmgp3Xa32+3OzszOzP/vYY2nl7zkHd57P+2tzh0AaLqOs25irZaa0ze3Pbnxru6+WFPjFqe8Xlz5YzZbvJz7PBCNzEQ2pFBSAvDS7AQCQDN0KjdWiDSmXnv4yKsv9wwMxFNaFJQBSCyjtm/q4uQr546NjBT+nD+UbN7sKKUAEJquYy4VtNQtbWP7P3t3b3OsE36YhrkcpIJQrBLZGKd390Oie3zH86PPvtBz7efJXcnmTA1Ar5lVRDp6+OkT7+1tLmdQR79Hnr+CuicDz/XCI12omb9Rx74m8VuRpz44PrCh+6ZPqqslAHRztZDuPzw03KR3oD48i4oYYGhofa0QC0JfG6ohiowI5OgE4ewau4de3O+69nYAPdnSdmBbQ3+UT39CGjWUpqM8hbI9ALBdlOvWNSRg/Ay3buqh5c7eIQCxpf3unYlLNvL8N/iJNIQTaF4Y/b+llVJgO0jbgqCOVi6h523au3r7AUQq2tSGU8GTDnK9CGsrqKqLEE/U740Eka6DqrmAjutUCS2tkQg0dlB3XIlTQ3oSJTUkAmm7yGwOADk9jzd1CVnJo6z1eh1TgiV9AFEsLVylJrdrvsKXLugGRELYwx8jzmbxfp2CcgmkDeYquvKgJigVCzkA/frK9LcFq0og1orvmCjPQ1YsjF3bEI/fj3jsPqTSUJ7CtysIZeAWC8xfO3eqfqO9+uWFhQtlPXMvmuvi2xayYhM6OIjR20Xo4KOocAC/UgW7QqDlAbL5y/JGYWYEQE8EU7XJuVMH5sqLJNr3oHsuvreO9f5J/NwC9kfj+Pk8yjNJtjxIyYgzcWX0zWgwngPQ3u7cieWZBER0eLDrmde7RCMsX6S6dLUOkukQbmhFb9rKYsDg5OyJ7wrmP/viobR76K/TCIUiEohjuZUjX0wfz27NDBy9I3nb7Q3xDgK2h79JkBcwU5kpTC6eecf2zDfioTRK1TkRdVgkERHDU97Y5PUfx35f/mUwFd7cFzPiGdu3CmvO8lSlVvoqKqLleCD5fxjgX7gioLoFqQkKAAAAAElFTkSuQmCC) no-repeat 0;color:#f72d66;margin-bottom:10px;padding-left:18px;text-align:left;width:1074px;height:18px}ul.caution li{margin-left:18px;color:#f72d66;text-align:left;list-style-type:none;line-height:1.5}ul.caution li:before{content:"\\30FB";margin-left:-18px}a{text-decoration:underline}a,strong{color:#f72d66}h5+.idol_skill,h5+.idol_status{margin-top:1rem}.idol_skill td,.idol_skill th{text-align:left}.idol_status th{text-align:center}.idol_status td{text-align:right}.idol_point{margin-bottom:0}h5+.normal_table{margin-top:1rem}.normal_table th{text-align:center}.normal_table td{text-align:left}', ""])
 }
 , function(e, t, n) {
@@ -35218,43 +35326,43 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(628)
+    var r = n(631)
       , i = o(r)
-      , a = n(629)
+      , a = n(632)
       , s = o(a)
-      , u = n(630)
+      , u = n(633)
       , l = o(u)
-      , c = n(631)
+      , c = n(634)
       , f = o(c)
-      , d = n(632)
+      , d = n(635)
       , p = o(d)
-      , h = n(633)
+      , h = n(636)
       , g = o(h)
-      , m = n(634)
+      , m = n(637)
       , _ = o(m)
-      , y = n(332)
+      , y = n(333)
       , I = o(y)
-      , A = n(635)
+      , A = n(638)
       , C = o(A)
-      , v = n(636)
+      , v = n(639)
       , b = o(v)
-      , P = n(637)
+      , P = n(640)
       , T = o(P)
-      , O = n(638)
-      , w = o(O)
-      , E = n(639)
+      , w = n(641)
+      , O = o(w)
+      , E = n(642)
       , S = o(E)
-      , k = n(640)
+      , k = n(643)
       , R = o(k)
-      , x = n(641)
+      , x = n(644)
       , M = o(x)
-      , N = n(642)
+      , N = n(645)
       , j = o(N)
-      , B = n(643)
+      , B = n(646)
       , D = o(B)
-      , L = n(644)
+      , L = n(647)
       , F = o(L)
-      , U = n(645)
+      , U = n(648)
       , G = o(U)
       , H = n(1)
       , V = o(H)
@@ -35281,6 +35389,7 @@ primJsp([63], [, function(e, t, n) {
         "/gashaAnimation": M.default,
         "/gashaResult": R.default,
         "/homeDeck": "homeDeck",
+        "/help": "help",
         "/home": "home",
         "/idolPortal": F.default,
         "/idolList": "idolList",
@@ -35290,7 +35399,7 @@ primJsp([63], [, function(e, t, n) {
         "/present": "present",
         "/produceMarathon/:gameEventId": "produceMarathonTop",
         "/produceReady": C.default,
-        "/redrawGashaAnimation": w.default,
+        "/redrawGashaAnimation": O.default,
         "/redrawGashaResult": T.default,
         "/skinExchange": "skinExchange",
         "/training": "trainingIdolList",
@@ -35322,7 +35431,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(12)
+    var r = n(13)
       , i = o(r)
       , a = n(54)
       , s = o(a)
@@ -35361,7 +35470,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(12)
+    var r = n(13)
       , i = o(r)
       , a = n(54)
       , s = o(a)
@@ -35409,7 +35518,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(12)
+    var o = n(13)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -35426,7 +35535,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(12)
+    var o = n(13)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -35454,7 +35563,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(12)
+    var o = n(13)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -35476,9 +35585,9 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(12)
+    var r = n(13)
       , i = o(r)
-      , a = n(202)
+      , a = n(203)
       , s = o(a);
     t.default = function(e) {
         if (!e.request) {
@@ -35509,7 +35618,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(12)
+    var o = n(13)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -35526,7 +35635,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(12)
+    var o = n(13)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -35548,11 +35657,11 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(12)
+    var r = n(13)
       , i = o(r)
       , a = n(135)
       , s = o(a)
-      , u = n(88)
+      , u = n(91)
       , l = o(u)
       , c = function(e) {
         var t = l.default.PRODUCE_STATES;
@@ -35604,7 +35713,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(12)
+    var r = n(13)
       , i = o(r)
       , a = n(54)
       , s = o(a);
@@ -35634,7 +35743,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(12)
+    var r = n(13)
       , i = o(r)
       , a = n(54)
       , s = o(a);
@@ -35659,7 +35768,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(12)
+    var o = n(13)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -35680,7 +35789,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(12)
+    var r = n(13)
       , i = o(r)
       , a = n(54)
       , s = o(a);
@@ -35700,7 +35809,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(12)
+    var r = n(13)
       , i = o(r)
       , a = n(54)
       , s = o(a);
@@ -35720,7 +35829,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(12)
+    var r = n(13)
       , i = o(r)
       , a = n(141)
       , s = o(a);
@@ -35745,7 +35854,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(12)
+    var o = n(13)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -35763,7 +35872,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var o = n(12)
+    var o = n(13)
       , r = function(e) {
         return e && e.__esModule ? e : {
             default: e
@@ -35786,7 +35895,7 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(12)
+    var r = n(13)
       , i = o(r)
       , a = n(141)
       , s = o(a);
@@ -35816,164 +35925,169 @@ primJsp([63], [, function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     });
-    var r = n(647)
+    var r = n(650)
       , i = o(r)
-      , a = n(648)
+      , a = n(651)
       , s = o(a)
       , u = [{
         name: "album",
         class: function() {
-            return n.e(1).then(n.bind(null, 879))
+            return n.e(1).then(n.bind(null, 882))
         }
     }, {
         name: "beginnerMission",
         class: function() {
-            return n.e(35).then(n.bind(null, 880))
+            return n.e(35).then(n.bind(null, 883))
         }
     }, {
         name: "boxGashaTop",
         class: function() {
-            return n.e(1).then(n.bind(null, 881))
+            return n.e(1).then(n.bind(null, 884))
         }
     }, {
         name: "comic",
         class: function() {
-            return n.e(1).then(n.bind(null, 882))
+            return n.e(1).then(n.bind(null, 885))
         }
     }, {
         name: "comicList",
         class: function() {
-            return n.e(1).then(n.bind(null, 883))
+            return n.e(1).then(n.bind(null, 886))
         }
     }, {
         name: "concertResult",
         class: function() {
-            return n.e(15).then(n.bind(null, 884))
+            return n.e(15).then(n.bind(null, 887))
         }
     }, {
         name: "deck",
         class: function() {
-            return n.e(2).then(n.bind(null, 885))
+            return n.e(2).then(n.bind(null, 888))
         }
     }, {
         name: "evolutionIdolList",
         class: function() {
-            return n.e(7).then(n.bind(null, 886))
+            return n.e(7).then(n.bind(null, 889))
         }
     }, {
         name: "evolution",
         class: function() {
-            return n.e(23).then(n.bind(null, 887))
+            return n.e(23).then(n.bind(null, 890))
         }
     }, {
         name: "fesConcert",
         class: function() {
-            return n.e(0).then(n.bind(null, 888))
+            return n.e(0).then(n.bind(null, 891))
         }
     }, {
         name: "fesDeck",
         class: function() {
-            return n.e(12).then(n.bind(null, 889))
+            return n.e(12).then(n.bind(null, 892))
         }
     }, {
         name: "fesDeckView",
         class: function() {
-            return n.e(32).then(n.bind(null, 890))
+            return n.e(32).then(n.bind(null, 893))
         }
     }, {
         name: "fesMatchConcert",
         class: function() {
-            return n.e(0).then(n.bind(null, 891))
+            return n.e(0).then(n.bind(null, 894))
         }
     }, {
         name: "fesMatchReady",
         class: function() {
-            return n.e(31).then(n.bind(null, 892))
+            return n.e(31).then(n.bind(null, 895))
         }
     }, {
         name: "fesMarathonTop",
         class: function() {
-            return n.e(28).then(n.bind(null, 893))
+            return n.e(28).then(n.bind(null, 896))
         }
     }, {
         name: "fesTop",
         class: function() {
-            return n.e(10).then(n.bind(null, 894))
+            return n.e(10).then(n.bind(null, 897))
         }
     }, {
         name: "fesResult",
         class: function() {
-            return n.e(44).then(n.bind(null, 865))
+            return n.e(45).then(n.bind(null, 868))
         }
     }, {
         name: "fesMatchResult",
         class: function() {
-            return n.e(29).then(n.bind(null, 895))
+            return n.e(29).then(n.bind(null, 898))
         }
     }, {
         name: "fesMatchRanking",
         class: function() {
-            return n.e(34).then(n.bind(null, 896))
+            return n.e(34).then(n.bind(null, 899))
         }
     }, {
         name: "fesIdolDetail",
         class: function() {
-            return n.e(19).then(n.bind(null, 897))
+            return n.e(19).then(n.bind(null, 900))
         }
     }, {
         name: "eventPlayer",
         class: function() {
-            return n.e(50).then(n.bind(null, 898))
+            return n.e(51).then(n.bind(null, 901))
         }
     }, {
         name: "gasha",
         class: function() {
-            return n.e(11).then(n.bind(null, 899))
+            return n.e(11).then(n.bind(null, 902))
         }
     }, {
         name: "gashaAnimation",
         class: function() {
-            return n.e(8).then(n.bind(null, 866))
+            return n.e(8).then(n.bind(null, 869))
         }
     }, {
         name: "gashaResult",
         class: function() {
-            return n.e(25).then(n.bind(null, 900))
+            return n.e(25).then(n.bind(null, 903))
+        }
+    }, {
+        name: "help",
+        class: function() {
+            return n.e(40).then(n.bind(null, 904))
         }
     }, {
         name: "homeDeck",
         class: function() {
-            return n.e(16).then(n.bind(null, 901))
+            return n.e(16).then(n.bind(null, 905))
         }
     }, {
         name: "home",
         class: function() {
-            return n.e(6).then(n.bind(null, 867))
+            return n.e(6).then(n.bind(null, 870))
         }
     }, {
         name: "idolDetail",
         class: function() {
-            return n.e(3).then(n.bind(null, 902))
+            return n.e(3).then(n.bind(null, 906))
         }
     }, {
         name: "idolList",
         class: function() {
-            return n.e(26).then(n.bind(null, 903))
+            return n.e(26).then(n.bind(null, 907))
         }
     }, {
         name: "idolPortal",
         class: function() {
-            return n.e(43).then(n.bind(null, 904))
+            return n.e(44).then(n.bind(null, 908))
         }
     }, {
         name: "invitation",
         class: function() {
-            return n.e(47).then(n.bind(null, 905))
+            return n.e(48).then(n.bind(null, 909))
         }
     }, {
         name: "item",
         class: function() {
-            return n.e(30).then(n.bind(null, 906))
+            return n.e(30).then(n.bind(null, 910))
         }
     }, {
         name: "loading",
@@ -35981,112 +36095,112 @@ primJsp([63], [, function(e, t, n) {
     }, {
         name: "loginBonus",
         class: function() {
-            return n.e(42).then(n.bind(null, 907))
+            return n.e(43).then(n.bind(null, 911))
         }
     }, {
         name: "login",
         class: function() {
-            return n.e(55).then(n.bind(null, 908))
+            return n.e(56).then(n.bind(null, 912))
         }
     }, {
         name: "memorialShop",
         class: function() {
-            return n.e(5).then(n.bind(null, 909))
+            return n.e(5).then(n.bind(null, 913))
         }
     }, {
         name: "mission",
         class: function() {
-            return n.e(27).then(n.bind(null, 910))
+            return n.e(27).then(n.bind(null, 914))
         }
     }, {
         name: "missionAchievement",
         class: function() {
-            return n.e(52).then(n.bind(null, 911))
+            return n.e(53).then(n.bind(null, 915))
         }
     }, {
         name: "notFound",
         class: function() {
-            return n.e(56).then(n.bind(null, 912))
+            return n.e(57).then(n.bind(null, 916))
         }
     }, {
         name: "notice",
         class: function() {
-            return n.e(45).then(n.bind(null, 913))
+            return n.e(46).then(n.bind(null, 917))
         }
     }, {
         name: "option",
         class: function() {
-            return n.e(20).then(n.bind(null, 914))
+            return n.e(20).then(n.bind(null, 918))
         }
     }, {
         name: "present",
         class: function() {
-            return n.e(36).then(n.bind(null, 915))
+            return n.e(36).then(n.bind(null, 919))
         }
     }, {
         name: "produce",
         class: function() {
-            return n.e(4).then(n.bind(null, 868))
+            return n.e(4).then(n.bind(null, 871))
         }
     }, {
         name: "produceAudition",
         class: function() {
-            return n.e(0).then(n.bind(null, 916))
+            return n.e(0).then(n.bind(null, 920))
         }
     }, {
         name: "produceConcert",
         class: function() {
-            return n.e(0).then(n.bind(null, 917))
+            return n.e(0).then(n.bind(null, 921))
         }
     }, {
         name: "produceEnding",
         class: function() {
-            return n.e(9).then(n.bind(null, 918))
+            return n.e(9).then(n.bind(null, 922))
         }
     }, {
         name: "produceIdolDetail",
         class: function() {
-            return n.e(3).then(n.bind(null, 919))
+            return n.e(3).then(n.bind(null, 923))
         }
     }, {
         name: "produceMarathonTop",
         class: function() {
-            return n.e(24).then(n.bind(null, 920))
+            return n.e(24).then(n.bind(null, 924))
         }
     }, {
         name: "produceReady",
         class: function() {
-            return n.e(2).then(n.bind(null, 921))
+            return n.e(2).then(n.bind(null, 925))
         }
     }, {
         name: "redrawGashaAnimation",
         class: function() {
-            return n.e(8).then(n.bind(null, 922))
+            return n.e(8).then(n.bind(null, 926))
         }
     }, {
         name: "redrawGashaResult",
         class: function() {
-            return n.e(37).then(n.bind(null, 923))
+            return n.e(37).then(n.bind(null, 927))
         }
     }, {
         name: "shop",
         class: function() {
-            return n.e(5).then(n.bind(null, 924))
+            return n.e(5).then(n.bind(null, 928))
         }
     }, {
         name: "shopPortal",
         class: function() {
-            return n.e(51).then(n.bind(null, 925))
+            return n.e(52).then(n.bind(null, 929))
         }
     }, {
         name: "skillBoard",
         class: function() {
-            return n.e(14).then(n.bind(null, 926))
+            return n.e(14).then(n.bind(null, 930))
         }
     }, {
         name: "skinExchange",
         class: function() {
-            return n.e(18).then(n.bind(null, 927))
+            return n.e(18).then(n.bind(null, 931))
         }
     }, {
         name: "start",
@@ -36094,82 +36208,82 @@ primJsp([63], [, function(e, t, n) {
     }, {
         name: "supportIdolDetail",
         class: function() {
-            return n.e(3).then(n.bind(null, 928))
+            return n.e(3).then(n.bind(null, 932))
         }
     }, {
         name: "titleSetting",
         class: function() {
-            return n.e(41).then(n.bind(null, 929))
+            return n.e(42).then(n.bind(null, 933))
         }
     }, {
         name: "trainingIdolList",
         class: function() {
-            return n.e(7).then(n.bind(null, 930))
+            return n.e(7).then(n.bind(null, 934))
         }
     }, {
         name: "training",
         class: function() {
-            return n.e(17).then(n.bind(null, 931))
+            return n.e(17).then(n.bind(null, 935))
         }
     }, {
         name: "tutorialAudition",
         class: function() {
-            return n.e(0).then(n.bind(null, 932))
+            return n.e(0).then(n.bind(null, 936))
         }
     }, {
         name: "tutorialHome",
         class: function() {
-            return n.e(6).then(n.bind(null, 933))
+            return n.e(6).then(n.bind(null, 937))
         }
     }, {
         name: "tutorialOpening",
         class: function() {
-            return n.e(40).then(n.bind(null, 934))
+            return n.e(41).then(n.bind(null, 938))
         }
     }, {
         name: "tutorialProduce",
         class: function() {
-            return n.e(4).then(n.bind(null, 935))
+            return n.e(4).then(n.bind(null, 939))
         }
     }, {
         name: "tutorialProduceReady",
         class: function() {
-            return n.e(2).then(n.bind(null, 936))
+            return n.e(2).then(n.bind(null, 940))
         }
     }, {
         name: "twitter",
         class: function() {
-            return n.e(39).then(n.bind(null, 937))
+            return n.e(39).then(n.bind(null, 941))
         }
     }, {
         name: "updateInformation",
         class: function() {
-            return n.e(46).then(n.bind(null, 938))
+            return n.e(47).then(n.bind(null, 942))
         }
     }, {
         name: "workActivityTop",
         class: function() {
-            return n.e(13).then(n.bind(null, 939))
+            return n.e(13).then(n.bind(null, 943))
         }
     }, {
         name: "workActivityReady",
         class: function() {
-            return n.e(21).then(n.bind(null, 940))
+            return n.e(21).then(n.bind(null, 944))
         }
     }, {
         name: "workActivityResult",
         class: function() {
-            return n.e(22).then(n.bind(null, 941))
+            return n.e(22).then(n.bind(null, 945))
         }
     }, {
         name: "characterFanRankingTop",
         class: function() {
-            return n.e(33).then(n.bind(null, 942))
+            return n.e(33).then(n.bind(null, 946))
         }
     }, {
         name: "characterFanRanking",
         class: function() {
-            return n.e(38).then(n.bind(null, 943))
+            return n.e(38).then(n.bind(null, 947))
         }
     }];
     t.default = u
@@ -36301,45 +36415,45 @@ primJsp([63], [, function(e, t, n) {
       , g = o(h)
       , m = n(58)
       , _ = o(m)
-      , y = n(92)
+      , y = n(95)
       , I = o(y)
-      , A = n(186)
+      , A = n(187)
       , C = o(A)
-      , v = n(182)
+      , v = n(183)
       , b = o(v)
       , P = n(10)
       , T = o(P)
-      , O = n(649)
-      , w = o(O)
-      , E = n(657)
+      , w = n(652)
+      , O = o(w)
+      , E = n(660)
       , S = o(E)
-      , k = n(658)
+      , k = n(661)
       , R = o(k)
       , x = n(132)
       , M = o(x)
-      , N = n(205)
+      , N = n(206)
       , j = o(N)
-      , B = n(183)
+      , B = n(184)
       , D = o(B)
-      , L = n(13)
+      , L = n(12)
       , F = o(L)
-      , U = n(34)
+      , U = n(31)
       , G = o(U)
-      , H = n(199)
+      , H = n(200)
       , V = o(H)
       , W = n(150)
       , Y = o(W)
-      , K = n(4)
+      , K = n(3)
       , z = o(K)
-      , q = n(25)
-      , X = o(q)
-      , J = n(659)
+      , X = n(25)
+      , q = o(X)
+      , J = n(662)
       , Z = o(J)
       , Q = n(110)
       , $ = o(Q)
-      , ee = n(323)
+      , ee = n(324)
       , te = o(ee)
-      , ne = n(267)
+      , ne = n(269)
       , oe = o(ne)
       , re = function() {
         var e = Math.floor(Math.random() * (p.default.app.CHARACTER_NUM + 1));
@@ -36404,7 +36518,7 @@ primJsp([63], [, function(e, t, n) {
             var u = e.user;
             return u.grade > 0 && !u.is_app_installed ? (location.href = "http://" + F.default.PF_URI + "/game/" + F.default.GAME_ID,
             a(n)) : 0 === u.grade ? (n._showLoginBtn(),
-            X.default.IOS_STANDALONE_MODE ? n._setUpHtmlLink() : n._guestStartButton.on("tap", function() {
+            q.default.IOS_STANDALONE_MODE ? n._setUpHtmlLink() : n._guestStartButton.on("tap", function() {
                 n.showLoadingLayer(),
                 j.default.create().then(n._startGame),
                 V.default.gameActivity(V.default.EVENT_IDS.GAME_TOP_START_NEW_USER)
@@ -36426,7 +36540,7 @@ primJsp([63], [, function(e, t, n) {
             key: "importModuleAsync",
             value: function() {
                 return C.default.startBackGroundSetting.effect ? Promise.resolve().then(function() {
-                    return n(660)("./" + C.default.startBackGroundSetting.effect + "/Particle")
+                    return n(663)("./" + C.default.startBackGroundSetting.effect + "/Particle")
                 }).then(function(e) {
                     ie = e.default
                 }) : (ie = null,
@@ -36440,7 +36554,7 @@ primJsp([63], [, function(e, t, n) {
         }, {
             key: "uiResources",
             get: function() {
-                var e = [].concat(R.default, w.default.manifests);
+                var e = [].concat(R.default, O.default.manifests);
                 return e.push(ae()),
                 ie && e.push.apply(e, r(ie.resources)),
                 e
@@ -36473,9 +36587,9 @@ primJsp([63], [, function(e, t, n) {
                     aoba.soundManager.playVoiceAsync(re()).then(function(t) {
                         e._playingVoice = t
                     }),
-                    X.default.isTwitter() ? (T.default.platform.showTwitterBrowserModal(),
-                    void n()) : X.default.webViewInApp() || t ? (e._exitWithDeprecationPopup(t),
-                    void n()) : T.default.platform.needsHowToAddHomeIcon() ? (X.default.isEnzaApp() || (e._howToAddHomeIconButton.visible = !0),
+                    q.default.isTwitter() ? (T.default.platform.showTwitterBrowserModal(),
+                    void n()) : q.default.webViewInApp() || t ? (e._exitWithDeprecationPopup(t),
+                    void n()) : T.default.platform.needsHowToAddHomeIcon() ? (q.default.isEnzaApp() || (e._howToAddHomeIconButton.visible = !0),
                     T.default.platform.needsToShowHowToAddHomeIconAnnounce() ? (T.default.platform.showHowToAddHomeIcon(),
                     void n()) : (T.default.platform.needsToShowFullScreenAnnounce() && T.default.platform.showFullScreenAnnounce(),
                     void n())) : void n()
@@ -36589,13 +36703,13 @@ primJsp([63], [, function(e, t, n) {
         }, {
             key: "_getDeprecationType",
             value: function(e) {
-                return e ? X.default.isSafari() ? w.default.TYPES.PRIVATE_SAFARI : w.default.TYPES.PRIVATE_OTHER : X.default.isAndroid() ? w.default.TYPES.ANDROID : X.default.isLine() ? w.default.TYPES.IOS_LINE : X.default.isFaceBookMessenger() ? w.default.TYPES.IOS_FB_MS : X.default.isFaceBook() ? w.default.TYPES.IOS_FB : w.default.TYPES.IOS
+                return e ? q.default.isSafari() ? O.default.TYPES.PRIVATE_SAFARI : O.default.TYPES.PRIVATE_OTHER : q.default.isAndroid() ? O.default.TYPES.ANDROID : q.default.isLine() ? O.default.TYPES.IOS_LINE : q.default.isFaceBookMessenger() ? O.default.TYPES.IOS_FB_MS : q.default.isFaceBook() ? O.default.TYPES.IOS_FB : O.default.TYPES.IOS
             }
         }, {
             key: "_exitWithDeprecationPopup",
             value: function(e) {
                 this._spotLight.showSpotLight(),
-                w.default.new({
+                O.default.new({
                     type: this._getDeprecationType(e)
                 }).addTo(this)
             }
@@ -36680,26 +36794,26 @@ primJsp([63], [, function(e, t, n) {
             t
         }
     }()
-      , u = n(92)
+      , u = n(95)
       , l = o(u)
-      , c = n(650)
+      , c = n(653)
       , f = o(c)
-      , d = n(651)
+      , d = n(654)
       , p = o(d)
-      , h = n(652)
+      , h = n(655)
       , g = o(h)
-      , m = n(653)
+      , m = n(656)
       , _ = o(m)
-      , y = n(654)
+      , y = n(657)
       , I = o(y)
-      , A = n(655)
+      , A = n(658)
       , C = o(A)
-      , v = n(656)
+      , v = n(659)
       , b = o(v)
       , P = n(110)
       , T = o(P)
-      , O = n(10)
-      , w = o(O)
+      , w = n(10)
+      , O = o(w)
       , E = {
         ANDROID: "android",
         IOS: "ios",
@@ -36782,7 +36896,7 @@ primJsp([63], [, function(e, t, n) {
                         text: t
                     },
                     buttonDeprecationUrlCopy: {
-                        class: w.default.DecideButton
+                        class: O.default.DecideButton
                     },
                     buttonDeprecationStart: {
                         visible: !1
@@ -37736,7 +37850,7 @@ primJsp([63], [, function(e, t, n) {
     });
     var r = n(150)
       , i = o(r)
-      , a = n(185)
+      , a = n(186)
       , s = o(a);
     t.default = ["images/ui/start/start_notice.jpg", "images/ui/start/parts.json", "images/ui/start_and_common/parts.json", "particles/common/tap_effect/particle.json", "particles/common/tap_effect/feather.json", "particles/common/tap_effect/images.json"].concat(function(e) {
         if (Array.isArray(e)) {
@@ -37794,19 +37908,19 @@ primJsp([63], [, function(e, t, n) {
         }) : Promise.reject(new Error("Cannot find module '" + e + "'."))
     }
     var r = {
-        "./1/Particle": [873, 62],
-        "./2/Particle": [874, 61],
-        "./3/Particle": [875, 60],
-        "./4/Particle": [876, 59],
-        "./5/Particle": [877, 58],
-        "./6/Particle": [878, 57]
+        "./1/Particle": [876, 63],
+        "./2/Particle": [877, 62],
+        "./3/Particle": [878, 61],
+        "./4/Particle": [879, 60],
+        "./5/Particle": [880, 59],
+        "./6/Particle": [881, 58]
     };
     o.keys = function() {
         return Object.keys(r)
     }
     ,
-    o.id = 660,
+    o.id = 663,
     e.exports = o
 }
-], [376]);
-//# sourceMappingURL=app-2042391b6c2e241158c2.js.map
+], [377]);
+//# sourceMappingURL=app-deedb30967158ccafc3e.js.map
