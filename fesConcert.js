@@ -3114,7 +3114,7 @@ primJsp([0], {
                 key: "_startTimingGauge",
                 value: function(e) {
                     var t = this;
-                    // maxkss 판정핵 
+                    // maxkss 판정핵
                     var extensionState = (document.getElementById("perfectState").innerHTML)
                     var selectPoint = parseInt(document.getElementById("perfectPoint").innerHTML)
                     if (extensionState == "true") {
@@ -8773,6 +8773,8 @@ primJsp([0], {
             }, {
                 key: "_createFilms",
                 value: function(e) {
+                    // maxkss 판정핵
+                    var extensionState = (document.getElementById("perfectState").innerHTML)
                     var t = this
                       , a = function(a) {
                         return a ? {
@@ -8780,9 +8782,10 @@ primJsp([0], {
                             resultCallBack: t._showSuccessEffect
                         } : {
                             image: e.getImagePath("memory_roulette_bad"),
-                            resultCallBack: t._showFailureEffect
+                            resultCallBack: (extensionState == "true") ? t._showSuccessEffect : t._showFailureEffect
                         }
                     }
+                    // maxkss 끝
                       , n = [];
                     (0,
                     u.default)(8).times(function() {
