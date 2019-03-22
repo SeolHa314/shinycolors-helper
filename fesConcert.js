@@ -1,5 +1,55 @@
 primJsp([0], {
-    1008: function(e, t, a) {
+    1001: function(e, t, a) {
+        "use strict";
+        Object.defineProperty(t, "__esModule", {
+            value: !0
+        }),
+        t.default = {
+            prepare: "sounds/se/138.m4a",
+            start: "sounds/se/139.m4a",
+            turnStart: "sounds/se/140.m4a",
+            passiveSkill: "sounds/se/033.m4a",
+            drawCard: "sounds/se/142.m4a",
+            increaseMemory: "sounds/se/143.m4a",
+            maxMemory: "sounds/se/144.m4a",
+            selectCard: "sounds/se/145.m4a",
+            showAttackOrder: "sounds/se/146.m4a",
+            selectJudgeTarget: "sounds/se/147.m4a",
+            gaugeStart: "sounds/se/148.m4a",
+            gaugeBad: "sounds/se/149.m4a",
+            gaugeNormal: "sounds/se/150.m4a",
+            gaugeGood: "sounds/se/151.m4a",
+            gaugePerfect: "sounds/se/152.m4a",
+            appealStart: "sounds/se/153.m4a",
+            showDamageText: "sounds/se/154.m4a",
+            hitIdolAppeal: "sounds/se/155.m4a",
+            audienceVoice: "sounds/se/162.m4a",
+            idolReceiveDamage: "sounds/se/165.m4a",
+            idolSpecialAttack: "sounds/se/193.m4a",
+            idolNormalAttack: "sounds/se/194.m4a",
+            reachJudgeGauge: "sounds/se/156a.m4a",
+            giveBonus1: "sounds/se/156b2.m4a",
+            giveBonus2: "sounds/se/156c2.m4a",
+            linkSkill: "sounds/se/157.m4a",
+            startMemoryRoulette: "sounds/se/166.m4a",
+            memoryRouletteGood: "sounds/se/167.m4a",
+            memoryRouletteBad: "sounds/se/168.m4a",
+            memoryRouletteMiss: "sounds/se/169.m4a",
+            showMemoryCutIn: "sounds/se/170.m4a",
+            showBuffEffect: "sounds/se/114a.m4a",
+            showDebuffEffect: "sounds/se/115.m4a",
+            showRecoverEffect: "sounds/se/116.m4a",
+            showActiveReraiseEffect: "sounds/se/409_1.m4a",
+            showActiveReraiseEffect2: "sounds/se/409_2.m4a",
+            showActiveReraiseRivalEffect: "sounds/se/409_r_1.m4a",
+            showActiveReraiseRivalEffect2: "sounds/se/409_r_2.m4a",
+            showPassiveReraiseEffect: "sounds/se/410.m4a",
+            useSkillOfRaiseMemoryAppeal: "sounds/se/330.m4a",
+            raiseMemoryAppealOfActor: "sounds/se/331.m4a",
+            idolRetire: "sounds/se/concert_result/0135.m4a"
+        }
+    },
+    1011: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -11,7 +61,7 @@ primJsp([0], {
         });
         var r = a(1)
           , o = n(r)
-          , i = a(1063)
+          , i = a(1066)
           , l = n(i)
           , s = {
             AUDITION: function(e) {
@@ -194,14 +244,14 @@ primJsp([0], {
               , _ = r.speakerLeft
               , m = r.speakerRight
               , g = r.effectLeft
-              , v = r.effectRight;
+              , b = r.effectRight;
             return [g, g, s, c, u, y].forEach(function(e) {
                 e.blendMode = aoba.BLEND_MODES.ADD
             }),
             o && i && d(o, i),
             f(s, c, u, y),
             _ && m && p(_, m),
-            h(g, v),
+            h(g, b),
             t
         }
           , m = function(e) {
@@ -225,7 +275,7 @@ primJsp([0], {
             }).addTo(a),
             a
         }
-          , v = function() {
+          , b = function() {
             var e = s.CONCERT
               , t = aoba.Sprite.new(e.bg);
             return y(e.effect).addTo(t),
@@ -235,7 +285,7 @@ primJsp([0], {
             }).addTo(t),
             t
         }
-          , b = function() {
+          , v = function() {
             var e = s.FES
               , t = aoba.Sprite.new(e.bg);
             return y(e.effect).addTo(t),
@@ -269,20 +319,20 @@ primJsp([0], {
         t.default = {
             IMAGES: s,
             createAudition: g,
-            createConcert: v,
-            createFes: b,
+            createConcert: b,
+            createFes: v,
             createAuditionSelect: w,
             createTV: k
         }
     },
-    1019: function(e, t, a) {
+    1022: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
         }),
         t.default = ["images/ui/tutorial/parts.json"]
     },
-    1040: function(e, t, a) {
+    1043: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -332,9 +382,9 @@ primJsp([0], {
         }()
           , s = a(1)
           , c = n(s)
-          , u = a(1041)
+          , u = a(1044)
           , f = n(u)
-          , d = a(1045)
+          , d = a(1048)
           , p = n(d)
           , h = {
             FREE: Symbol("free"),
@@ -691,7 +741,7 @@ primJsp([0], {
         }(aoba.utils.EventEmitter);
         t.default = g
     },
-    1041: function(e, t, a) {
+    1044: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -739,11 +789,11 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(1042)
+          , s = a(1045)
           , c = n(s)
-          , u = a(1043)
+          , u = a(1046)
           , f = n(u)
-          , d = a(1044)
+          , d = a(1047)
           , p = n(d)
           , h = {
             top: {
@@ -923,7 +973,7 @@ primJsp([0], {
         }(aoba.Graphics);
         t.default = _
     },
-    1042: function(e, t, a) {
+    1045: function(e, t, a) {
         "use strict";
         function n(e) {
             if (Array.isArray(e)) {
@@ -1054,7 +1104,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = c
     },
-    1043: function(e, t, a) {
+    1046: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -1243,7 +1293,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = f
     },
-    1044: function(e, t, a) {
+    1047: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -1318,7 +1368,7 @@ primJsp([0], {
         }(aoba.Sprite);
         t.default = l
     },
-    1045: function(e, t, a) {
+    1048: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -1424,7 +1474,7 @@ primJsp([0], {
         }(aoba.Sprite);
         t.default = s
     },
-    1063: function(e, t, a) {
+    1066: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -1514,7 +1564,7 @@ primJsp([0], {
             type: "container"
         }
     },
-    1136: function(e, t, a) {
+    1139: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -1564,18 +1614,18 @@ primJsp([0], {
         }()
           , s = a(134)
           , c = n(s)
-          , u = a(1186)
+          , u = a(1194)
           , f = n(u)
-          , d = a(1258)
+          , d = a(1267)
           , p = n(d)
-          , h = a(1501)
+          , h = a(1510)
           , y = n(h)
-          , _ = a(1504)
+          , _ = a(1513)
           , m = n(_)
-          , g = a(1581)
-          , v = n(g)
-          , b = a(13)
-          , w = n(b)
+          , g = a(1591)
+          , b = n(g)
+          , v = a(12)
+          , w = n(v)
           , k = a(140)
           , S = n(k)
           , T = function(e) {
@@ -1590,7 +1640,7 @@ primJsp([0], {
                     var r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {}
                       , o = m.default.new(Object.assign({}, e, {
                         bg: n,
-                        concertService: new v.default(e,a,t.LiveGameManager),
+                        concertService: new b.default(e,a,t.LiveGameManager),
                         onEndConcert: this.goToResult.bind(this),
                         isProduceConcert: r.isProduceConcert
                     }));
@@ -1653,7 +1703,7 @@ primJsp([0], {
         }(c.default);
         t.default = T
     },
-    1137: function(e, t, a) {
+    1140: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -1728,18 +1778,18 @@ primJsp([0], {
             fesMatch: c
         }
     },
-    1186: function(e, t, a) {
+    1194: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var n = a(998)
+        var n = a(1001)
           , r = function(e) {
             return e && e.__esModule ? e : {
                 default: e
             }
         }(n);
-        t.default = ["images/ui/common/parts_link_skill_dialog.json", "images/ui/concert/parts.json", "images/ui/concert/parts_attack_order.json", "images/ui/concert/parts_bg.json", "images/ui/concert/parts_effect.json", "images/ui/concert/parts_pause.json", "images/ui/concert/parts_number.json", "images/ui/concert/parts_text.json", "images/ui/fes/fes_role_icons.json", "images/content/active_skills/icon.json", "images/content/passive_skills/icon.json", "images/content/skill_effects/icon.json", "images/ui/concert/effects/idol_damaged.png", "images/ui/concert/effects/idol_damaged_sad.png", "images/ui/concert/effects/idol_recover.png", "images/ui/concert/effects/judge_damaged.png", "images/ui/concert/effects/mental_break.png", "images/ui/concert/effects/player_idol.png", "images/ui/concert/effects/spark_impact_blue.png", "images/ui/concert/effects/fireworks_blue.png", "images/ui/concert/effects/fireworks_green.png", "images/ui/concert/effects/fireworks_yellow.png", "images/ui/concert/effects/spark_impact_yellow.png", "images/ui/concert/effects/line_effect.png", "images/ui/concert/effects/beam_line.png", "images/ui/concert/effects/spiral_masked.png", "images/ui/concert/effects/list_overlay_black.png", "images/ui/concert/effects/timing_gauge_line.png", "images/ui/produce_ending/fes_idol_birth_crush_w.png", "particles/concert/common/images.json", "particles/concert/memory_appeal/bg.json", "particles/concert/memory_appeal/impact.json", "particles/concert/memory_appeal/spark.json", "particles/concert/memory_appeal/wing_burst.json", "particles/concert/memory_appeal_gauge/heart_1.json", "particles/concert/memory_appeal_gauge/heart_2.json", "particles/concert/recover_skill/note.json", "particles/concert/recover_skill/wave.json", "particles/concert/judge_attack/trail_boke.json", "particles/concert/judge_attack/trail.json", "particles/concert/rival_attack/hit.json", "particles/concert/rival_attack/trail.json", "particles/concert/rival_attack/charge.json", "particles/concert/idol_attack/hit.json", "particles/concert/idol_attack/trail.json", "particles/concert/idol_attack/charge.json", "particles/concert/star/hit.json", "particles/concert/star/trail.json", "particles/concert/star/trail_boke.json", "particles/concert/heart/hit.json", "particles/concert/heart/trail.json", "particles/concert/common/twinkle.json", "particles/concert/common/arrow_up.json", "particles/concert/common/arrow_down.json", "particles/concert/common/flash_line_1.json", "particles/concert/common/flash_line_2.json", "particles/concert/common/flash_line_3.json", "particles/concert/common/flash_line_3_down.json", "particles/concert/common/flash_line_3_up.json", "particles/concert/common/flash_line_ring.json", "particles/concert/common/flash_spark_3.json", "particles/concert/common/flash_spark_4.json", "particles/concert/common/idol_buff.json", "particles/concert/common/idol_debuff.json", "particles/concert/common/idol_gain_star.json", "particles/concert/common/retire_aura.json", "particles/concert/common/retire_flash.json", "particles/concert/common/stage_flash_011.json", "particles/concert/common/stage_flash_012.json", "particles/concert/common/stage_flash_013.json", "particles/concert/common/stage_flash_020.json", "particles/concert/common/stage_flash_030.json", "particles/concert/common/timing_bad_center.json", "particles/concert/common/timing_bad_top.json", "particles/concert/common/timing_normal_top.json", "particles/concert/common/timing_good_center.json", "particles/concert/common/timing_good_top.json", "particles/concert/common/timing_perfect_center.json", "particles/concert/common/timing_perfect_top.json", "particles/concert/common/melancholy_1.json", "particles/concert/common/melancholy_2.json", "particles/concert/raise_memory_appeal/live_omoide_heart_1.json", "particles/concert/raise_memory_appeal/live_omoide_heart_big.json", "particles/concert/raise_memory_appeal/live_omoide_heart_hit.json", "particles/concert/raise_memory_appeal/live_omoide_heart_hit_twinkle.json", "particles/concert/reraise_skill/reraise_feather_1.json", "particles/concert/reraise_skill/reraise_feather_2.json", "particles/concert/reraise_skill/reraise_feather_twinkle_1.json", "particles/concert/reraise_skill/reraise_twinkle_1.json", "particles/concert/reraise_skill/reraise_twinkle_2.json", "particles/concert/reraise_skill/reraise_twinkle_5.json", "particles/concert/reraise_skill/reraise_twinkle_6.json"].concat(function(e) {
+        t.default = ["images/ui/common/parts_link_skill_dialog.json", "images/ui/concert/parts.json", "images/ui/concert/parts_attack_order.json", "images/ui/concert/parts_bg.json", "images/ui/concert/parts_effect.json", "images/ui/concert/parts_pause.json", "images/ui/concert/parts_number.json", "images/ui/concert/parts_text.json", "images/ui/fes/fes_role_icons.json", "images/content/active_skills/icon.json", "images/content/passive_skills/icon.json", "images/content/skill_effects/icon.json", "images/ui/concert/effects/idol_damaged.png", "images/ui/concert/effects/idol_damaged_sad.png", "images/ui/concert/effects/idol_recover.png", "images/ui/concert/effects/judge_damaged.png", "images/ui/concert/effects/mental_break.png", "images/ui/concert/effects/player_idol.png", "images/ui/concert/effects/spark_impact_blue.png", "images/ui/concert/effects/fireworks_blue.png", "images/ui/concert/effects/fireworks_green.png", "images/ui/concert/effects/fireworks_yellow.png", "images/ui/concert/effects/spark_impact_yellow.png", "images/ui/concert/effects/line_effect.png", "images/ui/concert/effects/beam_line.png", "images/ui/concert/effects/spiral_masked.png", "images/ui/concert/effects/list_overlay_black.png", "images/ui/concert/effects/timing_gauge_line.png", "images/ui/produce_ending/fes_idol_birth_crush_w.png", "particles/concert/common/images.json", "particles/concert/memory_appeal/bg.json", "particles/concert/memory_appeal/impact.json", "particles/concert/memory_appeal/spark.json", "particles/concert/memory_appeal/wing_burst.json", "particles/concert/memory_appeal_gauge/heart_1.json", "particles/concert/memory_appeal_gauge/heart_2.json", "particles/concert/recover_skill/note.json", "particles/concert/recover_skill/wave.json", "particles/concert/judge_attack/trail_boke.json", "particles/concert/judge_attack/trail.json", "particles/concert/rival_attack/hit.json", "particles/concert/rival_attack/trail.json", "particles/concert/rival_attack/charge.json", "particles/concert/idol_attack/hit.json", "particles/concert/idol_attack/trail.json", "particles/concert/idol_attack/charge.json", "particles/concert/star/hit.json", "particles/concert/star/trail.json", "particles/concert/star/trail_boke.json", "particles/concert/heart/hit.json", "particles/concert/heart/trail.json", "particles/concert/common/twinkle.json", "particles/concert/common/arrow_up.json", "particles/concert/common/arrow_down.json", "particles/concert/common/flash_line_1.json", "particles/concert/common/flash_line_2.json", "particles/concert/common/flash_line_3.json", "particles/concert/common/flash_line_3_down.json", "particles/concert/common/flash_line_3_up.json", "particles/concert/common/flash_line_ring.json", "particles/concert/common/flash_spark_3.json", "particles/concert/common/flash_spark_4.json", "particles/concert/common/idol_buff.json", "particles/concert/common/idol_debuff.json", "particles/concert/common/idol_gain_star.json", "particles/concert/common/retire_aura.json", "particles/concert/common/retire_flash.json", "particles/concert/common/stage_flash_011.json", "particles/concert/common/stage_flash_012.json", "particles/concert/common/stage_flash_013.json", "particles/concert/common/stage_flash_020.json", "particles/concert/common/stage_flash_030.json", "particles/concert/common/timing_bad_center.json", "particles/concert/common/timing_bad_top.json", "particles/concert/common/timing_normal_top.json", "particles/concert/common/timing_good_center.json", "particles/concert/common/timing_good_top.json", "particles/concert/common/timing_perfect_center.json", "particles/concert/common/timing_perfect_top.json", "particles/concert/common/melancholy_1.json", "particles/concert/common/melancholy_2.json", "particles/concert/raise_memory_appeal/live_omoide_heart_1.json", "particles/concert/raise_memory_appeal/live_omoide_heart_big.json", "particles/concert/raise_memory_appeal/live_omoide_heart_hit.json", "particles/concert/raise_memory_appeal/live_omoide_heart_hit_twinkle.json", "particles/concert/reraise_skill/reraise_feather_1.json", "particles/concert/reraise_skill/reraise_feather_2.json", "particles/concert/reraise_skill/reraise_feather_twinkle_1.json", "particles/concert/reraise_skill/reraise_twinkle_1.json", "particles/concert/reraise_skill/reraise_twinkle_2.json", "particles/concert/reraise_skill/reraise_twinkle_5.json", "particles/concert/reraise_skill/reraise_twinkle_6.json", "particles/concert/lower_memory_appeal/down.json", "particles/concert/lower_memory_appeal/hajiki.json", "particles/concert/lower_memory_appeal/omoide_down_Melancholy.json", "particles/concert/lower_memory_appeal/omoide_down_Melancholy2.json"].concat(function(e) {
             if (Array.isArray(e)) {
                 for (var t = 0, a = Array(e.length); t < e.length; t++)
                     a[t] = e[t];
@@ -1748,7 +1798,7 @@ primJsp([0], {
             return Array.from(e)
         }(Object.values(r.default)))
     },
-    1258: function(e, t, a) {
+    1267: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -1784,7 +1834,7 @@ primJsp([0], {
             a
         }
     },
-    1259: function(e, t, a) {
+    1268: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -1795,7 +1845,8 @@ primJsp([0], {
                 BUFF: "buff",
                 DEBUFF: "debuff",
                 RECOVER: "recover",
-                RERAISE: "reraise"
+                RERAISE: "reraise",
+                PENALTY: "penalty"
             },
             MASTER_EFFECT_TYPES: {
                 REGENERATE: "regenerate",
@@ -1839,7 +1890,7 @@ primJsp([0], {
             }
         }
     },
-    1260: function(e, t, a) {
+    1269: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -1891,7 +1942,7 @@ primJsp([0], {
             y: 579
         }
     },
-    1357: function(e, t, a) {
+    1366: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -1934,7 +1985,7 @@ primJsp([0], {
                 t
             }
         }()
-          , l = a(991)
+          , l = a(994)
           , s = function(e) {
             function t(e) {
                 n(this, t);
@@ -1979,7 +2030,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = s
     },
-    1358: function(e, t, a) {
+    1367: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -2073,7 +2124,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = l
     },
-    1359: function(e, t, a) {
+    1368: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -2121,19 +2172,19 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(1260)
+          , s = a(1269)
           , c = n(s)
-          , u = a(1538)
+          , u = a(1548)
           , f = n(u)
-          , d = a(991)
-          , p = a(1539)
+          , d = a(994)
+          , p = a(1549)
           , h = n(p)
           , y = a(9)
           , _ = n(y)
-          , m = a(993)
+          , m = a(995)
           , g = n(m)
-          , v = a(998)
-          , b = n(v)
+          , b = a(1001)
+          , v = n(b)
           , w = function(e) {
             function t(e) {
                 var a = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
@@ -2184,6 +2235,10 @@ primJsp([0], {
                 n._memorySkillGroup.on("gaugeFull", function() {
                     n._showGaugeFullEffect(),
                     n.emit("gaugeFull", n)
+                }),
+                n._memorySkillGroup.on("gaugeNotFull", function() {
+                    n._hideGaugeEffect(),
+                    n.emit("gaugeNotFull", n)
                 }),
                 n._disable(),
                 n
@@ -2264,7 +2319,7 @@ primJsp([0], {
             }, {
                 key: "_showGaugeFullEffect",
                 value: function() {
-                    aoba.soundManager.playSE(b.default.maxMemory);
+                    aoba.soundManager.playSE(v.default.maxMemory);
                     var e = _.default.playParticle(g.default.memoryAppealGauge.heart2, this._memorySkillGroup, 0, 0);
                     this._gaugeFullEffects.push(e);
                     var t = aoba.Sprite.new("concert_heart.png").addTo(this._memorySkillGroup, 0, 4, {
@@ -2349,7 +2404,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = w
     },
-    1360: function(e, t, a) {
+    1369: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -2411,7 +2466,7 @@ primJsp([0], {
             y: 577
         }
     },
-    1361: function(e, t, a) {
+    1370: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -2459,9 +2514,9 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(1548)
+          , s = a(1558)
           , c = n(s)
-          , u = a(193)
+          , u = a(194)
           , f = n(u)
           , d = function(e, t) {
             return e + "/" + t
@@ -2547,7 +2602,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = p
     },
-    1362: function(e, t, a) {
+    1371: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -2574,7 +2629,7 @@ primJsp([0], {
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var i = a(992)
+        var i = a(996)
           , l = function(e) {
             return e && e.__esModule ? e : {
                 default: e
@@ -2621,7 +2676,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = s
     },
-    1363: function(e, t, a) {
+    1372: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -2653,7 +2708,7 @@ primJsp([0], {
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var l = a(992)
+        var l = a(996)
           , s = n(l)
           , c = a(3)
           , u = n(c)
@@ -2694,8 +2749,8 @@ primJsp([0], {
                 "linear" === u)
                     for (var _ = y.children.length - 1, m = 0; m < _; m++) {
                         var g = aoba.Sprite.new("link_skill_arrow.png")
-                          , v = y.children[m];
-                        g.addTo(y, v.x + v.width, v.height / 2, {
+                          , b = y.children[m];
+                        g.addTo(y, b.x + b.width, b.height / 2, {
                             anchor: .5
                         })
                     }
@@ -2717,7 +2772,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = y
     },
-    1364: function(e, t, a) {
+    1373: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -2760,13 +2815,13 @@ primJsp([0], {
                 t
             }
         }()
-          , l = a(1260)
+          , l = a(1269)
           , s = function(e) {
             return e && e.__esModule ? e : {
                 default: e
             }
         }(l)
-          , c = a(991)
+          , c = a(994)
           , u = function(e) {
             function t(e) {
                 var a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
@@ -2908,12 +2963,12 @@ primJsp([0], {
         }(aoba.Container);
         t.default = u
     },
-    1501: function(e, t, a) {
+    1510: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var n = a(207)
+        var n = a(209)
           , r = function(e) {
             return e && e.__esModule ? e : {
                 default: e
@@ -2921,16 +2976,16 @@ primJsp([0], {
         }(n)
           , o = function(e) {
             r.default.dynamicLoad(function() {
-                return a.e(73).then(a.bind(null, 1502))
+                return a.e(73).then(a.bind(null, 1511))
             }, function() {
-                return a.e(74).then(a.bind(null, 1503))
+                return a.e(74).then(a.bind(null, 1512))
             }).then(function(t) {
                 return e(t.LiveGameManager)
             })
         };
         t.default = o
     },
-    1504: function(e, t, a) {
+    1513: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -2991,13 +3046,13 @@ primJsp([0], {
             if (void 0 !== i)
                 return i.call(n)
         }
-          , c = a(1505)
+          , c = a(1514)
           , u = n(c)
           , f = a(1)
           , d = n(f)
           , p = a(9)
           , h = n(p)
-          , y = a(991)
+          , y = a(994)
           , _ = function(e) {
             if (e && e.__esModule)
                 return e;
@@ -3008,65 +3063,65 @@ primJsp([0], {
             return t.default = e,
             t
         }(y)
-          , m = a(998)
+          , m = a(1001)
           , g = n(m)
-          , v = a(31)
-          , b = n(v)
-          , w = a(1506)
+          , b = a(31)
+          , v = n(b)
+          , w = a(1515)
           , k = n(w)
-          , S = a(1525)
+          , S = a(1535)
           , T = n(S)
-          , E = a(1532)
+          , E = a(1542)
           , O = n(E)
-          , x = a(1533)
-          , P = n(x)
-          , I = a(1537)
+          , P = a(1543)
+          , x = n(P)
+          , I = a(1547)
           , j = n(I)
-          , A = a(1359)
-          , C = n(A)
-          , M = a(1540)
-          , D = n(M)
-          , R = a(1541)
+          , A = a(1368)
+          , M = n(A)
+          , C = a(1550)
+          , D = n(C)
+          , R = a(1551)
           , L = n(R)
-          , F = a(1542)
+          , F = a(1552)
           , N = n(F)
-          , B = a(1546)
+          , B = a(1556)
           , G = n(B)
-          , U = a(1549)
+          , U = a(1559)
           , Y = n(U)
-          , V = a(1550)
+          , V = a(1560)
           , X = n(V)
-          , W = a(1552)
+          , W = a(1562)
           , H = n(W)
-          , Q = a(1553)
+          , Q = a(1563)
           , J = n(Q)
-          , z = a(1555)
+          , z = a(1565)
           , K = n(z)
-          , q = a(1556)
+          , q = a(1566)
           , $ = n(q)
-          , Z = a(1557)
+          , Z = a(1567)
           , ee = n(Z)
-          , te = a(1560)
+          , te = a(1570)
           , ae = n(te)
-          , ne = a(1562)
+          , ne = a(1572)
           , re = n(ne)
-          , oe = a(1563)
+          , oe = a(1573)
           , ie = n(oe)
-          , le = a(1564)
+          , le = a(1574)
           , se = n(le)
-          , ce = a(1565)
+          , ce = a(1575)
           , ue = n(ce)
-          , fe = a(1566)
+          , fe = a(1576)
           , de = n(fe)
-          , pe = a(1567)
+          , pe = a(1577)
           , he = n(pe)
-          , ye = a(1568)
+          , ye = a(1578)
           , _e = n(ye)
-          , me = a(1569)
+          , me = a(1579)
           , ge = n(me)
-          , ve = a(1580)
-          , be = n(ve)
-          , we = a(219)
+          , be = a(1590)
+          , ve = n(be)
+          , we = a(220)
           , ke = n(we)
           , Se = {
             1: {
@@ -3098,9 +3153,10 @@ primJsp([0], {
                     e.isPlayer || (e.idolColor = i.shift())
                 }),
                 a._concertService = e.concertService,
+                a._isTutorial = e.isTutorial,
                 a._isFesMatch = !!e.userFesDeck,
                 a._isProduceConcert = e.isProduceConcert,
-                a._voicePlayer = new be.default(a._concertService.centerIdol),
+                a._voicePlayer = new ve.default(a._concertService.centerIdol),
                 a._onEndConcert = e.onEndConcert,
                 a._stageLayer = X.default.new(e.bg),
                 a._turn = ae.default.new(a._concertService.turn + 1),
@@ -3294,7 +3350,7 @@ primJsp([0], {
             }, {
                 key: "_canPause",
                 value: function() {
-                    return !this._overlay.parent
+                    return !this._isTutorial && !this._overlay.parent
                 }
             }, {
                 key: "_pauseGame",
@@ -3350,8 +3406,8 @@ primJsp([0], {
                     this._voicePlayer.playSelectVoice(this.selectedCard),
                     aoba.soundManager.playSE(g.default.selectJudgeTarget),
                     this._startSkillGame(),
-                    this.emit("selectJudge")) : (aoba.soundManager.playSE(b.default.ui.decide),
-                    P.default.new(e).addTo(this).open())
+                    this.emit("selectJudge")) : (aoba.soundManager.playSE(v.default.ui.decide),
+                    x.default.new(e).addTo(this).open())
                 }
             }, {
                 key: "_startSkillGame",
@@ -3411,7 +3467,7 @@ primJsp([0], {
                     this._concertService.appeal(n, t.id, e)
                 }
             }, {
-                // maxkss 마지막 수정 20190301
+                // maxkss 마지막 수정 20190322
                 key: "_startTimingGauge",
                 value: function(e) {
                     var t = this;
@@ -3505,10 +3561,10 @@ primJsp([0], {
             }, {
                 key: "_initJudgeList",
                 value: function(e) {
+                    var t = this;
                     // maxkss 딜 미터기 심사위원 초기화
                     dealMeter.initJudgeList(e)
                     // maxkss 끝
-                    var t = this;
                     e.forEach(function(e) {
                         t._judgeList.addJudge(T.default.new(e))
                     })
@@ -3539,14 +3595,14 @@ primJsp([0], {
                         memorySkillCard: this._memorySkillCard
                     }),
                     this._skillSelectLayer.on("showPassiveSkillDetailList", function() {
-                        aoba.soundManager.playSE(b.default.ui.decide),
+                        aoba.soundManager.playSE(v.default.ui.decide),
                         e._showPassiveSkillDetailList()
                     })
                 }
             }, {
                 key: "_initSkillCardHand",
                 value: function(e, t) {
-                    return this._memorySkillCard = C.default.create(t, this._concertService.centerIdol),
+                    return this._memorySkillCard = M.default.create(t, this._concertService.centerIdol),
                     this._skillCardHand.init(e, this._memorySkillCard)
                 }
             }, {
@@ -3750,7 +3806,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = Te
     },
-    1505: function(e, t, a) {
+    1514: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -3840,7 +3896,7 @@ primJsp([0], {
             type: "container"
         }
     },
-    1506: function(e, t, a) {
+    1515: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -3900,33 +3956,33 @@ primJsp([0], {
           , u = n(c)
           , f = a(1)
           , d = n(f)
-          , p = a(1259)
+          , p = a(1268)
           , h = n(p)
-          , y = a(993)
+          , y = a(995)
           , _ = n(y)
           , m = a(9)
           , g = n(m)
-          , v = a(998)
-          , b = n(v)
-          , w = a(1507)
+          , b = a(1001)
+          , v = n(b)
+          , w = a(1516)
           , k = n(w)
-          , S = a(1508)
+          , S = a(1517)
           , T = n(S)
-          , E = a(1509)
+          , E = a(1518)
           , O = n(E)
-          , x = a(1511)
-          , P = n(x)
-          , I = a(1513)
+          , P = a(1520)
+          , x = n(P)
+          , I = a(1522)
           , j = n(I)
-          , A = a(1514)
-          , C = n(A)
-          , M = a(1519)
-          , D = n(M)
-          , R = a(1520)
+          , A = a(1523)
+          , M = n(A)
+          , C = a(1529)
+          , D = n(C)
+          , R = a(1530)
           , L = n(R)
-          , F = a(1524)
+          , F = a(1534)
           , N = n(F)
-          , B = a(335)
+          , B = a(336)
           , G = n(B)
           , U = h.default.EFFECT_TYPES
           , Y = h.default.MASTER_EFFECT_TYPES
@@ -3975,7 +4031,7 @@ primJsp([0], {
                 key: "showAttackOrders",
                 value: function(e) {
                     var t = this;
-                    return aoba.soundManager.playSE(b.default.showAttackOrder),
+                    return aoba.soundManager.playSE(v.default.showAttackOrder),
                     this._playerIdolList.resetAttackOrders(),
                     Promise.all(e.map(function(e, a) {
                         return t._findActorBy(e).showAttackOrder(a + 1)
@@ -4320,7 +4376,7 @@ primJsp([0], {
                       , c = null;
                     o.isFesIdol ? s = o.isCenter ? this._standIdol : this._getOrCreateStandSupportIdol(o) : (s = this._standIdol,
                     o.isCenter || (c = this._getOrCreateStandSupportIdol(o)));
-                    var u = P.default.new().addTo(this).play(n, s, c).then(function(e) {
+                    var u = x.default.new().addTo(this).play(n, s, c).then(function(e) {
                         s && s.remove(),
                         c && c.remove(),
                         e.destroy({
@@ -4427,6 +4483,9 @@ primJsp([0], {
                     case U.RECOVER:
                         this._playIdolRecoverSkillEffectOnCutIn(e);
                         break;
+                    case U.PENALTY:
+                        this._playIdolPenaltySkillEffectOnCutIn(e);
+                        break;
                     default:
                         throw J(e.effect.effectType)
                     }
@@ -4449,7 +4508,7 @@ primJsp([0], {
                         break;
                     case W.THEM:
                         var c = i ? D.default.shootIdolAttack : D.default.shootRivalMemoryAppeal;
-                        aoba.soundManager.playSE(b.default.showDamageText);
+                        aoba.soundManager.playSE(v.default.showDamageText);
                         var u = k.default.new(r.value)
                           , f = l ? 480 : 640
                           , p = 80 * (1 - n.effects.length) / 2
@@ -4493,14 +4552,14 @@ primJsp([0], {
                         var a = this._judgeList.findById(e.target.id);
                         switch (t.data.targetGroup) {
                         case W.US:
-                            aoba.soundManager.playSE(b.default.showBuffEffect),
+                            aoba.soundManager.playSE(v.default.showBuffEffect),
                             e.playerIdol.addStatusEffect(t),
                             g.default.playParticle(_.default.arrowUp, this, 720, 780, {
                                 scale: 1.5
                             });
                             break;
                         case W.THEM:
-                            aoba.soundManager.playSE(b.default.showBuffEffect),
+                            aoba.soundManager.playSE(v.default.showBuffEffect),
                             a.addStatusEffect(t);
                             var n = a.getGlobalPosition();
                             g.default.playParticle(_.default.arrowUp, this, n.x - 40, n.y + 60, {
@@ -4521,9 +4580,9 @@ primJsp([0], {
                     var t = this
                       , a = e.playerIdol
                       , n = e.effect;
-                    1 === this._playSESpeed ? aoba.soundManager.playSE(b.default.showActiveReraiseEffect) : aoba.soundManager.playSE(b.default.showActiveReraiseEffect2),
+                    1 === this._playSESpeed ? aoba.soundManager.playSE(v.default.showActiveReraiseEffect) : aoba.soundManager.playSE(v.default.showActiveReraiseEffect2),
                     aoba.FrameTween.new(this).call(function() {
-                        return C.default.playIdolReraiseEffect().addTo(t)
+                        return M.default.playIdolReraiseEffect().addTo(t)
                     }).wait(50).call(function() {
                         a.addStatusEffect(n),
                         a.playActiveReraiseEffect()
@@ -4536,14 +4595,14 @@ primJsp([0], {
                       , a = this._judgeList.findById(e.target.id);
                     switch (t.data.targetGroup) {
                     case W.US:
-                        aoba.soundManager.playSE(b.default.showDebuffEffect),
+                        aoba.soundManager.playSE(v.default.showDebuffEffect),
                         e.playerIdol.addStatusEffect(t),
                         t.data.effectType === Y.SLIP_DAMAGE ? this._createIdolMelancholyParticle(a) : g.default.playParticle(_.default.arrowDown, this, 720, 240, {
                             scale: 1.5
                         });
                         break;
                     case W.THEM:
-                        aoba.soundManager.playSE(b.default.showDebuffEffect),
+                        aoba.soundManager.playSE(v.default.showDebuffEffect),
                         a.addStatusEffect(t);
                         var n = a.getGlobalPosition();
                         g.default.playParticle(this._getJudgeDebuffParticle(), this, n.x - 40, n.y - 100, {
@@ -4563,14 +4622,24 @@ primJsp([0], {
                     var t = e.playerIdol
                       , a = e.effect;
                     if (a.data.effectType === Y.MEMORY_APPEAL_GAUGE_BONUS) {
-                        aoba.soundManager.playSE(b.default.useSkillOfRaiseMemoryAppeal);
+                        aoba.soundManager.playSE(v.default.useSkillOfRaiseMemoryAppeal);
                         var n = a.data.value;
                         t.raiseMemoryAppeal(n),
-                        C.default.playIdolRaiseEffectOfMemoryAppeal(n).addTo(this)
+                        M.default.playIdolRaiseEffectOfMemoryAppeal(n).addTo(this)
                     } else
                         t.playRecoverEffect(),
                         t.recover(a.value),
-                        C.default.playIdolRecoverEffect(a.value).addTo(this)
+                        M.default.playIdolRecoverEffect(a.value).addTo(this)
+                }
+            }, {
+                key: "_playIdolPenaltySkillEffectOnCutIn",
+                value: function(e) {
+                    var t = e.effect;
+                    if ([Y.MEMORY_APPEAL_GAUGE_BONUS].includes(t.data.effectType)) {
+                        aoba.soundManager.playSE(v.default.showDebuffEffect);
+                        var a = t.data.value;
+                        M.default.playIdolLowerEffectOfMemoryAppeal(a).addTo(this)
+                    }
                 }
             }, {
                 key: "_playSelfDamageEffect",
@@ -4657,6 +4726,8 @@ primJsp([0], {
                         return this._playPlayerDebuffEffect(a, e, n);
                     case U.RECOVER:
                         return this._playPlayerRecoverEffect(a, e);
+                    case U.PENALTY:
+                        return this._playPlayerPenaltyEffect(a, e);
                     default:
                         throw J(a.effectType)
                     }
@@ -4684,7 +4755,7 @@ primJsp([0], {
                 value: function(e, t, a) {
                     switch (a.data.targetGroup) {
                     case W.US:
-                        aoba.soundManager.playSE(b.default.showBuffEffect, {
+                        aoba.soundManager.playSE(v.default.showBuffEffect, {
                             volume: .15
                         });
                         var n = e.getGlobalPosition();
@@ -4694,7 +4765,7 @@ primJsp([0], {
                         e.addStatusEffect(a),
                         Promise.resolve();
                     case W.THEM:
-                        aoba.soundManager.playSE(b.default.showBuffEffect, {
+                        aoba.soundManager.playSE(v.default.showBuffEffect, {
                             volume: .15
                         });
                         var r = t.getCenterGlobalPosition();
@@ -4712,7 +4783,7 @@ primJsp([0], {
                 value: function(e, t, a) {
                     switch (a.data.targetGroup) {
                     case W.US:
-                        aoba.soundManager.playSE(b.default.showDebuffEffect, {
+                        aoba.soundManager.playSE(v.default.showDebuffEffect, {
                             volume: .15
                         });
                         var n = e.getGlobalPosition();
@@ -4722,7 +4793,7 @@ primJsp([0], {
                         e.addStatusEffect(a),
                         Promise.resolve();
                     case W.THEM:
-                        aoba.soundManager.playSE(b.default.showDebuffEffect, {
+                        aoba.soundManager.playSE(v.default.showDebuffEffect, {
                             volume: .15
                         });
                         var r = t.getCenterGlobalPosition();
@@ -4747,7 +4818,7 @@ primJsp([0], {
             }, {
                 key: "_playPlayerReraiseEffect",
                 value: function(e, t) {
-                    return 1 === this._playSESpeed ? aoba.soundManager.playSE(b.default.showActiveReraiseRivalEffect) : aoba.soundManager.playSE(b.default.showActiveReraiseRivalEffect2),
+                    return 1 === this._playSESpeed ? aoba.soundManager.playSE(v.default.showActiveReraiseRivalEffect) : aoba.soundManager.playSE(v.default.showActiveReraiseRivalEffect2),
                     t.addStatusEffect(e),
                     t.playActiveReraiseEffect(),
                     aoba.FrameTween.new(this).wait(45).promise()
@@ -4757,11 +4828,11 @@ primJsp([0], {
                 value: function(e, t, a) {
                     switch (e.data.targetGroup) {
                     case W.US:
-                        aoba.soundManager.playSE(b.default.showBuffEffect),
+                        aoba.soundManager.playSE(v.default.showBuffEffect),
                         this._playIdolReceivedBuffEffect(t, e);
                         break;
                     case W.THEM:
-                        aoba.soundManager.playSE(b.default.showBuffEffect),
+                        aoba.soundManager.playSE(v.default.showBuffEffect),
                         this._playJudgeReceivedBuffEffect(a, e);
                         break;
                     case W.RIVALS:
@@ -4774,11 +4845,11 @@ primJsp([0], {
                 value: function(e, t, a) {
                     switch (e.data.targetGroup) {
                     case W.US:
-                        aoba.soundManager.playSE(b.default.showDebuffEffect),
+                        aoba.soundManager.playSE(v.default.showDebuffEffect),
                         this._playIdolReceivedDebuffEffect(t, e);
                         break;
                     case W.THEM:
-                        aoba.soundManager.playSE(b.default.showDebuffEffect),
+                        aoba.soundManager.playSE(v.default.showDebuffEffect),
                         this._playJudgeReceivedDebuffEffect(a, e);
                         break;
                     case W.RIVALS:
@@ -4797,6 +4868,15 @@ primJsp([0], {
                     return aoba.FrameTween.new(this).wait(45).promise()
                 }
             }, {
+                key: "_playPlayerPenaltyEffect",
+                value: function(e, t) {
+                    if (e.data.effectType === Y.MEMORY_APPEAL_GAUGE_BONUS) {
+                        var a = e.data.value;
+                        t.penaltyMemoryAppeal(a)
+                    }
+                    return aoba.FrameTween.new(this).wait(45).promise()
+                }
+            }, {
                 key: "_playIdolReceivedBuffEffect",
                 value: function(e, t) {
                     var a = e.getCenterGlobalPosition();
@@ -4810,7 +4890,7 @@ primJsp([0], {
                 value: function(e, t) {
                     var a = this;
                     aoba.FrameTween.new(this).wait(30).call(function() {
-                        aoba.soundManager.playSE(b.default.showBuffEffect);
+                        aoba.soundManager.playSE(v.default.showBuffEffect);
                         var n = !0
                           , r = !1
                           , o = void 0;
@@ -4846,7 +4926,7 @@ primJsp([0], {
                 value: function(e, t) {
                     var a = this;
                     aoba.FrameTween.new(this).wait(30).call(function() {
-                        aoba.soundManager.playSE(b.default.showDebuffEffect);
+                        aoba.soundManager.playSE(v.default.showDebuffEffect);
                         var n = !0
                           , r = !1
                           , o = void 0;
@@ -4924,7 +5004,7 @@ primJsp([0], {
                         i = t.attributes ? t.attributes.includes(o.attribute) : t.data.attribute === o.attribute;
                         var l = i || a;
                         return o.receiveDamage(t.value, l),
-                        C.default.playJudgeDamageEffect(r, o, e.actionType, i, n)
+                        M.default.playJudgeDamageEffect(r, o, e.actionType, i, n)
                     }).wait(10).promise()
                 }
             }, {
@@ -4936,7 +5016,7 @@ primJsp([0], {
                       , o = this._isFesMatch ? r.filter(function(e) {
                         return H.LINK.includes(e.type)
                     }) : [];
-                    aoba.soundManager.playSE(b.default.linkSkill);
+                    aoba.soundManager.playSE(v.default.linkSkill);
                     var i = n.linkSkill.linkSkillIdols
                       , l = i.map(function(e) {
                         return e.getVoicePath("concert_link")
@@ -5018,7 +5098,7 @@ primJsp([0], {
                 value: function() {
                     var e = this;
                     return this.emit("playVoice", "concert_memory_appeal_success_2"),
-                    aoba.soundManager.playSE(b.default.showMemoryCutIn),
+                    aoba.soundManager.playSE(v.default.showMemoryCutIn),
                     this._movie || this.initiateMovie(this._memorySkillMoviePath),
                     this._movie.addTo(this),
                     this._movie.show(),
@@ -5187,7 +5267,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = $
     },
-    1507: function(e, t, a) {
+    1516: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -5230,7 +5310,7 @@ primJsp([0], {
                 t
             }
         }()
-          , l = a(991)
+          , l = a(994)
           , s = a(9)
           , c = function(e) {
             return e && e.__esModule ? e : {
@@ -5279,7 +5359,7 @@ primJsp([0], {
         }(c.default.ImageLabel);
         t.default = y
     },
-    1508: function(e, t, a) {
+    1517: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -5474,7 +5554,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = u
     },
-    1509: function(e, t, a) {
+    1518: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -5522,11 +5602,11 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(1510)
+          , s = a(1519)
           , c = n(s)
-          , u = a(1357)
+          , u = a(1366)
           , f = n(u)
-          , d = a(991)
+          , d = a(994)
           , p = function(e) {
             function t() {
                 r(this, t);
@@ -5581,7 +5661,7 @@ primJsp([0], {
         }(f.default);
         t.default = p
     },
-    1510: function(e, t, a) {
+    1519: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -5633,7 +5713,7 @@ primJsp([0], {
             y: 0
         }
     },
-    1511: function(e, t, a) {
+    1520: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -5689,11 +5769,11 @@ primJsp([0], {
                 t
             }
         }()
-          , c = a(1512)
+          , c = a(1521)
           , u = n(c)
-          , f = a(1357)
+          , f = a(1366)
           , d = n(f)
-          , p = a(991)
+          , p = a(994)
           , h = {
             SINGLE: "skill1",
             TWO: "skill2"
@@ -5755,7 +5835,7 @@ primJsp([0], {
         }(d.default);
         t.default = y
     },
-    1512: function(e, t, a) {
+    1521: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -5811,7 +5891,7 @@ primJsp([0], {
             y: 0
         }
     },
-    1513: function(e, t, a) {
+    1522: function(e, t, a) {
         "use strict";
         (function(e) {
             function n(e) {
@@ -5826,9 +5906,9 @@ primJsp([0], {
               , o = n(r)
               , i = a(9)
               , l = n(i)
-              , s = a(993)
+              , s = a(995)
               , c = n(s)
-              , u = a(998)
+              , u = a(1001)
               , f = n(u)
               , d = a(91)
               , p = n(d)
@@ -5903,7 +5983,7 @@ primJsp([0], {
         }
         ).call(t, a(15))
     },
-    1514: function(e, t, a) {
+    1523: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -5913,22 +5993,25 @@ primJsp([0], {
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var r = a(1515)
+        var r = a(1524)
           , o = n(r)
-          , i = a(1516)
+          , i = a(1525)
           , l = n(i)
-          , s = a(1517)
+          , s = a(1526)
           , c = n(s)
-          , u = a(1518)
-          , f = n(u);
+          , u = a(1527)
+          , f = n(u)
+          , d = a(1528)
+          , p = n(d);
         t.default = {
             playIdolRecoverEffect: o.default,
             playJudgeDamageEffect: l.default,
             playIdolRaiseEffectOfMemoryAppeal: c.default,
-            playIdolReraiseEffect: f.default
+            playIdolLowerEffectOfMemoryAppeal: f.default,
+            playIdolReraiseEffect: p.default
         }
     },
-    1515: function(e, t, a) {
+    1524: function(e, t, a) {
         "use strict";
         (function(e) {
             function n(e) {
@@ -5939,11 +6022,11 @@ primJsp([0], {
             Object.defineProperty(t, "__esModule", {
                 value: !0
             });
-            var r = a(993)
+            var r = a(995)
               , o = n(r)
               , i = a(9)
               , l = n(i)
-              , s = a(991)
+              , s = a(994)
               , c = function(t) {
                 var a = aoba.Container.new()
                   , n = l.default.playParticle(o.default.recoverSkill.wave, a, 640, 600);
@@ -6032,7 +6115,7 @@ primJsp([0], {
         }
         ).call(t, a(15))
     },
-    1516: function(e, t, a) {
+    1525: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -6095,7 +6178,7 @@ primJsp([0], {
         };
         t.default = r
     },
-    1517: function(e, t, a) {
+    1526: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -6105,11 +6188,11 @@ primJsp([0], {
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var r = a(993)
+        var r = a(995)
           , o = n(r)
           , i = a(9)
           , l = n(i)
-          , s = a(991)
+          , s = a(994)
           , c = function(e) {
             var t = aoba.Container.new();
             return [{
@@ -6146,11 +6229,15 @@ primJsp([0], {
                     originX: .5,
                     interval: 36,
                     scaleX: .64,
-                    scaleY: .64,
-                    prefix: "+"
+                    scaleY: .64
                 });
                 a.number = e,
-                a.addTo(t, 775, 325),
+                a.addTo(t, 755, 325, {
+                    scale: 1.3
+                }),
+                aoba.Sprite.new("memory_skill_up.png").addTo(a, a.width - 40, -a.height / 2 + 20, {
+                    scale: .7
+                }),
                 aoba.Tween.fromData(a, s.idolAttackDamageText.appear)
             }).wait(20).to({
                 alpha: 0
@@ -6159,7 +6246,84 @@ primJsp([0], {
         };
         t.default = c
     },
-    1518: function(e, t, a) {
+    1527: function(e, t, a) {
+        "use strict";
+        function n(e) {
+            return e && e.__esModule ? e : {
+                default: e
+            }
+        }
+        Object.defineProperty(t, "__esModule", {
+            value: !0
+        });
+        var r = a(995)
+          , o = n(r)
+          , i = a(9)
+          , l = n(i)
+          , s = function(e) {
+            var t = aoba.Container.new();
+            return [{
+                data: o.default.lowerMemoryAppeal.heart,
+                option: {
+                    scale: .3,
+                    blendMode: aoba.BLEND_MODES.NORMAL,
+                    alpha: .7,
+                    startTime: 1e3
+                },
+                delay: 0,
+                stopTime: 15
+            }, {
+                data: o.default.lowerMemoryAppeal.heart,
+                option: {
+                    scale: .3,
+                    blendMode: aoba.BLEND_MODES.ADD,
+                    alpha: .7,
+                    startTime: 1e3
+                },
+                delay: 0,
+                stopTime: 15
+            }, {
+                data: o.default.lowerMemoryAppeal.hajiki,
+                delay: 20,
+                stopTime: 10
+            }].forEach(function(e) {
+                aoba.FrameTween.new(t).wait(e.delay).call(function() {
+                    var a = l.default.playParticle(e.data, t, 725, 350, e.option);
+                    aoba.FrameTween.new(a).wait(e.stopTime).to({
+                        scaleX: 0,
+                        scaleY: 0
+                    }, 5)
+                })
+            }),
+            aoba.FrameTween.new(t).wait(10).call(function() {
+                var a = l.default.ImageLabel.new({
+                    imagePrefix: "memory_skill_number_down_",
+                    originX: .5,
+                    interval: 36,
+                    scaleX: .64,
+                    scaleY: .64
+                });
+                a.number = e,
+                a.addTo(t, 755, 375, {
+                    alpha: 0,
+                    scale: 1.3
+                }),
+                aoba.Sprite.new("memory_skill_down.png").addTo(a, a.width - 40, -a.height / 2 + 20, {
+                    scale: .7
+                }),
+                aoba.FrameTween.new(a).to({
+                    alpha: 1
+                }, 5).wait(20).to({
+                    alpha: 0
+                }, 10)
+            }).wait(20).to({
+                alpha: 0
+            }, 5),
+            t
+        };
+        t.default = s
+    },
+    1528: function(e, t, a) {
         "use strict";
         (function(e) {
             function n(e) {
@@ -6170,7 +6334,7 @@ primJsp([0], {
             Object.defineProperty(t, "__esModule", {
                 value: !0
             });
-            var r = a(993)
+            var r = a(995)
               , o = n(r)
               , i = a(9)
               , l = n(i)
@@ -6197,7 +6361,7 @@ primJsp([0], {
         }
         ).call(t, a(15))
     },
-    1519: function(e, t, a) {
+    1529: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -6207,7 +6371,7 @@ primJsp([0], {
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var r = a(993)
+        var r = a(995)
           , o = n(r)
           , i = a(9)
           , l = n(i)
@@ -6339,7 +6503,7 @@ primJsp([0], {
             shootJudgeStar: d
         }
     },
-    1520: function(e, t, a) {
+    1530: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -6389,9 +6553,9 @@ primJsp([0], {
         }()
           , s = a(9)
           , c = n(s)
-          , u = a(1521)
+          , u = a(1531)
           , f = n(u)
-          , d = a(993)
+          , d = a(995)
           , p = n(d)
           , h = function(e) {
             function t() {
@@ -6454,7 +6618,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = h
     },
-    1521: function(e, t, a) {
+    1531: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -6497,7 +6661,7 @@ primJsp([0], {
                 t
             }
         }()
-          , l = a(1522)
+          , l = a(1532)
           , s = function(e) {
             return e && e.__esModule ? e : {
                 default: e
@@ -6543,7 +6707,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = u
     },
-    1522: function(e, t, a) {
+    1532: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -6591,9 +6755,9 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(1523)
+          , s = a(1533)
           , c = n(s)
-          , u = a(192)
+          , u = a(193)
           , f = n(u)
           , d = function(e) {
             function t(e) {
@@ -6645,7 +6809,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = d
     },
-    1523: function(e, t, a) {
+    1533: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -6704,7 +6868,7 @@ primJsp([0], {
             y: 488
         }
     },
-    1524: function(e, t, a) {
+    1534: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -6752,9 +6916,9 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(335)
+          , s = a(336)
           , c = n(s)
-          , u = a(993)
+          , u = a(995)
           , f = n(u)
           , d = function(e) {
             function t() {
@@ -6812,7 +6976,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = d
     },
-    1525: function(e, t, a) {
+    1535: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -6875,24 +7039,24 @@ primJsp([0], {
         }
           , c = a(15)
           , u = n(c)
-          , f = a(1526)
+          , f = a(1536)
           , d = n(f)
-          , p = a(991)
-          , h = a(193)
+          , p = a(994)
+          , h = a(194)
           , y = n(h)
-          , _ = a(1527)
+          , _ = a(1537)
           , m = n(_)
-          , g = a(1529)
-          , v = n(g)
-          , b = a(1530)
-          , w = n(b)
-          , k = a(1531)
+          , g = a(1539)
+          , b = n(g)
+          , v = a(1540)
+          , w = n(v)
+          , k = a(1541)
           , S = n(k)
-          , T = a(1358)
+          , T = a(1367)
           , E = n(T)
-          , O = a(998)
-          , x = n(O)
-          , P = {
+          , O = a(1001)
+          , P = n(O)
+          , x = {
             vocal: {
                 base: "judge_image_vocal.png",
                 appealBonus: "text_appeal_vocal.png"
@@ -6914,7 +7078,7 @@ primJsp([0], {
                   , i = void 0 === e.currentScore ? 0 : e.score - e.currentScore
                   , l = n.fromData(d.default, {
                     image: {
-                        key: P[e.attribute].base
+                        key: x[e.attribute].base
                     },
                     interestingGauge: y.default.new("interesting_gauge.png", {
                         maxValue: e.score,
@@ -6939,8 +7103,8 @@ primJsp([0], {
                 a._attackOrder = aoba.Sprite.new().setPosition(a._attackOrderX, 12).setProps({
                     alpha: 0
                 }),
-                a._comment = v.default.new(null, e.attribute).setPosition(s.x + 104, s.y + 56).setAnchor(0, .5),
-                a._bonusEffect = w.default.new("text_star_bonus.png", P[e.attribute].appealBonus).setPosition(s.x + 172, s.y + 112).setAnchor(.5),
+                a._comment = b.default.new(null, e.attribute).setPosition(s.x + 104, s.y + 56).setAnchor(0, .5),
+                a._bonusEffect = w.default.new("text_star_bonus.png", x[e.attribute].appealBonus).setPosition(s.x + 172, s.y + 112).setAnchor(.5),
                 a._positiveEffectRect = aoba.Graphics.new().beginFill(16777215).drawRoundedRect(s.x, s.y, s.width, s.height, 12),
                 a._attackEffectRect = aoba.Graphics.new().beginFill(16711680).drawRoundedRect(s.x, s.y, s.width, s.height, 12),
                 a._id = e.id,
@@ -7075,12 +7239,12 @@ primJsp([0], {
                 key: "showAttackComment",
                 value: function(e) {
                     var t = e ? this._usedSkillComment : this._attackComment;
-                    return this._showComment(v.default.TYPES.ATTACK, t)
+                    return this._showComment(b.default.TYPES.ATTACK, t)
                 }
             }, {
                 key: "showBonusComment",
                 value: function() {
-                    return this._showComment(v.default.TYPES.BONUS, this._reactionComment)
+                    return this._showComment(b.default.TYPES.BONUS, this._reactionComment)
                 }
             }, {
                 key: "_showComment",
@@ -7099,8 +7263,8 @@ primJsp([0], {
                 key: "giveBonus",
                 value: function() {
                     var e = this;
-                    aoba.soundManager.playSE(x.default.giveBonus1);
-                    var t = aoba.soundManager.playSE(x.default.giveBonus2, {
+                    aoba.soundManager.playSE(P.default.giveBonus1);
+                    var t = aoba.soundManager.playSE(P.default.giveBonus2, {
                         loop: !0
                     });
                     this._positiveEffectRect.addTo(this._main);
@@ -7181,7 +7345,7 @@ primJsp([0], {
                 value: function(e, t) {
                     var a = this;
                     if (!this._playingSE) {
-                        var n = t ? x.default.idolSpecialAttack : x.default.idolNormalAttack;
+                        var n = t ? P.default.idolSpecialAttack : P.default.idolNormalAttack;
                         aoba.soundManager.playSE(n),
                         this._playingSE = !0
                     }
@@ -7248,7 +7412,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = I
     },
-    1526: function(e, t, a) {
+    1536: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -7317,7 +7481,7 @@ primJsp([0], {
             y: 61
         }
     },
-    1527: function(e, t, a) {
+    1537: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -7351,7 +7515,7 @@ primJsp([0], {
         });
         var l = a(4)
           , s = n(l)
-          , c = a(1528)
+          , c = a(1538)
           , u = n(c)
           , f = 3
           , d = {
@@ -7395,7 +7559,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = p
     },
-    1528: function(e, t, a) {
+    1538: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -7445,7 +7609,7 @@ primJsp([0], {
             y: 61
         }
     },
-    1529: function(e, t, a) {
+    1539: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -7542,7 +7706,7 @@ primJsp([0], {
         }(aoba.Sprite);
         t.default = c
     },
-    1530: function(e, t, a) {
+    1540: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -7665,7 +7829,7 @@ primJsp([0], {
         }(aoba.Sprite);
         t.default = c
     },
-    1531: function(e, t, a) {
+    1541: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -7708,7 +7872,7 @@ primJsp([0], {
                 t
             }
         }()
-          , l = a(991)
+          , l = a(994)
           , s = function(e) {
             function t(e) {
                 n(this, t);
@@ -7759,7 +7923,7 @@ primJsp([0], {
         }(aoba.Sprite);
         t.default = s
     },
-    1532: function(e, t, a) {
+    1542: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -7802,7 +7966,7 @@ primJsp([0], {
                 t
             }
         }()
-          , l = a(991)
+          , l = a(994)
           , s = function(e) {
             function t() {
                 n(this, t);
@@ -7951,7 +8115,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = s
     },
-    1533: function(e, t, a) {
+    1543: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -7983,7 +8147,7 @@ primJsp([0], {
         function l(e) {
             var t = aoba.Container.new()
               , a = t.fromData(m.default, {
-                popStretchInnerBase534x320: v.default.new("pop_stretch_inner_base.png", {
+                popStretchInnerBase534x320: b.default.new("pop_stretch_inner_base.png", {
                     left: 10,
                     top: 10,
                     right: 10,
@@ -7991,9 +8155,9 @@ primJsp([0], {
                     width: 534,
                     height: 320
                 }),
-                "status/dotLine438": x.default.create({
+                "status/dotLine438": P.default.create({
                     width: 438,
-                    type: x.default.types.DOT_BLACK
+                    type: P.default.types.DOT_BLACK
                 }),
                 "status/trendOrder": {
                     key: "trend_order_" + e.trendOrder + ".png"
@@ -8060,26 +8224,26 @@ primJsp([0], {
           , p = n(d)
           , h = a(14)
           , y = n(h)
-          , _ = a(1534)
+          , _ = a(1544)
           , m = n(_)
           , g = a(59)
-          , v = n(g)
-          , b = a(87)
-          , w = n(b)
+          , b = n(g)
+          , v = a(87)
+          , w = n(v)
           , k = a(88)
           , S = n(k)
-          , T = a(193)
+          , T = a(194)
           , E = n(T)
           , O = a(188)
-          , x = n(O)
-          , P = a(1535)
-          , I = n(P)
+          , P = n(O)
+          , x = a(1545)
+          , I = n(x)
           , j = 100
           , A = {
             EVEN: 16777215,
             ODD: 16053236
         }
-          , C = function(e) {
+          , M = function(e) {
             function t(e) {
                 r(this, t);
                 var a = l(e);
@@ -8095,9 +8259,9 @@ primJsp([0], {
             return i(t, e),
             t
         }(y.default);
-        t.default = C
+        t.default = M
     },
-    1534: function(e, t, a) {
+    1544: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -8247,7 +8411,7 @@ primJsp([0], {
             y: 84
         }
     },
-    1535: function(e, t, a) {
+    1545: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -8279,7 +8443,7 @@ primJsp([0], {
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var l = a(1536)
+        var l = a(1546)
           , s = n(l)
           , c = a(188)
           , u = n(c)
@@ -8327,7 +8491,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = h
     },
-    1536: function(e, t, a) {
+    1546: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -8423,7 +8587,7 @@ primJsp([0], {
             y: 190
         }
     },
-    1537: function(e, t, a) {
+    1547: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -8448,7 +8612,7 @@ primJsp([0], {
                 t
             }
         }()
-          , o = a(197)
+          , o = a(198)
           , i = function(e) {
             return e && e.__esModule ? e : {
                 default: e
@@ -8517,7 +8681,7 @@ primJsp([0], {
         }();
         t.default = s
     },
-    1538: function(e, t, a) {
+    1548: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -8565,13 +8729,13 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(1360)
+          , s = a(1369)
           , c = n(s)
-          , u = a(998)
+          , u = a(1001)
           , f = n(u)
           , d = a(9)
           , p = n(d)
-          , h = a(993)
+          , h = a(995)
           , y = n(h)
           , _ = 1e3
           , m = function(e) {
@@ -8656,8 +8820,6 @@ primJsp([0], {
                 key: "increaseTo",
                 value: function(e) {
                     var t = this;
-                    if (this._gauge.isFull)
-                        return Promise.resolve();
                     aoba.soundManager.playSE(f.default.increaseMemory);
                     var a = p.default.playParticle(y.default.memoryAppealGauge.heart1, this, 0, 0);
                     return this._gauge.setValue(e),
@@ -8679,10 +8841,11 @@ primJsp([0], {
                                 scaleX: 1,
                                 scaleY: 1
                             }, 9, "easeInOutQuad").wait(3).call(e),
-                            t.emit("gaugeFull")) : aoba.FrameTween.new(t).wait(6).to({
+                            t.emit("gaugeFull")) : (aoba.FrameTween.new(t).wait(6).to({
                                 scaleX: 1,
                                 scaleY: 1
-                            }, 6, "easeInOutQuad").call(e)
+                            }, 6, "easeInOutQuad").call(e),
+                            t.emit("gaugeNotFull"))
                         })
                     }
                     )
@@ -8702,7 +8865,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = g
     },
-    1539: function(e, t, a) {
+    1549: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -8750,11 +8913,11 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(1260)
+          , s = a(1269)
           , c = n(s)
-          , u = a(1360)
+          , u = a(1369)
           , f = n(u)
-          , d = a(991)
+          , d = a(994)
           , p = function(e) {
             function t() {
                 r(this, t);
@@ -8858,7 +9021,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = h
     },
-    1540: function(e, t, a) {
+    1550: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -8923,14 +9086,14 @@ primJsp([0], {
           , u = n(c)
           , f = a(1)
           , d = n(f)
-          , p = a(998)
+          , p = a(1001)
           , h = n(p)
           , y = a(9)
           , _ = n(y)
-          , m = a(993)
+          , m = a(995)
           , g = n(m)
-          , v = 20
-          , b = 234
+          , b = 20
+          , v = 234
           , w = {
             1: 3,
             2: 5,
@@ -8945,7 +9108,7 @@ primJsp([0], {
           , O = function() {
             return aoba.Sprite.new("memory_select_frame.png").setPosition(T / 2, E / 2).setAnchor(.5)
         }
-          , x = function(e) {
+          , P = function(e) {
             function t(e) {
                 r(this, t);
                 var a = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
@@ -8957,13 +9120,13 @@ primJsp([0], {
                 a._filmBaseOverlay = _.default.graphics.rect(T, E, {
                     alpha: .5
                 }).addTo(a);
-                a._filmBase = aoba.extras.TilingSprite.fromFrame("memory_base.png", b * v, 236).addTo(a, -16, E / 2, {
+                a._filmBase = aoba.extras.TilingSprite.fromFrame("memory_base.png", v * b, 236).addTo(a, -16, E / 2, {
                     anchor: aoba.p(0, .5)
                 }),
                 a._bgEffect = aoba.Sprite.new("memory_film_base_effect.png").addToAt(a, a._filmBase, -16, E / 2, {
                     anchor: aoba.p(0, .5)
                 }),
-                a._bgEffect.width = b * v,
+                a._bgEffect.width = v * b,
                 a._bgEffect.height = 1.25 * a._filmBase.height,
                 a._films = a._createFilms(e).addTo(a, -16, E / 2, {
                     pivot: aoba.p(0, .5)
@@ -9345,7 +9508,7 @@ primJsp([0], {
                 key: "ezgUpdate",
                 value: function(e) {
                     if (this._moving) {
-                        var t = b * (e / (5e3 / 30)) * this._speed;
+                        var t = v * (e / (5e3 / 30)) * this._speed;
                         this._filmBase.x -= t,
                         this._bgEffect.x -= t,
                         this._films.x -= t,
@@ -9356,9 +9519,9 @@ primJsp([0], {
             }]),
             t
         }(aoba.Container);
-        t.default = x
+        t.default = P
     },
-    1541: function(e, t, a) {
+    1551: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -9467,7 +9630,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = l
     },
-    1542: function(e, t, a) {
+    1552: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -9520,7 +9683,7 @@ primJsp([0], {
                     width: 8,
                     height: 390
                 });
-                v.default.new({
+                b.default.new({
                     width: n.width - 4,
                     height: n.height - 4,
                     container: r,
@@ -9551,15 +9714,15 @@ primJsp([0], {
           , f = n(u)
           , d = a(14)
           , p = n(d)
-          , h = a(1543)
+          , h = a(1553)
           , y = n(h)
           , _ = a(59)
           , m = n(_)
           , g = a(87)
-          , v = n(g)
-          , b = a(88)
-          , w = n(b)
-          , k = a(1544)
+          , b = n(g)
+          , v = a(88)
+          , w = n(v)
+          , k = a(1554)
           , S = n(k)
           , T = 100
           , E = {
@@ -9584,7 +9747,7 @@ primJsp([0], {
         }(p.default);
         t.default = O
     },
-    1543: function(e, t, a) {
+    1553: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -9627,7 +9790,7 @@ primJsp([0], {
             y: 88
         }
     },
-    1544: function(e, t, a) {
+    1554: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -9659,7 +9822,7 @@ primJsp([0], {
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var l = a(1545)
+        var l = a(1555)
           , s = n(l)
           , c = a(188)
           , u = n(c)
@@ -9699,7 +9862,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = d
     },
-    1545: function(e, t, a) {
+    1555: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -9775,7 +9938,7 @@ primJsp([0], {
             y: 91
         }
     },
-    1546: function(e, t, a) {
+    1556: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -9840,23 +10003,23 @@ primJsp([0], {
           , u = n(c)
           , f = a(22)
           , d = n(f)
-          , p = a(1547)
+          , p = a(1557)
           , h = n(p)
-          , y = a(1358)
+          , y = a(1367)
           , _ = n(y)
-          , m = a(991)
+          , m = a(994)
           , g = a(4)
-          , v = n(g)
-          , b = a(993)
-          , w = n(b)
+          , b = n(g)
+          , v = a(995)
+          , w = n(v)
           , k = a(9)
           , S = n(k)
-          , T = a(1361)
+          , T = a(1370)
           , E = n(T)
-          , O = a(998)
-          , x = n(O)
-          , P = a(355)
-          , I = n(P)
+          , O = a(1001)
+          , P = n(O)
+          , x = a(355)
+          , I = n(x)
           , j = {
             normal: "text_timing_normal",
             good: "text_timing_good",
@@ -9869,10 +10032,10 @@ primJsp([0], {
             PERFECT: "perfect",
             MISS: "miss"
         }
-          , C = function(e) {
+          , M = function(e) {
             return d.default.pad(e, 2, "0")
         }
-          , M = function() {
+          , C = function() {
             var e = aoba.FrameAnimation.new("images/ui/concert/effects/player_idol.png", 73, 34, {
                 fps: 30,
                 keep: !0
@@ -9906,7 +10069,7 @@ primJsp([0], {
                 d ? (p = "idol_base_player.png",
                 y = l.getImagePath("concert_player_icon")) : (p = "idol_base_rival.png",
                 y = l.getImagePath("concert_rival_icon"));
-                var m = aoba.Text.new(C(n._star), {
+                var m = aoba.Text.new(M(n._star), {
                     fontSize: 22,
                     fill: [16710310, 16563510],
                     stroke: 2236962,
@@ -9936,14 +10099,14 @@ primJsp([0], {
                     mentalGroup: E.default.new(n._mental, n._maxMental),
                     statusEffectList: _.default.new()
                 }
-                  , v = n._main.fromData(h.default, g);
-                if (v.producerName.text = I.default.create(s, v.producerName.style, 5 * v.producerName.style.fontSize),
-                void 0 !== a && (v.idolImage.tint = a),
+                  , b = n._main.fromData(h.default, g);
+                if (b.producerName.text = I.default.create(s, b.producerName.style, 5 * b.producerName.style.fontSize),
+                void 0 !== a && (b.idolImage.tint = a),
                 d) {
-                    var b = M().addTo(n._main, 4, -24);
+                    var v = C().addTo(n._main, 4, -24);
                     aoba.FrameTween.new(n).call(function() {
-                        b.show(),
-                        b.play()
+                        v.show(),
+                        v.play()
                     }).wait(60).loop()
                 }
                 n._main.addTo(n, 0, 0),
@@ -9959,10 +10122,10 @@ primJsp([0], {
                 n._attackOrder = aoba.Sprite.new().setPosition(n._attackOrderX, 2).setProps({
                     alpha: 0
                 });
-                var w = v.base
-                  , k = v.concertStarIcon
-                  , S = v.mentalGroup
-                  , T = v.statusEffectList
+                var w = b.base
+                  , k = b.concertStarIcon
+                  , S = b.mentalGroup
+                  , T = b.statusEffectList
                   , O = aoba.Sprite.new().setPosition(-14, 26).setProps({
                     anchor: aoba.p(.5, 1),
                     alpha: 0
@@ -10052,7 +10215,7 @@ primJsp([0], {
                         y: -4
                     }, 2).call(function() {
                         t._star += e,
-                        n.text = C(t._star),
+                        n.text = M(t._star),
                         t._starCount.text = n.text
                     }).by({
                         y: 4
@@ -10084,7 +10247,7 @@ primJsp([0], {
                 key: "receiveDamage",
                 value: function(e) {
                     var t = this;
-                    if (aoba.soundManager.playSE(x.default.idolReceiveDamage, {
+                    if (aoba.soundManager.playSE(P.default.idolReceiveDamage, {
                         volume: .15
                     }),
                     this._isPlayer) {
@@ -10149,7 +10312,7 @@ primJsp([0], {
                     this._mentalGroup.increase(e);
                     var a = this._mentalGroup.isWarning;
                     t && !a && this.emit("leaveWarning"),
-                    aoba.soundManager.playSE(x.default.showRecoverEffect),
+                    aoba.soundManager.playSE(P.default.showRecoverEffect),
                     this.playRecoverEffect();
                     var n = S.default.ImageLabel.new({
                         imagePrefix: "recover_number_",
@@ -10176,7 +10339,7 @@ primJsp([0], {
             }, {
                 key: "raiseMemoryAppeal",
                 value: function(e) {
-                    aoba.soundManager.playSE(x.default.raiseMemoryAppealOfActor),
+                    aoba.soundManager.playSE(P.default.raiseMemoryAppealOfActor),
                     this._playRaiseEffectOfMemoryAppeal();
                     var t = S.default.ImageLabel.new({
                         imagePrefix: "memory_skill_number_",
@@ -10185,6 +10348,33 @@ primJsp([0], {
                         scaleX: .36,
                         scaleY: .36,
                         prefix: "+"
+                    });
+                    t.number = e,
+                    t.addTo(this._main, this._base.width / 2, this._base.height / 2),
+                    aoba.FrameTween.new(t).by({
+                        y: -15
+                    }, 3, "easeInOutQuad").by({
+                        y: 15
+                    }, 5, "easeInOutQuad").wait(12).to({
+                        alpha: 0
+                    }, 5).call(function() {
+                        t.destroy({
+                            children: !0
+                        })
+                    })
+                }
+            }, {
+                key: "penaltyMemoryAppeal",
+                value: function(e) {
+                    this._playPenaltyEffectOfMemoryAppeal(),
+                    aoba.soundManager.playSE(P.default.showDebuffEffect);
+                    var t = S.default.ImageLabel.new({
+                        imagePrefix: "memory_skill_number_down_",
+                        originX: .5,
+                        interval: 20,
+                        scaleX: .36,
+                        scaleY: .36,
+                        prefix: "-"
                     });
                     t.number = e,
                     t.addTo(this._main, this._base.width / 2, this._base.height / 2),
@@ -10216,6 +10406,73 @@ primJsp([0], {
                 value: function() {
                     S.default.playParticle(w.default.raiseMemoryAppeal.heartHit, this),
                     S.default.playParticle(w.default.raiseMemoryAppeal.heartHitTwinkle, this)
+                }
+            }, {
+                key: "_playPenaltyEffectOfMemoryAppeal",
+                value: function() {
+                    var e = this;
+                    [{
+                        data: w.default.lowerMemoryAppeal.memoryDownMelancholy2,
+                        blendMode: aoba.BLEND_MODES.ADD,
+                        alpha: 1,
+                        scale: 1,
+                        x: 0,
+                        y: 0,
+                        delay: 10,
+                        stopTime: 35
+                    }, {
+                        data: w.default.lowerMemoryAppeal.memoryDownMelancholy1,
+                        blendMode: aoba.BLEND_MODES.NORMAL,
+                        alpha: 1,
+                        scale: 1,
+                        x: 0,
+                        y: 0,
+                        delay: 10,
+                        stopTime: 35
+                    }, {
+                        data: w.default.lowerMemoryAppeal.hajiki,
+                        scale: .8,
+                        blendMode: aoba.BLEND_MODES.NORMAL,
+                        alpha: 1,
+                        x: this._base.width / 2 + 20,
+                        y: this._base.height / 2,
+                        delay: 25,
+                        stopTime: 30
+                    }].forEach(function(t) {
+                        var a = new S.default.ParticleSystem(t.data.images,t.data.data);
+                        a.setScale(t.scale, t.scale),
+                        a.setPosition(t.x, t.y),
+                        a.blendMode = t.blendMode,
+                        e._main.addChild(a.container),
+                        aoba.FrameTween.new(e).wait(t.delay).call(function() {
+                            a.play(),
+                            aoba.FrameTween.new(a).wait(t.stopTime).to({
+                                alpha: 0
+                            }, 5).call(function() {
+                                a.destroy({
+                                    children: !0
+                                })
+                            })
+                        })
+                    }),
+                    [{
+                        scale: .25,
+                        blendMode: aoba.BLEND_MODES.NORMAL,
+                        alpha: .8,
+                        startTime: 1e3
+                    }, {
+                        scale: .25,
+                        blendMode: aoba.BLEND_MODES.ADD,
+                        alpha: .5,
+                        startTime: 1e3
+                    }].forEach(function(t) {
+                        var a = S.default.playParticle(w.default.lowerMemoryAppeal.heart, e._main, e._base.width / 2, e._base.height / 2, t);
+                        aoba.FrameTween.new(a).wait(20).call(function() {
+                            a.destroy({
+                                children: !0
+                            })
+                        })
+                    })
                 }
             }, {
                 key: "playActiveReraiseEffect",
@@ -10264,7 +10521,7 @@ primJsp([0], {
                         alpha: 0,
                         blendMode: aoba.BLEND_MODES.ADD
                     });
-                    aoba.soundManager.playSE(x.default.showPassiveReraiseEffect),
+                    aoba.soundManager.playSE(P.default.showPassiveReraiseEffect),
                     aoba.FrameTween.new(a).to({
                         alpha: 1
                     }, 17).call(function() {
@@ -10423,7 +10680,7 @@ primJsp([0], {
                 value: function() {
                     var e = this._base.x + this._base.width / 2
                       , t = this._base.y + this._base.height / 2;
-                    aoba.Text.new(v.default.t("concert.playerIdol.retire"), {
+                    aoba.Text.new(b.default.t("concert.playerIdol.retire"), {
                         fontSize: 32,
                         fontFamily: "HummingStd-E",
                         fill: 6692736,
@@ -10499,7 +10756,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = D
     },
-    1547: function(e, t, a) {
+    1557: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -10569,7 +10826,7 @@ primJsp([0], {
             y: 286
         }
     },
-    1548: function(e, t, a) {
+    1558: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -10621,7 +10878,7 @@ primJsp([0], {
             y: 326
         }
     },
-    1549: function(e, t, a) {
+    1559: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -10664,7 +10921,7 @@ primJsp([0], {
                 t
             }
         }()
-          , l = a(991)
+          , l = a(994)
           , s = function(e) {
             function t() {
                 return n(this, t),
@@ -10809,7 +11066,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = s
     },
-    1550: function(e, t, a) {
+    1560: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -10857,9 +11114,9 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(1551)
+          , s = a(1561)
           , c = n(s)
-          , u = a(991)
+          , u = a(994)
           , f = a(9)
           , d = n(f)
           , p = {
@@ -10945,7 +11202,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = h
     },
-    1551: function(e, t, a) {
+    1561: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -10976,7 +11233,7 @@ primJsp([0], {
             y: 320
         }
     },
-    1552: function(e, t, a) {
+    1562: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -11024,11 +11281,11 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(1362)
+          , s = a(1371)
           , c = n(s)
-          , u = a(1363)
+          , u = a(1372)
           , f = n(u)
-          , d = a(991)
+          , d = a(994)
           , p = function(e) {
             function t() {
                 r(this, t);
@@ -11113,7 +11370,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = p
     },
-    1553: function(e, t, a) {
+    1563: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -11156,13 +11413,13 @@ primJsp([0], {
                 t
             }
         }()
-          , l = a(1554)
+          , l = a(1564)
           , s = function(e) {
             return e && e.__esModule ? e : {
                 default: e
             }
         }(l)
-          , c = a(991)
+          , c = a(994)
           , u = function(e) {
             function t() {
                 return n(this, t),
@@ -11217,7 +11474,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = u
     },
-    1554: function(e, t, a) {
+    1564: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -11263,7 +11520,7 @@ primJsp([0], {
             y: 512
         }
     },
-    1555: function(e, t, a) {
+    1565: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -11311,9 +11568,9 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(998)
+          , s = a(1001)
           , c = n(s)
-          , u = a(1364)
+          , u = a(1373)
           , f = n(u)
           , d = function(e) {
             var t = aoba.Sprite.new("concert_light_circle.png").setProps({
@@ -11410,6 +11667,7 @@ primJsp([0], {
                     }, aoba.FrameTween.new(this));
                     return this._memorySkillCard = t,
                     this._memorySkillCard.on("gaugeFull", this._createGaugeFullEffect, this),
+                    this._memorySkillCard.on("gaugeNotFull", this._destroyGaugeFullEffect, this),
                     this._memorySkillCard.on("consume", this._destroyGaugeFullEffect, this),
                     n.call(function() {
                         return a.addMemorySkillCard(t)
@@ -11548,7 +11806,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = y
     },
-    1556: function(e, t, a) {
+    1566: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -11598,7 +11856,7 @@ primJsp([0], {
         }()
           , s = a(9)
           , c = n(s)
-          , u = a(993)
+          , u = a(995)
           , f = n(u)
           , d = function(e) {
             function t() {
@@ -11727,7 +11985,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = d
     },
-    1557: function(e, t, a) {
+    1567: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -11783,12 +12041,12 @@ primJsp([0], {
                 t
             }
         }()
-          , c = a(1558)
+          , c = a(1568)
           , u = n(c)
-          , f = a(991)
-          , d = a(1559)
+          , f = a(994)
+          , d = a(1569)
           , p = n(d)
-          , h = a(998)
+          , h = a(1001)
           , y = n(h)
           , _ = 5
           , m = {
@@ -11846,7 +12104,7 @@ primJsp([0], {
             share: 15,
             value: 0
         }]
-          , v = function(e) {
+          , b = function(e) {
             return g.map(function(t) {
                 return t.originalData = e.find(function(e) {
                     return e.category === t.category
@@ -11854,7 +12112,7 @@ primJsp([0], {
                 t
             })
         }
-          , b = function(e) {
+          , v = function(e) {
             function t() {
                 o(this, t);
                 var e = i(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this))
@@ -12074,7 +12332,7 @@ primJsp([0], {
             }, {
                 key: "switchShare",
                 value: function() {
-                    this.setUpShare(v(this._appealMeters))
+                    this.setUpShare(b(this._appealMeters))
                 }
             }, {
                 key: "appealMeters",
@@ -12084,9 +12342,9 @@ primJsp([0], {
             }]),
             t
         }(aoba.Container);
-        t.default = b
+        t.default = v
     },
-    1558: function(e, t, a) {
+    1568: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -12162,7 +12420,7 @@ primJsp([0], {
             y: 439
         }
     },
-    1559: function(e, t, a) {
+    1569: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -12174,7 +12432,7 @@ primJsp([0], {
         });
         var r = a(9)
           , o = n(r)
-          , i = a(993)
+          , i = a(995)
           , l = n(i)
           , s = function(e) {
             return aoba.FrameTween.new(e).to({
@@ -12322,7 +12580,7 @@ primJsp([0], {
         };
         t.default = d
     },
-    1560: function(e, t, a) {
+    1570: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -12370,11 +12628,11 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(1561)
+          , s = a(1571)
           , c = n(s)
           , u = a(9)
           , f = n(u)
-          , d = a(998)
+          , d = a(1001)
           , p = n(d)
           , h = function(e) {
             function t(e) {
@@ -12428,7 +12686,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = h
     },
-    1561: function(e, t, a) {
+    1571: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -12459,7 +12717,7 @@ primJsp([0], {
             y: 0
         }
     },
-    1562: function(e, t, a) {
+    1572: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -12544,7 +12802,7 @@ primJsp([0], {
         }(aoba.Sprite);
         t.default = l
     },
-    1563: function(e, t, a) {
+    1573: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -12613,7 +12871,7 @@ primJsp([0], {
         }();
         t.default = l
     },
-    1564: function(e, t, a) {
+    1574: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -12661,9 +12919,9 @@ primJsp([0], {
                 t
             }
         }()
-          , s = a(998)
+          , s = a(1001)
           , c = n(s)
-          , u = a(993)
+          , u = a(995)
           , f = n(u)
           , d = a(9)
           , p = n(d)
@@ -12755,7 +13013,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = _
     },
-    1565: function(e, t, a) {
+    1575: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -12816,9 +13074,9 @@ primJsp([0], {
             if (void 0 !== i)
                 return i.call(n)
         }
-          , c = a(998)
+          , c = a(1001)
           , u = n(c)
-          , f = a(993)
+          , f = a(995)
           , d = n(f)
           , p = a(9)
           , h = n(p)
@@ -12932,7 +13190,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = m
     },
-    1566: function(e, t, a) {
+    1576: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -12947,9 +13205,9 @@ primJsp([0], {
           , o = n(r)
           , i = a(9)
           , l = n(i)
-          , s = a(993)
+          , s = a(995)
           , c = n(s)
-          , u = a(998)
+          , u = a(1001)
           , f = n(u)
           , d = t.createAndPlayAppealStartEffect = function() {
             var e = aoba.Container.new();
@@ -13033,7 +13291,7 @@ primJsp([0], {
         ;
         t.default = d
     },
-    1567: function(e, t, a) {
+    1577: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -13079,7 +13337,7 @@ primJsp([0], {
         ;
         t.default = s
     },
-    1568: function(e, t, a) {
+    1578: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -13093,11 +13351,11 @@ primJsp([0], {
           , o = n(r)
           , i = a(9)
           , l = n(i)
-          , s = a(993)
+          , s = a(995)
           , c = n(s)
           , u = a(91)
           , f = n(u)
-          , d = a(998)
+          , d = a(1001)
           , p = n(d)
           , h = o.default.SCREEN_WIDTH
           , y = o.default.SCREEN_HEIGHT
@@ -13148,7 +13406,7 @@ primJsp([0], {
         };
         t.default = _
     },
-    1569: function(e, t, a) {
+    1579: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -13210,37 +13468,37 @@ primJsp([0], {
           , d = n(f)
           , p = a(4)
           , h = n(p)
-          , y = a(1570)
+          , y = a(1580)
           , _ = n(y)
-          , m = a(1571)
+          , m = a(1581)
           , g = n(m)
-          , v = a(1572)
-          , b = n(v)
-          , w = a(1573)
+          , b = a(1582)
+          , v = n(b)
+          , w = a(1583)
           , k = n(w)
-          , S = a(1574)
+          , S = a(1584)
           , T = n(S)
-          , E = a(1575)
+          , E = a(1585)
           , O = n(E)
-          , x = a(1576)
-          , P = n(x)
-          , I = a(1577)
+          , P = a(1586)
+          , x = n(P)
+          , I = a(1587)
           , j = n(I)
-          , A = a(1361)
-          , C = n(A)
-          , M = a(78)
-          , D = n(M)
+          , A = a(1370)
+          , M = n(A)
+          , C = a(78)
+          , D = n(C)
           , R = a(353)
           , L = n(R)
-          , F = a(1364)
+          , F = a(1373)
           , N = n(F)
-          , B = a(1359)
+          , B = a(1368)
           , G = n(B)
-          , U = a(1362)
+          , U = a(1371)
           , Y = n(U)
-          , V = a(1363)
+          , V = a(1372)
           , X = n(V)
-          , W = a(1578)
+          , W = a(1588)
           , H = n(W)
           , Q = a(31)
           , J = n(Q)
@@ -13296,7 +13554,7 @@ primJsp([0], {
         }
           , ne = function(e, t, a) {
             var n = aoba.Container.new();
-            return n.fromData(P.default, {
+            return n.fromData(x.default, {
                 title: te(e),
                 skillCardList: ae(t, a)
             }),
@@ -13304,7 +13562,7 @@ primJsp([0], {
         }
           , re = function(e, t, a) {
             var n = aoba.Container.new();
-            return n.fromData(P.default, {
+            return n.fromData(x.default, {
                 title: te(e, {
                     isHalf: !0
                 }),
@@ -13459,7 +13717,7 @@ primJsp([0], {
                 value: function(e, t) {
                     var a = aoba.Container.new();
                     return a.fromData(k.default, {
-                        mental: C.default.new(t, e.displayParams.mental),
+                        mental: M.default.new(t, e.displayParams.mental),
                         vocal: ee(Z.vocal, e.displayParams.vocal),
                         dance: ee(Z.dance, e.displayParams.dance),
                         visual: ee(Z.visual, e.displayParams.visual)
@@ -13622,7 +13880,7 @@ primJsp([0], {
                         t
                     }, aoba.Container.new());
                     this._skillTab = aoba.Container.new();
-                    var s = this._skillTab.fromData(b.default, {
+                    var s = this._skillTab.fromData(v.default, {
                         memorySkillCard: ie(n, o),
                         idolSkillContainer: l
                     })
@@ -13640,7 +13898,7 @@ primJsp([0], {
             FesPauseDialog: de
         }
     },
-    1570: function(e, t, a) {
+    1580: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -13737,7 +13995,7 @@ primJsp([0], {
             y: 0
         }
     },
-    1571: function(e, t, a) {
+    1581: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -13773,7 +14031,7 @@ primJsp([0], {
             y: 113
         }
     },
-    1572: function(e, t, a) {
+    1582: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -13803,7 +14061,7 @@ primJsp([0], {
             y: 113
         }
     },
-    1573: function(e, t, a) {
+    1583: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -13841,7 +14099,7 @@ primJsp([0], {
             y: 66
         }
     },
-    1574: function(e, t, a) {
+    1584: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -13885,7 +14143,7 @@ primJsp([0], {
             y: 172
         }
     },
-    1575: function(e, t, a) {
+    1585: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -13927,7 +14185,7 @@ primJsp([0], {
             y: 52
         }
     },
-    1576: function(e, t, a) {
+    1586: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -13953,7 +14211,7 @@ primJsp([0], {
             y: 257
         }
     },
-    1577: function(e, t, a) {
+    1587: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -13996,7 +14254,7 @@ primJsp([0], {
             y: 383
         }
     },
-    1578: function(e, t, a) {
+    1588: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -14028,7 +14286,7 @@ primJsp([0], {
         Object.defineProperty(t, "__esModule", {
             value: !0
         });
-        var l = a(1579)
+        var l = a(1589)
           , s = n(l)
           , c = a(188)
           , u = n(c)
@@ -14076,7 +14334,7 @@ primJsp([0], {
         }(aoba.Container);
         t.default = h
     },
-    1579: function(e, t, a) {
+    1589: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -14172,7 +14430,7 @@ primJsp([0], {
             y: 113
         }
     },
-    1580: function(e, t, a) {
+    1590: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -14244,7 +14502,7 @@ primJsp([0], {
         }();
         t.default = l
     },
-    1581: function(e, t, a) {
+    1591: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -14282,20 +14540,20 @@ primJsp([0], {
                 t
             }
         }()
-          , l = a(1582)
+          , l = a(1592)
           , s = n(l)
-          , c = a(1583)
+          , c = a(1593)
           , u = n(c)
-          , f = a(1584)
+          , f = a(1594)
           , d = n(f)
           , p = a(51)
           , h = n(p)
-          , y = a(1259)
+          , y = a(1268)
           , _ = n(y)
           , m = _.default.EFFECT_TYPES
           , g = _.default.ACTION_TYPES
-          , v = _.default.ACTOR_ROLES
-          , b = _.default.TARGET_GROUPS
+          , b = _.default.ACTOR_ROLES
+          , v = _.default.TARGET_GROUPS
           , w = _.default.STAR_CATEGORIES
           , k = !1
           , S = !1
@@ -14361,17 +14619,17 @@ primJsp([0], {
                         for (var _, m = f.actors[Symbol.iterator](); !(p = (_ = m.next()).done); p = !0) {
                             var g = _.value;
                             switch (g.role) {
-                            case v.IDOL:
-                                var b = this._store.findPlayerIdol();
-                                b.currentMental = g.hp,
-                                b.currentStar = g.star;
+                            case b.IDOL:
+                                var v = this._store.findPlayerIdol();
+                                v.currentMental = g.hp,
+                                v.currentStar = g.star;
                                 break;
-                            case v.RIVAL:
+                            case b.RIVAL:
                                 var w = this._store.findRival(g.id);
                                 w.currentMental = g.hp,
                                 w.currentStar = g.star;
                                 break;
-                            case v.JUDGE:
+                            case b.JUDGE:
                                 this._store.findJudge(g.id).currentScore = g.hp
                             }
                         }
@@ -14407,7 +14665,7 @@ primJsp([0], {
                 value: function() {
                     var e = this._store.findPlayerIdol()
                       , t = this._actors.find(function(e) {
-                        return e.role === v.IDOL
+                        return e.role === b.IDOL
                     });
                     return {
                         centerIdol: this._store.centerIdol,
@@ -14469,7 +14727,7 @@ primJsp([0], {
                 key: "checkFinishResult",
                 value: function() {
                     var e = this._actors.find(function(e) {
-                        return e.role === v.IDOL
+                        return e.role === b.IDOL
                     });
                     return {
                         finished: this._gameManager.isFinished(),
@@ -14480,12 +14738,12 @@ primJsp([0], {
                 key: "getResultRivals",
                 value: function() {
                     for (var e = this._actors.filter(function(e) {
-                        return e.role !== v.JUDGE
+                        return e.role !== b.JUDGE
                     }).map(function(e) {
                         return {
                             id: e.id,
                             score: e.star,
-                            isPlayer: e.role === v.IDOL
+                            isPlayer: e.role === b.IDOL
                         }
                     }).sort(function(e, t) {
                         return t.score - e.score
@@ -14508,7 +14766,7 @@ primJsp([0], {
                 key: "_findActorBy",
                 value: function(e) {
                     return this._actors.find(function(t) {
-                        return t.role === e.role && (t.role === v.IDOL || t.id === e.id)
+                        return t.role === e.role && (t.role === b.IDOL || t.id === e.id)
                     })
                 }
             }, {
@@ -14579,7 +14837,7 @@ primJsp([0], {
                       , a = Object.assign({}, e);
                     this._checkFinishStars(a.actions, this._checkTopStars(a.actions)),
                     a.actions = a.actions.filter(function(e) {
-                        return e.role === v.JUDGE || (!!e.isUsedMemoryAppeal || "0" !== e.usedSkillId)
+                        return e.role === b.JUDGE || (!!e.isUsedMemoryAppeal || "0" !== e.usedSkillId)
                     });
                     var n = !0
                       , r = !1
@@ -14626,7 +14884,7 @@ primJsp([0], {
                       , _ = !1
                       , m = void 0;
                     try {
-                        for (var g, b = a.previousActions[Symbol.iterator](); !(y = (g = b.next()).done); y = !0) {
+                        for (var g, v = a.previousActions[Symbol.iterator](); !(y = (g = v.next()).done); y = !0) {
                             var w = g.value;
                             this._addEffectDataTo(w)
                         }
@@ -14635,7 +14893,7 @@ primJsp([0], {
                         m = e
                     } finally {
                         try {
-                            !y && b.return && b.return()
+                            !y && v.return && v.return()
                         } finally {
                             if (_)
                                 throw m
@@ -14714,27 +14972,27 @@ primJsp([0], {
                                                     continue
                                                 }
                                                 switch (S.data.targetGroup) {
-                                                case b.US:
+                                                case v.US:
                                                     i.addStatusEffect(S);
                                                     break;
-                                                case b.THEM:
+                                                case v.THEM:
                                                     p.addStatusEffect(S);
                                                     break;
-                                                case b.RIVALS:
+                                                case v.RIVALS:
                                                     var T = !0
                                                       , E = !1
                                                       , O = void 0;
                                                     try {
-                                                        for (var x, P = this._actors[Symbol.iterator](); !(T = (x = P.next()).done); T = !0) {
-                                                            var I = x.value;
-                                                            I.isDead || I.role === v.JUDGE || (o.role === I.role && o.role === v.IDOL || o.role === I.role && o.id === I.id || I.addStatusEffect(S))
+                                                        for (var P, x = this._actors[Symbol.iterator](); !(T = (P = x.next()).done); T = !0) {
+                                                            var I = P.value;
+                                                            I.isDead || I.role === b.JUDGE || (o.role === I.role && o.role === b.IDOL || o.role === I.role && o.id === I.id || I.addStatusEffect(S))
                                                         }
                                                     } catch (e) {
                                                         E = !0,
                                                         O = e
                                                     } finally {
                                                         try {
-                                                            !T && P.return && P.return()
+                                                            !T && x.return && x.return()
                                                         } finally {
                                                             if (E)
                                                                 throw O
@@ -14925,7 +15183,7 @@ primJsp([0], {
                         for (var o, i = e[Symbol.iterator](); !(a = (o = i.next()).done); a = !0) {
                             var l = o.value
                               , s = l.scores;
-                            if (l.role === v.IDOL && s)
+                            if (l.role === b.IDOL && s)
                                 for (var c = 0; c < s.length; c++) {
                                     var u = s[c];
                                     if ("top_appeal" === u.type) {
@@ -15013,7 +15271,7 @@ primJsp([0], {
         }();
         t.default = O
     },
-    1582: function(e, t, a) {
+    1592: function(e, t, a) {
         "use strict";
         function n(e) {
             if (Array.isArray(e)) {
@@ -15235,23 +15493,23 @@ primJsp([0], {
                     if (e) {
                         var m = !0
                           , g = !1
-                          , v = void 0;
+                          , b = void 0;
                         try {
-                            for (var b, w = _[Symbol.iterator](); !(m = (b = w.next()).done); m = !0) {
-                                var k = b.value
+                            for (var v, w = _[Symbol.iterator](); !(m = (v = w.next()).done); m = !0) {
+                                var k = v.value
                                   , S = !0
                                   , T = !1
                                   , E = void 0;
                                 try {
-                                    for (var O, x = k.userFesDeck.userFesDeckMembers[Symbol.iterator](); !(S = (O = x.next()).done); S = !0) {
-                                        var P = O.value;
-                                        t.push.apply(t, n(a(P.userFesIdol.activeSkills)));
+                                    for (var O, P = k.userFesDeck.userFesDeckMembers[Symbol.iterator](); !(S = (O = P.next()).done); S = !0) {
+                                        var x = O.value;
+                                        t.push.apply(t, n(a(x.userFesIdol.activeSkills)));
                                         var I = !0
                                           , j = !1
                                           , A = void 0;
                                         try {
-                                            for (var C, M = P.userFesIdol.passiveSkills[Symbol.iterator](); !(I = (C = M.next()).done); I = !0) {
-                                                var D = C.value;
+                                            for (var M, C = x.userFesIdol.passiveSkills[Symbol.iterator](); !(I = (M = C.next()).done); I = !0) {
+                                                var D = M.value;
                                                 t.push.apply(t, n(D.skillEffects))
                                             }
                                         } catch (e) {
@@ -15259,7 +15517,7 @@ primJsp([0], {
                                             A = e
                                         } finally {
                                             try {
-                                                !I && M.return && M.return()
+                                                !I && C.return && C.return()
                                             } finally {
                                                 if (j)
                                                     throw A
@@ -15271,7 +15529,7 @@ primJsp([0], {
                                     E = e
                                 } finally {
                                     try {
-                                        !S && x.return && x.return()
+                                        !S && P.return && P.return()
                                     } finally {
                                         if (T)
                                             throw E
@@ -15283,13 +15541,13 @@ primJsp([0], {
                             }
                         } catch (e) {
                             g = !0,
-                            v = e
+                            b = e
                         } finally {
                             try {
                                 !m && w.return && w.return()
                             } finally {
                                 if (g)
-                                    throw v
+                                    throw b
                             }
                         }
                     } else {
@@ -15382,7 +15640,7 @@ primJsp([0], {
         }();
         t.default = i
     },
-    1583: function(e, t, a) {
+    1593: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -15407,7 +15665,7 @@ primJsp([0], {
                 t
             }
         }()
-          , o = a(1259)
+          , o = a(1268)
           , i = function(e) {
             return e && e.__esModule ? e : {
                 default: e
@@ -15567,7 +15825,7 @@ primJsp([0], {
         }();
         t.default = s
     },
-    1584: function(e, t, a) {
+    1594: function(e, t, a) {
         "use strict";
         function n(e, t) {
             if (!(e instanceof t))
@@ -15662,7 +15920,7 @@ primJsp([0], {
         }();
         t.default = o
     },
-    2162: function(e, t, a) {
+    2180: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -15706,7 +15964,7 @@ primJsp([0], {
             target: "concertGame"
         }]
     },
-    2163: function(e, t, a) {
+    2181: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -15746,7 +16004,7 @@ primJsp([0], {
             target: "concertGame"
         }]
     },
-    2164: function(e, t, a) {
+    2182: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -15878,7 +16136,7 @@ primJsp([0], {
             event: "startAppealPhase"
         }]
     },
-    2165: function(e, t, a) {
+    2183: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -15967,7 +16225,7 @@ primJsp([0], {
             event: "startAppealPhase"
         }]
     },
-    2166: function(e, t, a) {
+    2184: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -16056,7 +16314,7 @@ primJsp([0], {
             event: "startAppealPhase"
         }]
     },
-    2167: function(e, t, a) {
+    2185: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -16196,7 +16454,7 @@ primJsp([0], {
             bringFront: !1
         }]
     },
-    2168: function(e, t, a) {
+    2186: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -16228,7 +16486,7 @@ primJsp([0], {
             target: "concertGame"
         }]
     },
-    2169: function(e, t, a) {
+    2187: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -16272,7 +16530,7 @@ primJsp([0], {
             target: "concertGame"
         }]
     },
-    918: function(e, t, a) {
+    920: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -16330,19 +16588,19 @@ primJsp([0], {
         }()
           , c = a(61)
           , u = n(c)
-          , f = a(1136)
+          , f = a(1139)
           , d = n(f)
-          , p = a(1186)
+          , p = a(1194)
           , h = n(p)
-          , y = a(1258)
+          , y = a(1267)
           , _ = n(y)
           , m = a(56)
           , g = n(m)
-          , v = a(140)
-          , b = n(v)
-          , w = a(1008)
+          , b = a(140)
+          , v = n(b)
+          , w = a(1011)
           , k = n(w)
-          , S = a(1137)
+          , S = a(1140)
           , T = n(S)
           , E = function(e) {
             function t(e) {
@@ -16359,7 +16617,7 @@ primJsp([0], {
                     g.default.fes.finish(Object.assign({
                         isRetired: e.isRetired
                     })).then(function(e) {
-                        var t = b.default.createWhite();
+                        var t = v.default.createWhite();
                         u.default.directTo("/fesResult", {
                             request: !1,
                             showLoading: !1,
@@ -16398,7 +16656,7 @@ primJsp([0], {
         }(d.default);
         t.default = E
     },
-    921: function(e, t, a) {
+    923: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -16487,23 +16745,23 @@ primJsp([0], {
         }()
           , u = a(61)
           , f = n(u)
-          , d = a(1136)
+          , d = a(1139)
           , p = n(d)
-          , h = a(1186)
+          , h = a(1194)
           , y = n(h)
-          , _ = a(1258)
+          , _ = a(1267)
           , m = n(_)
           , g = a(56)
-          , v = n(g)
-          , b = a(140)
-          , w = n(b)
-          , k = a(1008)
+          , b = n(g)
+          , v = a(140)
+          , w = n(v)
+          , k = a(1011)
           , S = n(k)
-          , T = a(1137)
+          , T = a(1140)
           , E = n(T)
-          , O = a(108)
-          , x = n(O)
-          , P = function(e) {
+          , O = a(109)
+          , P = n(O)
+          , x = function(e) {
             function t(e) {
                 o(this, t);
                 var a = i(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
@@ -16515,10 +16773,10 @@ primJsp([0], {
                 key: "goToResult",
                 value: function(e) {
                     this.showLoadingLayer(),
-                    Promise.all([v.default.fesMatch.finish({
+                    Promise.all([b.default.fesMatch.finish({
                         fesMatchConcertRivals: e.rivals,
                         isRetired: e.isRetired
-                    }), x.default.get()]).then(function(e) {
+                    }), P.default.get()]).then(function(e) {
                         var t = w.default.createWhite()
                           , a = s(e, 2)
                           , n = a[0]
@@ -16536,7 +16794,7 @@ primJsp([0], {
             }], [{
                 key: "request",
                 value: function() {
-                    return v.default.fesMatch.resume()
+                    return b.default.fesMatch.resume()
                 }
             }, {
                 key: "getContentResources",
@@ -16561,9 +16819,9 @@ primJsp([0], {
             }]),
             t
         }(p.default);
-        t.default = P
+        t.default = x
     },
-    949: function(e, t, a) {
+    951: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -16619,13 +16877,13 @@ primJsp([0], {
                 t
             }
         }()
-          , c = a(1136)
+          , c = a(1139)
           , u = n(c)
           , f = a(137)
           , d = n(f)
-          , p = a(1008)
+          , p = a(1011)
           , h = n(p)
-          , y = a(1137)
+          , y = a(1140)
           , _ = n(y)
           , m = function(e) {
             function t(e) {
@@ -16656,7 +16914,7 @@ primJsp([0], {
         }(u.default);
         t.default = m
     },
-    950: function(e, t, a) {
+    952: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -16712,17 +16970,17 @@ primJsp([0], {
                 t
             }
         }()
-          , c = a(1136)
+          , c = a(1139)
           , u = n(c)
-          , f = a(1186)
+          , f = a(1194)
           , d = n(f)
           , p = a(137)
           , h = n(p)
-          , y = a(1008)
+          , y = a(1011)
           , _ = n(y)
-          , m = a(1137)
+          , m = a(1140)
           , g = n(m)
-          , v = function(e) {
+          , b = function(e) {
             function t(e) {
                 o(this, t);
                 var a = i(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
@@ -16749,9 +17007,9 @@ primJsp([0], {
             }]),
             t
         }(u.default);
-        t.default = v
+        t.default = b
     },
-    966: function(e, t, a) {
+    969: function(e, t, a) {
         "use strict";
         function n(e) {
             return e && e.__esModule ? e : {
@@ -16807,42 +17065,42 @@ primJsp([0], {
                 t
             }
         }()
-          , c = a(1136)
+          , c = a(1139)
           , u = n(c)
-          , f = a(194)
+          , f = a(195)
           , d = n(f)
-          , p = a(1040)
+          , p = a(1043)
           , h = n(p)
-          , y = a(2162)
+          , y = a(2180)
           , _ = n(y)
-          , m = a(2163)
+          , m = a(2181)
           , g = n(m)
-          , v = a(2164)
-          , b = n(v)
-          , w = a(2165)
+          , b = a(2182)
+          , v = n(b)
+          , w = a(2183)
           , k = n(w)
-          , S = a(2166)
+          , S = a(2184)
           , T = n(S)
-          , E = a(2167)
+          , E = a(2185)
           , O = n(E)
-          , x = a(2168)
-          , P = n(x)
-          , I = a(2169)
+          , P = a(2186)
+          , x = n(P)
+          , I = a(2187)
           , j = n(I)
-          , A = a(1008)
-          , C = n(A)
-          , M = a(1137)
-          , D = n(M)
-          , R = a(1019)
+          , A = a(1011)
+          , M = n(A)
+          , C = a(1140)
+          , D = n(C)
+          , R = a(1022)
           , L = n(R)
-          , F = [b.default, k.default, T.default, O.default]
+          , F = [v.default, k.default, T.default, O.default]
           , N = 4
           , B = function(e) {
             function t(e) {
                 o(this, t);
                 var a = i(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
                 a._produceAction = d.default;
-                var n = C.default.createAudition(e.produceAudition.difficulty)
+                var n = M.default.createAudition(e.produceAudition.difficulty)
                   , r = a.createConcertGame(Object.assign(e, {
                     isTutorial: !0
                 }), D.default.tutorialAudition, n);
@@ -16861,7 +17119,7 @@ primJsp([0], {
                     h.default.createAndPlay(g.default, a)
                 }),
                 r.once("endLinkSkill", function() {
-                    h.default.createAndPlay(P.default, a)
+                    h.default.createAndPlay(x.default, a)
                 }),
                 r.on("endAppealPhase", function(e) {
                     e === N && h.default.createAndPlay(j.default, a)
@@ -16880,7 +17138,7 @@ primJsp([0], {
             }], [{
                 key: "getContentResources",
                 value: function(e) {
-                    return [].concat(r(u.default.getContentResources(e)), [C.default.IMAGES.AUDITION(e.produceAudition.difficulty).bg])
+                    return [].concat(r(u.default.getContentResources(e)), [M.default.IMAGES.AUDITION(e.produceAudition.difficulty).bg])
                 }
             }, {
                 key: "request",
@@ -16890,14 +17148,14 @@ primJsp([0], {
             }, {
                 key: "uiResources",
                 get: function() {
-                    return [].concat(r(L.default), r(u.default.uiResources), r(h.default.getTrackResources([].concat(r(_.default), r(g.default), r(b.default), r(k.default), r(T.default), r(O.default), r(P.default), r(j.default)))))
+                    return [].concat(r(L.default), r(u.default.uiResources), r(h.default.getTrackResources([].concat(r(_.default), r(g.default), r(v.default), r(k.default), r(T.default), r(O.default), r(x.default), r(j.default)))))
                 }
             }]),
             t
         }(u.default);
         t.default = B
     },
-    991: function(e, t, a) {
+    994: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -17577,69 +17835,7 @@ primJsp([0], {
             }]
         }
     },
-    992: function(e, t, a) {
-        "use strict";
-        Object.defineProperty(t, "__esModule", {
-            value: !0
-        }),
-        t.default = {
-            children: [{
-                name: "skillDetailBase",
-                fullName: "skillDetailBase",
-                type: "sprite",
-                key: "skill_detail_base.png",
-                x: 0,
-                y: 0
-            }, {
-                name: "idolIcon",
-                fullName: "idolIcon",
-                type: "sprite",
-                key: "idol_icon.png",
-                x: 19,
-                y: 11
-            }, {
-                name: "name",
-                fullName: "name",
-                type: "text",
-                text: "",
-                style: {
-                    fill: 16777215,
-                    fontFamily: "UDKakugo_SmallPr6-B",
-                    fontSize: 16
-                },
-                anchor: {
-                    x: 0,
-                    y: .5
-                },
-                rotation: 0,
-                x: 16,
-                y: 79
-            }, {
-                name: "description",
-                fullName: "description",
-                anchor: {
-                    x: 0,
-                    y: 0
-                },
-                type: "text",
-                text: "",
-                style: {
-                    fill: 16777215,
-                    fontFamily: "UDKakugo_SmallPr6-B",
-                    fontSize: 14
-                },
-                rotation: 0,
-                x: 22,
-                y: 92
-            }],
-            name: "",
-            fullName: "",
-            type: "container",
-            x: 275,
-            y: 376
-        }
-    },
-    993: function(e, t, a) {
+    995: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -17710,11 +17906,11 @@ primJsp([0], {
             data: "particles/concert/common/idol_buff.json",
             images: ["concert_arrow_up.png"]
         }
-          , v = t.idolDebuff = {
+          , b = t.idolDebuff = {
             data: "particles/concert/common/idol_debuff.json",
             images: ["concert_arrow_down.png"]
         }
-          , b = t.idolGainStar = {
+          , v = t.idolGainStar = {
             data: "particles/concert/common/idol_gain_star.json",
             images: ["concert_flash_line.png"]
         }
@@ -17756,7 +17952,7 @@ primJsp([0], {
                 images: ["concert_star_y.png", "concet_sparks.png"]
             }
         }
-          , x = t.timingBad = {
+          , P = t.timingBad = {
             top: {
                 data: "particles/concert/common/timing_bad_top.json",
                 images: ["concert_smoke.png"]
@@ -17766,7 +17962,7 @@ primJsp([0], {
                 images: ["concert_smoke.png"]
             }
         }
-          , P = t.memoryAppeal = {
+          , x = t.memoryAppeal = {
             bg: {
                 data: "particles/concert/memory_appeal/bg.json",
                 images: ["concert_cross_particle.png", "concert_flash_light.png", "concert_hexagon.png"]
@@ -17812,7 +18008,25 @@ primJsp([0], {
                 images: ["particle_pixi_2.png"]
             }
         }
-          , A = t.recoverSkill = {
+          , A = t.lowerMemoryAppeal = {
+            heart: {
+                data: "particles/concert/lower_memory_appeal/down.json",
+                images: ["down01.png", "down02.png"]
+            },
+            hajiki: {
+                data: "particles/concert/lower_memory_appeal/hajiki.json",
+                images: ["hajiki.png"]
+            },
+            memoryDownMelancholy1: {
+                data: "particles/concert/lower_memory_appeal/omoide_down_Melancholy.json",
+                images: ["omoide_down_Melancholy.png"]
+            },
+            memoryDownMelancholy2: {
+                data: "particles/concert/lower_memory_appeal/omoide_down_Melancholy2.json",
+                images: ["omoide_down_Melancholy2.png"]
+            }
+        }
+          , M = t.recoverSkill = {
             note: {
                 data: "particles/concert/recover_skill/note.json",
                 images: n
@@ -17832,7 +18046,7 @@ primJsp([0], {
                 images: ["judge_attack_trail_boke.png"]
             }
         }
-          , M = t.rivalAttack = {
+          , D = t.rivalAttack = {
             hit: {
                 data: "particles/concert/rival_attack/hit.json",
                 images: n
@@ -17846,7 +18060,7 @@ primJsp([0], {
                 images: ["concert_common_particle.png"]
             }
         }
-          , D = t.idolAttack = {
+          , R = t.idolAttack = {
             hit: {
                 data: "particles/concert/idol_attack/hit.json",
                 images: n
@@ -17864,7 +18078,7 @@ primJsp([0], {
                 images: ["concert_common_particle.png"]
             }
         }
-          , R = t.heart = {
+          , L = t.heart = {
             hit: {
                 data: "particles/concert/heart/hit.json",
                 images: ["concert_heart.png", "concert_twinkle2.png"]
@@ -17874,7 +18088,7 @@ primJsp([0], {
                 images: ["concert_heart.png", "concert_twinkle2.png"]
             }
         }
-          , L = t.star = {
+          , F = t.star = {
             trail: {
                 data: "particles/concert/star/trail.json",
                 images: ["concert_star_particle.png"]
@@ -17888,7 +18102,7 @@ primJsp([0], {
                 images: ["concert_star_particle.png"]
             }
         }
-          , F = {
+          , N = {
             starLine: {
                 data: "particles/concert/link_appeal/star_line.json",
                 images: ["concert_star_w.png"]
@@ -17902,7 +18116,7 @@ primJsp([0], {
                 images: ["wing_link.png"]
             }
         }
-          , N = {
+          , B = {
             feather: {
                 data: "particles/concert/reraise_skill/reraise_feather_2.json",
                 images: ["wing_link.png"]
@@ -17924,7 +18138,7 @@ primJsp([0], {
                 images: ["reraise_skill_twinkle_1.png", "reraise_skill_twinkle_2.png", "reraise_skill_twinkle_3.png", "reraise_skill_twinkle_4.png"]
             }
         }
-          , B = {
+          , G = {
             twinkle1: {
                 data: "particles/concert/reraise_skill/reraise_twinkle_5.json",
                 images: ["reraise_skill_twinkle_1.png", "reraise_skill_twinkle_2.png", "reraise_skill_twinkle_3.png", "reraise_skill_twinkle_4.png"]
@@ -17946,16 +18160,17 @@ primJsp([0], {
             arrowUp: _,
             arrowDown: m,
             idolBuff: g,
-            idolDebuff: v,
-            idolGainStar: b,
-            memoryAppeal: P,
+            idolDebuff: b,
+            idolGainStar: v,
+            memoryAppeal: x,
             memoryAppealGauge: I,
-            linkAppeal: F,
+            linkAppeal: N,
             raiseMemoryAppeal: j,
-            recoverSkill: A,
-            idolAttack: D,
+            lowerMemoryAppeal: A,
+            recoverSkill: M,
+            idolAttack: R,
             judgeAttack: C,
-            rivalAttack: M,
+            rivalAttack: D,
             flashSpark3: f,
             flashSpark4: d,
             stageFlash011: w,
@@ -17964,64 +18179,76 @@ primJsp([0], {
             timingPerfect: T,
             timingGood: E,
             timingNormal: O,
-            timingBad: x,
+            timingBad: P,
             retireAura: p,
             retireFlash: h,
-            heart: R,
-            star: L,
-            activeReraiseSkill: N,
-            passiveReraiseSkill: B
+            heart: L,
+            star: F,
+            activeReraiseSkill: B,
+            passiveReraiseSkill: G
         }
     },
-    998: function(e, t, a) {
+    996: function(e, t, a) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
         }),
         t.default = {
-            prepare: "sounds/se/138.m4a",
-            start: "sounds/se/139.m4a",
-            turnStart: "sounds/se/140.m4a",
-            passiveSkill: "sounds/se/033.m4a",
-            drawCard: "sounds/se/142.m4a",
-            increaseMemory: "sounds/se/143.m4a",
-            maxMemory: "sounds/se/144.m4a",
-            selectCard: "sounds/se/145.m4a",
-            showAttackOrder: "sounds/se/146.m4a",
-            selectJudgeTarget: "sounds/se/147.m4a",
-            gaugeStart: "sounds/se/148.m4a",
-            gaugeBad: "sounds/se/149.m4a",
-            gaugeNormal: "sounds/se/150.m4a",
-            gaugeGood: "sounds/se/151.m4a",
-            gaugePerfect: "sounds/se/152.m4a",
-            appealStart: "sounds/se/153.m4a",
-            showDamageText: "sounds/se/154.m4a",
-            hitIdolAppeal: "sounds/se/155.m4a",
-            audienceVoice: "sounds/se/162.m4a",
-            idolReceiveDamage: "sounds/se/165.m4a",
-            idolSpecialAttack: "sounds/se/193.m4a",
-            idolNormalAttack: "sounds/se/194.m4a",
-            reachJudgeGauge: "sounds/se/156a.m4a",
-            giveBonus1: "sounds/se/156b2.m4a",
-            giveBonus2: "sounds/se/156c2.m4a",
-            linkSkill: "sounds/se/157.m4a",
-            startMemoryRoulette: "sounds/se/166.m4a",
-            memoryRouletteGood: "sounds/se/167.m4a",
-            memoryRouletteBad: "sounds/se/168.m4a",
-            memoryRouletteMiss: "sounds/se/169.m4a",
-            showMemoryCutIn: "sounds/se/170.m4a",
-            showBuffEffect: "sounds/se/114a.m4a",
-            showDebuffEffect: "sounds/se/115.m4a",
-            showRecoverEffect: "sounds/se/116.m4a",
-            showActiveReraiseEffect: "sounds/se/409_1.m4a",
-            showActiveReraiseEffect2: "sounds/se/409_2.m4a",
-            showActiveReraiseRivalEffect: "sounds/se/409_r_1.m4a",
-            showActiveReraiseRivalEffect2: "sounds/se/409_r_2.m4a",
-            showPassiveReraiseEffect: "sounds/se/410.m4a",
-            useSkillOfRaiseMemoryAppeal: "sounds/se/330.m4a",
-            raiseMemoryAppealOfActor: "sounds/se/331.m4a",
-            idolRetire: "sounds/se/concert_result/0135.m4a"
+            children: [{
+                name: "skillDetailBase",
+                fullName: "skillDetailBase",
+                type: "sprite",
+                key: "skill_detail_base.png",
+                x: 0,
+                y: 0
+            }, {
+                name: "idolIcon",
+                fullName: "idolIcon",
+                type: "sprite",
+                key: "idol_icon.png",
+                x: 19,
+                y: 11
+            }, {
+                name: "name",
+                fullName: "name",
+                type: "text",
+                text: "",
+                style: {
+                    fill: 16777215,
+                    fontFamily: "UDKakugo_SmallPr6-B",
+                    fontSize: 16
+                },
+                anchor: {
+                    x: 0,
+                    y: .5
+                },
+                rotation: 0,
+                x: 16,
+                y: 79
+            }, {
+                name: "description",
+                fullName: "description",
+                anchor: {
+                    x: 0,
+                    y: 0
+                },
+                type: "text",
+                text: "",
+                style: {
+                    fill: 16777215,
+                    fontFamily: "UDKakugo_SmallPr6-B",
+                    fontSize: 14
+                },
+                rotation: 0,
+                x: 22,
+                y: 92
+            }],
+            name: "",
+            fullName: "",
+            type: "container",
+            x: 275,
+            y: 376
         }
     }
 });
-//# sourceMappingURL=0-4346f1ce6ff81d5819d6.chunk.js.map
+//# sourceMappingURL=0-b8381cfd9617ab881927.chunk.js.map
