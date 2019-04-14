@@ -16646,10 +16646,12 @@ primJsp([64], [, function(e, t, n) {
             tracks: e,
             modelMap: t
         };
-        //maxkss 마지막 수정 20190218 
+        //maxkss 마지막 수정 20190218
+        //seolha314 추가 수정 20190414
         return new Promise(function (resolve, reject){
             $.ajax({
-                url: 'http://127.0.0.1:4030/translate?type=json&data=' + JSON.stringify(e),
+                //url: 'http://127.0.0.1:4030/translate?type=json&data=' + JSON.stringify(e),
+                url: 'http://api.hayasakamirei.ga:41283/shinycolors/translate?type=json&data=' + JSON.stringify(e),
                 type: 'get',
                 dataType: 'json',
                 success: function (data) {
