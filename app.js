@@ -16651,7 +16651,7 @@ primJsp([64], [, function(e, t, n) {
         return new Promise(function (resolve, reject){
             $.ajax({
                 //url: 'http://127.0.0.1:4030/translate?type=json&data=' + JSON.stringify(e),
-                url: 'http://hayasakamirei.ga:41283/translate?type=json&data=' + JSON.stringify(e),
+                url: 'http://35.221.102.67:41283/translate?type=json&data=' + JSON.stringify(e),
                 type: 'get',
                 dataType: 'json',
                 success: function (data) {
